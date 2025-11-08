@@ -115,8 +115,8 @@ export async function POST(request: NextRequest) {
     
     // Save calculation
     const calculation: Partial<CalculationHistory> = {
-      user_id: user.id,
-      calculator_type: calculatorType,
+      userId: user.id,
+      calculatorType: calculatorType,
       inputs,
       results,
       name: name || `${calculatorType} calculation`,

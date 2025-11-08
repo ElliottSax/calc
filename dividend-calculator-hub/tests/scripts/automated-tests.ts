@@ -175,7 +175,7 @@ export class APITests {
       testResults.push({
         test: 'API Error',
         passed: false,
-        error: error.message
+        error: error instanceof Error ? error.message : String(error)
       })
     }
     

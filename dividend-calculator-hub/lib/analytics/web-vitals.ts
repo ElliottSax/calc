@@ -2,15 +2,15 @@
  * Core Web Vitals monitoring and performance tracking
  */
 
-import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals'
+import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'
 
 // Metric names for tracking
-export type MetricName = 'CLS' | 'FID' | 'FCP' | 'LCP' | 'TTFB'
+export type MetricName = 'CLS' | 'INP' | 'FCP' | 'LCP' | 'TTFB'
 
 // Metric thresholds for classification
 const THRESHOLDS = {
   CLS: { good: 0.1, poor: 0.25 },
-  FID: { good: 100, poor: 300 },
+  INP: { good: 200, poor: 500 },
   FCP: { good: 1800, poor: 3000 },
   LCP: { good: 2500, poor: 4000 },
   TTFB: { good: 800, poor: 1800 }
@@ -77,14 +77,14 @@ function sendToAnalytics(metric: any) {
 export function initWebVitals() {
   try {
     // Core Web Vitals
-    getCLS(sendToAnalytics)
-    getFID(sendToAnalytics)
-    getLCP(sendToAnalytics)
-    
+    onCLS(sendToAnalytics)
+    onINP(sendToAnalytics)
+    onLCP(sendToAnalytics)
+
     // Other important metrics
-    getFCP(sendToAnalytics)
-    getTTFB(sendToAnalytics)
-    
+    onFCP(sendToAnalytics)
+    onTTFB(sendToAnalytics)
+
     console.log('Web Vitals monitoring initialized')
   } catch (error) {
     console.error('Failed to initialize Web Vitals:', error)
@@ -267,4 +267,4 @@ export function getPerformanceSuggestions(): string[] {
 }
 
 // Export for use in _app.tsx
-export { getCLS, getFID, getFCP, getLCP, getTTFB }
+export { onCLS, onFCP, onINP, onLCP, onTTFB }

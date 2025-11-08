@@ -105,10 +105,10 @@ export function SocialShare({
   return (
     <div className={className}>
       {/* Native share button for mobile */}
-      {typeof navigator !== 'undefined' && navigator.share && (
-        <Button 
-          variant="outline" 
-          size="sm" 
+      {typeof navigator !== 'undefined' && typeof navigator.share === 'function' && (
+        <Button
+          variant="outline"
+          size="sm"
           onClick={handleNativeShare}
           className="mr-2"
         >

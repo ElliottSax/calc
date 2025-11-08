@@ -110,7 +110,7 @@ export function StockProfileOGTags({ symbol, name, yield: stockYield, price }: {
 }) {
   return (
     <OpenGraphTags
-      title={`${symbol} Stock Analysis | ${yield.toFixed(2)}% Dividend Yield`}
+      title={`${symbol} Stock Analysis | ${stockYield.toFixed(2)}% Dividend Yield`}
       description={`Comprehensive dividend analysis for ${name} (${symbol}). Current yield: ${stockYield.toFixed(2)}%, Price: $${price.toFixed(2)}. View dividend history and calculate returns.`}
       image={generateOGImageUrl({
         title: `${symbol} Dividend Analysis`,
