@@ -14,7 +14,13 @@
     "test:functionality": "node -e \"console.log('Functionality tests - see tests/scripts/automated-tests.ts')\"",
     "validate": "npm run type-check && npm run lint",
     "prepare": "npm run validate",
-    "analyze": "ANALYZE=true npm run build"
+    "analyze": "ANALYZE=true npm run build",
+    "vercel:preview": "vercel",
+    "vercel:prod": "vercel --prod",
+    "vercel:logs": "vercel logs",
+    "vercel:env": "vercel env pull",
+    "deploy": "npm run validate && vercel --prod",
+    "prebuild": "npm run type-check"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
