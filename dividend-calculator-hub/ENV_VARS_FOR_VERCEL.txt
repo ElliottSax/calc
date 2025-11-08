@@ -1,0 +1,131 @@
+═══════════════════════════════════════════════════════════════════════════
+                    ENVIRONMENT VARIABLES FOR VERCEL
+═══════════════════════════════════════════════════════════════════════════
+
+Copy these values when adding environment variables in Vercel Dashboard:
+(Go to: https://vercel.com/dashboard → Your Project → Settings → Environment Variables)
+
+Select: Production, Preview, AND Development for all variables
+
+═══════════════════════════════════════════════════════════════════════════
+
+REQUIRED VARIABLES (Mock Mode - App Works Without Real APIs):
+─────────────────────────────────────────────────────────────────────────
+
+Variable Name: MOCK_API_RESPONSES
+Value: true
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: NEXT_PUBLIC_SUPABASE_URL
+Value: https://example.supabase.co
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: NEXT_PUBLIC_SUPABASE_ANON_KEY
+Value: example_supabase_anon_key_placeholder_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: SUPABASE_SERVICE_ROLE_KEY
+Value: example_service_role_key_placeholder_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: FMP_API_KEY
+Value: example_fmp_key_placeholder
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: NEXTAUTH_SECRET
+Value: [Generate with: openssl rand -base64 32]
+Example: aB3dEfGhIjKlMnOpQrStUvWxYz123456789+/=
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: NEXT_PUBLIC_APP_NAME
+Value: Dividend Calculator Hub
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: NEXT_PUBLIC_APP_URL
+Value: https://dividend-calculator-hub.vercel.app
+(Update after first deployment with your actual URL)
+Environments: ☑ Production
+
+Variable Name: NEXT_PUBLIC_APP_URL
+Value: https://dividend-calculator-hub-preview.vercel.app
+Environments: ☑ Preview  ☑ Development
+
+═══════════════════════════════════════════════════════════════════════════
+
+OPTIONAL (Recommended for Better Experience):
+─────────────────────────────────────────────────────────────────────────
+
+Variable Name: DISABLE_ANALYTICS
+Value: true
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: LOG_LEVEL
+Value: info
+Environments: ☑ Production  ☑ Preview  ☑ Development
+
+Variable Name: TEST_MODE
+Value: false
+Environments: ☑ Production
+
+Variable Name: TEST_MODE
+Value: true
+Environments: ☑ Preview  ☑ Development
+
+═══════════════════════════════════════════════════════════════════════════
+
+OPTIONAL (For Production with Real APIs - Add Later):
+─────────────────────────────────────────────────────────────────────────
+
+Variable Name: NEXT_PUBLIC_GA_MEASUREMENT_ID
+Value: G-XXXXXXXXXX
+(Get from: Google Analytics)
+Environments: ☑ Production
+
+Variable Name: NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT
+Value: ca-pub-XXXXXXXXXXXXXXXX
+(Get from: Google AdSense)
+Environments: ☑ Production
+
+Variable Name: ENABLE_AFFILIATE_TRACKING
+Value: true
+Environments: ☑ Production
+
+═══════════════════════════════════════════════════════════════════════════
+
+CLI COMMANDS TO ADD VARIABLES:
+─────────────────────────────────────────────────────────────────────────
+
+# Add each variable for all environments:
+
+echo "true" | vercel env add MOCK_API_RESPONSES production preview development
+
+echo "https://example.supabase.co" | vercel env add NEXT_PUBLIC_SUPABASE_URL production preview development
+
+echo "example_supabase_anon_key_placeholder" | vercel env add NEXT_PUBLIC_SUPABASE_ANON_KEY production preview development
+
+echo "example_fmp_key_placeholder" | vercel env add FMP_API_KEY production preview development
+
+echo "$(openssl rand -base64 32)" | vercel env add NEXTAUTH_SECRET production preview development
+
+echo "Dividend Calculator Hub" | vercel env add NEXT_PUBLIC_APP_NAME production preview development
+
+echo "true" | vercel env add DISABLE_ANALYTICS production preview development
+
+echo "info" | vercel env add LOG_LEVEL production preview development
+
+═══════════════════════════════════════════════════════════════════════════
+
+NOTES:
+─────────────────────────────────────────────────────────────────────────
+
+1. With MOCK_API_RESPONSES=true, your app will work WITHOUT real API keys
+2. The calculator will use mock stock data for testing
+3. No Supabase database is needed in mock mode
+4. You can test the full calculator functionality immediately
+5. When ready for production with real APIs:
+   - Get real Supabase credentials from https://supabase.com
+   - Get real FMP API key from https://financialmodelingprep.com
+   - Set MOCK_API_RESPONSES=false
+   - Redeploy with: vercel --prod
+
+═══════════════════════════════════════════════════════════════════════════
