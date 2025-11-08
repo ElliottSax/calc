@@ -7,17 +7,18 @@ const isProduction = process.env.NODE_ENV === 'production'
 // Base configuration for Pino
 export const pinoOptions: LoggerOptions = {
   level: process.env.LOG_LEVEL || (isDevelopment ? 'debug' : 'info'),
-  
-  // Use pretty print in development
-  transport: isDevelopment ? {
-    target: 'pino-pretty',
-    options: {
-      colorize: true,
-      levelFirst: true,
-      translateTime: 'UTC:yyyy-mm-dd HH:MM:ss.l',
-      ignore: 'pid,hostname'
-    }
-  } : undefined,
+
+  // Disable pretty transport to avoid worker thread issues
+  // Use pretty print in development (disabled due to worker thread compatibility)
+  // transport: isDevelopment ? {
+  //   target: 'pino-pretty',
+  //   options: {
+  //     colorize: true,
+  //     levelFirst: true,
+  //     translateTime: 'UTC:yyyy-mm-dd HH:MM:ss.l',
+  //     ignore: 'pid,hostname'
+  //   }
+  // } : undefined,
 
   // Production optimizations
   ...(isProduction && {

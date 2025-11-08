@@ -1,6 +1,6 @@
 /**
  * Three-layer logging architecture using Pino
- * 
+ *
  * Layer 1: Core Logger - Base Pino configuration
  * Layer 2: Context Logger - Adds contextual information (user, request, etc.)
  * Layer 3: Domain Logger - Specific loggers for different parts of the application
@@ -9,8 +9,18 @@
 import pino from 'pino'
 import { pinoOptions } from './config'
 
+// Only use pino logger on server side
+// On client side, use console
+const isServer = typeof window === 'undefined'
+
 // Layer 1: Core Logger
-export const logger = pino(pinoOptions)
+export const logger = isServer ? pino(pinoOptions) : {
+  info: console.log,
+  error: console.error,
+  warn: console.warn,
+  debug: console.debug,
+  child: () => logger
+} as any
 
 // Layer 2: Context Logger Factory
 export function createContextLogger(context: {
