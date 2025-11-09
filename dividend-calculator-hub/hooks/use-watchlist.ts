@@ -15,29 +15,40 @@ export function useWatchlist() {
   // Check authentication status
   useEffect(() => {
     const checkAuth = async () => {
-      const { data: { user } } = await supabase.auth.getUser()
-      setIsAuthenticated(!!user)
-      
-      if (user) {
-        fetchWatchlist()
-      } else {
+      try {
+        const { data: { user } } = await supabase.auth.getUser()
+        setIsAuthenticated(!!user)
+
+        if (user) {
+          fetchWatchlist()
+        } else {
+          setLoading(false)
+        }
+      } catch (error) {
+        console.warn('Supabase auth check failed - authentication disabled', error)
+        setIsAuthenticated(false)
         setLoading(false)
       }
     }
-    
+
     checkAuth()
 
     // Subscribe to auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      setIsAuthenticated(!!session)
-      if (session) {
-        fetchWatchlist()
-      } else {
-        setWatchlist([])
-      }
-    })
+    try {
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+        setIsAuthenticated(!!session)
+        if (session) {
+          fetchWatchlist()
+        } else {
+          setWatchlist([])
+        }
+      })
 
-    return () => subscription.unsubscribe()
+      return () => subscription.unsubscribe()
+    } catch (error) {
+      console.warn('Supabase auth subscription failed', error)
+      return () => {} // No-op cleanup
+    }
   }, [])
 
   const fetchWatchlist = async () => {
