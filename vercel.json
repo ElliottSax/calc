@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "buildCommand": "cd dividend-calculator-hub && npm run build",
+  "devCommand": "cd dividend-calculator-hub && npm run dev",
+  "installCommand": "cd dividend-calculator-hub && npm install",
+  "outputDirectory": "dividend-calculator-hub/.next"
+}
