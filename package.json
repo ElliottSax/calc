@@ -1,0 +1,14 @@
+{
+  "name": "calc-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd dividend-calculator-hub && npm run dev",
+    "build": "cd dividend-calculator-hub && npm run build",
+    "start": "cd dividend-calculator-hub && npm run start",
+    "install-deps": "cd dividend-calculator-hub && npm install"
+  },
+  "workspaces": [
+    "dividend-calculator-hub"
+  ]
+}
