@@ -150,7 +150,7 @@ export function EmailCaptureForm({ variant = 'inline', onSuccess }: EmailCapture
           </div>
 
           <div className="space-y-2">
-            <p className="text-xs text-gray-600">You'll receive:</p>
+            <p className="text-xs text-gray-600">You&apos;ll receive:</p>
             <ul className="text-xs text-gray-600 space-y-1">
               <li>✓ 10 carefully selected dividend aristocrats</li>
               <li>✓ Detailed analysis of each stock</li>

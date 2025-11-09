@@ -49,7 +49,7 @@ export function AristocratsTable({
 
   // Filter and sort data
   const processedData = useMemo(() => {
-    let filtered = data.filter(item => {
+    const filtered = data.filter(item => {
       // Search filter
       const matchesSearch = searchTerm === '' || 
         item.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ||

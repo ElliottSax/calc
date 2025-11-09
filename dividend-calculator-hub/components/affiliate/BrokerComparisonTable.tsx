@@ -53,8 +53,8 @@ export function BrokerComparisonTable() {
             <div className="text-sm">
               <p className="font-medium text-blue-900 dark:text-blue-100">Affiliate Disclosure</p>
               <p className="text-blue-700 dark:text-blue-200 mt-1">
-                We may earn a commission when you open an account through links on this page. 
-                This doesn't affect our rankings or reviews. All opinions are our own based on 
+                We may earn a commission when you open an account through links on this page.
+                This doesn&apos;t affect our rankings or reviews. All opinions are our own based on
                 extensive research and user feedback.
               </p>
             </div>

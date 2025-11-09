@@ -298,7 +298,7 @@ export function BehaviorTriggeredPopup() {
                 </div>
 
                 <div>
-                  <Label htmlFor="popup-segment">I'm interested in...</Label>
+                  <Label htmlFor="popup-segment">I&apos;m interested in...</Label>
                   <Select value={segment} onValueChange={setSegment} required>
                     <SelectTrigger id="popup-segment">
                       <SelectValue placeholder="Select your interest" />
@@ -323,7 +323,7 @@ export function BehaviorTriggeredPopup() {
                 </Button>
 
                 <p className="text-xs text-center text-gray-500">
-                  We'll also send you weekly dividend investing tips. 
+                  We&apos;ll also send you weekly dividend investing tips.
                   Unsubscribe anytime.
                 </p>
               </form>

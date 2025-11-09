@@ -57,9 +57,9 @@ export default function Home() {
           <section className="mt-12 prose prose-lg max-w-none dark:prose-invert">
             <h2>Master Your Dividend Investing Strategy</h2>
             <p>
-              Our dividend reinvestment calculator helps you visualize the long-term power of 
-              compounding returns through dividend reinvestment plans (DRIPs). Whether you're 
-              planning for retirement or building passive income, understanding how dividends 
+              Our dividend reinvestment calculator helps you visualize the long-term power of
+              compounding returns through dividend reinvestment plans (DRIPs). Whether you&apos;re
+              planning for retirement or building passive income, understanding how dividends
               compound over time is crucial for successful investing.
             </p>
             

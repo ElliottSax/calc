@@ -35,11 +35,10 @@ export function WebVitalsReporter() {
  * Shows real-time performance metrics
  */
 export function PerformanceDebugPanel() {
-  if (process.env.NODE_ENV !== 'development') {
-    return null
-  }
-  
   useEffect(() => {
+    // Only run in development
+    if (process.env.NODE_ENV !== 'development') return
+
     // Add debug styles
     const style = document.createElement('style')
     style.textContent = `
