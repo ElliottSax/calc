@@ -1,6 +1,9 @@
 import { Metadata } from 'next'
 import { AristocratsExplorer } from '@/components/aristocrats/AristocratsExplorer'
 
+// Force dynamic rendering to avoid build-time Supabase connection errors
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Dividend Aristocrats List 2024 | Complete Analysis & Screener',
   description: 'Explore all S&P 500 Dividend Aristocrats with our interactive screener. Filter by yield, growth rate, and sector. Updated daily with real-time data.',
