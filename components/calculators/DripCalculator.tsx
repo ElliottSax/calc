@@ -13,6 +13,7 @@ import { validateDripInputs } from '@/lib/utils/validation'
 import { calculatorBrowserLogger } from '@/lib/logger/browser'
 import { PremiumFeatures } from '@/components/premium/PremiumFeatures'
 import { trackCalculatorUse } from '@/lib/analytics/tracking'
+import { DripCharts } from '@/components/visualizations/DripCharts'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
 
 export function DripCalculator() {
@@ -359,7 +360,12 @@ export function DripCalculator() {
                   </div>
                 </CardContent>
               </Card>
-              
+
+              {/* Interactive Charts */}
+              {results && (
+                <DripCharts results={results} />
+              )}
+
               <Card>
                 <CardHeader>
                   <CardTitle>Year-by-Year Breakdown</CardTitle>
