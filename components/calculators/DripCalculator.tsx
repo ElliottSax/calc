@@ -16,6 +16,7 @@ import { PremiumFeatures } from '@/components/premium/PremiumFeatures'
 import { trackCalculatorUse } from '@/lib/analytics/tracking'
 import { DripCharts } from '@/components/visualizations/DripCharts'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
+import { ShareResults } from '@/components/viral/ShareResults'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
 
 export function DripCalculator() {
@@ -400,6 +401,33 @@ export function DripCalculator() {
                         {formatPercent(summary.finalYieldOnCost)}
                       </p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Share Results - VIRAL FEATURE */}
+              <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 border-2 border-blue-300 dark:border-blue-700 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div className="text-center md:text-left">
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
+                        🎉 Love these results?
+                      </h3>
+                      <p className="text-slate-600 dark:text-slate-400 text-lg">
+                        Share your dividend plan and inspire others to start investing!
+                      </p>
+                    </div>
+                    <ShareResults
+                      results={{
+                        finalPortfolioValue: summary.finalPortfolioValue,
+                        finalDividendIncome: summary.finalDividendIncome,
+                        totalDividendsEarned: summary.totalDividendsEarned,
+                        totalReturn: summary.totalReturnPercent,
+                        yearsCalculated: inputs.yearsToCalculate,
+                        initialInvestment: summary.initialInvestment,
+                        monthlyContribution: parseFloat(inputs.monthlyContribution)
+                      }}
+                    />
                   </div>
                 </CardContent>
               </Card>
