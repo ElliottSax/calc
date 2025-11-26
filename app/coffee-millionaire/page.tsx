@@ -22,25 +22,58 @@ export const metadata: Metadata = {
 
 export default function CoffeeMillionairePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <Header />
 
-      <main className="container mx-auto px-4 py-12">
-        <CoffeeToRetirement />
+      {/* Hero Section */}
+      <section className="py-16 pt-24 bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50 dark:from-slate-900 dark:via-orange-950/20 dark:to-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-yellow-100 to-orange-100 dark:from-yellow-900/30 dark:to-orange-900/30 border border-yellow-300/50 dark:border-yellow-700/50 mb-6">
+              <span className="text-sm font-semibold bg-gradient-to-r from-yellow-700 to-orange-700 dark:from-yellow-400 dark:to-orange-400 bg-clip-text text-transparent">
+                ☕ OPPORTUNITY COST CALCULATOR
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
+              Your Daily Coffee Could Be Worth{' '}
+              <span className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                $1 Million
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+              Calculate the shocking opportunity cost of your daily habits. That $5 latte could become your retirement fund.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        {/* Social Sharing */}
-        <div className="max-w-4xl mx-auto mt-12 text-center">
-          <SocialShare
-            title="The $1 Million Coffee - See What Your Daily Habits Really Cost"
-            description="I just calculated how much my daily coffee could cost me in retirement. You won't believe the number!"
-            hashtags={['OpportunityCost', 'FinancialFreedom', 'Investing']}
-            className="justify-center"
-          />
+      <main className="container mx-auto px-4 py-12">
+        {/* Calculator Card with Premium Styling */}
+        <div className="relative max-w-5xl mx-auto mb-16">
+          {/* Glow Effect */}
+          <div className="absolute -inset-4 bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-red-500/20 rounded-3xl blur-3xl opacity-30"></div>
+
+          <div className="relative">
+            <CoffeeToRetirement />
+          </div>
         </div>
 
-        {/* Email Capture */}
-        <div className="max-w-2xl mx-auto mt-12">
-          <EmailCaptureForm />
+        {/* Social Sharing */}
+        <div className="max-w-4xl mx-auto mt-12 mb-12">
+          <div className="backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border-2 border-slate-200/50 dark:border-slate-800/50 shadow-xl p-8 rounded-2xl text-center">
+            <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4">
+              Share Your Results
+            </h3>
+            <p className="text-slate-600 dark:text-slate-400 mb-6">
+              Shocked by the numbers? Share this calculator with friends and family!
+            </p>
+            <SocialShare
+              title="The $1 Million Coffee - See What Your Daily Habits Really Cost"
+              description="I just calculated how much my daily coffee could cost me in retirement. You won't believe the number!"
+              hashtags={['OpportunityCost', 'FinancialFreedom', 'Investing']}
+              className="justify-center"
+            />
+          </div>
         </div>
 
         {/* SEO Content */}

@@ -1,67 +1,61 @@
 import { Header } from '@/components/layout/Header'
-import { PremiumHero } from '@/components/hero/PremiumHero'
-import { FeaturesShowcase } from '@/components/hero/FeaturesShowcase'
-import { SocialProof } from '@/components/hero/SocialProof'
-import { DripCalculator } from '@/components/calculators/DripCalculator'
+import { MultiCalculator } from '@/components/calculators/MultiCalculator'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
+import { SocialProof } from '@/components/hero/SocialProof'
+import { FeaturesShowcase } from '@/components/hero/FeaturesShowcase'
 import { BehaviorTriggeredPopup } from '@/components/lead-generation/BehaviorTriggeredPopup'
-import { Card } from '@/components/ui/card'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <Header />
 
-      {/* Premium Hero Section */}
-      <PremiumHero />
-
-      {/* Features Showcase */}
-      <FeaturesShowcase />
-
-      {/* Main Calculator Section */}
-      <section id="calculator" className="py-24 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-slate-950 dark:via-blue-950/10 dark:to-slate-950">
+      {/* Main Calculator Section - LEAD WITH THIS */}
+      <section id="calculator" className="py-12 pt-24">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             {/* Section Header */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 border border-blue-300/50 dark:border-blue-700/50 mb-6">
                 <span className="text-sm font-semibold bg-gradient-to-r from-blue-700 to-purple-700 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-                  START CALCULATING
+                  FREE DIVIDEND CALCULATORS
                 </span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
-                See Your <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Financial Future</span>
-              </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                Enter your numbers below and watch your dividend wealth compound over time
+              <h1 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6">
+                Calculate Your <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Dividend Future</span>
+              </h1>
+              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                Choose from 5 powerful calculators to plan your dividend investing strategy
               </p>
             </div>
 
-            {/* Calculator Card */}
+            {/* Multi-Calculator with Tabs */}
             <div className="relative">
               {/* Glow Effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-2xl opacity-30"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-3xl opacity-30"></div>
 
-              <Card className="relative backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border-2 border-blue-200/50 dark:border-blue-800/50 shadow-2xl p-8 rounded-2xl">
-                <DripCalculator />
-              </Card>
+              <div className="relative">
+                <MultiCalculator />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Section */}
-      <SocialProof />
-
-      {/* Broker Comparison */}
-      <section className="py-24 bg-white dark:bg-slate-950">
+      {/* Broker Comparison - Focus on Affiliate */}
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
-                Ready to <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">Start Investing</span>?
+              <div className="inline-block px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-sm mb-6">
+                <span className="text-sm font-semibold text-blue-300">
+                  START INVESTING TODAY
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black mb-6">
+                Ready to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Build Your Portfolio</span>?
               </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              <p className="text-xl text-slate-300 max-w-2xl mx-auto">
                 Choose the best broker to start building your dividend portfolio
               </p>
             </div>
@@ -69,6 +63,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Social Proof Section */}
+      <SocialProof />
+
+      {/* Features Showcase */}
+      <FeaturesShowcase />
 
       {/* SEO Content Section */}
       <section className="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
