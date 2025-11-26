@@ -8,6 +8,7 @@ export const DRIP_PRESETS = {
     icon: "🛡️",
     description: "Low-risk, stable dividend stocks with moderate growth",
     inputs: {
+      ticker: '',
       initialInvestment: '100000',
       sharePrice: '100',
       annualDividend: '4',
@@ -25,6 +26,7 @@ export const DRIP_PRESETS = {
     icon: "🚀",
     description: "High-growth dividend aristocrats with lower current yield",
     inputs: {
+      ticker: '',
       initialInvestment: '50000',
       sharePrice: '150',
       annualDividend: '3',
@@ -42,6 +44,7 @@ export const DRIP_PRESETS = {
     icon: "🔥",
     description: "Path to financial independence with high savings rate",
     inputs: {
+      ticker: '',
       initialInvestment: '25000',
       sharePrice: '75',
       annualDividend: '3.75',
@@ -59,6 +62,7 @@ export const DRIP_PRESETS = {
     icon: "👑",
     description: "Blue-chip stocks with 25+ years of dividend growth",
     inputs: {
+      ticker: '',
       initialInvestment: '75000',
       sharePrice: '120',
       annualDividend: '4.80',
@@ -76,6 +80,7 @@ export const DRIP_PRESETS = {
     icon: "💎",
     description: "REITs and high-yield stocks for immediate income",
     inputs: {
+      ticker: '',
       initialInvestment: '150000',
       sharePrice: '50',
       annualDividend: '4',
@@ -93,6 +98,7 @@ export const DRIP_PRESETS = {
     icon: "🌱",
     description: "Starting small with time on your side",
     inputs: {
+      ticker: '',
       initialInvestment: '5000',
       sharePrice: '50',
       annualDividend: '1.50',
