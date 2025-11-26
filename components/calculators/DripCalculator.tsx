@@ -419,12 +419,12 @@ export function DripCalculator() {
                     </div>
                     <ShareResults
                       results={{
-                        finalPortfolioValue: summary.finalPortfolioValue,
-                        finalDividendIncome: summary.finalDividendIncome,
-                        totalDividendsEarned: summary.totalDividendsEarned,
-                        totalReturn: summary.totalReturnPercent,
+                        finalPortfolioValue: Number(summary.finalPortfolioValue),
+                        finalDividendIncome: Number(summary.finalDividendIncome),
+                        totalDividendsEarned: Number(summary.totalDividendsEarned),
+                        totalReturn: Number(summary.totalReturnPercent),
                         yearsCalculated: inputs.yearsToCalculate,
-                        initialInvestment: summary.initialInvestment,
+                        initialInvestment: Number(summary.initialInvestment),
                         monthlyContribution: parseFloat(inputs.monthlyContribution)
                       }}
                     />
