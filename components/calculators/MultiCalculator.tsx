@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card } from '@/components/ui/card'
 import {
@@ -18,9 +19,32 @@ import { DividendGrowthCalculator } from './DividendGrowthCalculator'
 import { YieldOnCostCalculator } from './YieldOnCostCalculator'
 
 export function MultiCalculator() {
+  const [activeTab, setActiveTab] = useState('drip')
+
+  // Handle URL parameters on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const calcParam = params.get('calc')
+
+      // Switch to calculator if specified in URL
+      if (calcParam && ['drip', 'retirement', 'growth', 'yield', 'coffee'].includes(calcParam)) {
+        setActiveTab(calcParam)
+
+        // Track shared link visits
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'shared_link_visit', {
+            calculator: calcParam,
+            has_params: params.toString().length > 10
+          })
+        }
+      }
+    }
+  }, [])
+
   return (
     <div className="w-full">
-      <Tabs defaultValue="drip" className="w-full">
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         {/* Premium Tab Navigation */}
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 gap-2 h-auto p-2 bg-slate-900/80 backdrop-blur-xl border-2 border-slate-700/50 rounded-2xl mb-8">
           <TabsTrigger

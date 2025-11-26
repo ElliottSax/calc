@@ -201,6 +201,7 @@ export function DividendGrowthCalculator() {
           {/* Share Results */}
           <div className="mt-8">
             <ShareResults
+              calculatorType="growth"
               results={{
                 finalPortfolioValue: parseFloat(shares) * parseFloat(currentDividend) * parseFloat(years),
                 finalDividendIncome: results.finalIncome,
