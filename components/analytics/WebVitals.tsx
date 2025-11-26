@@ -46,9 +46,3 @@ export function WebVitals() {
 
   return null
 }
-
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void
-  }
-}
