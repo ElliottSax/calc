@@ -26,7 +26,10 @@ export interface DripCalculationResult {
   sharePrice: Big
   portfolioValue: Big
   annualDividend: Big
+  grossAnnualDividend: Big
+  netAnnualDividend: Big
   totalDividends: Big
+  totalDividendsEarned: Big
   totalContributions: Big
   totalReturn: Big
   totalReturnPercent: Big
