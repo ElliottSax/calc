@@ -7,6 +7,8 @@ import { Label } from '@/components/ui/label'
 import { Card } from '@/components/ui/card'
 import { formatCurrency } from '@/lib/utils/calculations'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+import { ShareResults } from '@/components/viral/ShareResults'
+import { ExternalLink } from 'lucide-react'
 
 export function DividendGrowthCalculator() {
   const [shares, setShares] = useState('1000')
@@ -194,6 +196,59 @@ export function DividendGrowthCalculator() {
                 />
               </LineChart>
             </ResponsiveContainer>
+          </Card>
+
+          {/* Share Results */}
+          <div className="mt-8">
+            <ShareResults
+              results={{
+                finalPortfolioValue: parseFloat(shares) * parseFloat(currentDividend) * parseFloat(years),
+                finalDividendIncome: results.finalIncome,
+                totalDividendsReceived: results.totalReceived,
+                totalContributions: 0,
+                yearsCalculated: parseInt(years),
+                gainFromDividends: results.totalReceived
+              }}
+            />
+          </div>
+
+          {/* Inline Broker CTA */}
+          <Card className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border-2 border-purple-200 dark:border-purple-800">
+            <div className="p-8 text-center">
+              <div className="text-4xl mb-4">📈</div>
+              <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3">
+                Love These Growth Projections?
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-2">
+                Start building a portfolio that grows to <span className="font-bold text-purple-600 dark:text-purple-400">{formatCurrency(results.finalIncome)}/year</span>
+              </p>
+              <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">
+                Total dividends over {years} years: <span className="font-semibold">{formatCurrency(results.totalReceived)}</span>
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all"
+                onClick={() => {
+                  const brokersSection = document.getElementById('brokers')
+                  if (brokersSection) {
+                    brokersSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'cta_click', {
+                      source: 'calculator_results',
+                      calculator: 'dividend_growth',
+                      income_projection: results.finalIncome
+                    })
+                  }
+                }}
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Find the Best Dividend Growth Stocks
+              </Button>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-4">
+                Open an account and start investing today
+              </p>
+            </div>
           </Card>
         </div>
       )}

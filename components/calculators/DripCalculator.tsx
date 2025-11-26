@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useCallback } from 'react'
-import { Calculator, Info, TrendingUp, DollarSign } from 'lucide-react'
+import { Calculator, Info, TrendingUp, DollarSign, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -17,6 +17,7 @@ import { trackCalculatorUse } from '@/lib/analytics/tracking'
 import { DripCharts } from '@/components/visualizations/DripCharts'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { DRIP_PRESETS, type PresetKey } from '@/lib/data/calculator-presets'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
 
 export function DripCalculator() {
@@ -126,6 +127,48 @@ export function DripCalculator() {
         </TabsList>
         
         <TabsContent value="inputs" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          {/* Quick Start Presets */}
+          <Card className="backdrop-blur-xl bg-gradient-to-r from-blue-50/80 to-purple-50/80 dark:from-blue-950/20 dark:to-purple-950/20 border border-blue-200/60 dark:border-blue-800/60 shadow-lg">
+            <CardContent className="pt-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Quick Start Scenarios</h3>
+              </div>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                Try these pre-configured investment strategies
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                {Object.entries(DRIP_PRESETS).map(([key, preset]) => (
+                  <Button
+                    key={key}
+                    variant="outline"
+                    size="sm"
+                    className="h-auto py-3 px-3 flex flex-col items-center gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:border-blue-400 dark:hover:border-blue-600 transition-all group"
+                    onClick={() => {
+                      setInputs(preset.inputs)
+                      toast({
+                        title: `${preset.icon} ${preset.name} Loaded`,
+                        description: preset.description
+                      })
+                      if (typeof window !== 'undefined' && (window as any).gtag) {
+                        (window as any).gtag('event', 'preset_loaded', {
+                          preset: key,
+                          calculator: 'drip'
+                        })
+                      }
+                    }}
+                    title={preset.description}
+                  >
+                    <span className="text-2xl group-hover:scale-110 transition-transform">{preset.icon}</span>
+                    <span className="text-xs font-semibold text-center leading-tight">
+                      {preset.name}
+                    </span>
+                  </Button>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/60 dark:border-slate-700/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:shadow-[0_16px_48px_0_rgba(0,0,0,0.12)] dark:hover:shadow-[0_16px_48px_0_rgba(0,0,0,0.4)] transition-all duration-500 group">
               <div className="absolute inset-0 bg-gradient-to-br from-slate-900/5 via-transparent to-slate-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-xl" />

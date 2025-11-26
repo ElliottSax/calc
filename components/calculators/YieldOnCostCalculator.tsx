@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card } from '@/components/ui/card'
 import { formatCurrency, formatPercent } from '@/lib/utils/calculations'
+import { ShareResults } from '@/components/viral/ShareResults'
+import { ExternalLink } from 'lucide-react'
 
 export function YieldOnCostCalculator() {
   const [shares, setShares] = useState('500')
@@ -239,6 +241,59 @@ export function YieldOnCostCalculator() {
               <div className="text-4xl font-black text-slate-900 dark:text-white tabular-nums">
                 {formatCurrency(results.totalIncomeReceived)}
               </div>
+            </div>
+          </Card>
+
+          {/* Share Results */}
+          <div className="mt-8">
+            <ShareResults
+              results={{
+                finalPortfolioValue: results.currentValue,
+                finalDividendIncome: results.annualIncome,
+                totalDividendsReceived: results.totalIncomeReceived,
+                totalContributions: results.initialInvestment,
+                yearsCalculated: parseInt(yearsHeld),
+                gainFromDividends: results.totalIncomeReceived
+              }}
+            />
+          </div>
+
+          {/* Inline Broker CTA */}
+          <Card className="mt-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-200 dark:border-orange-800">
+            <div className="p-8 text-center">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3">
+                Impressive {results.yieldOnCost.toFixed(2)}% Yield on Cost!
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-2">
+                Generate <span className="font-bold text-orange-600 dark:text-orange-400">{formatCurrency(results.annualIncome)}/year</span> from your {formatCurrency(results.initialInvestment)} investment
+              </p>
+              <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">
+                Total return: <span className="font-semibold text-green-600">{results.totalReturn.toFixed(1)}%</span> over {yearsHeld} years
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all"
+                onClick={() => {
+                  const brokersSection = document.getElementById('brokers')
+                  if (brokersSection) {
+                    brokersSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'cta_click', {
+                      source: 'calculator_results',
+                      calculator: 'yield_on_cost',
+                      yoc: results.yieldOnCost
+                    })
+                  }
+                }}
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Start Building Your Dividend Portfolio
+              </Button>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-4">
+                Find stocks with growing dividends
+              </p>
             </div>
           </Card>
         </div>

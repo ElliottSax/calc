@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Broker Comparison - Focus on Affiliate */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
+      <section id="brokers" className="py-24 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">

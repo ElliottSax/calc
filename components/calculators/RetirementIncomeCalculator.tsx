@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card } from '@/components/ui/card'
 import { formatCurrency } from '@/lib/utils/calculations'
+import { ShareResults } from '@/components/viral/ShareResults'
+import { ExternalLink } from 'lucide-react'
 
 export function RetirementIncomeCalculator() {
   const [portfolioValue, setPortfolioValue] = useState('500000')
@@ -163,6 +165,59 @@ export function RetirementIncomeCalculator() {
               </div>
             </Card>
           </div>
+
+          {/* Share Results */}
+          <div className="mt-8">
+            <ShareResults
+              results={{
+                finalPortfolioValue: results.requiredPortfolio,
+                finalDividendIncome: results.annualIncome,
+                totalDividendsReceived: results.totalIncomeReceived || 0,
+                totalContributions: parseFloat(portfolioValue),
+                yearsCalculated: parseInt(yearsToRetirement),
+                gainFromDividends: results.gap > 0 ? results.requiredMonthly * 12 * parseInt(yearsToRetirement) : 0
+              }}
+            />
+          </div>
+
+          {/* Inline Broker CTA */}
+          <Card className="mt-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 border-2 border-green-200 dark:border-green-800">
+            <div className="p-8 text-center">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3">
+                Ready to Make This Real?
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-2">
+                Start building your <span className="font-bold text-green-600 dark:text-green-400">{formatCurrency(results.requiredPortfolio)}</span> retirement portfolio today
+              </p>
+              <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">
+                Generate <span className="font-semibold">{formatCurrency(results.annualIncome)}/year</span> in passive dividend income
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all"
+                onClick={() => {
+                  const brokersSection = document.getElementById('brokers')
+                  if (brokersSection) {
+                    brokersSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'cta_click', {
+                      source: 'calculator_results',
+                      calculator: 'retirement_income',
+                      portfolio_target: results.requiredPortfolio
+                    })
+                  }
+                }}
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                See Best Brokers for Dividend Investing
+              </Button>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-4">
+                Compare fees, features, and bonuses
+              </p>
+            </div>
+          </Card>
         </div>
       )}
     </div>
