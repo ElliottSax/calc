@@ -707,11 +707,11 @@ export function EnhancedDripCalculator() {
 
           {/* Export Tab */}
           <TabsContent value="export" className="space-y-6">
-            <ExportTools 
+            <ExportTools
               data={summary ? {
-                portfolioValue: summary.finalPortfolioValue,
-                annualDividends: summary.finalDividendIncome,
-                totalReturn: summary.totalReturnPercent,
+                portfolioValue: Number(summary.finalPortfolioValue),
+                annualDividends: Number(summary.finalDividendIncome),
+                totalReturn: Number(summary.totalReturnPercent),
                 years: inputs.yearsToCalculate,
                 monthlyContribution: Number(inputs.monthlyContribution),
                 initialInvestment: Number(inputs.initialInvestment),
