@@ -169,6 +169,7 @@ export function RetirementIncomeCalculator() {
           {/* Share Results */}
           <div className="mt-8">
             <ShareResults
+              calculatorType="retirement"
               results={{
                 finalPortfolioValue: results.requiredPortfolio,
                 finalDividendIncome: results.annualIncome,

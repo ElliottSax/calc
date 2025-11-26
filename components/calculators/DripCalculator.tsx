@@ -461,6 +461,7 @@ export function DripCalculator() {
                       </p>
                     </div>
                     <ShareResults
+                      calculatorType="drip"
                       results={{
                         finalPortfolioValue: Number(summary.finalPortfolioValue),
                         finalDividendIncome: Number(summary.finalDividendIncome),

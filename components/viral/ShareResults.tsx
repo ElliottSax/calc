@@ -34,15 +34,32 @@ interface ShareResultsProps {
     initialInvestment: number
     monthlyContribution: number
   }
+  calculatorType?: 'drip' | 'retirement' | 'growth' | 'yield' | 'coffee'
   className?: string
 }
 
-export function ShareResults({ results, className = '' }: ShareResultsProps) {
+export function ShareResults({ results, calculatorType, className = '' }: ShareResultsProps) {
   const [copied, setCopied] = useState(false)
   const [showPreview, setShowPreview] = useState(false)
 
   const shareText = generateShareText(results)
-  const shareUrl = typeof window !== 'undefined' ? window.location.origin : ''
+
+  // Build share URL with calculator type and key parameters
+  const shareUrl = typeof window !== 'undefined' ? (() => {
+    const baseUrl = window.location.origin
+    const params = new URLSearchParams()
+
+    if (calculatorType) {
+      params.set('calc', calculatorType)
+    }
+
+    // Add key parameters to URL for pre-filling
+    params.set('initial', Math.round(results.initialInvestment).toString())
+    params.set('monthly', Math.round(results.monthlyContribution).toString())
+    params.set('years', results.yearsCalculated.toString())
+
+    return `${baseUrl}/?${params.toString()}`
+  })() : ''
 
   const socialLinks = {
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}&hashtags=DividendInvesting,PassiveIncome,FIRE`,

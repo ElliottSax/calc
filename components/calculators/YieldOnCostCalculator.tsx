@@ -247,6 +247,7 @@ export function YieldOnCostCalculator() {
           {/* Share Results */}
           <div className="mt-8">
             <ShareResults
+              calculatorType="yield"
               results={{
                 finalPortfolioValue: results.currentValue,
                 finalDividendIncome: results.annualIncome,
