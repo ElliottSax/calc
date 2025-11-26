@@ -28,7 +28,7 @@ interface DripChartsProps {
 }
 
 // Premium glass morphism tooltip with elegant design
-const CustomTooltip = ({ active, payload, label }: TooltipProps<number, string>) => {
+const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
       <div className="relative backdrop-blur-xl bg-white/90 dark:bg-slate-900/90 p-6 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] border border-slate-200/60 dark:border-slate-700/60 animate-in fade-in zoom-in duration-200">
