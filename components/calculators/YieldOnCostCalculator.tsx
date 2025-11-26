@@ -250,10 +250,11 @@ export function YieldOnCostCalculator() {
               results={{
                 finalPortfolioValue: results.currentValue,
                 finalDividendIncome: results.annualIncome,
-                totalDividendsReceived: results.totalIncomeReceived,
-                totalContributions: results.initialInvestment,
+                totalDividendsEarned: results.totalIncomeReceived,
+                totalReturn: results.totalReturn,
                 yearsCalculated: parseInt(yearsHeld),
-                gainFromDividends: results.totalIncomeReceived
+                initialInvestment: results.initialInvestment,
+                monthlyContribution: 0
               }}
             />
           </div>

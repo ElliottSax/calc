@@ -204,10 +204,11 @@ export function DividendGrowthCalculator() {
               results={{
                 finalPortfolioValue: parseFloat(shares) * parseFloat(currentDividend) * parseFloat(years),
                 finalDividendIncome: results.finalIncome,
-                totalDividendsReceived: results.totalReceived,
-                totalContributions: 0,
+                totalDividendsEarned: results.totalReceived,
+                totalReturn: results.percentIncrease,
                 yearsCalculated: parseInt(years),
-                gainFromDividends: results.totalReceived
+                initialInvestment: parseFloat(shares) * parseFloat(currentDividend),
+                monthlyContribution: 0
               }}
             />
           </div>

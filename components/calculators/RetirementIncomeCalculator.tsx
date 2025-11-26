@@ -172,10 +172,11 @@ export function RetirementIncomeCalculator() {
               results={{
                 finalPortfolioValue: results.requiredPortfolio,
                 finalDividendIncome: results.annualIncome,
-                totalDividendsReceived: results.totalIncomeReceived || 0,
-                totalContributions: parseFloat(portfolioValue),
+                totalDividendsEarned: results.totalIncomeReceived || 0,
+                totalReturn: ((results.requiredPortfolio - parseFloat(portfolioValue)) / parseFloat(portfolioValue)) * 100,
                 yearsCalculated: parseInt(yearsToRetirement),
-                gainFromDividends: results.gap > 0 ? results.requiredMonthly * 12 * parseInt(yearsToRetirement) : 0
+                initialInvestment: parseFloat(portfolioValue),
+                monthlyContribution: results.shortfall ? results.requiredMonthly : 0
               }}
             />
           </div>
