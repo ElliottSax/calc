@@ -142,35 +142,35 @@ export function TaxOptimizer() {
         title: 'Max Out 401(k)',
         description: 'Contribute the maximum $23,000 to reduce taxable income',
         potentialSavings: (23000 - retirementContributions) * 0.24,
-        difficulty: 'easy',
+        difficulty: 'easy' as const,
         icon: PiggyBank
       },
       {
         title: 'Tax Loss Harvesting',
         description: 'Offset capital gains with losses from underperforming investments',
         potentialSavings: Math.min(capitalGains, 3000) * capitalGainsRate,
-        difficulty: 'medium',
+        difficulty: 'medium' as const,
         icon: TrendingUp
       },
       {
         title: 'Municipal Bonds',
         description: 'Invest in tax-free municipal bonds for dividend income',
         potentialSavings: dividendIncome * qualifiedDividendRate * 0.5,
-        difficulty: 'easy',
+        difficulty: 'easy' as const,
         icon: Shield
       },
       {
         title: 'Qualified Opportunity Zones',
         description: 'Defer and reduce capital gains tax through QOZ investments',
         potentialSavings: capitalGains * 0.1,
-        difficulty: 'hard',
+        difficulty: 'hard' as const,
         icon: Calculator
       },
       {
         title: 'HSA Contributions',
         description: 'Triple tax advantage: deductible, tax-free growth, tax-free withdrawals',
         potentialSavings: 4150 * 0.24,
-        difficulty: 'easy',
+        difficulty: 'easy' as const,
         icon: FileText
       }
     ].sort((a, b) => b.potentialSavings - a.potentialSavings)
