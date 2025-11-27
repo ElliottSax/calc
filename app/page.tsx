@@ -4,10 +4,14 @@ import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTa
 import { SocialProof } from '@/components/hero/SocialProof'
 import { FeaturesShowcase } from '@/components/hero/FeaturesShowcase'
 import { BehaviorTriggeredPopup } from '@/components/lead-generation/BehaviorTriggeredPopup'
+import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      {/* SEO: FAQ Schema for Rich Snippets */}
+      <FAQSchema faqs={DRIP_CALCULATOR_FAQS} />
+
       <Header />
 
       {/* Main Calculator Section - LEAD WITH THIS */}
