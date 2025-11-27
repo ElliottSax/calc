@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useMemo, useState, useRef } from 'react'
+import React, { useMemo, useState, useRef, useEffect } from 'react'
 import {
   LineChart,
   Line,
@@ -19,10 +19,11 @@ import {
   ReferenceArea,
   ReferenceLine
 } from 'recharts'
+import Confetti from 'react-confetti'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Button } from '@/components/ui/button'
-import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Sparkles, Activity, Download, Maximize2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
+import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Sparkles, Activity, Download, Maximize2, ZoomIn, ZoomOut, RotateCcw, Trophy, Target, Zap, Crown, Award, DollarSign } from 'lucide-react'
 import { formatCurrency, formatNumber } from '@/lib/utils/calculations'
 import type { DripCalculationResult } from '@/types/calculator'
 
@@ -106,6 +107,11 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
   const [zoomDomain, setZoomDomain] = useState<{left: number, right: number} | null>(null)
   const [activeDataPoint, setActiveDataPoint] = useState<number | null>(null)
   const [showBrush, setShowBrush] = useState(false)
+  const [celebration, setCelebration] = useState<{ active: boolean; message: string; icon: any } | null>(null)
+  const [clickedPoint, setClickedPoint] = useState<any>(null)
+  const [hiddenSeries, setHiddenSeries] = useState<Set<string>>(new Set())
+  const [showInsights, setShowInsights] = useState(true)
+  const celebrationTimerRef = useRef<NodeJS.Timeout | null>(null)
 
   // Format data for different chart types
   const portfolioGrowthData = useMemo(() => {
@@ -152,6 +158,133 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
     }))
   }, [results, comparisonResults])
 
+  // Detect milestones and generate insights
+  const milestones = useMemo(() => {
+    const final = results[results.length - 1]
+    const finalValue = Number(final?.portfolioValue || 0)
+    const finalDividend = Number(final?.grossAnnualDividend || 0)
+    const detected: Array<{ value: number; message: string; icon: any; year?: number }> = []
+
+    // Portfolio milestones
+    const portfolioMilestones = [
+      { threshold: 1000000, message: "🎉 Millionaire Status!", icon: Crown },
+      { threshold: 500000, message: "💎 Half Million Achieved!", icon: Trophy },
+      { threshold: 250000, message: "🚀 Quarter Million Milestone!", icon: Zap },
+      { threshold: 100000, message: "✨ Six Figures Reached!", icon: Award },
+      { threshold: 50000, message: "🎯 $50K Portfolio!", icon: Target }
+    ]
+
+    portfolioMilestones.forEach(m => {
+      const crossingPoint = results.findIndex(r => Number(r.portfolioValue) >= m.threshold)
+      if (crossingPoint !== -1) {
+        detected.push({
+          value: m.threshold,
+          message: m.message,
+          icon: m.icon,
+          year: results[crossingPoint].year
+        })
+      }
+    })
+
+    // Dividend income milestones
+    if (finalDividend >= 10000) {
+      detected.push({ value: 10000, message: "💰 $10K+ Annual Dividends!", icon: Crown })
+    } else if (finalDividend >= 5000) {
+      detected.push({ value: 5000, message: "💵 $5K+ Passive Income!", icon: Trophy })
+    }
+
+    return detected
+  }, [results])
+
+  // Key insights
+  const insights = useMemo(() => {
+    if (results.length < 2) return []
+
+    const final = results[results.length - 1]
+    const initial = results[0]
+    const finalValue = Number(final.portfolioValue)
+    const initialValue = Number(initial.portfolioValue)
+    const totalReturn = ((finalValue - initialValue) / initialValue) * 100
+    const finalDividend = Number(final.grossAnnualDividend)
+    const years = results.length - 1
+
+    const insights: string[] = []
+
+    // Growth rate insight
+    const annualGrowth = (Math.pow(finalValue / initialValue, 1 / years) - 1) * 100
+    if (annualGrowth > 15) {
+      insights.push(`🔥 ${annualGrowth.toFixed(1)}% annual growth - exceptional performance!`)
+    } else if (annualGrowth > 10) {
+      insights.push(`📈 ${annualGrowth.toFixed(1)}% annual growth - beating market average!`)
+    }
+
+    // Dividend income insight
+    const monthlyIncome = finalDividend / 12
+    if (monthlyIncome > 1000) {
+      insights.push(`💰 ${formatCurrency(monthlyIncome)}/month in passive income!`)
+    }
+
+    // Compound power insight
+    const contributions = Number(final.totalContributions)
+    const gains = finalValue - contributions
+    const gainPercent = (gains / contributions) * 100
+    if (gainPercent > 100) {
+      insights.push(`⚡ Your money has more than doubled through compound growth!`)
+    } else if (gainPercent > 50) {
+      insights.push(`✨ ${gainPercent.toFixed(0)}% gains from compounding - the magic is working!`)
+    }
+
+    return insights
+  }, [results])
+
+  // Trigger celebration
+  const triggerCelebration = (message: string, icon: any) => {
+    if (celebrationTimerRef.current) {
+      clearTimeout(celebrationTimerRef.current)
+    }
+
+    setCelebration({ active: true, message, icon })
+
+    celebrationTimerRef.current = setTimeout(() => {
+      setCelebration(null)
+    }, 5000)
+  }
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (celebrationTimerRef.current) {
+        clearTimeout(celebrationTimerRef.current)
+      }
+    }
+  }, [])
+
+  // Handle data point click
+  const handleDataPointClick = (data: any) => {
+    setClickedPoint(data)
+
+    // Check if this point crosses a milestone
+    const value = data.portfolioValue || data.totalIncome || 0
+    const milestone = milestones.find(m =>
+      value >= m.value * 0.98 && value <= m.value * 1.02
+    )
+
+    if (milestone) {
+      triggerCelebration(milestone.message, milestone.icon)
+    }
+  }
+
+  // Toggle series visibility
+  const toggleSeries = (seriesName: string) => {
+    const newHidden = new Set(hiddenSeries)
+    if (newHidden.has(seriesName)) {
+      newHidden.delete(seriesName)
+    } else {
+      newHidden.add(seriesName)
+    }
+    setHiddenSeries(newHidden)
+  }
+
   // Chart controls component
   const ChartControls = ({ onReset, onToggleBrush }: { onReset: () => void, onToggleBrush: () => void }) => (
     <div className="flex items-center gap-2">
@@ -183,6 +316,125 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
 
   return (
     <div className="space-y-8 relative">
+      {/* Celebration Confetti */}
+      {celebration?.active && (
+        <div className="fixed inset-0 z-50 pointer-events-none">
+          <Confetti
+            width={typeof window !== 'undefined' ? window.innerWidth : 1000}
+            height={typeof window !== 'undefined' ? window.innerHeight : 1000}
+            recycle={false}
+            numberOfPieces={500}
+            gravity={0.3}
+            colors={['#3b82f6', '#8b5cf6', '#ec4899', '#10b981', '#f59e0b']}
+          />
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto">
+            <div className="backdrop-blur-xl bg-white/95 dark:bg-slate-900/95 p-12 rounded-3xl shadow-[0_32px_128px_0_rgba(0,0,0,0.3)] dark:shadow-[0_32px_128px_0_rgba(0,0,0,0.8)] border-4 border-yellow-400/80 animate-in zoom-in-95 duration-500">
+              <div className="text-center space-y-6">
+                {celebration.icon && (
+                  <celebration.icon className="w-24 h-24 mx-auto text-yellow-500 animate-bounce" />
+                )}
+                <h2 className="text-5xl font-black text-slate-900 dark:text-white animate-pulse">
+                  {celebration.message}
+                </h2>
+                <Button
+                  size="lg"
+                  onClick={() => setCelebration(null)}
+                  className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-8 py-6 text-xl shadow-xl animate-float"
+                >
+                  Amazing! ✨
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Insights Banner */}
+      {showInsights && insights.length > 0 && (
+        <div className="relative animate-in slide-in-from-top duration-700">
+          <Card className="overflow-hidden backdrop-blur-xl bg-gradient-to-r from-blue-50/90 via-purple-50/90 to-pink-50/90 dark:from-blue-950/40 dark:via-purple-950/40 dark:to-pink-950/40 border-2 border-blue-300/60 dark:border-blue-600/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-glow" />
+            <CardContent className="relative p-6">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 animate-pulse" />
+                    <h3 className="text-xl font-black text-slate-900 dark:text-white">
+                      Key Insights
+                    </h3>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {insights.map((insight, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center gap-2 p-3 rounded-xl bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm border border-slate-200/60 dark:border-slate-700/60 hover:scale-105 transition-transform duration-200 cursor-pointer"
+                        onClick={() => {
+                          const Icon = i === 0 ? TrendingUp : i === 1 ? DollarSign : Zap
+                          triggerCelebration(insight, Icon)
+                        }}
+                      >
+                        <div className="text-2xl">{insight.split(' ')[0]}</div>
+                        <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                          {insight.substring(insight.indexOf(' ') + 1)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  onClick={() => setShowInsights(false)}
+                  className="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                >
+                  ✕
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
+      {/* Milestones Achievement Banner */}
+      {milestones.length > 0 && (
+        <div className="relative animate-in slide-in-from-left duration-700 delay-300">
+          <Card className="overflow-hidden backdrop-blur-xl bg-gradient-to-r from-yellow-50/90 via-orange-50/90 to-red-50/90 dark:from-yellow-950/40 dark:via-orange-950/40 dark:to-red-950/40 border-2 border-yellow-300/60 dark:border-yellow-600/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4 flex-wrap">
+                <Trophy className="w-7 h-7 text-yellow-600 dark:text-yellow-400 animate-bounce" />
+                <div className="flex-1">
+                  <h3 className="text-lg font-black text-slate-900 dark:text-white mb-2">
+                    🎯 Milestones Achieved
+                  </h3>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    {milestones.slice(0, 5).map((milestone, i) => {
+                      const Icon = milestone.icon
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => triggerCelebration(milestone.message, Icon)}
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 dark:bg-slate-800/80 border-2 border-yellow-400/60 dark:border-yellow-600/60 hover:scale-110 hover:border-yellow-500 transition-all duration-200 cursor-pointer shadow-md hover:shadow-xl group"
+                        >
+                          <Icon className="w-4 h-4 text-yellow-600 dark:text-yellow-400 group-hover:animate-spin" />
+                          <span className="text-sm font-bold text-slate-900 dark:text-white">
+                            {formatCurrency(milestone.value)}
+                          </span>
+                          {milestone.year && (
+                            <span className="text-xs text-slate-600 dark:text-slate-400">
+                              Year {milestone.year}
+                            </span>
+                          )}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
       {/* Subtle premium background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-50/50 via-white to-slate-50/50 dark:from-slate-950/50 dark:via-slate-900 dark:to-slate-950/50 rounded-3xl" />
 
@@ -292,6 +544,16 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   <Legend
                     wrapperStyle={{ paddingTop: '24px' }}
                     iconType="circle"
+                    onClick={(e: any) => toggleSeries(e.value)}
+                    formatter={(value: string) => (
+                      <span
+                        className={`cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors ${
+                          hiddenSeries.has(value) ? 'line-through opacity-50' : ''
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    )}
                   />
                   <Area
                     type="monotone"
@@ -302,6 +564,23 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     animationEasing="ease-in-out"
                     isAnimationActive={true}
                   />
+                  {/* Milestone Reference Lines */}
+                  {milestones.map((milestone, i) => (
+                    <ReferenceLine
+                      key={i}
+                      y={milestone.value}
+                      stroke="#f59e0b"
+                      strokeDasharray="6 6"
+                      strokeWidth={2}
+                      label={{
+                        value: `${formatCurrency(milestone.value)} 🎯`,
+                        position: 'right',
+                        fill: '#f59e0b',
+                        fontSize: 13,
+                        fontWeight: 700
+                      }}
+                    />
+                  ))}
                   <Line
                     type="monotone"
                     dataKey="portfolioValue"
@@ -321,11 +600,13 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                       stroke: '#fff',
                       fill: '#0f172a',
                       filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
+                      onClick: handleDataPointClick,
                       style: { cursor: 'pointer' }
                     }}
                     animationDuration={2000}
                     animationEasing="ease-in-out"
                     isAnimationActive={true}
+                    hide={hiddenSeries.has('Portfolio Value')}
                   />
                   <Line
                     type="monotone"
@@ -338,6 +619,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     animationDuration={2000}
                     animationEasing="ease-in-out"
                     isAnimationActive={true}
+                    hide={hiddenSeries.has('Total Contributions')}
                   />
                   {showBrush && (
                     <Brush
@@ -410,6 +692,16 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   <Legend
                     wrapperStyle={{ paddingTop: '24px' }}
                     iconType="circle"
+                    onClick={(e: any) => toggleSeries(e.value)}
+                    formatter={(value: string) => (
+                      <span
+                        className={`cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors ${
+                          hiddenSeries.has(value) ? 'line-through opacity-50' : ''
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    )}
                   />
                   <Area
                     type="monotone"
@@ -504,6 +796,16 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   <Legend
                     wrapperStyle={{ paddingTop: '24px' }}
                     iconType="circle"
+                    onClick={(e: any) => toggleSeries(e.value)}
+                    formatter={(value: string) => (
+                      <span
+                        className={`cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors ${
+                          hiddenSeries.has(value) ? 'line-through opacity-50' : ''
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    )}
                   />
                   <Bar
                     dataKey="grossDividend"
@@ -592,6 +894,16 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   <Legend
                     wrapperStyle={{ paddingTop: '24px' }}
                     iconType="circle"
+                    onClick={(e: any) => toggleSeries(e.value)}
+                    formatter={(value: string) => (
+                      <span
+                        className={`cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors ${
+                          hiddenSeries.has(value) ? 'line-through opacity-50' : ''
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    )}
                   />
                   <Area
                     yAxisId="left"
