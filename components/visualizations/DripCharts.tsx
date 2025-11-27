@@ -19,11 +19,10 @@ import {
   ReferenceArea,
   ReferenceLine
 } from 'recharts'
-import Confetti from 'react-confetti'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Button } from '@/components/ui/button'
-import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Sparkles, Activity, Download, Maximize2, ZoomIn, ZoomOut, RotateCcw, Trophy, Target, Zap, Crown, Award, DollarSign } from 'lucide-react'
+import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Activity, Download, Maximize2, ZoomIn, ZoomOut, RotateCcw, Trophy, Target, Zap, Crown, Award, DollarSign } from 'lucide-react'
 import { formatCurrency, formatNumber } from '@/lib/utils/calculations'
 import type { DripCalculationResult } from '@/types/calculator'
 
@@ -32,68 +31,39 @@ interface DripChartsProps {
   comparisonResults?: DripCalculationResult[] | null
 }
 
-// Enhanced interactive tooltip with sparkline trend and animations
+// Professional tooltip with clean design
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
-    // Calculate growth from previous year if available
-    const currentValue = payload[0]?.value || 0
-
     return (
-      <div className="relative backdrop-blur-xl bg-white/95 dark:bg-slate-900/95 p-6 rounded-2xl shadow-[0_16px_64px_0_rgba(0,0,0,0.2)] dark:shadow-[0_16px_64px_0_rgba(0,0,0,0.6)] border-2 border-slate-300/80 dark:border-slate-600/80 animate-in fade-in zoom-in-95 duration-300 min-w-[280px]">
-        {/* Animated glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl animate-pulse" style={{ animationDuration: '3s' }} />
-
-        {/* Shimmer effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent dark:via-white/10 rounded-2xl animate-shimmer" style={{ backgroundSize: '200% 100%', animation: 'shimmer 2s infinite' }} />
-
-        <div className="relative">
-          {/* Header with year and sparkle */}
-          <div className="flex items-center justify-between mb-4 pb-3 border-b-2 border-slate-200/80 dark:border-slate-700/80">
-            <div className="flex items-center gap-3">
-              <div className="w-1.5 h-8 bg-gradient-to-b from-slate-800 via-slate-600 to-slate-800 dark:from-slate-200 dark:via-slate-400 dark:to-slate-200 rounded-full shadow-lg animate-pulse" />
-              <div>
-                <p className="font-bold text-xl tracking-tight text-slate-900 dark:text-slate-100">Year {label}</p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">Data Point</p>
-              </div>
+      <div className="backdrop-blur-xl bg-white/95 dark:bg-slate-900/95 p-5 rounded-lg shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] border border-slate-200 dark:border-slate-700 min-w-[240px]">
+        {/* Header */}
+        <div className="mb-4 pb-3 border-b border-slate-200 dark:border-slate-700">
+          <div className="flex items-center gap-2">
+            <div className="w-1 h-6 bg-slate-900 dark:bg-slate-100 rounded-full" />
+            <div>
+              <p className="font-semibold text-base text-slate-900 dark:text-slate-100 tabular-nums">Year {label}</p>
             </div>
-            <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400 animate-pulse" />
           </div>
+        </div>
 
-          {/* Values with enhanced styling */}
-          <div className="space-y-3.5">
-            {payload.map((entry: any, index: number) => (
-              <div key={index} className="flex items-center justify-between gap-8 group relative">
-                {/* Hover background */}
-                <div className="absolute inset-0 bg-slate-100/50 dark:bg-slate-800/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10" />
-
-                <div className="flex items-center gap-3 flex-1">
-                  <div
-                    className="w-3 h-3 rounded-full shadow-md transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg relative"
-                    style={{ backgroundColor: entry.color }}
-                  >
-                    {/* Pulsing ring */}
-                    <div
-                      className="absolute inset-0 rounded-full animate-ping opacity-75"
-                      style={{ backgroundColor: entry.color }}
-                    />
-                  </div>
-                  <p className="text-sm font-semibold text-slate-700 dark:text-slate-300 tracking-wide group-hover:text-slate-900 dark:group-hover:text-slate-100 transition-colors">
-                    {entry.name}
-                  </p>
-                </div>
-                <p className="text-base font-bold tabular-nums tracking-tight transition-all duration-300 group-hover:scale-105" style={{ color: entry.color }}>
-                  {formatCurrency(entry.value as number)}
+        {/* Values */}
+        <div className="space-y-3">
+          {payload.map((entry: any, index: number) => (
+            <div key={index} className="flex items-center justify-between gap-6">
+              <div className="flex items-center gap-2.5 flex-1">
+                <div
+                  className="w-2.5 h-2.5 rounded-full"
+                  style={{ backgroundColor: entry.color }}
+                />
+                <p className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  {entry.name}
                 </p>
               </div>
-            ))}
-          </div>
-
-          {/* Footer tip */}
-          <div className="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60">
-            <p className="text-xs text-slate-500 dark:text-slate-400 text-center font-medium">
-              Click chart to zoom • Hover for details
-            </p>
-          </div>
+              <p className="text-sm font-bold tabular-nums" style={{ color: entry.color }}>
+                {formatCurrency(entry.value as number)}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     )
@@ -316,119 +286,110 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
 
   return (
     <div className="space-y-8 relative">
-      {/* Celebration Confetti */}
+      {/* Professional Achievement Notification */}
       {celebration?.active && (
-        <div className="fixed inset-0 z-50 pointer-events-none">
-          <Confetti
-            width={typeof window !== 'undefined' ? window.innerWidth : 1000}
-            height={typeof window !== 'undefined' ? window.innerHeight : 1000}
-            recycle={false}
-            numberOfPieces={500}
-            gravity={0.3}
-            colors={['#3b82f6', '#8b5cf6', '#ec4899', '#10b981', '#f59e0b']}
-          />
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto">
-            <div className="backdrop-blur-xl bg-white/95 dark:bg-slate-900/95 p-12 rounded-3xl shadow-[0_32px_128px_0_rgba(0,0,0,0.3)] dark:shadow-[0_32px_128px_0_rgba(0,0,0,0.8)] border-4 border-yellow-400/80 animate-in zoom-in-95 duration-500">
-              <div className="text-center space-y-6">
-                {celebration.icon && (
-                  <celebration.icon className="w-24 h-24 mx-auto text-yellow-500 animate-bounce" />
-                )}
-                <h2 className="text-5xl font-black text-slate-900 dark:text-white animate-pulse">
-                  {celebration.message}
-                </h2>
-                <Button
-                  size="lg"
-                  onClick={() => setCelebration(null)}
-                  className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-8 py-6 text-xl shadow-xl animate-float"
-                >
-                  Amazing! ✨
-                </Button>
+        <div className="fixed top-8 right-8 z-50 animate-in slide-in-from-right duration-300">
+          <div className="backdrop-blur-xl bg-slate-900/95 dark:bg-slate-800/95 px-6 py-4 rounded-lg shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] border border-slate-700/60 min-w-[320px]">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
               </div>
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-slate-200 mb-1">
+                  Milestone Achieved
+                </p>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  {celebration.message.replace(/[🎉💎🚀✨🎯💰💵👑🏆⚡]/g, '').trim()}
+                </p>
+              </div>
+              <button
+                onClick={() => setCelebration(null)}
+                className="flex-shrink-0 text-slate-500 hover:text-slate-300 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Insights Banner */}
+      {/* Professional Key Metrics */}
       {showInsights && insights.length > 0 && (
-        <div className="relative animate-in slide-in-from-top duration-700">
-          <Card className="overflow-hidden backdrop-blur-xl bg-gradient-to-r from-blue-50/90 via-purple-50/90 to-pink-50/90 dark:from-blue-950/40 dark:via-purple-950/40 dark:to-pink-950/40 border-2 border-blue-300/60 dark:border-blue-600/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-glow" />
-            <CardContent className="relative p-6">
+        <div className="relative">
+          <Card className="overflow-hidden backdrop-blur-sm bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
+            <CardContent className="p-6">
               <div className="flex items-start justify-between gap-4">
-                <div className="flex-1 space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 animate-pulse" />
-                    <h3 className="text-xl font-black text-slate-900 dark:text-white">
-                      Key Insights
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-1 h-5 bg-slate-900 dark:bg-slate-100 rounded-full"></div>
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white uppercase tracking-wider">
+                      Performance Summary
                     </h3>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-3">
-                    {insights.map((insight, i) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-2 p-3 rounded-xl bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm border border-slate-200/60 dark:border-slate-700/60 hover:scale-105 transition-transform duration-200 cursor-pointer"
-                        onClick={() => {
-                          const Icon = i === 0 ? TrendingUp : i === 1 ? DollarSign : Zap
-                          triggerCelebration(insight, Icon)
-                        }}
-                      >
-                        <div className="text-2xl">{insight.split(' ')[0]}</div>
-                        <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
-                          {insight.substring(insight.indexOf(' ') + 1)}
-                        </p>
-                      </div>
-                    ))}
+                  <div className="grid md:grid-cols-3 gap-4">
+                    {insights.map((insight, i) => {
+                      // Remove emoji and extract metric
+                      const cleanInsight = insight.replace(/[🔥📈💰⚡✨]/g, '').trim()
+                      return (
+                        <div
+                          key={i}
+                          className="p-4 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
+                        >
+                          <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            {cleanInsight}
+                          </p>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
-                <Button
-                  size="sm"
-                  variant="ghost"
+                <button
                   onClick={() => setShowInsights(false)}
-                  className="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                  className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
                 >
-                  ✕
-                </Button>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
               </div>
             </CardContent>
           </Card>
         </div>
       )}
 
-      {/* Milestones Achievement Banner */}
+      {/* Professional Milestone Tracker */}
       {milestones.length > 0 && (
-        <div className="relative animate-in slide-in-from-left duration-700 delay-300">
-          <Card className="overflow-hidden backdrop-blur-xl bg-gradient-to-r from-yellow-50/90 via-orange-50/90 to-red-50/90 dark:from-yellow-950/40 dark:via-orange-950/40 dark:to-red-950/40 border-2 border-yellow-300/60 dark:border-yellow-600/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]">
+        <div className="relative">
+          <Card className="overflow-hidden backdrop-blur-sm bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
             <CardContent className="p-6">
-              <div className="flex items-center gap-4 flex-wrap">
-                <Trophy className="w-7 h-7 text-yellow-600 dark:text-yellow-400 animate-bounce" />
-                <div className="flex-1">
-                  <h3 className="text-lg font-black text-slate-900 dark:text-white mb-2">
-                    🎯 Milestones Achieved
-                  </h3>
-                  <div className="flex items-center gap-2 flex-wrap">
-                    {milestones.slice(0, 5).map((milestone, i) => {
-                      const Icon = milestone.icon
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => triggerCelebration(milestone.message, Icon)}
-                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 dark:bg-slate-800/80 border-2 border-yellow-400/60 dark:border-yellow-600/60 hover:scale-110 hover:border-yellow-500 transition-all duration-200 cursor-pointer shadow-md hover:shadow-xl group"
-                        >
-                          <Icon className="w-4 h-4 text-yellow-600 dark:text-yellow-400 group-hover:animate-spin" />
-                          <span className="text-sm font-bold text-slate-900 dark:text-white">
-                            {formatCurrency(milestone.value)}
-                          </span>
-                          {milestone.year && (
-                            <span className="text-xs text-slate-600 dark:text-slate-400">
-                              Year {milestone.year}
-                            </span>
-                          )}
-                        </button>
-                      )
-                    })}
-                  </div>
-                </div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-1 h-5 bg-slate-900 dark:bg-slate-100 rounded-full"></div>
+                <h3 className="text-sm font-semibold text-slate-900 dark:text-white uppercase tracking-wider">
+                  Portfolio Milestones
+                </h3>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                {milestones.slice(0, 5).map((milestone, i) => (
+                  <button
+                    key={i}
+                    onClick={() => triggerCelebration(milestone.message, milestone.icon)}
+                    className="flex flex-col items-start p-4 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all group"
+                  >
+                    <div className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
+                      Target Reached
+                    </div>
+                    <div className="text-lg font-bold text-slate-900 dark:text-white tabular-nums mb-1">
+                      {formatCurrency(milestone.value)}
+                    </div>
+                    {milestone.year && (
+                      <div className="text-xs text-slate-600 dark:text-slate-400">
+                        Year {milestone.year}
+                      </div>
+                    )}
+                  </button>
+                ))}
               </div>
             </CardContent>
           </Card>
@@ -569,15 +530,16 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     <ReferenceLine
                       key={i}
                       y={milestone.value}
-                      stroke="#f59e0b"
-                      strokeDasharray="6 6"
-                      strokeWidth={2}
+                      stroke="#64748b"
+                      strokeDasharray="8 4"
+                      strokeWidth={1.5}
+                      strokeOpacity={0.4}
                       label={{
-                        value: `${formatCurrency(milestone.value)} 🎯`,
+                        value: formatCurrency(milestone.value),
                         position: 'right',
-                        fill: '#f59e0b',
-                        fontSize: 13,
-                        fontWeight: 700
+                        fill: '#64748b',
+                        fontSize: 12,
+                        fontWeight: 600
                       }}
                     />
                   ))}
