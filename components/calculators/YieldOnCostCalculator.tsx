@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -17,6 +17,38 @@ export function YieldOnCostCalculator() {
   const [currentDividend, setCurrentDividend] = useState('3.50')
   const [yearsHeld, setYearsHeld] = useState('10')
   const [results, setResults] = useState<any>(null)
+
+  // Pre-fill inputs from URL parameters (viral sharing)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+
+      const sharesParam = params.get('shares')
+      const purchase = params.get('purchase')
+      const initDiv = params.get('initDiv')
+      const current = params.get('current')
+      const currentDiv = params.get('currentDiv')
+      const years = params.get('years')
+
+      // Only pre-fill if at least one parameter is present
+      if (sharesParam || purchase || initDiv || current || currentDiv || years) {
+        if (sharesParam) setShares(sharesParam)
+        if (purchase) setPurchasePrice(purchase)
+        if (initDiv) setInitialDividend(initDiv)
+        if (current) setCurrentPrice(current)
+        if (currentDiv) setCurrentDividend(currentDiv)
+        if (years) setYearsHeld(years)
+
+        // Track pre-filled visits
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'calculator_prefill', {
+            calculator: 'yield_on_cost',
+            source: 'shared_link'
+          })
+        }
+      }
+    }
+  }, [])
 
   const calculate = () => {
     const numShares = parseFloat(shares)
@@ -256,6 +288,13 @@ export function YieldOnCostCalculator() {
                 yearsCalculated: parseInt(yearsHeld),
                 initialInvestment: results.initialInvestment,
                 monthlyContribution: 0
+              }}
+              additionalParams={{
+                shares: shares,
+                purchase: purchasePrice,
+                initDiv: initialDividend,
+                current: currentPrice,
+                currentDiv: currentDividend
               }}
             />
           </div>

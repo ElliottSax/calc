@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -15,6 +15,34 @@ export function RetirementIncomeCalculator() {
   const [dividendYield, setDividendYield] = useState('4')
   const [yearsToRetirement, setYearsToRetirement] = useState('15')
   const [results, setResults] = useState<any>(null)
+
+  // Pre-fill inputs from URL parameters (viral sharing)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+
+      const initial = params.get('initial')
+      const target = params.get('target')
+      const yieldParam = params.get('yield')
+      const years = params.get('years')
+
+      // Only pre-fill if at least one parameter is present
+      if (initial || target || yieldParam || years) {
+        if (initial) setPortfolioValue(initial)
+        if (target) setTargetIncome(target)
+        if (yieldParam) setDividendYield(yieldParam)
+        if (years) setYearsToRetirement(years)
+
+        // Track pre-filled visits
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'calculator_prefill', {
+            calculator: 'retirement',
+            source: 'shared_link'
+          })
+        }
+      }
+    }
+  }, [])
 
   const calculate = () => {
     const portfolio = parseFloat(portfolioValue)
@@ -178,6 +206,10 @@ export function RetirementIncomeCalculator() {
                 yearsCalculated: parseInt(yearsToRetirement),
                 initialInvestment: parseFloat(portfolioValue),
                 monthlyContribution: results.shortfall ? results.requiredMonthly : 0
+              }}
+              additionalParams={{
+                target: targetIncome,
+                yield: dividendYield
               }}
             />
           </div>

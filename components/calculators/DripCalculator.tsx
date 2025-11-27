@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { Calculator, Info, TrendingUp, DollarSign, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -39,6 +39,39 @@ export function DripCalculator() {
   const [results, setResults] = useState<DripCalculationResult[] | null>(null)
   const [summary, setSummary] = useState<DripSummary | null>(null)
   const [loading, setLoading] = useState(false)
+
+  // Pre-fill inputs from URL parameters (viral sharing)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+
+      const initial = params.get('initial')
+      const monthly = params.get('monthly')
+      const years = params.get('years')
+      const yieldParam = params.get('yield')
+      const growth = params.get('growth')
+
+      // Only pre-fill if at least one parameter is present
+      if (initial || monthly || years || yieldParam || growth) {
+        setInputs(prev => ({
+          ...prev,
+          ...(initial && { initialInvestment: initial }),
+          ...(monthly && { monthlyContribution: monthly }),
+          ...(years && { yearsToCalculate: parseInt(years) }),
+          ...(yieldParam && { dividendYield: yieldParam }),
+          ...(growth && { dividendGrowthRate: growth })
+        }))
+
+        // Track pre-filled visits
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'calculator_prefill', {
+            calculator: 'drip',
+            source: 'shared_link'
+          })
+        }
+      }
+    }
+  }, [])
 
   const handleInputChange = (field: keyof DripCalculatorInputs, value: string | number | boolean) => {
     setInputs(prev => ({
@@ -470,6 +503,10 @@ export function DripCalculator() {
                         yearsCalculated: inputs.yearsToCalculate,
                         initialInvestment: Number(summary.initialInvestment),
                         monthlyContribution: parseFloat(inputs.monthlyContribution)
+                      }}
+                      additionalParams={{
+                        yield: inputs.dividendYield,
+                        growth: inputs.dividendGrowthRate
                       }}
                     />
                   </div>
