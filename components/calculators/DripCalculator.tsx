@@ -17,6 +17,7 @@ import { trackCalculatorUse } from '@/lib/analytics/tracking'
 import { DripCharts } from '@/components/visualizations/DripCharts'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { FieldTooltip } from '@/components/ui/field-tooltip'
 import { DRIP_PRESETS, type PresetKey } from '@/lib/data/calculator-presets'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
 
@@ -218,7 +219,10 @@ export function DripCalculator() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <Label htmlFor="ticker">Stock Ticker (Optional)</Label>
+                  <Label htmlFor="ticker" className="flex items-center">
+                    Stock Ticker (Optional)
+                    <FieldTooltip content="Enter a stock symbol to track (e.g., AAPL for Apple). This is optional and used for reference only." />
+                  </Label>
                   <Input
                     id="ticker"
                     placeholder="e.g., AAPL"
@@ -226,9 +230,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('ticker', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="initialInvestment">Initial Investment ($)</Label>
+                  <Label htmlFor="initialInvestment" className="flex items-center">
+                    Initial Investment ($)
+                    <FieldTooltip content="The amount of money you plan to invest upfront. This is your starting capital that will begin generating dividends immediately." />
+                  </Label>
                   <Input
                     id="initialInvestment"
                     type="number"
@@ -238,9 +245,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('initialInvestment', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="monthlyContribution">Monthly Contribution ($)</Label>
+                  <Label htmlFor="monthlyContribution" className="flex items-center">
+                    Monthly Contribution ($)
+                    <FieldTooltip content="How much you plan to invest each month. Regular contributions accelerate wealth building through dollar-cost averaging." />
+                  </Label>
                   <Input
                     id="monthlyContribution"
                     type="number"
@@ -250,9 +260,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('monthlyContribution', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="yearsToCalculate">Investment Period (Years)</Label>
+                  <Label htmlFor="yearsToCalculate" className="flex items-center">
+                    Investment Period (Years)
+                    <FieldTooltip content="How many years you plan to invest. Longer timeframes allow compound growth to work its magic. 20-30 years is typical for retirement planning." />
+                  </Label>
                   <Input
                     id="yearsToCalculate"
                     type="number"
@@ -280,7 +293,10 @@ export function DripCalculator() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <Label htmlFor="sharePrice">Current Share Price ($)</Label>
+                  <Label htmlFor="sharePrice" className="flex items-center">
+                    Current Share Price ($)
+                    <FieldTooltip content="The current market price per share of the stock. This determines how many shares your initial investment can buy." />
+                  </Label>
                   <Input
                     id="sharePrice"
                     type="number"
@@ -290,9 +306,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('sharePrice', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="annualDividend">Annual Dividend per Share ($)</Label>
+                  <Label htmlFor="annualDividend" className="flex items-center">
+                    Annual Dividend per Share ($)
+                    <FieldTooltip content="The total dividend paid per share each year. For example, if a stock pays $0.50 quarterly, the annual dividend is $2.00." />
+                  </Label>
                   <Input
                     id="annualDividend"
                     type="number"
@@ -302,9 +321,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('annualDividend', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="dividendYield">Dividend Yield (%)</Label>
+                  <Label htmlFor="dividendYield" className="flex items-center">
+                    Dividend Yield (%)
+                    <FieldTooltip content="Automatically calculated as (Annual Dividend / Share Price) × 100. Shows the percentage return from dividends alone. Typical dividend yields range from 2-5%." />
+                  </Label>
                   <Input
                     id="dividendYield"
                     type="number"
@@ -314,15 +336,16 @@ export function DripCalculator() {
                     disabled
                   />
                 </div>
-                
+
                 <div className="flex items-center space-x-2">
                   <Checkbox
                     id="reinvestDividends"
                     checked={inputs.reinvestDividends}
                     onCheckedChange={(checked) => handleInputChange('reinvestDividends', checked as boolean)}
                   />
-                  <Label htmlFor="reinvestDividends" className="cursor-pointer">
+                  <Label htmlFor="reinvestDividends" className="cursor-pointer flex items-center">
                     Reinvest Dividends (DRIP)
+                    <FieldTooltip content="When enabled, dividend payments automatically buy more shares instead of being paid as cash. This creates compound growth and is the core of DRIP investing." />
                   </Label>
                 </div>
               </CardContent>
@@ -345,7 +368,10 @@ export function DripCalculator() {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <Label htmlFor="dividendGrowthRate">Dividend Growth Rate (%)</Label>
+                  <Label htmlFor="dividendGrowthRate" className="flex items-center">
+                    Dividend Growth Rate (%)
+                    <FieldTooltip content="How much the dividend increases each year. Dividend aristocrats average 5-8% annual growth. Conservative estimate: 3-5%, Aggressive: 8-12%." />
+                  </Label>
                   <Input
                     id="dividendGrowthRate"
                     type="number"
@@ -356,9 +382,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('dividendGrowthRate', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="shareAppreciationRate">Share Price Growth Rate (%)</Label>
+                  <Label htmlFor="shareAppreciationRate" className="flex items-center">
+                    Share Price Growth Rate (%)
+                    <FieldTooltip content="Expected annual increase in stock price. Historical S&P 500 average is 7-10%. This affects your total portfolio value but not dividend income." />
+                  </Label>
                   <Input
                     id="shareAppreciationRate"
                     type="number"
@@ -369,9 +398,12 @@ export function DripCalculator() {
                     onChange={(e) => handleInputChange('shareAppreciationRate', e.target.value)}
                   />
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="taxRate">Tax Rate on Dividends (%)</Label>
+                  <Label htmlFor="taxRate" className="flex items-center">
+                    Tax Rate on Dividends (%)
+                    <FieldTooltip content="Qualified dividends are taxed at 0%, 15%, or 20% based on income. Use 0% for tax-advantaged accounts like IRAs. Default 15% is typical for most investors." />
+                  </Label>
                   <Input
                     id="taxRate"
                     type="number"
