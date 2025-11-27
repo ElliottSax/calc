@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -16,6 +16,34 @@ export function DividendGrowthCalculator() {
   const [growthRate, setGrowthRate] = useState('7')
   const [years, setYears] = useState('20')
   const [results, setResults] = useState<any>(null)
+
+  // Pre-fill inputs from URL parameters (viral sharing)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+
+      const sharesParam = params.get('shares')
+      const dividend = params.get('dividend')
+      const growth = params.get('growth')
+      const yearsParam = params.get('years')
+
+      // Only pre-fill if at least one parameter is present
+      if (sharesParam || dividend || growth || yearsParam) {
+        if (sharesParam) setShares(sharesParam)
+        if (dividend) setCurrentDividend(dividend)
+        if (growth) setGrowthRate(growth)
+        if (yearsParam) setYears(yearsParam)
+
+        // Track pre-filled visits
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'calculator_prefill', {
+            calculator: 'growth',
+            source: 'shared_link'
+          })
+        }
+      }
+    }
+  }, [])
 
   const calculate = () => {
     const numShares = parseFloat(shares)
@@ -210,6 +238,11 @@ export function DividendGrowthCalculator() {
                 yearsCalculated: parseInt(years),
                 initialInvestment: parseFloat(shares) * parseFloat(currentDividend),
                 monthlyContribution: 0
+              }}
+              additionalParams={{
+                shares: shares,
+                dividend: currentDividend,
+                growth: growthRate
               }}
             />
           </div>

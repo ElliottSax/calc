@@ -35,10 +35,11 @@ interface ShareResultsProps {
     monthlyContribution: number
   }
   calculatorType?: 'drip' | 'retirement' | 'growth' | 'yield' | 'coffee'
+  additionalParams?: Record<string, string>
   className?: string
 }
 
-export function ShareResults({ results, calculatorType, className = '' }: ShareResultsProps) {
+export function ShareResults({ results, calculatorType, additionalParams, className = '' }: ShareResultsProps) {
   const [copied, setCopied] = useState(false)
   const [showPreview, setShowPreview] = useState(false)
 
@@ -57,6 +58,13 @@ export function ShareResults({ results, calculatorType, className = '' }: ShareR
     params.set('initial', Math.round(results.initialInvestment).toString())
     params.set('monthly', Math.round(results.monthlyContribution).toString())
     params.set('years', results.yearsCalculated.toString())
+
+    // Add additional calculator-specific parameters
+    if (additionalParams) {
+      Object.entries(additionalParams).forEach(([key, value]) => {
+        params.set(key, value)
+      })
+    }
 
     return `${baseUrl}/?${params.toString()}`
   })() : ''
