@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useCallback, useEffect } from 'react'
-import { Calculator, Info, TrendingUp, DollarSign, Sparkles } from 'lucide-react'
+import { Calculator, Info, TrendingUp, DollarSign } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -162,14 +162,14 @@ export function DripCalculator() {
         
         <TabsContent value="inputs" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
           {/* Quick Start Presets */}
-          <Card className="backdrop-blur-xl bg-gradient-to-r from-blue-50/80 to-purple-50/80 dark:from-blue-950/20 dark:to-purple-950/20 border border-blue-200/60 dark:border-blue-800/60 shadow-lg">
+          <Card className="backdrop-blur-sm bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
             <CardContent className="pt-6">
               <div className="flex items-center gap-2 mb-4">
-                <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Quick Start Scenarios</h3>
+                <div className="w-1 h-5 bg-slate-900 dark:bg-slate-100 rounded-full"></div>
+                <h3 className="text-sm font-semibold text-slate-900 dark:text-white uppercase tracking-wider">Preset Strategies</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                Try these pre-configured investment strategies
+                Pre-configured investment scenarios for quick analysis
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                 {Object.entries(DRIP_PRESETS).map(([key, preset]) => (
@@ -177,11 +177,11 @@ export function DripCalculator() {
                     key={key}
                     variant="outline"
                     size="sm"
-                    className="h-auto py-3 px-3 flex flex-col items-center gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:border-blue-400 dark:hover:border-blue-600 transition-all group"
+                    className="h-auto py-3 px-3 flex flex-col items-center gap-2 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all group"
                     onClick={() => {
                       setInputs(preset.inputs)
                       toast({
-                        title: `${preset.icon} ${preset.name} Loaded`,
+                        title: `${preset.name} Loaded`,
                         description: preset.description
                       })
                       if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -193,8 +193,7 @@ export function DripCalculator() {
                     }}
                     title={preset.description}
                   >
-                    <span className="text-2xl group-hover:scale-110 transition-transform">{preset.icon}</span>
-                    <span className="text-xs font-semibold text-center leading-tight">
+                    <span className="text-xs font-semibold text-center leading-tight text-slate-900 dark:text-slate-100">
                       {preset.name}
                     </span>
                   </Button>
@@ -514,15 +513,18 @@ export function DripCalculator() {
               </Card>
 
               {/* Share Results - VIRAL FEATURE */}
-              <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 border-2 border-blue-300 dark:border-blue-700 shadow-xl">
+              <Card className="backdrop-blur-sm bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
                 <CardContent className="p-8">
                   <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="text-center md:text-left">
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
-                        🎉 Love these results?
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-400 text-lg">
-                        Share your dividend plan and inspire others to start investing!
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="w-1 h-5 bg-slate-900 dark:bg-slate-100 rounded-full"></div>
+                        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">
+                          Share Analysis
+                        </h3>
+                      </div>
+                      <p className="text-slate-600 dark:text-slate-400 text-sm">
+                        Export your dividend projection for review or sharing
                       </p>
                     </div>
                     <ShareResults
