@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useRef } from 'react'
 import {
   LineChart,
   Line,
@@ -14,11 +14,15 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  TooltipProps
+  TooltipProps,
+  Brush,
+  ReferenceArea,
+  ReferenceLine
 } from 'recharts'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Sparkles, Activity } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { TrendingUp, BarChart3, LineChart as LineChartIcon, PieChart, Sparkles, Activity, Download, Maximize2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import { formatCurrency, formatNumber } from '@/lib/utils/calculations'
 import type { DripCalculationResult } from '@/types/calculator'
 
@@ -27,34 +31,67 @@ interface DripChartsProps {
   comparisonResults?: DripCalculationResult[] | null
 }
 
-// Premium glass morphism tooltip with elegant design
+// Enhanced interactive tooltip with sparkline trend and animations
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
+    // Calculate growth from previous year if available
+    const currentValue = payload[0]?.value || 0
+
     return (
-      <div className="relative backdrop-blur-xl bg-white/90 dark:bg-slate-900/90 p-6 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] border border-slate-200/60 dark:border-slate-700/60 animate-in fade-in zoom-in duration-200">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-transparent dark:from-slate-800/50 rounded-2xl" />
+      <div className="relative backdrop-blur-xl bg-white/95 dark:bg-slate-900/95 p-6 rounded-2xl shadow-[0_16px_64px_0_rgba(0,0,0,0.2)] dark:shadow-[0_16px_64px_0_rgba(0,0,0,0.6)] border-2 border-slate-300/80 dark:border-slate-600/80 animate-in fade-in zoom-in-95 duration-300 min-w-[280px]">
+        {/* Animated glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl animate-pulse" style={{ animationDuration: '3s' }} />
+
+        {/* Shimmer effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent dark:via-white/10 rounded-2xl animate-shimmer" style={{ backgroundSize: '200% 100%', animation: 'shimmer 2s infinite' }} />
+
         <div className="relative">
-          <div className="flex items-center gap-3 mb-4 pb-3 border-b border-slate-200/60 dark:border-slate-700/60">
-            <div className="w-1 h-6 bg-gradient-to-b from-slate-800 to-slate-600 dark:from-slate-200 dark:to-slate-400 rounded-full" />
-            <p className="font-semibold text-lg tracking-tight text-slate-900 dark:text-slate-100">Year {label}</p>
+          {/* Header with year and sparkle */}
+          <div className="flex items-center justify-between mb-4 pb-3 border-b-2 border-slate-200/80 dark:border-slate-700/80">
+            <div className="flex items-center gap-3">
+              <div className="w-1.5 h-8 bg-gradient-to-b from-slate-800 via-slate-600 to-slate-800 dark:from-slate-200 dark:via-slate-400 dark:to-slate-200 rounded-full shadow-lg animate-pulse" />
+              <div>
+                <p className="font-bold text-xl tracking-tight text-slate-900 dark:text-slate-100">Year {label}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">Data Point</p>
+              </div>
+            </div>
+            <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400 animate-pulse" />
           </div>
-          <div className="space-y-3">
+
+          {/* Values with enhanced styling */}
+          <div className="space-y-3.5">
             {payload.map((entry: any, index: number) => (
-              <div key={index} className="flex items-center justify-between gap-6 group">
-                <div className="flex items-center gap-3">
+              <div key={index} className="flex items-center justify-between gap-8 group relative">
+                {/* Hover background */}
+                <div className="absolute inset-0 bg-slate-100/50 dark:bg-slate-800/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10" />
+
+                <div className="flex items-center gap-3 flex-1">
                   <div
-                    className="w-2 h-2 rounded-full shadow-sm transition-all duration-200 group-hover:scale-150 group-hover:shadow-md"
+                    className="w-3 h-3 rounded-full shadow-md transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg relative"
                     style={{ backgroundColor: entry.color }}
-                  />
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400 tracking-wide">
+                  >
+                    {/* Pulsing ring */}
+                    <div
+                      className="absolute inset-0 rounded-full animate-ping opacity-75"
+                      style={{ backgroundColor: entry.color }}
+                    />
+                  </div>
+                  <p className="text-sm font-semibold text-slate-700 dark:text-slate-300 tracking-wide group-hover:text-slate-900 dark:group-hover:text-slate-100 transition-colors">
                     {entry.name}
                   </p>
                 </div>
-                <p className="text-sm font-semibold tabular-nums tracking-tight transition-all duration-200" style={{ color: entry.color }}>
+                <p className="text-base font-bold tabular-nums tracking-tight transition-all duration-300 group-hover:scale-105" style={{ color: entry.color }}>
                   {formatCurrency(entry.value as number)}
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* Footer tip */}
+          <div className="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60">
+            <p className="text-xs text-slate-500 dark:text-slate-400 text-center font-medium">
+              Click chart to zoom • Hover for details
+            </p>
           </div>
         </div>
       </div>
@@ -66,6 +103,9 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export const DripCharts = React.memo(function DripCharts({ results, comparisonResults }: DripChartsProps) {
   const [activeTab, setActiveTab] = useState('growth')
   const [hoveredChart, setHoveredChart] = useState<string | null>(null)
+  const [zoomDomain, setZoomDomain] = useState<{left: number, right: number} | null>(null)
+  const [activeDataPoint, setActiveDataPoint] = useState<number | null>(null)
+  const [showBrush, setShowBrush] = useState(false)
 
   // Format data for different chart types
   const portfolioGrowthData = useMemo(() => {
@@ -111,6 +151,35 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
       withoutDRIP: comparisonResults[index] ? Number(comparisonResults[index].portfolioValue) : 0
     }))
   }, [results, comparisonResults])
+
+  // Chart controls component
+  const ChartControls = ({ onReset, onToggleBrush }: { onReset: () => void, onToggleBrush: () => void }) => (
+    <div className="flex items-center gap-2">
+      <Button
+        size="sm"
+        variant="outline"
+        onClick={onToggleBrush}
+        className="h-8 px-3 backdrop-blur-sm bg-white/60 dark:bg-slate-900/60 border-slate-300/60 dark:border-slate-600/60 hover:bg-white dark:hover:bg-slate-800 transition-all duration-200"
+      >
+        <ZoomIn className="w-3.5 h-3.5 mr-1.5" />
+        <span className="text-xs font-medium">Zoom</span>
+      </Button>
+      <Button
+        size="sm"
+        variant="outline"
+        onClick={onReset}
+        className="h-8 px-3 backdrop-blur-sm bg-white/60 dark:bg-slate-900/60 border-slate-300/60 dark:border-slate-600/60 hover:bg-white dark:hover:bg-slate-800 transition-all duration-200"
+      >
+        <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
+        <span className="text-xs font-medium">Reset</span>
+      </Button>
+    </div>
+  )
+
+  const handleResetZoom = () => {
+    setZoomDomain(null)
+    setShowBrush(false)
+  }
 
   return (
     <div className="space-y-8 relative">
@@ -167,15 +236,20 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
           >
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-xl" />
             <CardHeader className="relative pb-6 pt-8 px-8">
-              <CardTitle className="flex items-center gap-4 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
-                <div className="p-2.5 bg-slate-900 dark:bg-slate-100 rounded-xl shadow-lg">
-                  <TrendingUp className="h-5 w-5 text-white dark:text-slate-900" />
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
+                  <CardTitle className="flex items-center gap-4 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+                    <div className="p-2.5 bg-slate-900 dark:bg-slate-100 rounded-xl shadow-lg">
+                      <TrendingUp className="h-5 w-5 text-white dark:text-slate-900" />
+                    </div>
+                    Portfolio Value Growth Over Time
+                  </CardTitle>
+                  <CardDescription className="text-base text-slate-600 dark:text-slate-400 mt-2 ml-14">
+                    Track how your portfolio value grows with contributions and dividend reinvestment
+                  </CardDescription>
                 </div>
-                Portfolio Value Growth Over Time
-              </CardTitle>
-              <CardDescription className="text-base text-slate-600 dark:text-slate-400 mt-2 ml-14">
-                Track how your portfolio value grows with contributions and dividend reinvestment
-              </CardDescription>
+                <ChartControls onReset={handleResetZoom} onToggleBrush={() => setShowBrush(!showBrush)} />
+              </div>
             </CardHeader>
             <CardContent className="relative px-8 pb-8">
               <ResponsiveContainer width="100%" height={480}>
@@ -204,7 +278,17 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     tick={{ fontSize: 13, fontWeight: 500 }}
                     stroke="#94a3b8"
                   />
-                  <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#0f172a', strokeWidth: 1, strokeDasharray: '4 4', opacity: 0.3 }} />
+                  <Tooltip
+                    content={<CustomTooltip />}
+                    cursor={{
+                      stroke: '#0f172a',
+                      strokeWidth: 2,
+                      strokeDasharray: '5 5',
+                      opacity: 0.5
+                    }}
+                    animationDuration={300}
+                    animationEasing="ease-out"
+                  />
                   <Legend
                     wrapperStyle={{ paddingTop: '24px' }}
                     iconType="circle"
@@ -214,8 +298,9 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     dataKey="portfolioValue"
                     fill="url(#portfolioGradient)"
                     stroke="none"
-                    animationDuration={1500}
+                    animationDuration={2000}
                     animationEasing="ease-in-out"
+                    isAnimationActive={true}
                   />
                   <Line
                     type="monotone"
@@ -223,22 +308,47 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     name="Portfolio Value"
                     stroke="#0f172a"
                     strokeWidth={3}
-                    dot={{ fill: '#0f172a', r: 4, strokeWidth: 2, stroke: '#fff' }}
-                    activeDot={{ r: 6, strokeWidth: 2 }}
-                    animationDuration={1500}
+                    dot={{
+                      fill: '#0f172a',
+                      r: 5,
+                      strokeWidth: 3,
+                      stroke: '#fff',
+                      filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
+                    }}
+                    activeDot={{
+                      r: 8,
+                      strokeWidth: 3,
+                      stroke: '#fff',
+                      fill: '#0f172a',
+                      filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
+                      style: { cursor: 'pointer' }
+                    }}
+                    animationDuration={2000}
                     animationEasing="ease-in-out"
+                    isAnimationActive={true}
                   />
                   <Line
                     type="monotone"
                     dataKey="totalContributions"
                     name="Total Contributions"
                     stroke="#64748b"
-                    strokeWidth={2}
-                    strokeDasharray="6 3"
+                    strokeWidth={2.5}
+                    strokeDasharray="8 4"
                     dot={false}
-                    animationDuration={1500}
+                    animationDuration={2000}
                     animationEasing="ease-in-out"
+                    isAnimationActive={true}
                   />
+                  {showBrush && (
+                    <Brush
+                      dataKey="year"
+                      height={40}
+                      stroke="#0f172a"
+                      fill="rgba(15, 23, 42, 0.05)"
+                      travellerWidth={10}
+                      className="animate-in slide-in-from-bottom duration-300"
+                    />
+                  )}
                 </LineChart>
               </ResponsiveContainer>
             </CardContent>
@@ -399,17 +509,25 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     dataKey="grossDividend"
                     name="Gross Dividend"
                     fill="url(#grossGradient)"
-                    radius={[8, 8, 0, 0]}
-                    animationDuration={1500}
+                    radius={[10, 10, 0, 0]}
+                    animationDuration={2000}
                     animationEasing="ease-in-out"
+                    isAnimationActive={true}
+                    onMouseEnter={(data: any) => setActiveDataPoint(data.index)}
+                    onMouseLeave={() => setActiveDataPoint(null)}
+                    style={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' }}
                   />
                   <Bar
                     dataKey="netDividend"
                     name="Net Dividend (After Tax)"
                     fill="url(#netGradient)"
-                    radius={[8, 8, 0, 0]}
-                    animationDuration={1500}
+                    radius={[10, 10, 0, 0]}
+                    animationDuration={2000}
                     animationEasing="ease-in-out"
+                    isAnimationActive={true}
+                    onMouseEnter={(data: any) => setActiveDataPoint(data.index)}
+                    onMouseLeave={() => setActiveDataPoint(null)}
+                    style={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' }}
                   />
                 </BarChart>
               </ResponsiveContainer>
