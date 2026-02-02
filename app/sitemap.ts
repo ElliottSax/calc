@@ -1,8 +1,17 @@
 import { MetadataRoute } from 'next'
+import { DIVIDEND_ARISTOCRATS } from '@/lib/data/dividend-aristocrats'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendcalculator.pro'
   const currentDate = new Date()
+
+  // Generate stock page URLs dynamically
+  const stockPages = DIVIDEND_ARISTOCRATS.map(stock => ({
+    url: `${baseUrl}/stocks/${stock.ticker.toLowerCase()}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
 
   return [
     {
@@ -132,6 +141,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/drip-investing-guide`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/stocks`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/compare/brokers`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
@@ -171,7 +192,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/about`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
-      priority: 0.5,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/privacy`,
@@ -191,5 +212,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+    // Dynamically generated stock pages (50 stocks)
+    ...stockPages,
   ]
 }

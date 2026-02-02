@@ -1,6 +1,6 @@
 # 📈 Stock Landing Pages - Complete List
 
-## Total: 42 Dividend Stock Pages Ready!
+## Total: 41 Dividend Stock Pages Ready!
 
 All stock pages are automatically generated using the dynamic route at `/stocks/[ticker]`
 
@@ -65,7 +65,7 @@ All stock pages are automatically generated using the dynamic route at `/stocks/
 
 ---
 
-## 📊 All 42 Stocks by Category
+## 📊 All 41 Stocks by Category
 
 ### Technology (5 stocks)
 - AAPL - Apple Inc. (0.52% yield)
@@ -210,7 +210,7 @@ Each stock page targets these keywords:
 - "McDonald's dividend yield"
 - Potential monthly searches: 2,000-5,000
 
-**42 stocks × 2,000 searches = 84,000+ monthly search volume potential!**
+**41 stocks × 2,000 searches = 82,000+ monthly search volume potential!**
 
 ---
 
@@ -240,7 +240,7 @@ Save the file → Page automatically works at `/stocks/sbux` ✨
 ## 📈 Traffic Projections
 
 ### Month 1 (Current):
-- 42 stock pages
+- 41 stock pages
 - ~500-1,000 visitors/month from organic search
 
 ### Month 3 (100 stock pages):
@@ -278,9 +278,9 @@ Save the file → Page automatically works at `/stocks/sbux` ✨
 
 ## ✅ Ready to Show Affiliate Managers!
 
-Your site now has **42 professional stock landing pages** - more than most affiliate sites!
+Your site now has **41 professional stock landing pages** - more than most affiliate sites!
 
 **In your applications, mention:**
-> "We have 42 stock-specific landing pages (expanding to 500+) where users research dividend stocks like Apple, Johnson & Johnson, Coca-Cola, McDonald's, and more. Each page includes a pre-filled calculator and broker recommendations contextually integrated."
+> "We have 41 stock-specific landing pages (expanding to 500+) where users research dividend stocks like Apple, Johnson & Johnson, Coca-Cola, McDonald's, and more. Each page includes a pre-filled calculator and broker recommendations contextually integrated."
 
 This demonstrates scale and professionalism! 🚀

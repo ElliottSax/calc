@@ -528,6 +528,116 @@ export const DIVIDEND_ARISTOCRATS: DividendStock[] = [
     payoutRatio: 50,
     marketCap: 125000000000
   },
+
+  // Additional Quality Dividend Stocks (9 More to Reach 50)
+  {
+    ticker: 'WFC',
+    name: 'Wells Fargo & Company',
+    sector: 'Financials',
+    price: 58.00,
+    annualDividend: 1.40,
+    yield: 2.41,
+    dividendGrowth5Year: 5.5,
+    yearsOfGrowth: 12,
+    payoutRatio: 32,
+    marketCap: 215000000000
+  },
+  {
+    ticker: 'CSCO',
+    name: 'Cisco Systems Inc.',
+    sector: 'Technology',
+    price: 52.00,
+    annualDividend: 1.60,
+    yield: 3.08,
+    dividendGrowth5Year: 3.2,
+    yearsOfGrowth: 13,
+    payoutRatio: 48,
+    marketCap: 210000000000
+  },
+  {
+    ticker: 'QCOM',
+    name: 'Qualcomm Incorporated',
+    sector: 'Technology',
+    price: 165.00,
+    annualDividend: 3.20,
+    yield: 1.94,
+    dividendGrowth5Year: 6.8,
+    yearsOfGrowth: 21,
+    payoutRatio: 38,
+    marketCap: 185000000000
+  },
+  {
+    ticker: 'SBUX',
+    name: 'Starbucks Corporation',
+    sector: 'Consumer Discretionary',
+    price: 95.00,
+    annualDividend: 2.20,
+    yield: 2.32,
+    dividendGrowth5Year: 12.5,
+    yearsOfGrowth: 14,
+    payoutRatio: 65,
+    marketCap: 110000000000
+  },
+  {
+    ticker: 'UNP',
+    name: 'Union Pacific Corporation',
+    sector: 'Industrials',
+    price: 245.00,
+    annualDividend: 5.20,
+    yield: 2.12,
+    dividendGrowth5Year: 9.8,
+    yearsOfGrowth: 18,
+    payoutRatio: 45,
+    marketCap: 150000000000
+  },
+  {
+    ticker: 'HON',
+    name: 'Honeywell International Inc.',
+    sector: 'Industrials',
+    price: 205.00,
+    annualDividend: 4.48,
+    yield: 2.19,
+    dividendGrowth5Year: 7.2,
+    yearsOfGrowth: 14,
+    payoutRatio: 48,
+    marketCap: 135000000000
+  },
+  {
+    ticker: 'UNH',
+    name: 'UnitedHealth Group Incorporated',
+    sector: 'Healthcare',
+    price: 520.00,
+    annualDividend: 7.52,
+    yield: 1.45,
+    dividendGrowth5Year: 16.5,
+    yearsOfGrowth: 15,
+    payoutRatio: 32,
+    marketCap: 485000000000
+  },
+  {
+    ticker: 'AMGN',
+    name: 'Amgen Inc.',
+    sector: 'Healthcare',
+    price: 285.00,
+    annualDividend: 8.80,
+    yield: 3.09,
+    dividendGrowth5Year: 10.2,
+    yearsOfGrowth: 13,
+    payoutRatio: 45,
+    marketCap: 155000000000
+  },
+  {
+    ticker: 'BDX',
+    name: 'Becton Dickinson and Company',
+    sector: 'Healthcare',
+    price: 240.00,
+    annualDividend: 3.76,
+    yield: 1.57,
+    dividendGrowth5Year: 5.5,
+    yearsOfGrowth: 53,
+    payoutRatio: 42,
+    marketCap: 68000000000
+  },
 ];
 
 // Helper functions
