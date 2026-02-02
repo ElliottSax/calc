@@ -406,6 +406,128 @@ export const DIVIDEND_ARISTOCRATS: DividendStock[] = [
     payoutRatio: 48,
     marketCap: 75000000000
   },
+
+  // Additional Top Dividend Stocks (10 More)
+  {
+    ticker: 'MCD',
+    name: "McDonald's Corporation",
+    sector: 'Consumer Discretionary',
+    price: 295.00,
+    annualDividend: 6.68,
+    yield: 2.26,
+    dividendGrowth5Year: 8.2,
+    yearsOfGrowth: 48,
+    payoutRatio: 58,
+    marketCap: 215000000000
+  },
+  {
+    ticker: 'COST',
+    name: 'Costco Wholesale Corporation',
+    sector: 'Consumer Staples',
+    price: 685.00,
+    annualDividend: 4.48,
+    yield: 0.65,
+    dividendGrowth5Year: 13.5,
+    yearsOfGrowth: 20,
+    payoutRatio: 28,
+    marketCap: 305000000000
+  },
+  {
+    ticker: 'NKE',
+    name: 'Nike Inc.',
+    sector: 'Consumer Discretionary',
+    price: 105.00,
+    annualDividend: 1.45,
+    yield: 1.38,
+    dividendGrowth5Year: 11.2,
+    yearsOfGrowth: 22,
+    payoutRatio: 35,
+    marketCap: 160000000000
+  },
+  {
+    ticker: 'MO',
+    name: 'Altria Group Inc.',
+    sector: 'Consumer Staples',
+    price: 48.00,
+    annualDividend: 4.08,
+    yield: 8.50,
+    dividendGrowth5Year: 3.8,
+    yearsOfGrowth: 54,
+    payoutRatio: 78,
+    marketCap: 85000000000
+  },
+  {
+    ticker: 'IBM',
+    name: 'International Business Machines Corporation',
+    sector: 'Technology',
+    price: 185.00,
+    annualDividend: 6.68,
+    yield: 3.61,
+    dividendGrowth5Year: 1.2,
+    yearsOfGrowth: 29,
+    payoutRatio: 65,
+    marketCap: 170000000000
+  },
+  {
+    ticker: 'INTC',
+    name: 'Intel Corporation',
+    sector: 'Technology',
+    price: 45.00,
+    annualDividend: 0.50,
+    yield: 1.11,
+    dividendGrowth5Year: 4.5,
+    yearsOfGrowth: 8,
+    payoutRatio: 25,
+    marketCap: 185000000000
+  },
+  {
+    ticker: 'GIS',
+    name: 'General Mills Inc.',
+    sector: 'Consumer Staples',
+    price: 68.00,
+    annualDividend: 2.32,
+    yield: 3.41,
+    dividendGrowth5Year: 1.8,
+    yearsOfGrowth: 125,
+    payoutRatio: 60,
+    marketCap: 38000000000
+  },
+  {
+    ticker: 'LMT',
+    name: 'Lockheed Martin Corporation',
+    sector: 'Industrials',
+    price: 465.00,
+    annualDividend: 12.60,
+    yield: 2.71,
+    dividendGrowth5Year: 7.5,
+    yearsOfGrowth: 21,
+    payoutRatio: 42,
+    marketCap: 120000000000
+  },
+  {
+    ticker: 'RTX',
+    name: 'RTX Corporation',
+    sector: 'Industrials',
+    price: 105.00,
+    annualDividend: 2.44,
+    yield: 2.32,
+    dividendGrowth5Year: 5.2,
+    yearsOfGrowth: 30,
+    payoutRatio: 45,
+    marketCap: 150000000000
+  },
+  {
+    ticker: 'BLK',
+    name: 'BlackRock Inc.',
+    sector: 'Financials',
+    price: 820.00,
+    annualDividend: 20.00,
+    yield: 2.44,
+    dividendGrowth5Year: 11.8,
+    yearsOfGrowth: 15,
+    payoutRatio: 50,
+    marketCap: 125000000000
+  },
 ];
 
 // Helper functions
