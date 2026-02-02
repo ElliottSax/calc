@@ -1,21 +1,17 @@
-/**
- * Google Analytics type definitions
- */
-
 declare global {
-  function gtag(
-    command: 'event' | 'config' | 'set' | 'js',
-    targetId: string,
-    config?: {
-      currency?: string
-      value?: number
-      [key: string]: any
-    }
-  ): void
-
   interface Window {
-    gtag?: typeof gtag
-    va?: any
+    gtag?: (
+      command: 'config' | 'event' | 'consent' | 'set',
+      targetId: string | { [key: string]: any },
+      config?: {
+        page_path?: string
+        page_title?: string
+        page_location?: string
+        send_page_view?: boolean
+        [key: string]: any
+      }
+    ) => void
+    dataLayer?: any[]
   }
 }
 
