@@ -13,15 +13,17 @@ import {
   ChevronUp,
   Info
 } from 'lucide-react'
-import { BROKER_AFFILIATES } from '@/lib/data/broker-affiliates'
+import { BROKER_AFFILIATES_EXPANDED } from '@/lib/data/broker-affiliates-expanded'
 import { trackAffiliateClick } from '@/lib/analytics/tracking'
+import { useExperiment } from '@/hooks/use-experiment'
 import type { BrokerComparison } from '@/types/monetization'
 
 export function BrokerComparisonTable() {
   const [expandedBroker, setExpandedBroker] = useState<string | null>(null)
   const [sortBy, setSortBy] = useState<'rating' | 'name'>('rating')
+  const { variant, trackConversion } = useExperiment('brokerCTA')
 
-  const sortedBrokers = [...BROKER_AFFILIATES].sort((a, b) => {
+  const sortedBrokers = [...BROKER_AFFILIATES_EXPANDED].sort((a, b) => {
     if (sortBy === 'rating') return b.rating - a.rating
     return a.name.localeCompare(b.name)
   })
@@ -34,6 +36,9 @@ export function BrokerComparisonTable() {
       category: 'broker',
       placement: 'comparison-table'
     })
+
+    // Track A/B test conversion
+    trackConversion('broker_click', 1)
 
     // Open in new tab
     window.open(
@@ -133,7 +138,7 @@ export function BrokerComparisonTable() {
                       onClick={() => handleBrokerClick(broker)}
                       className="flex items-center gap-2"
                     >
-                      Open Account
+                      {variant?.text || 'Open Account'}
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>
