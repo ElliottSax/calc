@@ -1,18 +1,20 @@
-import { Header } from '@/components/layout/Header'
+import { Navigation } from '@/components/layout/Navigation'
+import { Footer } from '@/components/layout/Footer'
 import { MultiCalculator } from '@/components/calculators/MultiCalculator'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { SocialProof } from '@/components/hero/SocialProof'
 import { FeaturesShowcase } from '@/components/hero/FeaturesShowcase'
 import { BehaviorTriggeredPopup } from '@/components/lead-generation/BehaviorTriggeredPopup'
+import { CookieConsent } from '@/components/gdpr/CookieConsent'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+    <>
       {/* SEO: FAQ Schema for Rich Snippets */}
       <FAQSchema faqs={DRIP_CALCULATOR_FAQS} />
 
-      <Header />
+      <Navigation />
 
       {/* Main Calculator Section - LEAD WITH THIS */}
       <section id="calculator" className="py-12 pt-24">
@@ -116,6 +118,12 @@ export default function Home() {
 
       {/* Behavior-triggered popup */}
       <BehaviorTriggeredPopup />
-    </div>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Cookie Consent */}
+      <CookieConsent />
+    </>
   )
 }
