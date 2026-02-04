@@ -196,7 +196,8 @@ function generateXMLFeed(brokers: AffiliateBroker[]): string {
 }
 
 // Product feed for comparison shopping engines
-export async function generateProductFeed(): Promise<string> {
+// This is a helper function that could be used by another route
+async function generateProductFeed(): Promise<string> {
   const products = AFFILIATE_BROKERS.map(broker => ({
     id: broker.id,
     title: `${broker.name} Brokerage Account`,

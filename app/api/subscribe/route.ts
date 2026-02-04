@@ -27,36 +27,29 @@ export async function POST(request: NextRequest) {
     }
     
     logger.info({ email, leadMagnet }, 'New newsletter subscription')
-    
-    // In production, you would:
-    // 1. Add to email service (ConvertKit, Mailchimp, etc.)
-    // 2. Send welcome email with lead magnet
-    // 3. Store in database for tracking
-    
-    // Example ConvertKit integration:
-    /*
-    const response = await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        api_key: process.env.CONVERTKIT_API_KEY,
-        email,
-        first_name: name,
-        tags: [leadMagnet]
-      })
+
+    // Use the unified email service
+    const { subscribeToNewsletter } = await import('@/lib/email/email-service')
+
+    const result = await subscribeToNewsletter({
+      email,
+      firstName: name,
+      source: 'subscribe_endpoint',
+      tags: leadMagnet ? [leadMagnet] : undefined,
+      customFields: {
+        lead_magnet: leadMagnet || 'none',
+        signup_date: new Date().toISOString()
+      }
     })
-    
-    if (!response.ok) {
-      throw new Error('Failed to subscribe to ConvertKit')
+
+    if (!result.success) {
+      throw new Error(result.error || 'Subscription failed')
     }
-    */
-    
-    // For demo purposes, just return success
+
     return NextResponse.json({
       success: true,
-      message: 'Successfully subscribed to newsletter'
+      message: result.message || 'Successfully subscribed to newsletter',
+      subscriberId: result.subscriberId
     })
     
   } catch (error) {

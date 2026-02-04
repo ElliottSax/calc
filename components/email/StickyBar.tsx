@@ -37,13 +37,27 @@ export function StickyEmailBar() {
     setLoading(true)
 
     try {
-      // TODO: Replace with your email service API
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Call newsletter API
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          source: 'sticky_bottom_bar'
+        })
+      })
+
+      const data = await response.json()
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed')
+      }
 
       // Track conversion
       if (typeof window !== 'undefined' && (window as any).posthog) {
         (window as any).posthog.capture('email_signup', {
-          source: 'sticky_bottom_bar'
+          source: 'sticky_bottom_bar',
+          subscriberId: data.data?.subscriberId
         })
       }
 
@@ -56,6 +70,8 @@ export function StickyEmailBar() {
       }, 2000)
     } catch (err) {
       console.error('Subscription error:', err)
+      // Show error to user
+      alert('Failed to subscribe. Please try again.')
     } finally {
       setLoading(false)
     }

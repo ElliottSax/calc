@@ -4,12 +4,14 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 import Script from 'next/script'
 
-declare global {
-  interface Window {
-    dataLayer: any[]
-    gtag: (...args: any[]) => void
-  }
-}
+// Global type extensions - dataLayer and gtag are added via scripts
+// Commenting out to avoid conflicts with other declarations
+// declare global {
+//   interface Window {
+//     dataLayer: any[]
+//     gtag: (...args: any[]) => void
+//   }
+// }
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 
@@ -17,18 +19,18 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 function initializeGoogleAnalytics() {
   if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) return
 
-  window.dataLayer = window.dataLayer || []
-  window.gtag = function gtag() {
-    window.dataLayer.push(arguments)
+  ;(window as any).dataLayer = (window as any).dataLayer || []
+  ;(window as any).gtag = function gtag(...args: any[]) {
+    ;(window as any).dataLayer.push(args)
   }
-  window.gtag('js', new Date())
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  ;(window as any).gtag('js', new Date())
+  ;(window as any).gtag('config', GA_MEASUREMENT_ID, {
     send_page_view: false, // We'll manually send page views
     cookie_flags: 'SameSite=None;Secure',
   })
 
   // Set up enhanced ecommerce
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  ;(window as any).gtag('config', GA_MEASUREMENT_ID, {
     custom_map: {
       dimension1: 'user_type',
       dimension2: 'calculator_type',
@@ -47,10 +49,11 @@ export function GoogleAnalytics() {
   useEffect(() => {
     if (!GA_MEASUREMENT_ID) return
 
-    const url = pathname + (searchParams?.toString() ? `?${searchParams}` : '')
+    const searchParamsString: string = searchParams?.toString() || ''
+    const url = pathname + (searchParamsString ? `?${searchParamsString}` : '')
 
     // Send page view
-    window.gtag('event', 'page_view', {
+    (window as any).gtag('event', 'page_view', {
       page_path: url,
       page_title: document.title,
       page_location: window.location.href,
@@ -90,9 +93,9 @@ export function GoogleAnalytics() {
 export const analytics = {
   // Track custom events
   event: (action: string, parameters?: Record<string, any>) => {
-    if (typeof window === 'undefined' || !window.gtag) return
+    if (typeof window === 'undefined' || !(window as any).gtag) return
 
-    window.gtag('event', action, parameters)
+    (window as any).gtag('event', action, parameters)
   },
 
   // Track calculator usage
@@ -137,8 +140,8 @@ export const analytics = {
     })
 
     // Send conversion to Google Ads if configured
-    if (window.gtag && process.env.NEXT_PUBLIC_GOOGLE_ADS_ID) {
-      window.gtag('event', 'conversion', {
+    if ((window as any).gtag && process.env.NEXT_PUBLIC_GOOGLE_ADS_ID) {
+      (window as any).gtag('event', 'conversion', {
         send_to: `${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}/${type}`,
         value: value || 0,
         currency: 'USD',
@@ -217,9 +220,9 @@ export const analytics = {
 
   // Set user properties
   setUserProperties: (properties: Record<string, any>) => {
-    if (typeof window === 'undefined' || !window.gtag) return
+    if (typeof window === 'undefined' || !(window as any).gtag) return
 
-    window.gtag('set', 'user_properties', properties)
+    (window as any).gtag('set', 'user_properties', properties)
   },
 
   // Track timing

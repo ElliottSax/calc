@@ -354,6 +354,15 @@ export function CoffeeToRetirement() {
             </CardContent>
           </Card>
 
+          {/* Inline Broker CTA */}
+          <InlineBrokerCTA
+            variant="featured"
+            finalPortfolioValue={calculation.retirementValue}
+            finalDividendIncome={calculation.dividendIncome}
+            calculatorType="coffee-millionaire"
+            className="mt-6"
+          />
+
           {/* Call to Action */}
           <Card className="bg-gradient-to-br from-slate-900 to-blue-900 text-white border-0">
             <CardContent className="p-8 text-center">

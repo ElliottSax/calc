@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'your-google-verification-code',
     yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
-    bing: process.env.NEXT_PUBLIC_BING_VERIFICATION,
+    // Note: Bing verification should be added via <meta> tag in head.tsx or as other metadata property
   },
 
   // Icons

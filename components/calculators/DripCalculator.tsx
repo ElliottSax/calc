@@ -17,6 +17,7 @@ import { trackCalculatorUse } from '@/lib/analytics/tracking'
 import { DripCharts } from '@/components/visualizations/DripCharts'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { FieldTooltip } from '@/components/ui/field-tooltip'
 import { DRIP_PRESETS, type PresetKey } from '@/lib/data/calculator-presets'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
@@ -542,6 +543,15 @@ export function DripCalculator() {
                         yield: inputs.dividendYield,
                         growth: inputs.dividendGrowthRate
                       }}
+                    />
+
+                    {/* Inline Broker CTA */}
+                    <InlineBrokerCTA
+                      variant="featured"
+                      finalPortfolioValue={Number(summary.finalPortfolioValue)}
+                      finalDividendIncome={Number(summary.finalDividendIncome)}
+                      calculatorType="drip"
+                      className="mt-8"
                     />
                   </div>
                 </CardContent>

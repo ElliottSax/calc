@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label'
 import { Card } from '@/components/ui/card'
 import { formatCurrency, formatPercent } from '@/lib/utils/calculations'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { ExternalLink } from 'lucide-react'
 
 export function YieldOnCostCalculator() {
@@ -298,6 +299,15 @@ export function YieldOnCostCalculator() {
               }}
             />
           </div>
+
+          {/* Inline Broker CTA */}
+          <InlineBrokerCTA
+            variant="featured"
+            finalPortfolioValue={results.currentValue}
+            finalDividendIncome={results.annualIncome}
+            calculatorType="yield-on-cost"
+            className="mt-8"
+          />
 
           {/* Inline Broker CTA */}
           <Card className="mt-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-200 dark:border-orange-800">
