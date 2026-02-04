@@ -43,29 +43,35 @@ export function InlineSignup({
     }
 
     try {
-      // TODO: Replace with your actual email service API
-      // Example for ConvertKit:
-      // const response = await fetch('/api/newsletter/subscribe', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, source })
-      // })
+      // Call newsletter API
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          source
+        })
+      })
 
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      const data = await response.json()
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed')
+      }
 
       // Track signup
       if (typeof window !== 'undefined' && (window as any).posthog) {
         (window as any).posthog.capture('email_signup', {
           source,
-          variant
+          variant,
+          subscriberId: data.data?.subscriberId
         })
       }
 
       setSuccess(true)
       setEmail('')
     } catch (err) {
-      setError('Something went wrong. Please try again.')
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
     } finally {
       setLoading(false)
     }

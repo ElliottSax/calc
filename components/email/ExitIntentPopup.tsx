@@ -47,8 +47,21 @@ export function ExitIntentPopup() {
     setLoading(true)
 
     try {
-      // TODO: Replace with your email service API
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Call newsletter API
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          source: 'exit_intent_popup'
+        })
+      })
+
+      const data = await response.json()
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed')
+      }
 
       // Track conversion
       if (typeof window !== 'undefined' && (window as any).posthog) {
@@ -66,6 +79,7 @@ export function ExitIntentPopup() {
       }, 3000)
     } catch (err) {
       console.error('Subscription error:', err)
+      alert('Failed to subscribe. Please try again.')
     } finally {
       setLoading(false)
     }

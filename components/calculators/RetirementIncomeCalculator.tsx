@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label'
 import { Card } from '@/components/ui/card'
 import { formatCurrency } from '@/lib/utils/calculations'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { ExternalLink } from 'lucide-react'
 
 export function RetirementIncomeCalculator() {
@@ -213,6 +214,15 @@ export function RetirementIncomeCalculator() {
               }}
             />
           </div>
+
+          {/* Inline Broker CTA */}
+          <InlineBrokerCTA
+            variant="featured"
+            finalPortfolioValue={results.requiredPortfolio}
+            finalDividendIncome={results.annualIncome}
+            calculatorType="retirement-income"
+            className="mt-8"
+          />
 
           {/* Inline Broker CTA */}
           <Card className="mt-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 border-2 border-green-200 dark:border-green-800">

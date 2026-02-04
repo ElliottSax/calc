@@ -667,7 +667,7 @@ export default function BestDividendStocksUnder50() {
           buttonText="Download Free List"
           source="under_50_blog"
         />
-      </section>
+      </div>
 
       {/* Building a Portfolio */}
       <section className="mb-16">

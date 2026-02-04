@@ -262,7 +262,9 @@ function StockCard({ stock }: { stock: DividendStock }) {
               </div>
             </div>
             {isDividendAristocrat && (
-              <Award className="h-5 w-5 text-yellow-500" title="Dividend Aristocrat" />
+              <span title="Dividend Aristocrat">
+                <Award className="h-5 w-5 text-yellow-500" />
+              </span>
             )}
           </div>
 

@@ -7,6 +7,12 @@ interface ConversionData {
   value?: number
   userId?: string
   metadata?: Record<string, any>
+  timestamp?: string
+  sessionId?: string
+  affiliateData?: any
+  ip?: string
+  userAgent?: string
+  referer?: string
 }
 
 // Simulated database for tracking conversions

@@ -3,7 +3,7 @@ import { DripCalculator as DRIPCalculator } from '@/components/calculators/DripC
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { TrustSignals } from '@/components/marketing/TrustSignals'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
-import { financialCalculatorSchema, breadcrumbSchema } from '@/lib/seo/structured-data'
+import { generateFinancialCalculatorSchema, generateBreadcrumbSchema } from '@/lib/seo/structured-data'
 import { ChevronRight, TrendingUp, DollarSign, PiggyBank, Target } from 'lucide-react'
 import Link from 'next/link'
 
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 
 export default function DRIPCalculatorPage() {
   const structuredData = {
-    ...financialCalculatorSchema,
+    ...generateFinancialCalculatorSchema(),
     name: 'DRIP Calculator - Professional Dividend Reinvestment Calculator',
     description: 'Calculate dividend reinvestment returns with our advanced DRIP calculator',
   }
 
-  const breadcrumbs = breadcrumbSchema([
+  const breadcrumbs = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://dividendcalculator.pro' },
     { name: 'Calculators', url: 'https://dividendcalculator.pro/calculators' },
     { name: 'DRIP Calculator', url: 'https://dividendcalculator.pro/calculators/drip-calculator' },

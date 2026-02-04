@@ -8,6 +8,7 @@ import { Card } from '@/components/ui/card'
 import { formatCurrency } from '@/lib/utils/calculations'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import { ShareResults } from '@/components/viral/ShareResults'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { ExternalLink } from 'lucide-react'
 
 export function DividendGrowthCalculator() {
@@ -246,6 +247,15 @@ export function DividendGrowthCalculator() {
               }}
             />
           </div>
+
+          {/* Inline Broker CTA */}
+          <InlineBrokerCTA
+            variant="featured"
+            finalPortfolioValue={parseFloat(shares) * parseFloat(currentDividend) * parseFloat(years)}
+            finalDividendIncome={results.finalIncome}
+            calculatorType="dividend-growth"
+            className="mt-8"
+          />
 
           {/* Inline Broker CTA */}
           <Card className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border-2 border-purple-200 dark:border-purple-800">

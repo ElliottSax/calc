@@ -590,7 +590,7 @@ export default function Build1000MonthPortfolio() {
           buttonText="Download Portfolio Template"
           source="1000_month_portfolio_blog"
         />
-      </section>
+      </div>
 
       {/* Step 3: How to Start */}
       <section className="mb-16">
