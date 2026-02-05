@@ -29,6 +29,12 @@ export function BrokerComparisonTable() {
   })
 
   const handleBrokerClick = (broker: BrokerComparison) => {
+    // Guard clause for missing affiliate link
+    if (!broker.affiliateLink) {
+      console.warn('No affiliate link available for broker:', broker.name)
+      return
+    }
+
     // Track affiliate click
     trackAffiliateClick({
       merchantId: broker.id,
