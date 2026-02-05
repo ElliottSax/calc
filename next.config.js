@@ -72,22 +72,30 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
 
-  // TypeScript configuration - temporarily disabled for deployment
-  // TODO: Re-enable after fixing all type errors
+  // TypeScript configuration - strict type checking enabled
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
 
-  // ESLint configuration - kept disabled during builds
+  // ESLint configuration - enable during builds for code quality
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
 
-  // Disable static optimization to avoid build timeouts
+  // Performance and optimization features
   experimental: {
     serverComponentsExternalPackages: ['pino', 'pino-pretty'],
-    optimizePackageImports: ['recharts', 'lucide-react', '@radix-ui/react-icons'],
+    optimizePackageImports: [
+      'recharts',
+      'lucide-react',
+      '@radix-ui/react-icons',
+      'framer-motion',
+      'date-fns'
+    ],
   },
+
+  // Output optimization
+  output: 'standalone',
 }
 
 module.exports = nextConfig
