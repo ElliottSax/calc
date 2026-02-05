@@ -475,7 +475,9 @@ export function PortfolioAnalyzer() {
                     <XAxis dataKey="sector" angle={-45} textAnchor="end" height={80} />
                     <YAxis />
                     <RechartsTooltip
-                      formatter={(value: number) => `$${value.toFixed(2)}`}
+                      formatter={(value: number | undefined) =>
+                        value !== undefined ? `$${value.toFixed(2)}` : '$0.00'
+                      }
                     />
                     <Bar dataKey="income" fill="#10b981" />
                   </BarChart>
@@ -497,7 +499,9 @@ export function PortfolioAnalyzer() {
                   <XAxis dataKey="ticker" />
                   <YAxis />
                   <RechartsTooltip
-                    formatter={(value: number) => `${value.toFixed(2)}%`}
+                    formatter={(value: number | undefined) =>
+                      value !== undefined ? `${value.toFixed(2)}%` : '0.00%'
+                    }
                   />
                   <Bar dataKey="gain" fill={(entry) => entry.gain >= 0 ? '#10b981' : '#ef4444'} />
                 </BarChart>
