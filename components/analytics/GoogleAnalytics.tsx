@@ -4,14 +4,13 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 import Script from 'next/script'
 
-// Global type extensions - dataLayer and gtag are added via scripts
-// Commenting out to avoid conflicts with other declarations
-// declare global {
-//   interface Window {
-//     dataLayer: any[]
-//     gtag: (...args: any[]) => void
-//   }
-// }
+// Global type extensions for Google Analytics
+declare global {
+  interface Window {
+    dataLayer?: any[]
+    gtag?: (...args: any[]) => void
+  }
+}
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 
@@ -19,18 +18,18 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 function initializeGoogleAnalytics() {
   if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) return
 
-  ;(window as any).dataLayer = (window as any).dataLayer || []
-  ;(window as any).gtag = function gtag(...args: any[]) {
-    ;(window as any).dataLayer.push(args)
+  window.dataLayer = window.dataLayer || []
+  window.gtag = function gtag(...args: any[]) {
+    window.dataLayer?.push(args)
   }
-  ;(window as any).gtag('js', new Date())
-  ;(window as any).gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag?.('js', new Date())
+  window.gtag?.('config', GA_MEASUREMENT_ID, {
     send_page_view: false, // We'll manually send page views
     cookie_flags: 'SameSite=None;Secure',
   })
 
   // Set up enhanced ecommerce
-  ;(window as any).gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag?.('config', GA_MEASUREMENT_ID, {
     custom_map: {
       dimension1: 'user_type',
       dimension2: 'calculator_type',
@@ -47,14 +46,14 @@ export function GoogleAnalytics() {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    if (!GA_MEASUREMENT_ID) return
+    if (!GA_MEASUREMENT_ID || !pathname) return
 
-    const searchParamsString: string = searchParams?.toString() || ''
-    const url = pathname + (searchParamsString ? `?${searchParamsString}` : '')
+    const searchParamsString = searchParams?.toString() ?? ''
+    const pagePath = searchParamsString ? `${pathname}?${searchParamsString}` : pathname
 
     // Send page view
-    (window as any).gtag('event', 'page_view', {
-      page_path: url,
+    window.gtag?.('event', 'page_view', {
+      page_path: pagePath,
       page_title: document.title,
       page_location: window.location.href,
     })

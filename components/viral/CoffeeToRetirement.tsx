@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { ShareResults } from './ShareResults'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { formatCurrency, formatNumber } from '@/lib/utils/calculations'
 
 interface CoffeeCalculation {

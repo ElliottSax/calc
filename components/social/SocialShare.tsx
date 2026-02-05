@@ -54,8 +54,8 @@ export function SocialShare({
       setTimeout(() => setCopied(false), 2000)
       
       // Track copy event
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'share', {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'share', {
           method: 'copy_link',
           content_type: 'url',
           content_id: shareUrl
@@ -70,8 +70,8 @@ export function SocialShare({
     window.open(url, '_blank', 'noopener,noreferrer,width=600,height=400')
     
     // Track share event
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'share', {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'share', {
         method: platform,
         content_type: 'article',
         content_id: shareUrl
@@ -89,8 +89,8 @@ export function SocialShare({
           url: shareUrl
         })
         
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'share', {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'share', {
             method: 'native',
             content_type: 'article',
             content_id: shareUrl

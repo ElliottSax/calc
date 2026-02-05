@@ -18,7 +18,22 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Badge } from '@/components/ui/badge'
 
-const NAVIGATION = [
+// Types for navigation structure
+type NavItem = {
+  label: string
+  href: string
+  badge?: string
+}
+
+type NavSection = {
+  label: string
+  icon: any
+  href: string
+  badge?: string
+  items?: NavItem[]
+}
+
+const NAVIGATION: NavSection[] = [
   {
     label: 'Calculators',
     icon: Calculator,

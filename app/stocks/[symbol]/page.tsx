@@ -7,20 +7,19 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { DIVIDEND_ARISTOCRATS } from '@/lib/data/dividend-aristocrats';
 
+// Force dynamic rendering to avoid build timeouts
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true
+
 interface StockPageProps {
   params: {
     symbol: string;
   };
 }
 
-// Generate static params for top dividend stocks
+// Disable static generation for now to speed up builds
 export async function generateStaticParams() {
-  // Top 100 dividend stocks to pre-generate
-  const topStocks = DIVIDEND_ARISTOCRATS.slice(0, 100).map((stock) => ({
-    symbol: stock.ticker.toLowerCase(),
-  }));
-
-  return topStocks;
+  return []  // Return empty array to disable pre-generation
 }
 
 // Generate metadata for SEO

@@ -2,13 +2,12 @@
  * Advanced Performance Monitoring and Optimization System
  */
 
-import { onCLS, onFCP, onFID, onINP, onLCP, onTTFB } from 'web-vitals'
+import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'
 
 // Performance metrics thresholds (in milliseconds)
 const THRESHOLDS = {
   FCP: { good: 1800, needs_improvement: 3000 },
   LCP: { good: 2500, needs_improvement: 4000 },
-  FID: { good: 100, needs_improvement: 300 },
   INP: { good: 200, needs_improvement: 500 },
   CLS: { good: 0.1, needs_improvement: 0.25 },
   TTFB: { good: 800, needs_improvement: 1800 }
@@ -35,7 +34,6 @@ class PerformanceMonitor {
     // Core Web Vitals
     onFCP(metric => this.recordMetric('FCP', metric.value))
     onLCP(metric => this.recordMetric('LCP', metric.value))
-    onFID(metric => this.recordMetric('FID', metric.value))
     onINP(metric => this.recordMetric('INP', metric.value))
     onCLS(metric => this.recordMetric('CLS', metric.value))
     onTTFB(metric => this.recordMetric('TTFB', metric.value))
