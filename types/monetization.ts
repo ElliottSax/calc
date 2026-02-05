@@ -52,6 +52,19 @@ export interface BrokerComparison {
     automaticRebalancing?: boolean
     internationalStocks?: boolean
     taxLossHarvesting?: boolean
+    cryptoTrading?: boolean
+    advancedCharts?: boolean
+    extendedHours?: boolean
+    socialFeatures?: boolean
+    retirementAccounts?: boolean
+    research?: boolean
+    bankingServices?: boolean
+    optionsTrading?: boolean
+    education?: boolean
+    internationalMarkets?: boolean
+    marginRates?: boolean
+    lowFees?: boolean
+    mutualFunds?: boolean
   }
   pros: string[]
   cons: string[]
