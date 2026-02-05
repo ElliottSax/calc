@@ -56,11 +56,20 @@ export interface BrokerComparison {
   rating: number
   reviewCount: number
   bestFor: string
-  commission?: string
+  commission?: string | {
+    type: string
+    amount: number
+    note: string
+  }
   affiliate?: {
     url: string
     cpa: number
     cookie: number
+  }
+  signUpBonus?: {
+    amount: number
+    type: string
+    requirements: string
   }
 }
 
