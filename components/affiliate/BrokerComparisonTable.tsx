@@ -135,7 +135,7 @@ export function BrokerComparisonTable() {
                   </div>
                   
                   <div className="text-right">
-                    {broker.affiliateLink.featured && (
+                    {broker.affiliateLink?.featured && (
                       <Badge className="mb-2" variant="default">
                         Featured Partner
                       </Badge>
@@ -143,6 +143,7 @@ export function BrokerComparisonTable() {
                     <Button
                       onClick={() => handleBrokerClick(broker)}
                       className="flex items-center gap-2"
+                      disabled={!broker.affiliateLink}
                     >
                       {variant?.text || 'Open Account'}
                       <ExternalLink className="h-4 w-4" />
