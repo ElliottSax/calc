@@ -28,13 +28,14 @@ export type AdPlacement =
 
 // Affiliate Types
 export interface AffiliateLink {
-  id: string
-  merchant: string
+  id?: string
+  merchant?: string
   url: string
   trackingId: string
-  commission: string
-  category: 'broker' | 'tool' | 'education' | 'service'
-  featured: boolean
+  commission?: string
+  category?: 'broker' | 'tool' | 'education' | 'service'
+  featured?: boolean
+  expiresAt?: string
 }
 
 export interface BrokerComparison {
