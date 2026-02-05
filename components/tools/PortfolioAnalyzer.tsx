@@ -451,7 +451,9 @@ export function PortfolioAnalyzer() {
                       ))}
                     </Pie>
                     <RechartsTooltip
-                      formatter={(value: number) => `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                      formatter={(value: number | undefined) =>
+                        value !== undefined ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}` : '$0.00'
+                      }
                     />
                     <Legend />
                   </PieChart>
@@ -538,7 +540,9 @@ export function PortfolioAnalyzer() {
                     <XAxis dataKey="year" />
                     <YAxis />
                     <RechartsTooltip
-                      formatter={(value: number) => `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                      formatter={(value: number | undefined) =>
+                        value !== undefined ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}` : '$0.00'
+                      }
                     />
                     <Area type="monotone" dataKey="income" stroke="#10b981" fill="#10b981" fillOpacity={0.3} />
                     <Area type="monotone" dataKey="cumulative" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.3} />
