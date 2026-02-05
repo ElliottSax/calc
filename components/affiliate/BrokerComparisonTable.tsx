@@ -170,13 +170,13 @@ export function BrokerComparisonTable() {
                   />
                   <FeatureItem
                     label="DRIP"
-                    value={broker.features.dividendReinvestment}
-                    positive={broker.features.dividendReinvestment}
+                    value={broker.features.dividendReinvestment ?? false}
+                    positive={broker.features.dividendReinvestment ?? false}
                   />
                   <FeatureItem
                     label="Int'l Stocks"
-                    value={broker.features.internationalStocks}
-                    positive={broker.features.internationalStocks}
+                    value={broker.features.internationalStocks ?? false}
+                    positive={broker.features.internationalStocks ?? false}
                   />
                 </div>
 
