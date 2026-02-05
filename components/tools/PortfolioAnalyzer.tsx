@@ -503,7 +503,11 @@ export function PortfolioAnalyzer() {
                       value !== undefined ? `${value.toFixed(2)}%` : '0.00%'
                     }
                   />
-                  <Bar dataKey="gain" fill={(entry) => entry.gain >= 0 ? '#10b981' : '#ef4444'} />
+                  <Bar dataKey="gain">
+                    {performanceData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.gain >= 0 ? '#10b981' : '#ef4444'} />
+                    ))}
+                  </Bar>
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
