@@ -8,6 +8,7 @@ import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void
+    va?: (event: string, ...args: any[]) => void
   }
 }
 
