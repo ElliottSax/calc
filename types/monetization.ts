@@ -51,6 +51,7 @@ export interface BrokerComparison {
     dripSupport?: boolean
     automaticRebalancing?: boolean
     internationalStocks?: boolean
+    taxLossHarvesting?: boolean
   }
   pros: string[]
   cons: string[]
