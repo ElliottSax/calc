@@ -3,6 +3,13 @@
  * Handles affiliate link tracking, cookie management, and conversion attribution
  */
 
+// Global type extensions
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
+
 interface AffiliateConfig {
   cookieDuration: number // days
   defaultCommission: number // percentage
@@ -204,8 +211,8 @@ export function trackAffiliateClick(platform: string, page?: string): string {
   localStorage.setItem('affiliate_clicks', JSON.stringify(clicks))
 
   // Send to analytics
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'affiliate_click', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'affiliate_click', {
       platform,
       page: clickData.page,
       value: config.commission
@@ -253,8 +260,8 @@ export function trackConversion(platform: string, type: ConversionData['conversi
   localStorage.setItem('affiliate_conversions', JSON.stringify(conversions))
 
   // Send to analytics
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'conversion', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'conversion', {
       platform,
       conversion_type: type,
       value: conversion.value,
@@ -383,8 +390,8 @@ if (typeof window !== 'undefined') {
 
   // Track page views for attribution
   if (getCookie('affiliate_referrer')) {
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'page_view', {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag!('event', 'page_view', {
         affiliate_referrer: getCookie('affiliate_referrer')
       })
     }

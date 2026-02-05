@@ -4,6 +4,13 @@
 
 import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'
 
+// Global type extensions
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
+
 // Metric names for tracking
 export type MetricName = 'CLS' | 'INP' | 'FCP' | 'LCP' | 'TTFB'
 
@@ -27,8 +34,8 @@ function getMetricRating(name: MetricName, value: number): 'good' | 'needs-impro
 // Send metric to analytics
 function sendToAnalytics(metric: any) {
   // Send to Google Analytics
-  if (typeof gtag !== 'undefined') {
-    gtag('event', metric.name, {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', metric.name, {
       event_category: 'Web Vitals',
       event_label: metric.id,
       value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
@@ -97,8 +104,8 @@ export function measureCustomMetric(name: string, startTime?: number) {
   const value = startTime ? endTime - startTime : endTime
   
   // Send custom metric
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'custom_metric', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'custom_metric', {
       event_category: 'Performance',
       event_label: name,
       value: Math.round(value),
@@ -155,8 +162,8 @@ export function observePerformance() {
           
           // Track slow resources (>1s)
           if (resourceEntry.duration > 1000) {
-            if (typeof gtag !== 'undefined') {
-              gtag('event', 'slow_resource', {
+            if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'slow_resource', {
                 event_category: 'Performance',
                 event_label: resourceEntry.name,
                 value: Math.round(resourceEntry.duration),
@@ -192,8 +199,8 @@ export function detectPerformanceIssues() {
     if (usagePercentage > 80) {
       console.warn('High memory usage detected:', usagePercentage + '%')
       
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'high_memory_usage', {
+      if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'high_memory_usage', {
           event_category: 'Performance',
           value: Math.round(usagePercentage),
           non_interaction: true
@@ -209,8 +216,8 @@ export function detectPerformanceIssues() {
         for (const entry of list.getEntries()) {
           console.warn('Long task detected:', entry.duration + 'ms')
           
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'long_task', {
+          if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag!('event', 'long_task', {
               event_category: 'Performance',
               value: Math.round(entry.duration),
               non_interaction: true

@@ -40,20 +40,28 @@ export interface AffiliateLink {
 export interface BrokerComparison {
   id: string
   name: string
-  logo: string
-  affiliateLink: AffiliateLink
+  logo?: string
+  affiliateLink?: AffiliateLink
   features: {
     minDeposit: number
     commissionFree: boolean
     fractionalShares: boolean
-    dividendReinvestment: boolean
-    internationalStocks: boolean
+    dividendReinvestment?: boolean
+    dripSupport?: boolean
+    automaticRebalancing?: boolean
+    internationalStocks?: boolean
   }
   pros: string[]
   cons: string[]
   rating: number
   reviewCount: number
   bestFor: string
+  commission?: string
+  affiliate?: {
+    url: string
+    cpa: number
+    cookie: number
+  }
 }
 
 // Lead Generation Types

@@ -144,9 +144,9 @@ export class DataExporter {
         : String(value)
 
       doc.text(`${formattedKey}:`, 25, yPosition)
-      doc.setFont(undefined, 'bold')
+      doc.setFont('helvetica', 'bold')
       doc.text(formattedValue, 100, yPosition)
-      doc.setFont(undefined, 'normal')
+      doc.setFont('helvetica', 'normal')
       yPosition += 7
     })
 

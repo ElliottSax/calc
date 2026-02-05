@@ -8,6 +8,9 @@ import { BehaviorTriggeredPopup } from '@/components/lead-generation/BehaviorTri
 import { CookieConsent } from '@/components/gdpr/CookieConsent'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
 
+// Force dynamic rendering to avoid static generation timeout
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
   return (
     <>

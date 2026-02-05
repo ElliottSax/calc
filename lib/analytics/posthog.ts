@@ -21,7 +21,6 @@ export const initPostHog = () => {
           capture_pageleave: true, // Track when users leave
           autocapture: false, // Disable automatic event capture (we'll be explicit)
           session_recording: {
-            enabled: true,
             recordCrossOriginIframes: false,
           },
         }
