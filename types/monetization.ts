@@ -61,7 +61,7 @@ export interface BrokerComparison {
   commission?: string | {
     type: string
     amount: number
-    note: string
+    note?: string
   }
   affiliate?: {
     url: string
