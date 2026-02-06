@@ -46,7 +46,7 @@ export async function subscribeToNewsletter(
 ): Promise<SubscribeResponse> {
   const provider = getProvider()
 
-  logger.info({ email: params.email, provider, source: params.source }, 'Newsletter subscription attempt')
+  logger.info({ provider, source: params.source }, 'Newsletter subscription attempt')
 
   try {
     switch (provider) {
@@ -67,7 +67,7 @@ export async function subscribeToNewsletter(
         return mockSubscribe(params)
     }
   } catch (error) {
-    logger.error({ error, email: params.email, provider }, 'Newsletter subscription failed')
+    logger.error({ error, provider }, 'Newsletter subscription failed')
     return {
       success: false,
       error: 'Failed to subscribe. Please try again later.'
@@ -265,7 +265,7 @@ async function subscribeMailchimp(params: SubscribeParams): Promise<SubscribeRes
  * Mock implementation for development/testing
  */
 function mockSubscribe(params: SubscribeParams): SubscribeResponse {
-  logger.info({ email: params.email, source: params.source }, 'Mock subscription (no email sent)')
+  logger.info({ source: params.source }, 'Mock subscription (no email sent)')
 
   // In development, just log and return success
   return {
@@ -287,7 +287,7 @@ export async function sendWelcomeEmail(
   // TODO: Implement welcome email for each provider
   // Most providers have transactional email APIs for this
 
-  logger.info({ email, provider }, 'Welcome email would be sent here')
+  logger.info({ provider }, 'Welcome email would be sent here')
 
   return true
 }
