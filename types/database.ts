@@ -80,6 +80,8 @@ export interface Database {
           name: string
           added_at: string
           notes: string | null
+          target_yield: number | null
+          target_price: number | null
         }
         Insert: {
           id?: string
@@ -88,6 +90,8 @@ export interface Database {
           name: string
           added_at?: string
           notes?: string | null
+          target_yield?: number | null
+          target_price?: number | null
         }
         Update: {
           id?: string
@@ -96,6 +100,63 @@ export interface Database {
           name?: string
           added_at?: string
           notes?: string | null
+          target_yield?: number | null
+          target_price?: number | null
+        }
+      }
+      user_profiles: {
+        Row: {
+          id: string
+          user_id: string
+          subscription_plan: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          subscription_plan?: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          subscription_plan?: string
+          created_at?: string
+          updated_at?: string
+        }
+      }
+      calculation_history: {
+        Row: {
+          id: string
+          user_id: string
+          calculator_type: string
+          inputs: Json
+          results: Json
+          name: string | null
+          notes: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          calculator_type: string
+          inputs: Json
+          results: Json
+          name?: string | null
+          notes?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          calculator_type?: string
+          inputs?: Json
+          results?: Json
+          name?: string | null
+          notes?: string | null
+          created_at?: string
         }
       }
     }

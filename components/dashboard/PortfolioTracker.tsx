@@ -300,15 +300,15 @@ export function PortfolioTracker() {
               </defs>
               <CartesianGrid strokeDasharray="3 3" className="stroke-gray-700" />
               <XAxis dataKey="date" className="text-gray-400" />
-              <YAxis className="text-gray-400" tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`} />
+              <YAxis className="text-gray-400" tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`} />
               <Tooltip
-                contentStyle={{ 
-                  backgroundColor: '#1e293b', 
+                contentStyle={{
+                  backgroundColor: '#1e293b',
                   border: '1px solid #475569',
                   borderRadius: '8px',
                   color: '#fff'
                 }}
-                formatter={(value: any) => [`$${Number(value).toLocaleString()}`, 'Portfolio Value']}
+                formatter={(value: number) => [`$${Number(value).toLocaleString()}`, 'Portfolio Value']}
               />
               <Area
                 type="monotone"
@@ -399,7 +399,7 @@ export function PortfolioTracker() {
                       borderRadius: '8px',
                       color: '#fff'
                     }}
-                    formatter={(value: any, name) => [`${value}%`, name]}
+                    formatter={(value: number, name: string) => [`${value}%`, name]}
                   />
                   <RechartsPieChart data={allocationData} cx="50%" cy="50%" outerRadius={80}>
                     {allocationData.map((entry, index) => (

@@ -2,6 +2,8 @@
  * Structured data generators for SEO
  */
 
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+
 interface CalculatorStructuredData {
   name: string
   description: string
@@ -50,7 +52,7 @@ export function generateCalculatorSchema(data: CalculatorStructuredData) {
     "author": {
       "@type": "Organization",
       "name": "Dividend Calculator Hub",
-      "url": "https://dividendcalculatorhub.com"
+      "url": baseUrl
     }
   }
 }
@@ -61,7 +63,7 @@ export function generateFinancialCalculatorSchema() {
     "@type": "FinancialService",
     "name": "Dividend Calculator Hub",
     "description": "Free online dividend calculators and investment tools",
-    "url": "https://dividendcalculatorhub.com",
+    "url": baseUrl,
     "serviceType": "Financial Calculators",
     "areaServed": {
       "@type": "Country",
@@ -147,7 +149,7 @@ export function generateArticleSchema(article: {
       "name": "Dividend Calculator Hub",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://dividendcalculatorhub.com/logo.png"
+        "url": `${baseUrl}/logo.png`
       }
     },
     "mainEntityOfPage": {
@@ -172,7 +174,7 @@ export function generateStockProfileSchema(stock: {
     "name": stock.name,
     "tickerSymbol": stock.symbol,
     "description": stock.description,
-    "url": `https://dividendcalculatorhub.com/stocks/${stock.symbol.toLowerCase()}`,
+    "url": `${baseUrl}/stocks/${stock.symbol.toLowerCase()}`,
     "sameAs": [
       `https://finance.yahoo.com/quote/${stock.symbol}`,
       `https://www.google.com/finance/quote/${stock.symbol}:${stock.exchange}`

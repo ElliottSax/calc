@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "test": "echo \"Tests not yet implemented - use npm run test:manual\"",
+    "test": "vitest run",
     "test:manual": "echo \"Run manual tests as described in TESTING.md\"",
     "test:deploy": "node tests/scripts/validate-deployment.js",
     "test:functionality": "node -e \"console.log('Functionality tests - see tests/scripts/automated-tests.ts')\"",

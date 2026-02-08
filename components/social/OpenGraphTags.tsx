@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+
 interface OpenGraphTagsProps {
   title: string
   description: string
@@ -26,7 +28,7 @@ export function OpenGraphTags({
   tags = []
 }: OpenGraphTagsProps) {
   const canonicalUrl = url || (typeof window !== 'undefined' ? window.location.href : '')
-  const ogImage = image.startsWith('http') ? image : `https://dividendcalculatorhub.com${image}`
+  const ogImage = image.startsWith('http') ? image : `${baseUrl}${image}`
   
   return (
     <Head>
@@ -86,7 +88,7 @@ export function generateOGImageUrl(params: {
   yield?: number
   price?: number
 }): string {
-  const baseUrl = 'https://dividendcalculatorhub.com/api/og'
+  const ogBaseUrl = `${baseUrl}/api/og`
   const searchParams = new URLSearchParams()
   
   searchParams.append('title', params.title)
@@ -96,7 +98,7 @@ export function generateOGImageUrl(params: {
   if (params.yield) searchParams.append('yield', params.yield.toString())
   if (params.price) searchParams.append('price', params.price.toString())
   
-  return `${baseUrl}?${searchParams.toString()}`
+  return `${ogBaseUrl}?${searchParams.toString()}`
 }
 
 /**
@@ -146,7 +148,7 @@ export function BlogPostOGTags({ title, excerpt, author, publishDate, slug, tags
       author={author}
       publishedTime={publishDate}
       tags={tags}
-      url={`https://dividendcalculatorhub.com/blog/${slug}`}
+      url={`${baseUrl}/blog/${slug}`}
     />
   )
 }

@@ -1,12 +1,15 @@
+import nextDynamic from 'next/dynamic'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
-import { MultiCalculator } from '@/components/calculators/MultiCalculator'
-import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
-import { SocialProof } from '@/components/hero/SocialProof'
-import { FeaturesShowcase } from '@/components/hero/FeaturesShowcase'
-import { BehaviorTriggeredPopup } from '@/components/lead-generation/BehaviorTriggeredPopup'
-import { CookieConsent } from '@/components/gdpr/CookieConsent'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
+
+// Dynamic imports for heavy below-fold components
+const MultiCalculator = nextDynamic(() => import('@/components/calculators/MultiCalculator').then(m => ({ default: m.MultiCalculator })))
+const BrokerComparisonTable = nextDynamic(() => import('@/components/affiliate/BrokerComparisonTable').then(m => ({ default: m.BrokerComparisonTable })))
+const SocialProof = nextDynamic(() => import('@/components/hero/SocialProof').then(m => ({ default: m.SocialProof })))
+const FeaturesShowcase = nextDynamic(() => import('@/components/hero/FeaturesShowcase').then(m => ({ default: m.FeaturesShowcase })))
+const BehaviorTriggeredPopup = nextDynamic(() => import('@/components/lead-generation/BehaviorTriggeredPopup').then(m => ({ default: m.BehaviorTriggeredPopup })), { ssr: false })
+const CookieConsent = nextDynamic(() => import('@/components/gdpr/CookieConsent').then(m => ({ default: m.CookieConsent })), { ssr: false })
 
 // Force dynamic rendering to avoid static generation timeout
 export const dynamic = 'force-dynamic'

@@ -1,22 +1,47 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card } from '@/components/ui/card'
 import {
-  Calculator,
   TrendingUp,
   DollarSign,
-  PiggyBank,
   LineChart,
   Coffee,
   Target
 } from 'lucide-react'
-import { DripCalculator } from './DripCalculator'
-import { CoffeeToRetirement } from '@/components/viral/CoffeeToRetirement'
-import { RetirementIncomeCalculator } from './RetirementIncomeCalculator'
-import { DividendGrowthCalculator } from './DividendGrowthCalculator'
-import { YieldOnCostCalculator } from './YieldOnCostCalculator'
+
+// Dynamic imports - only load the active calculator
+const DripCalculator = dynamic(() => import('./DripCalculator').then(m => ({ default: m.DripCalculator })), {
+  loading: () => <CalculatorSkeleton />,
+})
+const CoffeeToRetirement = dynamic(() => import('@/components/viral/CoffeeToRetirement').then(m => ({ default: m.CoffeeToRetirement })), {
+  loading: () => <CalculatorSkeleton />,
+})
+const RetirementIncomeCalculator = dynamic(() => import('./RetirementIncomeCalculator').then(m => ({ default: m.RetirementIncomeCalculator })), {
+  loading: () => <CalculatorSkeleton />,
+})
+const DividendGrowthCalculator = dynamic(() => import('./DividendGrowthCalculator').then(m => ({ default: m.DividendGrowthCalculator })), {
+  loading: () => <CalculatorSkeleton />,
+})
+const YieldOnCostCalculator = dynamic(() => import('./YieldOnCostCalculator').then(m => ({ default: m.YieldOnCostCalculator })), {
+  loading: () => <CalculatorSkeleton />,
+})
+
+function CalculatorSkeleton() {
+  return (
+    <div className="animate-pulse space-y-4 p-4">
+      <div className="h-8 bg-slate-200 dark:bg-slate-700 rounded w-1/3"></div>
+      <div className="space-y-3">
+        <div className="h-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
+        <div className="h-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
+        <div className="h-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
+      </div>
+      <div className="h-12 bg-slate-200 dark:bg-slate-700 rounded w-1/4"></div>
+    </div>
+  )
+}
 
 export function MultiCalculator() {
   const [activeTab, setActiveTab] = useState('drip')

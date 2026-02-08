@@ -186,7 +186,7 @@ export async function GET(request: NextRequest) {
               }}
             >
               <span>📊</span>
-              <span>DividendCalculatorHub.com</span>
+              <span>Dividend Calculator Pro</span>
             </div>
           </div>
         </div>

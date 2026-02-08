@@ -18,8 +18,9 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
   const post = getBlogPostBySlug(params.slug)
-  
+
   if (!post) {
     return {
       title: 'Blog Post Not Found',
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const metadata = generateBlogPostMetadata(post)
-  
+
   return {
     title: metadata.title,
     description: metadata.description,
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: metadata.title,
       description: metadata.description,
       type: 'article',
-      url: `https://dividendcalculatorhub.com/blog/${post.slug}`,
+      url: `${baseUrl}/blog/${post.slug}`,
       siteName: 'Dividend Calculator Hub',
       publishedTime: metadata.publishDate,
       authors: [metadata.author],
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [`/og/blog/${post.slug}.png`]
     },
     alternates: {
-      canonical: `https://dividendcalculatorhub.com/blog/${post.slug}`
+      canonical: `${baseUrl}/blog/${post.slug}`
     }
   }
 }
@@ -71,19 +72,20 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPostPage({ params }: PageProps) {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
   const post = getBlogPostBySlug(params.slug)
-  
+
   if (!post) {
     notFound()
   }
 
   const relatedPosts = getRelatedPosts(post.slug)
-  
+
   // Breadcrumb data
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://dividendcalculatorhub.com' },
-    { name: 'Blog', url: 'https://dividendcalculatorhub.com/blog' },
-    { name: post.title, url: `https://dividendcalculatorhub.com/blog/${post.slug}` }
+    { name: 'Home', url: baseUrl },
+    { name: 'Blog', url: `${baseUrl}/blog` },
+    { name: post.title, url: `${baseUrl}/blog/${post.slug}` }
   ]
 
   // Structured data
@@ -94,7 +96,7 @@ export default function BlogPostPage({ params }: PageProps) {
     datePublished: post.publishDate,
     dateModified: post.updatedDate || post.publishDate,
     imageUrl: `/og/blog/${post.slug}.png`,
-    url: `https://dividendcalculatorhub.com/blog/${post.slug}`
+    url: `${baseUrl}/blog/${post.slug}`
   })
 
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems)
