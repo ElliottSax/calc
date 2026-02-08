@@ -4,6 +4,8 @@ import { AristocratsExplorer } from '@/components/aristocrats/AristocratsExplore
 // Force dynamic rendering to avoid build-time Supabase connection errors
 export const dynamic = 'force-dynamic'
 
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+
 export const metadata: Metadata = {
   title: 'Dividend Aristocrats List 2024 | Complete Analysis & Screener',
   description: 'Explore all S&P 500 Dividend Aristocrats with our interactive screener. Filter by yield, growth rate, and sector. Updated daily with real-time data.',
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Dividend Aristocrats List 2024 - Interactive Screener',
     description: 'Complete list of S&P 500 Dividend Aristocrats with yields, growth rates, and detailed analysis.',
     type: 'website',
-    url: 'https://dividendcalculatorhub.com/aristocrats',
+    url: `${baseUrl}/aristocrats`,
     images: [
       {
         url: '/og-aristocrats.png',
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     description: 'Interactive screener for S&P 500 Dividend Aristocrats'
   },
   alternates: {
-    canonical: 'https://dividendcalculatorhub.com/aristocrats'
+    canonical: `${baseUrl}/aristocrats`
   }
 }
 
@@ -38,7 +40,7 @@ const structuredData = {
   "@type": "WebPage",
   "name": "Dividend Aristocrats List and Screener",
   "description": "Interactive screener for S&P 500 Dividend Aristocrats with real-time data",
-  "url": "https://dividendcalculatorhub.com/aristocrats",
+  "url": `${baseUrl}/aristocrats`,
   "mainEntity": {
     "@type": "Table",
     "about": "S&P 500 Dividend Aristocrats",
@@ -51,13 +53,13 @@ const structuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://dividendcalculatorhub.com"
+        "item": baseUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Dividend Aristocrats",
-        "item": "https://dividendcalculatorhub.com/aristocrats"
+        "item": `${baseUrl}/aristocrats`
       }
     ]
   }

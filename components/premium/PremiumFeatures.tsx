@@ -56,9 +56,9 @@ export function PremiumFeatures({
           .from('user_profiles')
           .select('subscription_plan')
           .eq('user_id', user.id)
-          .single()
-        
-        setUserPlan(profile?.subscription_plan || 'free')
+          .single() as { data: { subscription_plan: string } | null }
+
+        setUserPlan((profile?.subscription_plan as 'free' | 'premium') || 'free')
       }
     }
     checkAuth()

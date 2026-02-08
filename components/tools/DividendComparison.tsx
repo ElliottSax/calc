@@ -365,7 +365,7 @@ export function DividendComparison() {
               />
               <YAxis 
                 className="text-gray-400"
-                tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`}
                 label={{ value: 'Portfolio Value', angle: -90, position: 'insideLeft' }}
               />
               <Tooltip 

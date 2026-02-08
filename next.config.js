@@ -98,9 +98,6 @@ const nextConfig = {
       'date-fns'
     ],
   },
-
-  // Output optimization
-  output: 'standalone',
 }
 
 module.exports = nextConfig

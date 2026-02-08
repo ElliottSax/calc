@@ -26,6 +26,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: StockPageProps): Promise<Metadata> {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app';
   const ticker = params.symbol.toUpperCase();
   const stockData = await getStockData(ticker);
 
@@ -54,7 +55,7 @@ export async function generateMetadata({
       title,
       description,
       type: 'website',
-      url: `https://dividendcalculatorhub.com/stocks/${ticker.toLowerCase()}`,
+      url: `${baseUrl}/stocks/${ticker.toLowerCase()}`,
     },
     twitter: {
       card: 'summary_large_image',

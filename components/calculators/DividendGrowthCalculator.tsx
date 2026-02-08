@@ -205,7 +205,7 @@ export function DividendGrowthCalculator() {
                 <YAxis
                   stroke="#64748b"
                   style={{ fontSize: '13px', fontWeight: 500 }}
-                  tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                  tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`}
                 />
                 <Tooltip
                   contentStyle={{
@@ -214,7 +214,7 @@ export function DividendGrowthCalculator() {
                     borderRadius: '8px',
                     color: '#fff'
                   }}
-                  formatter={(value: any) => [formatCurrency(value), 'Annual Income']}
+                  formatter={(value: number) => [formatCurrency(value), 'Annual Income']}
                 />
                 <Line
                   type="monotone"

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { DIVIDEND_ARISTOCRATS } from '@/lib/data/dividend-aristocrats'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendcalculator.pro'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
   const currentDate = new Date()
 
   // Generate stock page URLs dynamically

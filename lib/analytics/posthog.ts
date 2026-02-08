@@ -14,7 +14,7 @@ export const initPostHog = () => {
         process.env.NEXT_PUBLIC_POSTHOG_KEY || 'phc_placeholder_key_replace_me',
         {
           api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
-          loaded: (posthog) => {
+          loaded: (_ph: any) => {
             if (process.env.NODE_ENV === 'development') console.log('PostHog loaded');
           },
           capture_pageview: true, // Auto-capture page views

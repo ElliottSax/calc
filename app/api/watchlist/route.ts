@@ -85,8 +85,8 @@ export async function POST(request: NextRequest) {
     }
     
     // Add to watchlist
-    const { data, error } = await supabase
-      .from('watchlist')
+    const { data, error } = await (supabase
+      .from('watchlist') as any)
       .insert({
         user_id: user.id,
         symbol,

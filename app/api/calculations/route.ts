@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerSupabaseClient } from '@/lib/supabase/server'
 import { logger } from '@/lib/logger'
-import type { CalculationHistory } from '@/types/monetization'
 
 /**
  * GET /api/calculations - Get user's calculation history
@@ -92,8 +91,8 @@ export async function POST(request: NextRequest) {
       .from('user_profiles')
       .select('subscription_plan')
       .eq('user_id', user.id)
-      .single()
-    
+      .single() as { data: { subscription_plan: string } | null }
+
     // Free users limited to 10 saved calculations
     if (profile?.subscription_plan === 'free') {
       const { count } = await supabase
@@ -114,18 +113,16 @@ export async function POST(request: NextRequest) {
     }
     
     // Save calculation
-    const calculation: Partial<CalculationHistory> = {
-      userId: user.id,
-      calculatorType: calculatorType,
-      inputs,
-      results,
-      name: name || `${calculatorType} calculation`,
-      notes
-    }
-    
-    const { data, error } = await supabase
-      .from('calculation_history')
-      .insert(calculation)
+    const { data, error } = await (supabase
+      .from('calculation_history') as any)
+      .insert({
+        user_id: user.id,
+        calculator_type: calculatorType,
+        inputs,
+        results,
+        name: name || `${calculatorType} calculation`,
+        notes
+      })
       .select()
       .single()
     

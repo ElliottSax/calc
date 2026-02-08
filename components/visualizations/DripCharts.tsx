@@ -485,7 +485,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     stroke="#94a3b8"
                   />
                   <YAxis
-                    tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                    tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`}
                     label={{ value: 'Portfolio Value', angle: -90, position: 'insideLeft' }}
                     className="text-slate-600 dark:text-slate-400"
                     tick={{ fontSize: 13, fontWeight: 500 }}
@@ -644,7 +644,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     stroke="#94a3b8"
                   />
                   <YAxis
-                    tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                    tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`}
                     label={{ value: 'Value', angle: -90, position: 'insideLeft' }}
                     className="text-slate-600 dark:text-slate-400"
                     tick={{ fontSize: 13, fontWeight: 500 }}
@@ -748,7 +748,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                     stroke="#94a3b8"
                   />
                   <YAxis
-                    tickFormatter={(value) => `$${value.toLocaleString()}`}
+                    tickFormatter={(value: number) => `$${value.toLocaleString()}`}
                     label={{ value: 'Annual Dividend', angle: -90, position: 'insideLeft' }}
                     className="text-slate-600 dark:text-slate-400"
                     tick={{ fontSize: 13, fontWeight: 500 }}
@@ -837,7 +837,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   />
                   <YAxis
                     yAxisId="left"
-                    tickFormatter={(value) => formatNumber(value)}
+                    tickFormatter={(value: number) => formatNumber(value)}
                     label={{ value: 'Number of Shares', angle: -90, position: 'insideLeft' }}
                     className="text-slate-600 dark:text-slate-400"
                     tick={{ fontSize: 13, fontWeight: 500 }}
@@ -846,7 +846,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                   <YAxis
                     yAxisId="right"
                     orientation="right"
-                    tickFormatter={(value) => `$${value.toFixed(0)}`}
+                    tickFormatter={(value: number) => `$${value.toFixed(0)}`}
                     label={{ value: 'Share Price', angle: 90, position: 'insideRight' }}
                     className="text-slate-600 dark:text-slate-400"
                     tick={{ fontSize: 13, fontWeight: 500 }}
@@ -939,7 +939,7 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
                       stroke="#94a3b8"
                     />
                     <YAxis
-                      tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                      tickFormatter={(value: number) => `$${(value / 1000).toFixed(0)}k`}
                       label={{ value: 'Portfolio Value', angle: -90, position: 'insideLeft' }}
                       className="text-slate-600 dark:text-slate-400"
                       tick={{ fontSize: 13, fontWeight: 500 }}

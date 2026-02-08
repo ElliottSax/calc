@@ -20,6 +20,8 @@ import { Header } from '@/components/layout/Header'
 import { getLearningPaths, getCourses, LearningPath, Course } from '@/lib/learn/learning-data'
 import { StructuredData } from '@/components/seo/StructuredData'
 
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+
 export const metadata: Metadata = {
   title: 'Dividend University | Free Dividend Investing Education',
   description: 'Master dividend investing with our comprehensive learning center. Free courses, guides, and resources for building wealth through dividend stocks.',
@@ -28,10 +30,10 @@ export const metadata: Metadata = {
     title: 'Dividend University | Free Dividend Investing Education',
     description: 'Master dividend investing with our comprehensive learning center.',
     type: 'website',
-    url: 'https://dividendcalculatorhub.com/learn'
+    url: `${baseUrl}/learn`
   },
   alternates: {
-    canonical: 'https://dividendcalculatorhub.com/learn'
+    canonical: `${baseUrl}/learn`
   }
 }
 
@@ -45,7 +47,7 @@ export default function LearnPage() {
     "@type": "EducationalOrganization",
     "name": "Dividend University",
     "description": "Free dividend investing education and courses",
-    "url": "https://dividendcalculatorhub.com/learn",
+    "url": `${baseUrl}/learn`,
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Dividend Investing Courses",
