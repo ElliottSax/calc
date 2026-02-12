@@ -1,4 +1,5 @@
 import nextDynamic from 'next/dynamic'
+import Link from 'next/link'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
@@ -8,8 +9,8 @@ const MultiCalculator = nextDynamic(() => import('@/components/calculators/Multi
 const BrokerComparisonTable = nextDynamic(() => import('@/components/affiliate/BrokerComparisonTable').then(m => ({ default: m.BrokerComparisonTable })))
 const SocialProof = nextDynamic(() => import('@/components/hero/SocialProof').then(m => ({ default: m.SocialProof })))
 const FeaturesShowcase = nextDynamic(() => import('@/components/hero/FeaturesShowcase').then(m => ({ default: m.FeaturesShowcase })))
-const BehaviorTriggeredPopup = nextDynamic(() => import('@/components/lead-generation/BehaviorTriggeredPopup').then(m => ({ default: m.BehaviorTriggeredPopup })), { ssr: false })
-const CookieConsent = nextDynamic(() => import('@/components/gdpr/CookieConsent').then(m => ({ default: m.CookieConsent })), { ssr: false })
+const BehaviorTriggeredPopup = nextDynamic(() => import('@/components/lead-generation/BehaviorTriggeredPopup').then(m => ({ default: m.BehaviorTriggeredPopup })))
+const CookieConsent = nextDynamic(() => import('@/components/gdpr/CookieConsent').then(m => ({ default: m.CookieConsent })))
 
 // Force dynamic rendering to avoid static generation timeout
 export const dynamic = 'force-dynamic'
@@ -81,6 +82,40 @@ export default function Home() {
 
       {/* Features Showcase */}
       <FeaturesShowcase />
+
+      {/* Free Guides Promotion -- Cross-project: BookCLI content as lead magnets */}
+      <section className="py-16 bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-emerald-950/20 dark:via-blue-950/20 dark:to-purple-950/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-4 py-2 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-300 dark:border-emerald-700 mb-6">
+              <span className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                FREE EXPERT GUIDES
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4">
+              Accelerate Your Wealth-Building Journey
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+              Download free guides on financial freedom, wealth building, and investing psychology.
+              Written to the standard of bestsellers like &quot;The Psychology of Money&quot; and &quot;The Simple Path to Wealth.&quot;
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/resources/lead-magnets"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg transition-colors shadow-lg hover:shadow-xl"
+              >
+                Browse Free Guides
+              </Link>
+              <Link
+                href="/resources"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold text-lg transition-colors border border-slate-200 dark:border-slate-700"
+              >
+                View All Resources
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SEO Content Section */}
       <section className="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">

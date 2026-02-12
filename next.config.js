@@ -86,9 +86,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  // Server external packages (moved from experimental in Next.js 15)
+  serverExternalPackages: ['pino', 'pino-pretty'],
+
   // Performance and optimization features
   experimental: {
-    serverComponentsExternalPackages: ['pino', 'pino-pretty'],
     optimizePackageImports: [
       'recharts',
       'lucide-react',

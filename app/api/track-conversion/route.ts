@@ -1,5 +1,7 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
+import { requireAdminAuth } from '@/lib/auth-admin'
+import { applyRateLimit, RateLimitPresets } from '@/lib/rate-limit'
 
 interface ConversionData {
   platform: string
@@ -18,7 +20,10 @@ interface ConversionData {
 // Simulated database for tracking conversions
 const conversions: ConversionData[] = []
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
+  // Apply rate limiting to prevent conversion tracking abuse
+  const rateLimitError = applyRateLimit(request, 'conversion-post', RateLimitPresets.CONVERSION_TRACKING)
+  if (rateLimitError) return rateLimitError
   try {
     const data: ConversionData = await request.json()
     const cookieStore = cookies()
@@ -107,8 +112,15 @@ export async function POST(request: Request) {
   }
 }
 
-// Get conversion analytics
-export async function GET(request: Request) {
+// Get conversion analytics (ADMIN ONLY - contains sensitive business data)
+export async function GET(request: NextRequest) {
+  // Require admin authentication for viewing analytics
+  const authError = requireAdminAuth(request)
+  if (authError) return authError
+
+  // Apply rate limiting
+  const rateLimitError = applyRateLimit(request, 'conversion-get', RateLimitPresets.MONITORING)
+  if (rateLimitError) return rateLimitError
   try {
     const { searchParams } = new URL(request.url)
     const platform = searchParams.get('platform')

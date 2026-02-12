@@ -335,6 +335,42 @@ export default function ResourcesPage() {
           </TabsContent>
 
           <TabsContent value="downloads" className="space-y-6">
+            {/* Lead Magnets Banner -- Cross-project integration: BookCLI content */}
+            <Card className="border-2 border-emerald-200 dark:border-emerald-800 bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-emerald-950/30 dark:via-blue-950/30 dark:to-purple-950/30">
+              <CardContent className="pt-6 pb-6">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-blue-500 flex items-center justify-center">
+                      <BookOpen className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-xl font-bold mb-1">Free Investing Guides</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
+                      Download expert-written guides on financial freedom, wealth building, and investing
+                      psychology. Get free preview chapters of full-length books.
+                    </p>
+                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                      <Badge variant="secondary" className="bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300">
+                        4 Guides Available
+                      </Badge>
+                      <Badge variant="secondary" className="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+                        15,000+ Words Free
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <Link href="/resources/lead-magnets">
+                      <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                        <Download className="w-4 h-4 mr-2" />
+                        Browse Free Guides
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-2 border-blue-100 dark:border-blue-900/50">
                 <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30">

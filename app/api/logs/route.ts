@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { logger } from '@/lib/logger'
+import { applyRateLimit, RateLimitPresets } from '@/lib/rate-limit'
 
 export async function POST(request: NextRequest) {
+  // Apply strict rate limiting to prevent DoS via log flooding
+  const rateLimitError = applyRateLimit(request, 'logs', RateLimitPresets.LOG_INGESTION)
+  if (rateLimitError) return rateLimitError
   try {
     const { logs } = await request.json()
     

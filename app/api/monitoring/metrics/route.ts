@@ -1,4 +1,6 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
+import { requireAdminAuth } from '@/lib/auth-admin'
+import { applyRateLimit, RateLimitPresets } from '@/lib/rate-limit'
 
 interface PerformanceMetric {
   name: string
@@ -48,8 +50,15 @@ function getSystemHealth(): SystemHealth {
   }
 }
 
-// Get metrics endpoint
-export async function GET(request: Request) {
+// Get metrics endpoint (ADMIN ONLY)
+export async function GET(request: NextRequest) {
+  // Require admin authentication for viewing metrics
+  const authError = requireAdminAuth(request)
+  if (authError) return authError
+
+  // Apply rate limiting
+  const rateLimitError = applyRateLimit(request, 'metrics-get', RateLimitPresets.MONITORING)
+  if (rateLimitError) return rateLimitError
   const { searchParams } = new URL(request.url)
   const category = searchParams.get('category')
   const timeRange = parseInt(searchParams.get('range') || '3600000') // Default 1 hour
@@ -120,8 +129,11 @@ export async function GET(request: Request) {
   })
 }
 
-// Record metrics endpoint
-export async function POST(request: Request) {
+// Record metrics endpoint (rate limited but public for client-side metrics)
+export async function POST(request: NextRequest) {
+  // Apply strict rate limiting to prevent metric flooding
+  const rateLimitError = applyRateLimit(request, 'metrics-post', RateLimitPresets.MONITORING)
+  if (rateLimitError) return rateLimitError
   try {
     const body = await request.json()
 
@@ -180,8 +192,15 @@ export async function POST(request: Request) {
   }
 }
 
-// Dashboard data endpoint
-export async function PUT(request: Request) {
+// Dashboard data endpoint (ADMIN ONLY)
+export async function PUT(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) return authError
+
+  // Apply rate limiting
+  const rateLimitError = applyRateLimit(request, 'metrics-dashboard', RateLimitPresets.MONITORING)
+  if (rateLimitError) return rateLimitError
   const now = Date.now()
   const hour = 3600000
   const day = 86400000
