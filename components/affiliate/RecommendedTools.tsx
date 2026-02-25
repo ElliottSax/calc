@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { ExternalLink, TrendingUp, Search, PieChart, BarChart3 } from 'lucide-react'
-import { RECOMMENDED_TOOLS } from '@/lib/data/broker-affiliates'
+import { RECOMMENDED_TOOLS } from '@/lib/data/broker-affiliates-expanded'
 import { trackAffiliateClick } from '@/lib/analytics/tracking'
 
 const categoryIcons = {

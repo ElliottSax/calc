@@ -565,3 +565,63 @@ export function getRecommendedBrokers(
   // Return top 5 recommendations
   return filtered.slice(0, 5);
 }
+
+// Recommended tools affiliate links
+export const RECOMMENDED_TOOLS = [
+  {
+    id: 'morningstar',
+    name: 'Morningstar Premium',
+    description: 'Professional-grade investment research and portfolio analysis',
+    category: 'research',
+    affiliateUrl: 'https://www.morningstar.com/premium?ref=dividendcalchub',
+    commission: '30% recurring',
+    features: [
+      'Stock & fund analysis',
+      'Portfolio X-Ray',
+      'Fair value estimates',
+      'Analyst reports'
+    ]
+  },
+  {
+    id: 'seeking-alpha',
+    name: 'Seeking Alpha Premium',
+    description: 'Crowd-sourced content and analysis for dividend investors',
+    category: 'research',
+    affiliateUrl: 'https://seekingalpha.com/premium?source=dividendcalchub',
+    commission: '25% recurring',
+    features: [
+      'Dividend scorecards',
+      'Quant ratings',
+      'Earnings call transcripts',
+      'Real-time alerts'
+    ]
+  },
+  {
+    id: 'yahoo-finance-plus',
+    name: 'Yahoo Finance Plus',
+    description: 'Enhanced market data and advanced charting tools',
+    category: 'data',
+    affiliateUrl: 'https://finance.yahoo.com/plus?src=dividendcalchub',
+    commission: '$15 per signup',
+    features: [
+      'Advanced charting',
+      'Company insights',
+      'Enhanced screeners',
+      'Portfolio analytics'
+    ]
+  },
+  {
+    id: 'personal-capital',
+    name: 'Personal Capital',
+    description: 'Free wealth management and tracking tools',
+    category: 'portfolio',
+    affiliateUrl: 'https://www.personalcapital.com?utm_source=dividendcalchub',
+    commission: '$100 per qualified lead',
+    features: [
+      'Net worth tracking',
+      'Investment checkup',
+      'Retirement planner',
+      'Fee analyzer'
+    ]
+  }
+]
