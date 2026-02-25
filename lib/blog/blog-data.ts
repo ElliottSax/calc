@@ -2,7 +2,21 @@
  * Blog post data and utilities
  */
 
-import { NEW_BLOG_POSTS_METADATA, readBlogContent, blogContentExists } from './blog-content'
+// Dynamic imports for blog content (server-side only)
+let readBlogContent: any
+let blogContentExists: any
+
+if (typeof window === 'undefined') {
+  try {
+    const blogContent = require('./blog-content')
+    readBlogContent = blogContent.readBlogContent
+    blogContentExists = blogContent.blogContentExists
+  } catch (e) {
+    // Fallback for build time
+    readBlogContent = () => ''
+    blogContentExists = () => false
+  }
+}
 
 export interface BlogPostSummary {
   slug: string
@@ -550,10 +564,16 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
 
   if (!post) return undefined
 
-  // If content is empty, try to load from markdown file
+  // If content is empty, try to load from markdown file (server-side only)
   if (!post.content || post.content === '') {
-    if (blogContentExists(slug)) {
-      post.content = readBlogContent(slug)
+    if (typeof window === 'undefined' && blogContentExists && readBlogContent) {
+      try {
+        if (blogContentExists(slug)) {
+          post.content = readBlogContent(slug)
+        }
+      } catch (e) {
+        console.warn(`Failed to load blog content for ${slug}:`, e)
+      }
     }
   }
 
