@@ -21,15 +21,37 @@ export function LeadMagnetForm() {
 
     setIsSubmitting(true)
 
-    // TODO: Integrate with email service (ConvertKit, Mailchimp, etc.)
-    // For now, simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    try {
+      // Call the email subscription API
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          name,
+          leadMagnet: 'dividend-toolkit',
+          timestamp: Date.now(),
+        }),
+      })
 
-    // Redirect to thank you page with download
-    window.location.href = `/free-guide/thank-you?email=${encodeURIComponent(email)}`
+      const data = await response.json()
 
-    setIsSubmitting(false)
-    setSubmitted(true)
+      if (!data.success) {
+        throw new Error(data.error || 'Subscription failed')
+      }
+
+      // Redirect to thank you page with download
+      window.location.href = `/free-guide/thank-you?email=${encodeURIComponent(email)}`
+
+      setSubmitted(true)
+    } catch (error) {
+      console.error('Subscription error:', error)
+      alert('Failed to subscribe. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (submitted) {
