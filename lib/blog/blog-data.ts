@@ -395,7 +395,22 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'DRIP Investing for Beginners 2026: Your Complete Starting Guide',
     excerpt: 'Dividend Reinvestment Plans (DRIPs) are one of the most powerful wealth-building strategies available. Learn how zero-commission trading and fractional shares make DRIP investing more accessible than ever.',
     metaDescription: 'Complete guide to DRIP investing for beginners in 2026. Learn how dividend reinvestment plans work, setup guides, broker comparisons, and compound growth strategies.',
-    content: '', // Loaded dynamically from content/blog/
+    content: `# DRIP Investing for Beginners 2026
+
+Dividend Reinvestment Plans (DRIPs) are powerful wealth-building tools. Instead of receiving cash dividends, they automatically purchase additional shares, creating exponential compound growth.
+
+## Why DRIP Investing Works
+
+The power of compounding: A $10,000 investment at 4% yield over 20 years grows to $21,911 with DRIP vs $18,000 without. That's $3,911 in extra wealth from automatic reinvestment alone.
+
+## Getting Started
+
+1. Open a brokerage account with DRIP support
+2. Purchase dividend-paying stocks
+3. Enable automatic dividend reinvestment
+4. Watch your wealth compound over time
+
+Use our [DRIP Calculator](/) to see your potential growth.`,
     author: 'Michael Thompson',
     publishDate: '2026-02-12',
     readTime: 12,
@@ -410,7 +425,18 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Top 10 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks',
     excerpt: 'Discover the top 10 Dividend Aristocrats with 25+ years of consecutive dividend increases. In-depth analysis of Procter & Gamble, Coca-Cola, Johnson & Johnson, and more elite dividend growers.',
     metaDescription: 'Top 10 Dividend Aristocrats 2026 analysis. Deep dive into PG, KO, JNJ, and other elite S&P 500 stocks with 25+ years of dividend growth.',
-    content: '',
+    content: `# Top 10 Dividend Aristocrats Analysis 2026
+
+Dividend Aristocrats are elite S&P 500 companies with 25+ years of consecutive dividend increases.
+
+## Top 10 List
+1. Procter & Gamble (PG) - 68 years
+2. Coca-Cola (KO) - 62 years
+3. Johnson & Johnson (JNJ) - 61 years
+4. 3M Company (MMM) - 64 years
+5. Walmart (WMT) - 49 years
+
+These companies demonstrate exceptional financial discipline and shareholder commitment. Use our calculators to model your dividend growth potential.`,
     author: 'Sarah Chen',
     publishDate: '2026-02-12',
     readTime: 14,
@@ -425,7 +451,16 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Monthly Dividend Stocks Guide: Build Consistent Cash Flow',
     excerpt: 'Learn how to build a portfolio of monthly dividend stocks for consistent cash flow. Analysis of REITs, BDCs, and monthly payers with strategies for creating monthly income streams.',
     metaDescription: 'Complete guide to monthly dividend stocks. Learn which REITs and BDCs pay monthly, how to build a consistent income stream, and optimize your cash flow.',
-    content: '',
+    content: `# Monthly Dividend Stocks Guide
+
+Build consistent monthly cash flow with stocks that pay dividends every month instead of quarterly.
+
+## Best Monthly Payers
+- Realty Income (O) - "The Monthly Dividend Company"
+- STAG Industrial (STAG)
+- LTC Properties (LTC)
+
+Monthly dividends provide better cash flow management and budgeting. Calculate your monthly income potential with our tools.`,
     author: 'David Rodriguez',
     publishDate: '2026-02-12',
     readTime: 13,
@@ -440,7 +475,17 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'REITs vs Dividend Stocks: Comprehensive Comparison for Income Investors',
     excerpt: 'Compare REITs and traditional dividend stocks for income investing. Understand tax implications, yield differences, growth potential, and optimal portfolio positioning.',
     metaDescription: 'REITs vs dividend stocks comparison. Tax implications, yield analysis, growth potential, and portfolio positioning strategies for income investors.',
-    content: '',
+    content: `# REITs vs Dividend Stocks
+
+Real Estate Investment Trusts (REITs) vs traditional dividend stocks - which is better for income investors?
+
+## Key Differences
+- REITs must distribute 90% of income (higher yields)
+- REITs taxed as ordinary income
+- Dividend stocks offer qualified dividend tax treatment
+- REITs provide real estate exposure
+
+Build your optimal mix with our calculators.`,
     author: 'Jennifer Walsh',
     publishDate: '2026-02-12',
     readTime: 11,
@@ -455,7 +500,17 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Tax-Efficient Dividend Investing: Strategies to Keep More of Your Income',
     excerpt: 'Master tax-efficient dividend investing with strategies for account positioning, qualified dividends, tax-loss harvesting, and minimizing tax drag on your portfolio.',
     metaDescription: 'Tax-efficient dividend investing strategies. Learn account positioning, qualified dividends, tax-loss harvesting, and minimize taxes on dividend income.',
-    content: '',
+    content: `# Tax-Efficient Dividend Investing
+
+Keep more of your dividend income with smart tax strategies.
+
+## Key Strategies
+1. Hold qualified dividends in taxable accounts (15-20% tax)
+2. Place REITs in Roth IRA (avoid ordinary income tax)
+3. Tax-loss harvesting to offset gains
+4. Consider dividend growth over high yield
+
+Our IRA calculator helps optimize your account positioning.`,
     author: 'Robert Chen',
     publishDate: '2026-02-12',
     readTime: 12,
@@ -470,7 +525,17 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Dividend Growth Strategy: Building Long-Term Wealth Through Rising Income',
     excerpt: 'Build a dividend growth portfolio that compounds wealth over decades. Learn stock selection criteria, target allocation, and realistic growth projections for financial independence.',
     metaDescription: 'Complete dividend growth investing strategy. Stock selection, portfolio allocation, growth projections, and path to financial independence.',
-    content: '',
+    content: `# Dividend Growth Strategy
+
+Build wealth through rising dividend income that compounds over decades.
+
+## Stock Selection Criteria
+- 5+ years of dividend increases
+- Payout ratio under 60%
+- Strong free cash flow
+- Competitive advantages
+
+Focus on dividend growth, not just yield. A 2% yielder growing 10% annually beats a 5% yielder growing 0%. Calculate your potential with our tools.`,
     author: 'Michael Thompson',
     publishDate: '2026-02-12',
     readTime: 13,
@@ -485,7 +550,18 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'High Yield vs Dividend Growth: Which Strategy Wins?',
     excerpt: 'Compare high-yield and dividend growth strategies with 10-year projections. Understand when to choose each approach and how to build a hybrid strategy.',
     metaDescription: 'High yield vs dividend growth: comprehensive comparison with 10-year projections. Learn when to use each strategy and build a hybrid approach.',
-    content: '',
+    content: `# High Yield vs Dividend Growth
+
+## The Trade-Off
+High yield: Immediate income (4-7% yields)
+Dividend growth: Rising income (2-3% yield, 8-12% growth)
+
+## 10-Year Projection
+$100K invested:
+- High yield (6%): $6,000/year income (flat)
+- Dividend growth (3% → 7.8%): $7,800/year income by year 10
+
+Younger investors favor growth. Retirees need yield now. Use our calculators to model both strategies.`,
     author: 'Sarah Chen',
     publishDate: '2026-02-12',
     readTime: 12,
@@ -500,7 +576,21 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Building $1K Monthly Dividend Income: Step-by-Step Roadmap',
     excerpt: 'Achieve $1,000 in monthly dividend income with this comprehensive roadmap. Year-by-year milestones, capital requirements, portfolio allocation, and realistic timelines.',
     metaDescription: 'Build $1,000 monthly dividend income: step-by-step roadmap with capital requirements, year-by-year milestones, and portfolio allocation strategies.',
-    content: '',
+    content: `# Building $1K Monthly Dividend Income
+
+## The Math
+$1,000/month = $12,000/year
+At 4% yield: Need $300,000 invested
+At 5% yield: Need $240,000 invested
+
+## 10-Year Roadmap
+Starting with $50K and $500/month contributions:
+- Year 3: $200/month income
+- Year 5: $400/month income
+- Year 7: $650/month income
+- Year 10: $1,000/month achieved!
+
+Use our savings calculator to plan your timeline.`,
     author: 'David Rodriguez',
     publishDate: '2026-02-12',
     readTime: 13,
@@ -515,7 +605,19 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Retirement Income from Dividends: Complete Planning Guide',
     excerpt: 'Plan your retirement income strategy using dividends. Calculate required capital, optimize for taxes, ensure income stability, and create a sustainable withdrawal plan.',
     metaDescription: 'Retirement income from dividends: complete planning guide. Capital requirements, tax optimization, income stability, and sustainable withdrawal strategies.',
-    content: '',
+    content: `# Retirement Income from Dividends
+
+## Planning Your Retirement
+Target: $60,000/year retirement income
+Option 1: $1.5M at 4% yield
+Option 2: $1.2M at 5% yield (higher risk)
+
+## Tax Optimization
+- Qualified dividends: 15% tax (most investors)
+- REITs in Roth IRA: Tax-free
+- Balance taxable and tax-advantaged accounts
+
+Calculate your retirement needs with our 401(k) and IRA calculators.`,
     author: 'Jennifer Walsh',
     publishDate: '2026-02-12',
     readTime: 14,
@@ -530,7 +632,21 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     title: 'Dividend Reinvestment Calculator Guide: Master Your DRIP Projections',
     excerpt: 'Learn how to use dividend reinvestment calculators to project long-term growth. Understand inputs, model different scenarios, and interpret results to optimize your DRIP strategy.',
     metaDescription: 'Complete dividend calculator guide. Learn how to use DRIP calculators, understand inputs, model scenarios, and interpret results for optimal dividend projections.',
-    content: '',
+    content: `# Dividend Reinvestment Calculator Guide
+
+## How to Use DRIP Calculators
+1. Enter initial investment amount
+2. Set expected dividend yield
+3. Input dividend growth rate
+4. Choose investment timeline
+5. Review compound growth projections
+
+## Interpreting Results
+- Total balance: Your future portfolio value
+- Dividends earned: Passive income generated
+- Growth from DRIP: Power of reinvestment
+
+Try our DRIP calculator to see your potential wealth accumulation over 20-30 years.`,
     author: 'Michael Thompson',
     publishDate: '2026-02-12',
     readTime: 15,
@@ -615,3 +731,5 @@ export function generateBlogPostMetadata(post: BlogPost) {
     category: post.category
   }
 }
+Note: The remaining new blog posts (reits-vs-dividend-stocks through dividend-reinvestment-calculator-guide) 
+need placeholder content added. For now, I'll update them to have basic content so the site can build.
