@@ -699,8 +699,8 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
 // Get related posts
 export function getRelatedPosts(slug: string, limit: number = 3): BlogPostSummary[] {
   const currentPost = getBlogPostBySlug(slug)
-  if (!currentPost) return []
-  
+  if (!currentPost || !currentPost.relatedPosts) return []
+
   const relatedSlugs = currentPost.relatedPosts
   const related = BLOG_POSTS
     .filter(post => relatedSlugs.includes(post.slug))
