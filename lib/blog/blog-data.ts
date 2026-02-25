@@ -2,6 +2,8 @@
  * Blog post data and utilities
  */
 
+import { NEW_BLOG_POSTS_METADATA, readBlogContent, blogContentExists } from './blog-content'
+
 export interface BlogPostSummary {
   slug: string
   title: string
@@ -370,6 +372,159 @@ Evaluate high-yield opportunities with our [Dividend Safety Calculator](/) to as
     keywords: 'high yield dividend stocks, dividend traps, dividend safety, income investing risks',
     featured: false,
     relatedPosts: ['dividend-aristocrats-complete-guide-2024', 'building-dividend-portfolio-beginners']
+  },
+  // ========================================
+  // NEW BLOG POSTS FROM content/blog/ (Feb 2026)
+  // ========================================
+  {
+    slug: 'drip-investing-for-beginners-2026',
+    title: 'DRIP Investing for Beginners 2026: Your Complete Starting Guide',
+    excerpt: 'Dividend Reinvestment Plans (DRIPs) are one of the most powerful wealth-building strategies available. Learn how zero-commission trading and fractional shares make DRIP investing more accessible than ever.',
+    metaDescription: 'Complete guide to DRIP investing for beginners in 2026. Learn how dividend reinvestment plans work, setup guides, broker comparisons, and compound growth strategies.',
+    content: '', // Loaded dynamically from content/blog/
+    author: 'Michael Thompson',
+    publishDate: '2026-02-12',
+    readTime: 12,
+    tags: ['DRIP', 'Beginner Investing', 'Dividend Reinvestment', 'Compound Growth'],
+    category: 'Education',
+    keywords: 'DRIP investing, dividend reinvestment plan, automatic investing, compound growth, zero commission',
+    featured: true,
+    relatedPosts: ['dividend-reinvestment-calculator-guide', 'dividend-growth-strategy']
+  },
+  {
+    slug: 'top-10-dividend-aristocrats-analysis',
+    title: 'Top 10 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks',
+    excerpt: 'Discover the top 10 Dividend Aristocrats with 25+ years of consecutive dividend increases. In-depth analysis of Procter & Gamble, Coca-Cola, Johnson & Johnson, and more elite dividend growers.',
+    metaDescription: 'Top 10 Dividend Aristocrats 2026 analysis. Deep dive into PG, KO, JNJ, and other elite S&P 500 stocks with 25+ years of dividend growth.',
+    content: '',
+    author: 'Sarah Chen',
+    publishDate: '2026-02-12',
+    readTime: 14,
+    tags: ['Dividend Aristocrats', 'Stock Analysis', 'Dividend Growth', 'S&P 500'],
+    category: 'Analysis',
+    keywords: 'dividend aristocrats, top dividend stocks, dividend growth, S&P 500, reliable dividends',
+    featured: true,
+    relatedPosts: ['dividend-growth-strategy', 'drip-investing-for-beginners-2026']
+  },
+  {
+    slug: 'monthly-dividend-stocks-guide',
+    title: 'Monthly Dividend Stocks Guide: Build Consistent Cash Flow',
+    excerpt: 'Learn how to build a portfolio of monthly dividend stocks for consistent cash flow. Analysis of REITs, BDCs, and monthly payers with strategies for creating monthly income streams.',
+    metaDescription: 'Complete guide to monthly dividend stocks. Learn which REITs and BDCs pay monthly, how to build a consistent income stream, and optimize your cash flow.',
+    content: '',
+    author: 'David Rodriguez',
+    publishDate: '2026-02-12',
+    readTime: 13,
+    tags: ['Monthly Dividends', 'REITs', 'Cash Flow', 'Income Investing'],
+    category: 'Strategy',
+    keywords: 'monthly dividend stocks, monthly dividends, REITs, consistent income, cash flow investing',
+    featured: false,
+    relatedPosts: ['reits-vs-dividend-stocks', 'building-1k-monthly-dividend-income']
+  },
+  {
+    slug: 'reits-vs-dividend-stocks',
+    title: 'REITs vs Dividend Stocks: Comprehensive Comparison for Income Investors',
+    excerpt: 'Compare REITs and traditional dividend stocks for income investing. Understand tax implications, yield differences, growth potential, and optimal portfolio positioning.',
+    metaDescription: 'REITs vs dividend stocks comparison. Tax implications, yield analysis, growth potential, and portfolio positioning strategies for income investors.',
+    content: '',
+    author: 'Jennifer Walsh',
+    publishDate: '2026-02-12',
+    readTime: 11,
+    tags: ['REITs', 'Dividend Stocks', 'Tax Strategy', 'Asset Allocation'],
+    category: 'Comparison',
+    keywords: 'REITs vs stocks, real estate investment trusts, dividend comparison, tax-efficient investing',
+    featured: false,
+    relatedPosts: ['tax-efficient-dividend-investing', 'monthly-dividend-stocks-guide']
+  },
+  {
+    slug: 'tax-efficient-dividend-investing',
+    title: 'Tax-Efficient Dividend Investing: Strategies to Keep More of Your Income',
+    excerpt: 'Master tax-efficient dividend investing with strategies for account positioning, qualified dividends, tax-loss harvesting, and minimizing tax drag on your portfolio.',
+    metaDescription: 'Tax-efficient dividend investing strategies. Learn account positioning, qualified dividends, tax-loss harvesting, and minimize taxes on dividend income.',
+    content: '',
+    author: 'Robert Chen',
+    publishDate: '2026-02-12',
+    readTime: 12,
+    tags: ['Tax Efficiency', 'Account Positioning', 'Qualified Dividends', 'Tax Planning'],
+    category: 'Tax Strategy',
+    keywords: 'tax-efficient investing, dividend taxes, qualified dividends, tax-loss harvesting, Roth IRA',
+    featured: true,
+    relatedPosts: ['reits-vs-dividend-stocks', 'retirement-income-from-dividends']
+  },
+  {
+    slug: 'dividend-growth-strategy',
+    title: 'Dividend Growth Strategy: Building Long-Term Wealth Through Rising Income',
+    excerpt: 'Build a dividend growth portfolio that compounds wealth over decades. Learn stock selection criteria, target allocation, and realistic growth projections for financial independence.',
+    metaDescription: 'Complete dividend growth investing strategy. Stock selection, portfolio allocation, growth projections, and path to financial independence.',
+    content: '',
+    author: 'Michael Thompson',
+    publishDate: '2026-02-12',
+    readTime: 13,
+    tags: ['Dividend Growth', 'Long-Term Investing', 'Portfolio Building', 'Financial Independence'],
+    category: 'Strategy',
+    keywords: 'dividend growth investing, dividend growth stocks, compounding dividends, financial independence',
+    featured: true,
+    relatedPosts: ['top-10-dividend-aristocrats-analysis', 'drip-investing-for-beginners-2026']
+  },
+  {
+    slug: 'high-yield-vs-dividend-growth',
+    title: 'High Yield vs Dividend Growth: Which Strategy Wins?',
+    excerpt: 'Compare high-yield and dividend growth strategies with 10-year projections. Understand when to choose each approach and how to build a hybrid strategy.',
+    metaDescription: 'High yield vs dividend growth: comprehensive comparison with 10-year projections. Learn when to use each strategy and build a hybrid approach.',
+    content: '',
+    author: 'Sarah Chen',
+    publishDate: '2026-02-12',
+    readTime: 12,
+    tags: ['High Yield', 'Dividend Growth', 'Strategy Comparison', 'Portfolio Allocation'],
+    category: 'Comparison',
+    keywords: 'high yield dividends, dividend growth, yield vs growth, dividend strategy',
+    featured: false,
+    relatedPosts: ['dividend-growth-strategy', 'high-yield-dividend-stocks-risks-rewards']
+  },
+  {
+    slug: 'building-1k-monthly-dividend-income',
+    title: 'Building $1K Monthly Dividend Income: Step-by-Step Roadmap',
+    excerpt: 'Achieve $1,000 in monthly dividend income with this comprehensive roadmap. Year-by-year milestones, capital requirements, portfolio allocation, and realistic timelines.',
+    metaDescription: 'Build $1,000 monthly dividend income: step-by-step roadmap with capital requirements, year-by-year milestones, and portfolio allocation strategies.',
+    content: '',
+    author: 'David Rodriguez',
+    publishDate: '2026-02-12',
+    readTime: 13,
+    tags: ['Income Goals', 'Portfolio Building', 'Monthly Income', 'Financial Planning'],
+    category: 'Case Study',
+    keywords: '$1000 monthly dividends, passive income, dividend income goal, financial milestones',
+    featured: true,
+    relatedPosts: ['monthly-dividend-stocks-guide', 'retirement-income-from-dividends']
+  },
+  {
+    slug: 'retirement-income-from-dividends',
+    title: 'Retirement Income from Dividends: Complete Planning Guide',
+    excerpt: 'Plan your retirement income strategy using dividends. Calculate required capital, optimize for taxes, ensure income stability, and create a sustainable withdrawal plan.',
+    metaDescription: 'Retirement income from dividends: complete planning guide. Capital requirements, tax optimization, income stability, and sustainable withdrawal strategies.',
+    content: '',
+    author: 'Jennifer Walsh',
+    publishDate: '2026-02-12',
+    readTime: 14,
+    tags: ['Retirement Planning', 'Income Strategy', 'Tax Optimization', 'Withdrawal Strategy'],
+    category: 'Retirement',
+    keywords: 'retirement dividends, retirement income, dividend retirement strategy, sustainable income',
+    featured: false,
+    relatedPosts: ['tax-efficient-dividend-investing', 'building-1k-monthly-dividend-income']
+  },
+  {
+    slug: 'dividend-reinvestment-calculator-guide',
+    title: 'Dividend Reinvestment Calculator Guide: Master Your DRIP Projections',
+    excerpt: 'Learn how to use dividend reinvestment calculators to project long-term growth. Understand inputs, model different scenarios, and interpret results to optimize your DRIP strategy.',
+    metaDescription: 'Complete dividend calculator guide. Learn how to use DRIP calculators, understand inputs, model scenarios, and interpret results for optimal dividend projections.',
+    content: '',
+    author: 'Michael Thompson',
+    publishDate: '2026-02-12',
+    readTime: 15,
+    tags: ['Calculator Guide', 'DRIP', 'Financial Planning', 'Projections'],
+    category: 'Tools',
+    keywords: 'dividend calculator, DRIP calculator, dividend projections, financial modeling',
+    featured: true,
+    relatedPosts: ['drip-investing-for-beginners-2026', 'dividend-growth-strategy']
   }
 ]
 
@@ -391,7 +546,18 @@ export function getBlogPosts(): BlogPostSummary[] {
 
 // Get blog post by slug
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-  return BLOG_POSTS.find(post => post.slug === slug)
+  const post = BLOG_POSTS.find(p => p.slug === slug)
+
+  if (!post) return undefined
+
+  // If content is empty, try to load from markdown file
+  if (!post.content || post.content === '') {
+    if (blogContentExists(slug)) {
+      post.content = readBlogContent(slug)
+    }
+  }
+
+  return post
 }
 
 // Get related posts
