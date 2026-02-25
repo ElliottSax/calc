@@ -1412,7 +1412,7 @@ export default function HowToLiveOffDividendsPage() {
                 <InlineSignup
                   title="Master Dividend Investing"
                   description="Get our free dividend investing checklist plus weekly tips on building passive income."
-                  tags={['dividend-retirement', 'live-off-dividends']}
+                  source="live-off-dividends"
                 />
 
                 {/* Broker Section */}
