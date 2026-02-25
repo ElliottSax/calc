@@ -731,5 +731,3 @@ export function generateBlogPostMetadata(post: BlogPost) {
     category: post.category
   }
 }
-Note: The remaining new blog posts (reits-vs-dividend-stocks through dividend-reinvestment-calculator-guide) 
-need placeholder content added. For now, I'll update them to have basic content so the site can build.

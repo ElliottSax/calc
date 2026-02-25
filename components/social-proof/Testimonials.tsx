@@ -22,7 +22,7 @@ const testimonials = [
     name: 'Jennifer Rodriguez',
     role: 'Early Retiree',
     location: 'Miami, FL',
-    quote: 'Used the dividend calculator to plan my retirement at 52. The projections were spot-on. I'm now living off $4,200/month in dividend income thanks to the planning these tools enabled.',
+    quote: 'Used the dividend calculator to plan my retirement at 52. The projections were spot-on. I\'m now living off $4,200/month in dividend income thanks to the planning these tools enabled.',
     rating: 5,
     image: '👩‍🦰'
   },
