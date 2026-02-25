@@ -46,7 +46,7 @@ const testimonials = [
     name: 'Robert Williams',
     role: 'Small Business Owner',
     location: 'Denver, CO',
-    quote: 'The savings goal calculator keeps me accountable. Set a $50K goal for a down payment and I'm ahead of schedule. Love the visual progress tracking and personalized recommendations.',
+    quote: 'The savings goal calculator keeps me accountable. Set a $50K goal for a down payment and I\'m ahead of schedule. Love the visual progress tracking and personalized recommendations.',
     rating: 5,
     image: '👨‍💼'
   }
