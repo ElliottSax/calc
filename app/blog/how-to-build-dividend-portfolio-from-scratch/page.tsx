@@ -1110,7 +1110,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">1.9%</td>
                             </tr>
                             <tr className="bg-slate-100 dark:bg-slate-800 font-bold">
-                              <td className="border p-3" colspan="3">Portfolio Totals</td>
+                              <td className="border p-3" colSpan={3}>Portfolio Totals</td>
                               <td className="border p-3 text-right">$10,000</td>
                               <td className="border p-3 text-center">3.0%</td>
                             </tr>
@@ -1148,7 +1148,7 @@ export default function BuildDividendPortfolioPage() {
                           </thead>
                           <tbody>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">CORE ETF HOLDINGS (60%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>CORE ETF HOLDINGS (60%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3 font-semibold">SCHD</td>
@@ -1165,7 +1165,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">1.9%</td>
                             </tr>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">INDIVIDUAL DIVIDEND GROWTH STOCKS (25%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>INDIVIDUAL DIVIDEND GROWTH STOCKS (25%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3 font-semibold">JNJ</td>
@@ -1196,7 +1196,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">0.7%</td>
                             </tr>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">HIGH YIELD POSITIONS (15%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>HIGH YIELD POSITIONS (15%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3 font-semibold">O</td>
@@ -1220,7 +1220,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">3.4%</td>
                             </tr>
                             <tr className="bg-slate-100 dark:bg-slate-800 font-bold">
-                              <td className="border p-3" colspan="3">Portfolio Totals</td>
+                              <td className="border p-3" colSpan={3}>Portfolio Totals</td>
                               <td className="border p-3 text-right">$50,000</td>
                               <td className="border p-3 text-center">2.8%</td>
                             </tr>
@@ -1259,7 +1259,7 @@ export default function BuildDividendPortfolioPage() {
                           </thead>
                           <tbody>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">DIVIDEND GROWTH STOCKS (50%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>DIVIDEND GROWTH STOCKS (50%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3">MSFT</td>
@@ -1339,7 +1339,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">1.8%</td>
                             </tr>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">HIGH YIELD POSITIONS (30%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>HIGH YIELD POSITIONS (30%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3">O</td>
@@ -1391,7 +1391,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">5.8%</td>
                             </tr>
                             <tr className="bg-slate-200 dark:bg-slate-700">
-                              <td className="border p-3 font-bold" colspan="5">DIVERSIFICATION ETFs (20%)</td>
+                              <td className="border p-3 font-bold" colSpan={5}>DIVERSIFICATION ETFs (20%)</td>
                             </tr>
                             <tr>
                               <td className="border p-3">SCHD</td>
@@ -1408,7 +1408,7 @@ export default function BuildDividendPortfolioPage() {
                               <td className="border p-3 text-center">3.1%</td>
                             </tr>
                             <tr className="bg-slate-100 dark:bg-slate-800 font-bold">
-                              <td className="border p-3" colspan="3">Portfolio Totals (20 positions)</td>
+                              <td className="border p-3" colSpan={3}>Portfolio Totals (20 positions)</td>
                               <td className="border p-3 text-right">$100,000</td>
                               <td className="border p-3 text-center">2.9%</td>
                             </tr>
