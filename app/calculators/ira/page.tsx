@@ -3,6 +3,8 @@ import { Header } from '@/components/layout/Header'
 import { IRACalculator } from '@/components/calculators/IRACalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
+import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
+import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema } from '@/lib/seo/structured-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
@@ -43,6 +45,10 @@ export default function IRACalculatorPage() {
               See exactly how much you'll save with each option.
             </p>
           </div>
+
+          <SimpleUsageCounter />
+          <CompactTrustBadges />
+
           <IRACalculator />
         </div>
       </main>

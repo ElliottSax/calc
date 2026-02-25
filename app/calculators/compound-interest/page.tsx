@@ -3,6 +3,8 @@ import { Header } from '@/components/layout/Header'
 import { CompoundInterestCalculator } from '@/components/calculators/CompoundInterestCalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
+import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
+import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema, generateFAQSchema } from '@/lib/seo/structured-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
@@ -125,6 +127,10 @@ export default function CompoundInterestCalculatorPage() {
               See detailed breakdowns, compare compounding frequencies, and plan your financial future.
             </p>
           </div>
+
+          {/* Social Proof */}
+          <SimpleUsageCounter />
+          <CompactTrustBadges />
 
           {/* Calculator */}
           <CompoundInterestCalculator />

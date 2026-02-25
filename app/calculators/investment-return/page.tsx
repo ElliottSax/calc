@@ -3,6 +3,8 @@ import { Header } from '@/components/layout/Header'
 import { InvestmentReturnCalculator } from '@/components/calculators/InvestmentReturnCalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
+import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
+import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema } from '@/lib/seo/structured-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
@@ -42,6 +44,10 @@ export default function InvestmentReturnCalculatorPage() {
               Calculate your investment returns, ROI, and annualized performance to track portfolio success.
             </p>
           </div>
+
+          <SimpleUsageCounter />
+          <CompactTrustBadges />
+
           <InvestmentReturnCalculator />
         </div>
       </main>

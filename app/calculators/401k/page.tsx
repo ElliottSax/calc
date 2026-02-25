@@ -3,6 +3,8 @@ import { Header } from '@/components/layout/Header'
 import { FourZeroOneKCalculator } from '@/components/calculators/FourZeroOneKCalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
+import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
+import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema, generateFAQSchema } from '@/lib/seo/structured-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
@@ -100,6 +102,9 @@ export default function FourZeroOneKCalculatorPage() {
               See exactly how much you'll have at retirement and plan your financial future.
             </p>
           </div>
+
+          <SimpleUsageCounter />
+          <CompactTrustBadges />
 
           <FourZeroOneKCalculator />
 
