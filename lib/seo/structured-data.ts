@@ -8,13 +8,13 @@ interface CalculatorStructuredData {
   name: string
   description: string
   url: string
-  category: string
-  inputFields: Array<{
+  category?: string
+  inputFields?: Array<{
     name: string
     description: string
     required: boolean
   }>
-  outputFields: Array<{
+  outputFields?: Array<{
     name: string
     description: string
   }>
@@ -28,17 +28,19 @@ export function generateCalculatorSchema(data: CalculatorStructuredData) {
     "description": data.description,
     "url": data.url,
     "applicationCategory": "FinanceApplication",
-    "applicationSubCategory": data.category,
+    "applicationSubCategory": data.category || "Calculator",
     "operatingSystem": "Any",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     },
-    "featureList": [
-      ...data.inputFields.map(field => `Input: ${field.name}`),
-      ...data.outputFields.map(field => `Output: ${field.name}`)
-    ],
+    ...(data.inputFields || data.outputFields ? {
+      "featureList": [
+        ...(data.inputFields || []).map(field => `Input: ${field.name}`),
+        ...(data.outputFields || []).map(field => `Output: ${field.name}`)
+      ]
+    } : {}),
     "screenshot": {
       "@type": "ImageObject",
       "url": `${data.url}/screenshot.png`,
