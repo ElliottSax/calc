@@ -5,18 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
-import {
-  Check,
-  X,
-  DollarSign,
-  TrendingUp,
-  Shield,
-  Smartphone,
-  Zap,
-  Award,
-  ArrowRight,
-  AlertCircle
-} from 'lucide-react'
+import { AlertCircle, ArrowRight, Award, BrokerRow, Check, Color, DollarSign, FeatureCard, Shield, Smartphone, TrendingUp, X, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How to Choose the Best Broker for Dividend Investing | 2026 Guide',

@@ -7,25 +7,7 @@ import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { InlineSignup } from '@/components/email/InlineSignup'
-import {
-  TrendingUp,
-  DollarSign,
-  Target,
-  Award,
-  CheckCircle2,
-  ArrowRight,
-  BarChart3,
-  ShieldCheck,
-  Percent,
-  PieChart,
-  Building2,
-  Crown,
-  LineChart,
-  XCircle,
-  AlertTriangle,
-  Zap,
-  Star
-} from 'lucide-react'
+import { AlertTriangle, ArrowRight, Award, BarChart3, Building2, CheckCircle2, Crown, DollarSign, LineChart, O, P, Percent, PieChart, ShieldCheck, Star, Target, TrendingUp, XCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Is PepsiCo (PEP) a Good Dividend Stock? 2026 Analysis',

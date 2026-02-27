@@ -6,31 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
-import {
-  TrendingUp,
-  DollarSign,
-  Target,
-  Award,
-  AlertCircle,
-  CheckCircle2,
-  ArrowRight,
-  BarChart3,
-  PieChart,
-  Building2,
-  Zap,
-  ShieldCheck,
-  Percent,
-  TrendingDown,
-  Activity,
-  XCircle,
-  Clock,
-  Crown,
-  LineChart,
-  Users,
-  Pill,
-  HeartPulse,
-  Scale
-} from 'lucide-react'
+import { Activity, AlertCircle, ArrowRight, Award, BarChart3, Building2, CheckCircle2, Clock, Crown, DollarSign, HeartPulse, J, LineChart, Percent, PieChart, Pill, Scale, ShieldCheck, Target, TrendingDown, TrendingUp, Users, XCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Johnson & Johnson Dividend Analysis: 62 Years of Increases (2026)',

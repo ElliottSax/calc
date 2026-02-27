@@ -5,14 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
-import {
-  Award,
-  TrendingUp,
-  DollarSign,
-  Calendar,
-  Shield,
-  ArrowRight
-} from 'lucide-react'
+import { ArrowRight, Award, Calendar, DollarSign, Shield, StockCard, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Top 10 Dividend Aristocrats for 2026 - Complete Analysis & Rankings',
