@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
-import { AlertCircle, ArrowRight, Award, CalcIcon, Calculator as CalcIcon, Calendar, CheckCircle2, DollarSign, Shield, Target, TrendingDown, TrendingUp, XCircle, Zap } from 'lucide-react'
+import { AlertCircle, ArrowRight, Award, Calculator as CalcIcon, Calendar, CheckCircle2, DollarSign, Shield, Target, TrendingDown, TrendingUp, XCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Covered Call + Dividend Strategy: Double Your Income in 2026',
