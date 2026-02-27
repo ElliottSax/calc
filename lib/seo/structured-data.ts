@@ -8,13 +8,13 @@ interface CalculatorStructuredData {
   name: string
   description: string
   url: string
-  category: string
-  inputFields: Array<{
+  category?: string
+  inputFields?: Array<{
     name: string
     description: string
     required: boolean
   }>
-  outputFields: Array<{
+  outputFields?: Array<{
     name: string
     description: string
   }>
@@ -36,8 +36,8 @@ export function generateCalculatorSchema(data: CalculatorStructuredData) {
       "priceCurrency": "USD"
     },
     "featureList": [
-      ...data.inputFields.map(field => `Input: ${field.name}`),
-      ...data.outputFields.map(field => `Output: ${field.name}`)
+      ...(data.inputFields || []).map(field => `Input: ${field.name}`),
+      ...(data.outputFields || []).map(field => `Output: ${field.name}`)
     ],
     "screenshot": {
       "@type": "ImageObject",
