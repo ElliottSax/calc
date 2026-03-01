@@ -5,7 +5,7 @@ import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
 import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Broker Comparison Tool - Compare Top Investment Brokers 2026',

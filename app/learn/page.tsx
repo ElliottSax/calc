@@ -20,7 +20,7 @@ import { Header } from '@/components/layout/Header'
 import { getLearningPaths, getCourses, LearningPath, Course } from '@/lib/learn/learning-data'
 import { StructuredData } from '@/components/seo/StructuredData'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Dividend University | Free Dividend Investing Education',
@@ -59,7 +59,7 @@ export default function LearnPage() {
           "description": course.description,
           "provider": {
             "@type": "Organization",
-            "name": "Dividend Calculator Hub"
+            "name": "Dividend Engines"
           }
         }
       }))

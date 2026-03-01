@@ -32,9 +32,9 @@ export default function DRIPCalculatorPage() {
   }
 
   const breadcrumbs = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://dividendcalculator.pro' },
-    { name: 'Calculators', url: 'https://dividendcalculator.pro/calculators' },
-    { name: 'DRIP Calculator', url: 'https://dividendcalculator.pro/calculators/drip-calculator' },
+    { name: 'Home', url: 'https://dividendengines.com' },
+    { name: 'Calculators', url: 'https://dividendengines.com/calculators' },
+    { name: 'DRIP Calculator', url: 'https://dividendengines.com/calculators/drip-calculator' },
   ])
 
   return (

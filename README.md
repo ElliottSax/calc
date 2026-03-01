@@ -1,6 +1,6 @@
-# Dividend Calculator Hub
+# Dividend Engines
 
-A professional-grade dividend investment calculator built with Next.js 14+, TypeScript, and modern web technologies.
+A professional-grade dividend investment calculator built with Next.js 15+, TypeScript, and modern web technologies.
 
 ## Features
 
@@ -47,7 +47,7 @@ A professional-grade dividend investment calculator built with Next.js 14+, Type
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/dividend-calculator-hub.git
+git clone https://github.com/yourusername/dividend-engines.git
 cd dividend-calculator-hub
 ```
 

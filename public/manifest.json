@@ -1,6 +1,6 @@
 {
-  "name": "Professional Dividend Calculator Suite",
-  "short_name": "DivCalc Pro",
+  "name": "Dividend Engines - Professional Dividend Calculator Suite",
+  "short_name": "Dividend Engines",
   "description": "Enterprise-grade dividend investment calculator with DRIP analysis, retirement planning, and portfolio optimization tools",
   "start_url": "/?source=pwa",
   "scope": "/",

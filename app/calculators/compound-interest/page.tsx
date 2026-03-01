@@ -7,7 +7,7 @@ import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
 import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema, generateFAQSchema } from '@/lib/seo/structured-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Compound Interest Calculator - Free Investment Growth Calculator 2026',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Free compound interest calculator. See how your money grows with regular contributions and compound interest over time.',
     type: 'website',
     url: `${baseUrl}/calculators/compound-interest`,
-    siteName: 'Dividend Calculator Hub',
+    siteName: 'Dividend Engines',
     images: [
       {
         url: '/og-compound-interest.png',

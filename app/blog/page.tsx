@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { TrendingUp, Clock, BookOpen, ArrowRight, Calculator, Shield, Target, BarChart3, Building2, Wallet, Globe, Zap, PiggyBank, Scale } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Dividend Investing Blog - Strategies, Analysis & Guides | Dividend Calculator Hub',
+  title: 'Dividend Investing Blog - Strategies, Analysis & Guides | Dividend Engines',
   description: 'Expert dividend investing guides, stock analysis, and strategies. 60+ in-depth articles on DRIP investing, dividend stocks, portfolio building, and passive income.',
   keywords: [
     'dividend investing blog',

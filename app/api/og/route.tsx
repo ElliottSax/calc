@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
     
-    const title = searchParams.get('title') || 'Dividend Calculator Hub'
+    const title = searchParams.get('title') || 'Dividend Engines'
     const description = searchParams.get('description') || 'Free dividend calculators and investment tools'
     const type = searchParams.get('type') as 'stock' | 'article' | 'calculator' || 'default'
     const symbol = searchParams.get('symbol')
@@ -186,7 +186,7 @@ export async function GET(request: NextRequest) {
               }}
             >
               <span>📊</span>
-              <span>Dividend Calculator Pro</span>
+              <span>Dividend Engines</span>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@ export async function GET(request: NextRequest) {
           }}
         >
           <div style={{ fontSize: 80, marginBottom: 20 }}>💰</div>
-          <div>Dividend Calculator Hub</div>
+          <div>Dividend Engines</div>
           <div style={{ fontSize: 24, opacity: 0.8, marginTop: 10 }}>
             Free dividend calculators and investment tools
           </div>

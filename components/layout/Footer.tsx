@@ -43,10 +43,10 @@ const FOOTER_LINKS = {
 }
 
 const SOCIAL_LINKS = [
-  { icon: Twitter, href: 'https://twitter.com/dividendcalcpro', label: 'Twitter' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/dividendcalcpro', label: 'LinkedIn' },
-  { icon: Youtube, href: 'https://youtube.com/@dividendcalcpro', label: 'YouTube' },
-  { icon: Facebook, href: 'https://facebook.com/dividendcalcpro', label: 'Facebook' },
+  { icon: Twitter, href: 'https://twitter.com/dividendengines', label: 'Twitter' },
+  { icon: Linkedin, href: 'https://linkedin.com/company/dividendengines', label: 'LinkedIn' },
+  { icon: Youtube, href: 'https://youtube.com/@dividendengines', label: 'YouTube' },
+  { icon: Facebook, href: 'https://facebook.com/dividendengines', label: 'Facebook' },
 ]
 
 const TRUST_BADGES = [

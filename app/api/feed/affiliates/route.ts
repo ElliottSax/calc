@@ -137,12 +137,12 @@ function generateXMLFeed(brokers: AffiliateBroker[]): string {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dividend Calculator Pro - Recommended Brokers</title>
-    <link>https://dividendcalculator.pro</link>
+    <title>Dividend Engines - Recommended Brokers</title>
+    <link>https://dividendengines.com</link>
     <description>Curated list of the best brokers for dividend investing</description>
     <language>en-US</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <generator>Dividend Calculator Pro Feed Generator</generator>
+    <generator>Dividend Engines Feed Generator</generator>
 
     ${brokers.map(broker => `
     <item>
@@ -207,7 +207,7 @@ async function generateProductFeed(): Promise<string> {
     brand: broker.name,
     condition: 'new',
     availability: 'in stock',
-    image_link: `https://dividendcalculator.pro/images/brokers/${broker.id}.png`,
+    image_link: `https://dividendengines.com/images/brokers/${broker.id}.png`,
     product_type: 'Financial Services > Investment Accounts',
     google_product_category: '3937', // Financial Services category
     custom_label_0: broker.bestFor,
@@ -218,8 +218,8 @@ async function generateProductFeed(): Promise<string> {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Dividend Calculator Pro - Broker Accounts</title>
-    <link>https://dividendcalculator.pro</link>
+    <title>Dividend Engines - Broker Accounts</title>
+    <link>https://dividendengines.com</link>
     <description>Investment brokerage accounts for dividend investors</description>
 
     ${products.map(product => `

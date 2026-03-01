@@ -136,10 +136,10 @@ export default function NotFound() {
             <HelpCircle className="w-4 h-4" />
             Need help? Contact us at{' '}
             <a
-              href="mailto:support@dividendcalculator.pro"
+              href="mailto:support@dividendengines.com"
               className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
             >
-              support@dividendcalculator.pro
+              support@dividendengines.com
             </a>
           </p>
         </div>

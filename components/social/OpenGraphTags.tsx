@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 interface OpenGraphTagsProps {
   title: string
@@ -21,7 +21,7 @@ export function OpenGraphTags({
   image = '/og/default.png',
   url,
   type = 'website',
-  siteName = 'Dividend Calculator Hub',
+  siteName = 'Dividend Engines',
   author,
   publishedTime,
   modifiedTime,
@@ -65,9 +65,9 @@ export function OpenGraphTags({
       
       {/* Additional meta tags for better sharing */}
       <meta property="fb:app_id" content="your-facebook-app-id" />
-      <meta name="twitter:app:name:iphone" content="Dividend Calculator Hub" />
-      <meta name="twitter:app:name:ipad" content="Dividend Calculator Hub" />
-      <meta name="twitter:app:name:googleplay" content="Dividend Calculator Hub" />
+      <meta name="twitter:app:name:iphone" content="Dividend Engines" />
+      <meta name="twitter:app:name:ipad" content="Dividend Engines" />
+      <meta name="twitter:app:name:googleplay" content="Dividend Engines" />
       
       {/* Schema.org for search engines */}
       <meta itemProp="name" content={title} />

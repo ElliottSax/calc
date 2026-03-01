@@ -4,7 +4,7 @@ import { AristocratsExplorer } from '@/components/aristocrats/AristocratsExplore
 // Force dynamic rendering to avoid build-time Supabase connection errors
 export const dynamic = 'force-dynamic'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Dividend Aristocrats List 2024 | Complete Analysis & Screener',

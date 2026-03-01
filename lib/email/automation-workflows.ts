@@ -93,7 +93,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'welcome-email',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -110,7 +110,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'drip-guide',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -127,7 +127,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'broker-comparison',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
     ],
@@ -153,7 +153,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'complete-calculation',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -178,7 +178,7 @@ export const WORKFLOW_TEMPLATES = {
               config: {
                 templateId: 'calculation-help',
                 fromName: 'Dividend Calculator Pro',
-                fromEmail: 'hello@dividendcalculator.pro',
+                fromEmail: 'hello@dividendengines.com',
               } as EmailStepConfig,
             },
           ],
@@ -199,7 +199,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'weekly-tip-1',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'tips@dividendcalculator.pro',
+          fromEmail: 'tips@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -216,7 +216,7 @@ export const WORKFLOW_TEMPLATES = {
         config: {
           templateId: 'weekly-tip-2',
           fromName: 'Dividend Calculator Pro',
-          fromEmail: 'tips@dividendcalculator.pro',
+          fromEmail: 'tips@dividendengines.com',
         } as EmailStepConfig,
       },
     ],

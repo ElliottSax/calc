@@ -12,7 +12,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <TrendingUp className="h-8 w-8 text-blue-600" />
             <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              Dividend Calculator Hub
+              Dividend Engines
             </h1>
           </Link>
           

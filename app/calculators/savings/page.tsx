@@ -7,7 +7,7 @@ import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
 import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema, generateFAQSchema } from '@/lib/seo/structured-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Savings Calculator - Calculate How to Reach Your Savings Goal 2026',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Calculate how long it will take to reach your savings goal. Get personalized recommendations and track your progress.',
     type: 'website',
     url: `${baseUrl}/calculators/savings`,
-    siteName: 'Dividend Calculator Hub'
+    siteName: 'Dividend Engines'
   },
   alternates: {
     canonical: `${baseUrl}/calculators/savings`

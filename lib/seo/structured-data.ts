@@ -2,7 +2,7 @@
  * Structured data generators for SEO
  */
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 interface CalculatorStructuredData {
   name: string
@@ -51,7 +51,7 @@ export function generateCalculatorSchema(data: CalculatorStructuredData) {
     },
     "author": {
       "@type": "Organization",
-      "name": "Dividend Calculator Hub",
+      "name": "Dividend Engines",
       "url": baseUrl
     }
   }
@@ -61,7 +61,7 @@ export function generateFinancialCalculatorSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Dividend Calculator Hub",
+    "name": "Dividend Engines",
     "description": "Free online dividend calculators and investment tools",
     "url": baseUrl,
     "serviceType": "Financial Calculators",
@@ -146,7 +146,7 @@ export function generateArticleSchema(article: {
     "url": article.url,
     "publisher": {
       "@type": "Organization",
-      "name": "Dividend Calculator Hub",
+      "name": "Dividend Engines",
       "logo": {
         "@type": "ImageObject",
         "url": `${baseUrl}/logo.png`

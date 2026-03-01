@@ -18,7 +18,7 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
   const post = getBlogPostBySlug(params.slug)
 
   if (!post) {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: metadata.description,
       type: 'article',
       url: `${baseUrl}/blog/${post.slug}`,
-      siteName: 'Dividend Calculator Hub',
+      siteName: 'Dividend Engines',
       publishedTime: metadata.publishDate,
       authors: [metadata.author],
       tags: post.tags,
@@ -72,7 +72,7 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPostPage({ params }: PageProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
   const post = getBlogPostBySlug(params.slug)
 
   if (!post) {

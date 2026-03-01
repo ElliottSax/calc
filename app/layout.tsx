@@ -3,8 +3,8 @@ import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
 import { WebVitals } from '@/components/analytics/WebVitals'
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendcalculator.pro'
-const siteName = process.env.NEXT_PUBLIC_APP_NAME || 'Dividend Calculator Pro'
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
+const siteName = process.env.NEXT_PUBLIC_APP_NAME || 'Dividend Engines'
 
 export const viewport: Viewport = {
   themeColor: [
@@ -19,8 +19,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Dividend Calculator Pro - FREE DRIP Calculator & 5 Investment Tools | 2025',
-    template: '%s | Dividend Calculator Pro - Financial Independence Tools',
+    default: 'Dividend Engines - FREE DRIP Calculator & 5 Investment Tools | 2025',
+    template: '%s | Dividend Engines - Financial Independence Tools',
   },
   description: '🔥 FREE dividend calculator suite with 5 powerful tools. Calculate DRIP returns up to 500% gains, compare 50+ dividend stocks, track yields, plan retirement income. Used by 10,000+ investors monthly!',
   keywords: [
@@ -67,15 +67,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'FREE Dividend Calculator - Calculate 500%+ DRIP Returns | Used by 10,000+ Investors',
-    description: '🚀 Professional dividend calculator trusted by 10,000+ investors. Calculate DRIP returns, compare stocks, track yields, plan retirement. Start building $1M+ portfolio today!',
+    title: 'FREE Dividend Calculator - Calculate 500%+ DRIP Returns | Dividend Engines',
+    description: '🚀 Professional dividend calculator from Dividend Engines. Calculate DRIP returns, compare stocks, track yields, plan retirement. Start building $1M+ portfolio today!',
     siteName: siteName,
     images: [
       {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Dividend Calculator Pro - Turn $10K into $1M with DRIP Investing',
+        alt: 'Dividend Engines - Turn $10K into $1M with DRIP Investing',
       },
     ],
   },
@@ -83,11 +83,11 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'FREE Dividend Calculator - 500%+ Returns | 10,000+ Users',
+    title: 'FREE Dividend Calculator - 500%+ Returns | Dividend Engines',
     description: '🚀 Calculate dividend returns with our professional DRIP calculator. Build passive income & achieve financial independence.',
     images: [`${siteUrl}/twitter-image.png`],
-    creator: '@dividendcalcpro',
-    site: '@dividendcalcpro',
+    creator: '@dividendengines',
+    site: '@dividendengines',
   },
 
   // Additional metadata
@@ -182,9 +182,9 @@ export default function RootLayout({
           height: 512
         },
         sameAs: [
-          'https://twitter.com/dividendcalcpro',
-          'https://www.linkedin.com/company/dividendcalcpro',
-          'https://www.youtube.com/@dividendcalcpro'
+          'https://twitter.com/dividendengines',
+          'https://www.linkedin.com/company/dividendengines',
+          'https://www.youtube.com/@dividendengines'
         ]
       },
       {

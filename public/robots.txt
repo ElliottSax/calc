@@ -1,5 +1,5 @@
-# Robots.txt for Dividend Calculator Pro
-# https://dividendcalculator.pro
+# Robots.txt for Dividend Engines
+# https://dividendengines.com
 
 # Allow all crawlers
 User-agent: *
@@ -45,7 +45,7 @@ User-agent: MJ12bot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://dividendcalculator.pro/sitemap.xml
+Sitemap: https://dividendengines.com/sitemap.xml
 
 # Host directive (for Yandex)
-Host: https://dividendcalculator.pro
+Host: https://dividendengines.com

@@ -7,7 +7,7 @@ import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
 import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 import { generateCalculatorSchema, generateFAQSchema } from '@/lib/seo/structured-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: '401(k) Calculator - Plan Your Retirement Savings with Employer Match 2026',
