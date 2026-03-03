@@ -12,14 +12,15 @@ import { getBlogPostBySlug, getRelatedPosts, generateBlogPostMetadata, BLOG_POST
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/seo/structured-data'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
-  const post = getBlogPostBySlug(params.slug)
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     return {
@@ -71,9 +72,10 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function BlogPostPage({ params }: PageProps) {
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
-  const post = getBlogPostBySlug(params.slug)
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     notFound()
