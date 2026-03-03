@@ -10,10 +10,11 @@ import type { AristocratDetails, DividendHistoryPoint } from '@/types/aristocrat
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: { symbol: string } }
+  { params }: { params: Promise<{ symbol: string }> }
 ) {
+  const { symbol: symbolParam } = await params;
   try {
-    const symbol = params.symbol.toUpperCase()
+    const symbol = symbolParam.toUpperCase()
     logger.info({ symbol }, 'Fetching aristocrat details')
     
     // Try to fetch from FMP API
