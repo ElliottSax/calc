@@ -15,7 +15,6 @@ export default function robots(): MetadataRoute.Robots {
           '/_next/',
           '/static/',
           '/*.json$',
-          '/*?*', // Temporarily block URLs with query parameters
           '/auth/',
         ],
       },

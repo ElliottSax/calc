@@ -258,7 +258,7 @@ export function CalculatorEmbedGenerator() {
  * Generate JavaScript embed code
  */
 function generateEmbedCode(size: string, theme: string): string {
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://yourdomain.com'
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://dividendengines.com'
   const width = size === 'small' ? '400px' : size === 'medium' ? '600px' : '100%'
   const height = size === 'small' ? '600px' : size === 'medium' ? '800px' : '1000px'
 
@@ -279,7 +279,7 @@ function generateEmbedCode(size: string, theme: string): string {
  * Generate iFrame embed code
  */
 function generateIframeCode(size: string, theme: string): string {
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://yourdomain.com'
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://dividendengines.com'
   const width = size === 'small' ? '400' : size === 'medium' ? '600' : '100%'
   const height = size === 'small' ? '600' : size === 'medium' ? '800' : '1000'
 

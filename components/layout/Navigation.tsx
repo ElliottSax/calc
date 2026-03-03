@@ -60,9 +60,14 @@ const NAVIGATION: NavSection[] = [
   },
   {
     label: 'Blog',
-    icon: Newspaper,
+    icon: FileText,
     href: '/blog',
-    badge: 'New',
+  },
+  {
+    label: 'News',
+    icon: Newspaper,
+    href: '/news',
+    badge: 'Live',
   },
   {
     label: 'Compare',
@@ -143,7 +148,7 @@ export function Navigation() {
               </div>
               <div className="flex flex-col">
                 <h1 className="text-xl font-bold text-slate-900 dark:text-white">
-                  Dividend<span className="text-blue-600">Pro</span>
+                  Dividend<span className="text-blue-600">Engines</span>
                 </h1>
                 <span className="text-xs text-slate-600 dark:text-slate-400">
                   Build Wealth Daily

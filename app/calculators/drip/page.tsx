@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     title: 'Free DRIP Calculator - Calculate Dividend Reinvestment Returns',
     description: 'See how dividend reinvestment can grow your wealth. Free calculator with interactive charts and year-by-year projections.',
     type: 'website',
-    url: 'https://yourdomain.com/calculators/drip',
+    url: 'https://dividendengines.com/calculators/drip',
   },
   alternates: {
-    canonical: 'https://yourdomain.com/calculators/drip'
+    canonical: 'https://dividendengines.com/calculators/drip'
   }
 }
 

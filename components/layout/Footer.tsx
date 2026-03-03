@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -8,7 +8,8 @@ import { Badge } from '@/components/ui/badge'
 import {
   TrendingUp, Mail, Twitter, Linkedin, Youtube, Facebook,
   Shield, Award, Users, Star, ExternalLink, ArrowRight,
-  Calculator, BookOpen, BarChart3, Newspaper, Download, Heart
+  Calculator, BookOpen, BarChart3, Newspaper, Download, Heart,
+  CheckCircle2, Loader2
 } from 'lucide-react'
 
 const FOOTER_LINKS = {
@@ -57,35 +58,109 @@ const TRUST_BADGES = [
 ]
 
 export function Footer() {
+  const [email, setEmail] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setError('')
+    setLoading(true)
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      setError('Please enter a valid email address')
+      setLoading(false)
+      return
+    }
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          source: 'footer'
+        })
+      })
+
+      const data = await response.json()
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed')
+      }
+
+      setSuccess(true)
+      setEmail('')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <footer className="bg-slate-900 text-white">
       {/* Newsletter Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl font-bold mb-4">
-              Join 25,000+ Smart Investors
-            </h3>
-            <p className="text-blue-100 mb-6">
-              Get weekly dividend picks, market analysis, and exclusive strategies delivered to your inbox
-            </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/70 h-12"
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-white/90"
-              >
-                Subscribe Free →
-              </Button>
-            </form>
-            <p className="text-xs text-blue-100 mt-3">
-              100% free • No spam • Unsubscribe anytime
-            </p>
+            {success ? (
+              <>
+                <CheckCircle2 className="h-12 w-12 text-white mx-auto mb-4" />
+                <h3 className="text-3xl font-bold mb-4">
+                  You're In!
+                </h3>
+                <p className="text-blue-100 mb-2">
+                  Check your inbox for your first dividend investing newsletter.
+                </p>
+                <p className="text-xs text-blue-200">
+                  Don't forget to check your spam folder if you don't see it.
+                </p>
+              </>
+            ) : (
+              <>
+                <h3 className="text-3xl font-bold mb-4">
+                  Join 25,000+ Smart Investors
+                </h3>
+                <p className="text-blue-100 mb-6">
+                  Get weekly dividend picks, market analysis, and exclusive strategies delivered to your inbox
+                </p>
+                <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    disabled={loading}
+                    className="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/70 h-12 disabled:opacity-50"
+                  />
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={loading}
+                    className="bg-white text-blue-600 hover:bg-white/90 disabled:opacity-50"
+                  >
+                    {loading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Subscribing...
+                      </>
+                    ) : (
+                      'Subscribe Free \u2192'
+                    )}
+                  </Button>
+                </form>
+                {error && (
+                  <p className="text-sm text-red-200 mt-3">{error}</p>
+                )}
+                <p className="text-xs text-blue-100 mt-3">
+                  100% free • No spam • Unsubscribe anytime
+                </p>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -103,7 +178,7 @@ export function Footer() {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold">
-                    Dividend<span className="text-blue-500">Pro</span>
+                    Dividend<span className="text-blue-500">Engines</span>
                   </h1>
                   <span className="text-xs text-slate-400">
                     Build Wealth Through Dividends
@@ -223,7 +298,7 @@ export function Footer() {
             {/* Bottom Bar */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-slate-800">
               <p className="text-sm text-slate-400">
-                © {new Date().getFullYear()} DividendPro. All rights reserved.
+                © {new Date().getFullYear()} Dividend Engines. All rights reserved.
               </p>
 
               <div className="flex items-center gap-6 text-sm text-slate-400">

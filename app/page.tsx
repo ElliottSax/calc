@@ -4,6 +4,10 @@ import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
 
+// Compliance components
+import { FinancialDisclaimer } from '@/components/compliance/FinancialDisclaimer'
+import { AffiliateDisclosureBanner } from '@/components/compliance/AffiliateDisclosureBanner'
+
 // Dynamic imports for heavy below-fold components
 const MultiCalculator = nextDynamic(() => import('@/components/calculators/MultiCalculator').then(m => ({ default: m.MultiCalculator })))
 const BrokerComparisonTable = nextDynamic(() => import('@/components/affiliate/BrokerComparisonTable').then(m => ({ default: m.BrokerComparisonTable })))
@@ -51,6 +55,9 @@ export default function Home() {
                 <MultiCalculator />
               </div>
             </div>
+
+            {/* Financial Disclaimer - Required for YMYL compliance */}
+            <FinancialDisclaimer variant="compact" className="mt-8" />
           </div>
         </div>
       </section>
@@ -72,6 +79,7 @@ export default function Home() {
                 Choose the best broker to start building your dividend portfolio
               </p>
             </div>
+            <AffiliateDisclosureBanner className="mb-6" />
             <BrokerComparisonTable />
           </div>
         </div>

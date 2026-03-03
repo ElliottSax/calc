@@ -1,0 +1,39 @@
+// Prisma Schema for Dividend Calculator (calc)
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// EMAIL SUBSCRIBERS - Shared across all sites
+model EmailSubscriber {
+  id                String    @id @default(uuid())
+  email             String
+  emailHash         String    @map("email_hash")
+  site              String    @default("calc") // "cardclassroom", "calc", "thestackguide"
+
+  source            String
+  preferences       String?
+
+  status            String    @default("active") // active, unsubscribed, bounced
+  verified          Boolean   @default(false)
+  verifiedAt        DateTime? @map("verified_at")
+  verificationToken String?   @unique @map("verification_token")
+
+  consentedAt       DateTime  @map("consented_at")
+  unsubscribedAt    DateTime? @map("unsubscribed_at")
+
+  sessionId         String    @map("session_id")
+  ipAddress         String?   @map("ip_address")
+
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  @@unique([email, site])
+  @@index([emailHash, site])
+  @@index([status, verified, site])
+  @@map("email_subscribers")
+}

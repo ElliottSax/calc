@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Dividend Engines - FREE DRIP Calculator & 5 Investment Tools | 2025',
+    default: 'Dividend Engines - FREE DRIP Calculator & Investment Tools | 2026',
     template: '%s | Dividend Engines - Financial Independence Tools',
   },
   description: '🔥 FREE dividend calculator suite with 5 powerful tools. Calculate DRIP returns up to 500% gains, compare 50+ dividend stocks, track yields, plan retirement income. Used by 10,000+ investors monthly!',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'fire calculator',
     'dividend tracker',
     'dividend screener',
-    'best dividend stocks 2025',
+    'best dividend stocks 2026',
     'dividend kings calculator',
     'S&P 500 dividend calculator',
     'ETF dividend calculator',

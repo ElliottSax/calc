@@ -199,7 +199,7 @@ function createOfflineResponse() {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Offline - Dividend Calculator</title>
+        <title>Offline - Dividend Engines</title>
         <style>
           body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
@@ -295,7 +295,7 @@ self.addEventListener('push', event => {
   }
 
   event.waitUntil(
-    self.registration.showNotification('Dividend Calculator', options)
+    self.registration.showNotification('Dividend Engines', options)
   )
 })
 
