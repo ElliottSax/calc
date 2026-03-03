@@ -24,9 +24,9 @@ import {
 import { getBrokerBySlug, getAllBrokers } from '@/lib/data/broker-details'
 
 interface BrokerPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -37,7 +37,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BrokerPageProps): Promise<Metadata> {
-  const broker = getBrokerBySlug(params.slug)
+  const { slug } = await params
+  const broker = getBrokerBySlug(slug)
 
   if (!broker) {
     return { title: 'Broker Not Found' }
@@ -50,8 +51,9 @@ export async function generateMetadata({ params }: BrokerPageProps): Promise<Met
   }
 }
 
-export default function BrokerPage({ params }: BrokerPageProps) {
-  const broker = getBrokerBySlug(params.slug)
+export default async function BrokerPage({ params }: BrokerPageProps) {
+  const { slug } = await params
+  const broker = getBrokerBySlug(slug)
 
   if (!broker) {
     notFound()

@@ -12,9 +12,9 @@ export const dynamic = 'force-dynamic'
 export const dynamicParams = true
 
 interface StockPageProps {
-  params: {
+  params: Promise<{
     symbol: string;
-  };
+  }>;
 }
 
 // Disable static generation for now to speed up builds
@@ -26,8 +26,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: StockPageProps): Promise<Metadata> {
+  const { symbol } = await params;
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com';
-  const ticker = params.symbol.toUpperCase();
+  const ticker = symbol.toUpperCase();
   const stockData = await getStockData(ticker);
 
   if (!stockData) {
@@ -66,7 +67,8 @@ export async function generateMetadata({
 }
 
 export default async function StockDividendPage({ params }: StockPageProps) {
-  const ticker = params.symbol.toUpperCase();
+  const { symbol } = await params;
+  const ticker = symbol.toUpperCase();
   const stockData = await getStockData(ticker);
 
   if (!stockData) {
