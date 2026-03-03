@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
   if (rateLimitError) return rateLimitError
   try {
     const data: ConversionData = await request.json()
-    const cookieStore = cookies()
+    const cookieStore = await cookies()
 
     // Get affiliate tracking data from cookies
     const affiliateData = cookieStore.get('affiliate_data')
