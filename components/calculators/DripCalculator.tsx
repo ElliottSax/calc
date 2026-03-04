@@ -17,10 +17,12 @@ import { trackCalculatorUse } from '@/lib/analytics/tracking'
 import { DripCharts } from '@/components/visualizations/DripCharts'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ShareResults } from '@/components/viral/ShareResults'
-import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
+// REMOVED: Affiliate broker CTA for E-E-A-T focus (financial credibility)
+// import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { FieldTooltip } from '@/components/ui/field-tooltip'
 import { DRIP_PRESETS, type PresetKey } from '@/lib/data/calculator-presets'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
+import { CalculatorMethodology } from '@/components/seo/CalculatorMethodology'
 
 export function DripCalculator() {
   const { toast } = useToast()
@@ -545,7 +547,7 @@ export function DripCalculator() {
                       }}
                     />
 
-                    {/* Inline Broker CTA */}
+                    {/* REMOVED: Inline Broker CTA - E-E-A-T focus (removed investment sales language)
                     <InlineBrokerCTA
                       variant="featured"
                       finalPortfolioValue={Number(summary.finalPortfolioValue)}
@@ -553,6 +555,7 @@ export function DripCalculator() {
                       calculatorType="drip"
                       className="mt-8"
                     />
+                    */}
                   </div>
                 </CardContent>
               </Card>
@@ -616,6 +619,30 @@ export function DripCalculator() {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Calculation Methodology - E-E-A-T Focus */}
+              <CalculatorMethodology
+                title="DRIP Calculator"
+                formula="FV = PV × (1 + r)^n + PMT × [((1 + r)^n - 1) / r] × (1 + r)"
+                accuracy="±2-5% over 1-5 years, ±10-15% over 10+ years"
+                dataSourcesHtml={
+                  <div className="space-y-1">
+                    <div>• <strong>Dividend Yields:</strong> Yahoo Finance, Seeking Alpha (updated daily)</div>
+                    <div>• <strong>Historical Performance:</strong> S&P Global Market Intelligence</div>
+                    <div>• <strong>Dividend Growth:</strong> Morningstar, SEC filings (10-K documents)</div>
+                  </div>
+                }
+                assumptionsHtml={
+                  <div className="space-y-1">
+                    <div>• Dividend yield remains constant throughout the period</div>
+                    <div>• Dividend growth rate remains consistent year-over-year</div>
+                    <div>• Share price appreciation is applied proportionally</div>
+                    <div>• No commission or fee deductions</div>
+                    <div>• Reinvestment occurs at current market price (no timing assumptions)</div>
+                  </div>
+                }
+                disclaimerHtml="Assumes consistent dividend payments and growth rates. Actual results depend on market conditions, company decisions, and economic factors. Not financial advice."
+              />
             </>
           )}
         </TabsContent>

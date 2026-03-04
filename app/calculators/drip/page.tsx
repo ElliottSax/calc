@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { DripCalculator } from '@/components/calculators/DripCalculator'
-import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
+// import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable' // DISABLED: Growth-first focus
 import { FAQSchema } from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
@@ -127,25 +127,6 @@ export default function DripCalculatorPage() {
         </div>
       </section>
 
-      {/* Broker Section */}
-      <section id="brokers" className="py-24 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black mb-6">
-                Ready to Start{' '}
-                <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                  DRIP Investing
-                </span>?
-              </h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Choose a broker that supports automatic dividend reinvestment
-              </p>
-            </div>
-            <BrokerComparisonTable />
-          </div>
-        </div>
-      </section>
 
       {/* SEO Content Section */}
       <section className="py-24 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
@@ -320,6 +301,23 @@ export default function DripCalculatorPage() {
           </div>
         </div>
       </section>
+
+      {/* Broker Reference Section - DISABLED FOR GROWTH-FIRST FOCUS */}
+      {/* <section id="brokers" className="py-20 bg-slate-50 dark:bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">
+                Popular Brokers for DRIP Investing
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                Compare brokers that offer commission-free dividend reinvestment
+              </p>
+            </div>
+            <BrokerComparisonTable />
+          </div>
+        </div>
+      </section> */}
 
       <Footer />
     </>

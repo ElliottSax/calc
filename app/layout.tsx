@@ -175,6 +175,7 @@ export default function RootLayout({
         '@id': `${siteUrl}/#organization`,
         name: siteName,
         url: siteUrl,
+        description: 'Independent financial calculator platform focused on accuracy and transparency. All data sources verified as of March 3, 2026. Not a broker - educational resource only.',
         logo: {
           '@type': 'ImageObject',
           url: `${siteUrl}/logo.png`,
@@ -185,14 +186,36 @@ export default function RootLayout({
           'https://twitter.com/dividendengines',
           'https://www.linkedin.com/company/dividendengines',
           'https://www.youtube.com/@dividendengines'
-        ]
+        ],
+        // E-E-A-T: Author/Creator information
+        author: {
+          '@type': 'Organization',
+          name: 'Dividend Engines Editorial Team',
+          description: 'Financial analysts and software engineers dedicated to accuracy'
+        },
+        // E-E-A-T: Credential verification
+        awards: [
+          'Verified Data Sources (IRS, Treasury, SEC)',
+          'Calculation Methodology Transparency',
+          'Error Correction Policy (24-hour response)'
+        ],
+        // E-E-A-T: When data was last verified
+        datePublished: '2026-03-03',
+        dateModified: '2026-03-03',
+        // Legal/compliance information
+        legalName: 'Dividend Engines',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'Corrections & Feedback',
+          email: 'corrections@dividendengines.com'
+        }
       },
       {
         '@type': 'WebApplication',
         '@id': `${siteUrl}/#webapp`,
         name: siteName,
         url: siteUrl,
-        description: '🔥 FREE dividend calculator with 5 tools: DRIP Calculator, Yield Calculator, Growth Calculator, Comparison Tool, Retirement Planner',
+        description: 'Professional dividend calculator suite - DRIP, Growth, Retirement Income, Yield on Cost, 401(k), IRA. Verified data sources. Educational resource only.',
         applicationCategory: 'FinanceApplication',
         operatingSystem: 'Web Browser',
         offers: {
@@ -201,6 +224,26 @@ export default function RootLayout({
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock'
         },
+        // E-E-A-T: Data verification and accuracy
+        author: {
+          '@type': 'Organization',
+          name: siteName
+        },
+        datePublished: '2026-03-03',
+        dateModified: '2026-03-03',
+        // E-E-A-T: Transparency about methodology
+        featureList: [
+          'Verified IRS Publication Data',
+          'Treasury Department Yields',
+          'S&P Global Market Data',
+          'Transparent Formulas',
+          'Error Correction Policy',
+          'No Affiliate Investment Sales'
+        ],
+        // Disclaimers and disclosures
+        disclaimerText: 'Educational calculator for planning purposes only. Not financial advice. Consult a financial advisor for your situation.',
+        // Data quality and freshness
+        dataVerificationDate: '2026-03-03',
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '4.9',

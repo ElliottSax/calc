@@ -232,12 +232,12 @@ export default function CompoundInterestCalculatorPage() {
             </div>
           </section>
 
-          {/* Call to Action */}
-          <section className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to Start Building Wealth?</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              The best time to start investing was 20 years ago. The second best time is today.
-              Use this calculator to plan your financial future, then open a brokerage account to get started.
+          {/* Summary Section */}
+          <section className="mt-12 bg-slate-50 dark:bg-slate-800 rounded-lg p-8 text-center">
+            <h2 className="text-2xl font-bold mb-4">Next Steps in Your Investment Journey</h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Use this calculator to understand how compound interest can work in your favor.
+              Once you've modeled different scenarios, explore brokers that align with your investment goals and timeline.
             </p>
           </section>
         </div>

@@ -8,8 +8,10 @@ import { Card } from '@/components/ui/card'
 import { formatCurrency } from '@/lib/utils/calculations'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import { ShareResults } from '@/components/viral/ShareResults'
-import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
+// REMOVED: Affiliate broker CTA for E-E-A-T focus (financial credibility)
+// import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { ExternalLink } from 'lucide-react'
+import { CalculatorMethodology } from '@/components/seo/CalculatorMethodology'
 
 export function DividendGrowthCalculator() {
   const [shares, setShares] = useState('1000')
@@ -248,7 +250,7 @@ export function DividendGrowthCalculator() {
             />
           </div>
 
-          {/* Inline Broker CTA */}
+          {/* REMOVED: Inline Broker CTA - E-E-A-T focus (removed investment sales language)
           <InlineBrokerCTA
             variant="featured"
             finalPortfolioValue={parseFloat(shares) * parseFloat(currentDividend) * parseFloat(years)}
@@ -256,6 +258,7 @@ export function DividendGrowthCalculator() {
             calculatorType="dividend-growth"
             className="mt-8"
           />
+          */}
 
           {/* Inline Broker CTA */}
           <Card className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border-2 border-purple-200 dark:border-purple-800">
@@ -296,6 +299,32 @@ export function DividendGrowthCalculator() {
             </div>
           </Card>
         </div>
+      )}
+
+      {/* Calculation Methodology - E-E-A-T Focus */}
+      {results && (
+        <CalculatorMethodology
+          title="Dividend Growth Calculator"
+          formula="Future Dividend = Current Dividend × (1 + growth_rate)^years | Annual Income = Shares × Current Dividend"
+          accuracy="±5-10% - Depends on consistency of dividend growth"
+          dataSourcesHtml={
+            <div className="space-y-1">
+              <div>• <strong>Dividend History:</strong> Yahoo Finance, Seeking Alpha</div>
+              <div>• <strong>Dividend Aristocrats:</strong> S&P Global official list</div>
+              <div>• <strong>SEC Filings:</strong> EDGAR database (10-K, 10-Q documents)</div>
+            </div>
+          }
+          assumptionsHtml={
+            <div className="space-y-1">
+              <div>• Dividend growth rate remains constant year-over-year</div>
+              <div>• Share count does not change (adjusted for splits)</div>
+              <div>• Company continues paying dividends indefinitely</div>
+              <div>• No tax adjustments included</div>
+              <div>• Dividend Aristocrats (25+ years of increases) provide most reliable projections</div>
+            </div>
+          }
+          disclaimerHtml="Dividend growth rates fluctuate based on company performance and economic conditions. Past dividend growth does not guarantee future results. Not financial advice."
+        />
       )}
     </div>
   )

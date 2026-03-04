@@ -36,6 +36,8 @@ export interface BlogPost extends BlogPostSummary {
   metaDescription: string
   keywords: string
   updatedDate?: string
+  lastVerified?: string
+  nextReviewDate?: string
   relatedPosts: string[]
 }
 
