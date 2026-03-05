@@ -141,7 +141,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               {post.excerpt}
             </p>
             
-            <div className="flex items-center justify-between py-4 border-t border-b">
+            <div className="flex flex-col gap-4 py-4 border-t border-b">
               <div className="flex items-center space-x-6 text-sm text-gray-600">
                 <div className="flex items-center">
                   <UserIcon className="h-4 w-4 mr-2" />
@@ -160,7 +160,43 @@ export default async function BlogPostPage({ params }: PageProps) {
                   {post.readTime} min read
                 </div>
               </div>
-              
+
+              {/* Freshness Signals */}
+              <div className="text-xs text-gray-500 space-y-1">
+                {post.updatedDate && post.updatedDate !== post.publishDate && (
+                  <p>
+                    Last Updated:{' '}
+                    {new Date(post.updatedDate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                )}
+                {(post as any).lastVerified && (
+                  <p>
+                    Data Verified:{' '}
+                    {new Date((post as any).lastVerified).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                )}
+                {(post as any).nextReviewDate && (
+                  <p>
+                    Next Review:{' '}
+                    {new Date((post as any).nextReviewDate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            <div className="flex items-center justify-end py-4">
               <Button variant="outline" size="sm">
                 <Share2 className="h-4 w-4 mr-2" />
                 Share
