@@ -323,14 +323,14 @@ export default function RootLayout({
         {/* Google Analytics 4 Tracking */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-CALC_ID_PLACEHOLDER"
+          src="https://www.googletagmanager.com/gtag/js?id=G-0C19DC0EQ4"
         ></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-CALC_ID_PLACEHOLDER', {
+            gtag('config', 'G-0C19DC0EQ4', {
               send_page_view: true,
               anonymize_ip: false
             });
