@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors look
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate represents the annual rate at which a company increases its dividend payments to shareholders. This metric is essential for:
 - Evaluating dividend sustainability
 - Projecting future income
@@ -39,6 +42,9 @@ While simple, this method can be misleading due to short-term fluctuations.
 
 ### 2. Compound Annual Growth Rate (CAGR)
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 CAGR is the most accurate method for calculating long-term dividend growth rates. The formula is:
 
 ```
@@ -63,6 +69,9 @@ Average Growth = Sum of Annual Growth Rates / Number of Periods
 ## Practical Example: Johnson & Johnson (JNJ)
 
 Let's analyze Johnson & Johnson's dividend growth using actual data:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Annual Dividends:
 - 2018: $3.54
@@ -103,6 +112,9 @@ Create your own Excel or Google Sheets template using these formulas:
 - CAGR formula
 - YOY calculations
 - Historical tracking
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 2. Financial Websites
 Reliable sources include:
@@ -146,6 +158,9 @@ FCF Payout Ratio = Annual Dividends / Free Cash Flow
 - Better indicator of dividend sustainability
 - Should be below 75%
 - Trend analysis important
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ## Real-World Application Example
 

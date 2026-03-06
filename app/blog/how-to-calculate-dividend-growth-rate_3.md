@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate represents the annual rate at which a company increases its dividend payments to shareholders. This metric is essential for:
 - Evaluating income-generating investments
 - Projecting future dividend income
@@ -40,6 +43,9 @@ While simple to calculate, this method can be misleading as it only considers tw
 ### 2. Compound Annual Growth Rate (CAGR)
 
 CAGR is the most accurate method for calculating long-term dividend growth rates. The formula is:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -77,6 +83,9 @@ Let's analyze Johnson & Johnson (JNJ)'s dividend growth from 2018 to 2022:
 | 2020 | $4.04          | 7.73%      |
 | 2021 | $4.19          | 3.71%      |
 | 2022 | $4.45          | 6.21%      |
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Using these figures:
 - CAGR = ($4.45/$3.54)^(1/4) - 1 = 5.89%
@@ -119,6 +128,9 @@ Using these figures:
 - Stock Rover
 - FastGraphs
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ## Common Mistakes to Avoid
 
 1. **Focusing Only on Short-Term Growth**
@@ -153,6 +165,9 @@ Using these figures:
 - Dividend coverage ratio
 - Interest coverage ratio
 - Return on equity
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ## Making Investment Decisions
 

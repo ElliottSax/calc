@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## Why Dividend Growth Rate Matters
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate shows how quickly a company increases its dividend payments over time. This metric is essential because:
 
 - It indicates a company's financial health and ability to generate increasing cash flows
@@ -37,6 +40,9 @@ Growth Rate = ($1.10 - $1.00) / $1.00 × 100 = 10%
 ## Compound Annual Growth Rate (CAGR)
 
 For longer periods, the Compound Annual Growth Rate (CAGR) provides a more accurate picture of dividend growth. The formula is:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -69,6 +75,9 @@ Example using Procter & Gamble's dividends:
 Average growth rate = (6.04% + 5.06% + 6.02% + 6.82%) / 4 = 5.99%
 
 ### 2. Linear Regression Method
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 This method uses statistical analysis to find the best-fit line through historical dividend data points. While more complex, it can provide more accurate results by reducing the impact of outliers.
 
@@ -103,6 +112,9 @@ Calculate growth rates using rolling periods (e.g., 3-year or 5-year windows) to
 - Minimum 5-year history recommended
 - Longer periods provide more reliable trends
 - Consider full business cycles
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 2. Ignoring Special Dividends
 - Focus on regular dividend payments
@@ -140,6 +152,9 @@ CAGR = ($2.72 / $1.84)^(1/4) - 1 = 10.26%
 - Strong free cash flow coverage
 - Low payout ratio (~30%)
 - Consistent earnings growth
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ## Tools for Calculating Dividend Growth
 

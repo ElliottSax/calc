@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate measures the average annual rate at which a company increases its dividend payments over time. This metric is essential for:
 - Evaluating a company's dividend sustainability
 - Projecting future income streams
@@ -40,6 +43,9 @@ While simple to calculate, YOY growth rates can be misleading due to short-term 
 ### 2. Compound Annual Growth Rate (CAGR)
 
 CAGR is the most accurate method for calculating long-term dividend growth rates. The formula is:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -75,6 +81,9 @@ Annual Dividends:
 ## Tools for Calculating Dividend Growth
 
 ### 1. Spreadsheet Templates
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Create a simple Excel or Google Sheets template:
 1. List annual dividends in chronological order
@@ -115,6 +124,9 @@ Several websites offer free dividend calculators:
 
 ## Using Dividend Growth Rates in Investment Analysis
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ### 1. Historical Consistency
 
 Look for companies with:
@@ -147,6 +159,9 @@ Guidelines:
 - Don't rely solely on YOY growth rates
 - Look for consistent long-term growth patterns
 - Consider multiple time periods
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 2. Ignoring Business Fundamentals
 - High growth rates aren't sustainable without strong fundamentals

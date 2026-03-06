@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors look
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 The dividend growth rate measures the average annual increase in a company's dividend payments over time. This metric is essential for:
 - Evaluating dividend sustainability
 - Projecting future income
@@ -40,6 +43,9 @@ While simple, this method can be misleading due to short-term fluctuations.
 ### 2. Compound Annual Growth Rate (CAGR)
 
 CAGR is the most accurate method for calculating long-term dividend growth rates:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -77,6 +83,9 @@ Average Growth = Sum of Annual Growth Rates / Number of Years
 2. Record at least 5-10 years of dividend payments
 3. Note any special or one-time dividends
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ### Step 2: Choose Your Calculation Method
 
 Select based on your needs:
@@ -109,6 +118,9 @@ CAGR = ($4.45 / $3.54)^(1/5) - 1
 ```
 
 ## Common Mistakes to Avoid
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 1. Using Too Short a Time Period
 - Minimum 5 years recommended
@@ -147,6 +159,9 @@ CAGR = ($4.45 / $3.54)^(1/5) - 1
 - Historical growth ≠ future growth
 - Industry average comparisons
 - Economic cycle considerations
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 2. Portfolio Planning
 - Income goals alignment

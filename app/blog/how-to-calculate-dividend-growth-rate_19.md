@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## Why Dividend Growth Rate Matters
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate indicates how quickly a company increases its dividend payments over time. This metric is essential because:
 
 - It helps predict future income potential
@@ -46,6 +49,9 @@ CAGR is the most accurate way to calculate dividend growth over multiple years:
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
 ```
 Where n = number of years
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 **Example:**
 - 2018 Annual Dividend: $1.80
@@ -80,6 +86,9 @@ Calculate growth rates for multiple periods and average them:
 - 2022-2023: 10%
 Average Growth Rate = (8% + 12% + 10%) / 3 = 10%
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ## Factors Affecting Dividend Growth Rate
 
 ### Payout Ratio
@@ -109,6 +118,9 @@ Different industries have varying dividend growth potential:
 ## Tools and Resources for Calculation
 
 ### Spreadsheet Templates
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Create your own dividend growth calculator using:
 - Microsoft Excel
@@ -148,6 +160,9 @@ Several websites offer dividend growth calculations:
 - Company-specific events
 - Industry trends
 - Management changes
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ## Practical Application Example
 

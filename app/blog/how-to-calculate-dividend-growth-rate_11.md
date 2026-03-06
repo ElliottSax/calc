@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate measures the average annual increase in a company's dividend payments over time. This metric helps investors evaluate a company's ability to consistently raise its dividend payments and assess the potential future income from their investments.
 
 ## Methods to Calculate Dividend Growth Rate
@@ -36,6 +39,9 @@ While simple to calculate, this method only provides a short-term view and can b
 ### 2. Compound Annual Growth Rate (CAGR)
 
 CAGR is the most accurate way to measure dividend growth over multiple years:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -68,6 +74,9 @@ Annual Dividends:
 - 2021: $4.19
 - 2022: $4.45
 - 2023: $4.76
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Calculating different growth rates:
 - YOY (2022-2023): 6.97%
@@ -110,6 +119,9 @@ Calculating different growth rates:
 - Consider market conditions
 - Evaluate management's commitment to dividends
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ## Common Mistakes to Avoid
 
 ### 1. Focusing Only on Short-Term Growth
@@ -145,6 +157,9 @@ Calculating different growth rates:
 - S&P Capital IQ
 
 ## Best Practices for Dividend Growth Analysis
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ### 1. Use Multiple Time Periods
 - Short-term (1-3 years)

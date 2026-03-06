@@ -14,6 +14,9 @@ Dividend Reinvestment Plans (DRIPs) are powerful tools for long-term wealth buil
 
 ## Understanding DRIP Investing
 
+**Related**: [DRIP Calculator: Growth with Automatic Reinvestment](/drip-calculator:-growth-with-automatic-reinvestmen)
+
+
 ### What is a DRIP?
 A Dividend Reinvestment Plan (DRIP) automatically reinvests cash dividend payments into additional shares of the same stock. Instead of receiving dividend payments in cash, investors can purchase fractional shares, often without paying commissions or fees.
 
@@ -53,6 +56,9 @@ Let's examine a practical example using typical numbers:
 - Total Dividends Year 1: $300 (200 shares × $1.50)
 - Additional Shares Purchased: 5.66 ($300 ÷ $53)
 
+**Related**: [DRIP Calculator: Growth with Automatic Reinvestment](/drip-calculator:-growth-with-automatic-reinvestmen)
+
+
 ## The Power of Compound Growth
 
 ### Long-Term DRIP Impact
@@ -79,6 +85,9 @@ Starting yield affects immediate reinvestment potential:
 - 2% yield = slower initial compound growth
 - 4% yield = faster initial compound growth
 - 6% yield = highest initial compound growth (but may indicate risk)
+
+**Related**: [DRIP Calculator: Growth with Automatic Reinvestment](/drip-calculator:-growth-with-automatic-reinvestmen)
+
 
 #### 3. Stock Price Appreciation
 The combination of dividend reinvestment and price appreciation creates multiple growth drivers:
@@ -111,6 +120,9 @@ The combination of dividend reinvestment and price appreciation creates multiple
 - Dividend growth rates rarely exceed 10% long-term
 - Price appreciation assumptions should align with historical averages
 
+**Related**: [DRIP Calculator: Growth with Automatic Reinvestment](/drip-calculator:-growth-with-automatic-reinvestmen)
+
+
 2. **Ignoring Tax Implications**
 - DRIP calculations often exclude tax considerations
 - Different tax treatment in retirement vs. taxable accounts
@@ -138,6 +150,9 @@ The combination of dividend reinvestment and price appreciation creates multiple
 - 20-Year DRIP Result: ~$52,000
 
 ## Advanced DRIP Calculator Features
+
+**Related**: [DRIP Calculator: Growth with Automatic Reinvestment](/drip-calculator:-growth-with-automatic-reinvestmen)
+
 
 ### Additional Considerations
 

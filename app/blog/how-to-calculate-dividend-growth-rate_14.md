@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## Why Dividend Growth Rate Matters
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate indicates how quickly a company increases its dividend payments over time. This metric is essential because:
 
 - It helps predict future income potential
@@ -51,6 +54,9 @@ Growth Rate = 0.0845 or 8.45%
 ## Alternative Calculation Methods
 
 ### Year-Over-Year Growth Rate
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 This simpler method looks at the change between two consecutive years:
 
@@ -91,6 +97,9 @@ Year | Annual Dividend | Growth Rate
 
 ### Online Calculators
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Several websites offer free dividend growth calculators:
 - DividendChannel.com
 - Portfolio Visualizer
@@ -129,6 +138,9 @@ This helps identify:
 - Impact of economic cycles
 
 ### Payout Ratio Analysis
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Calculate the payout ratio alongside growth rate:
 ```
@@ -174,6 +186,9 @@ Supporting factors:
 - Sustainable payout ratio (~45%)
 - Strong cash flow generation
 - Diversified business model
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ## Practical Applications
 

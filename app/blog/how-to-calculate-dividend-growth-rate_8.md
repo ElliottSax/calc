@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors look
 
 ## Understanding Dividend Growth Rate Basics
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate represents the annual rate at which a company increases its dividend payments to shareholders. This metric is essential for:
 
 - Evaluating income potential of dividend stocks
@@ -41,6 +44,9 @@ While simple to calculate, YOY growth rates can be misleading due to short-term 
 ### 2. Compound Annual Growth Rate (CAGR)
 
 CAGR provides a more accurate picture of dividend growth over longer periods:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 ```
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
@@ -88,6 +94,9 @@ Calculations:
 - Share buyback programs
 - Debt reduction goals
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ## Advanced Calculation Methods
 
 ### 1. Average Annual Growth Rate
@@ -119,6 +128,9 @@ Weighted Average = Σ(Growth Rate × Weight) / Σ(Weights)
 - 2020-2021: 3.71% × 0.3 = 1.11
 - 2019-2020: 7.73% × 0.2 = 1.55
 - 2018-2019: 5.93% × 0.1 = 0.59
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Weighted Average = 5.73%
 
@@ -159,6 +171,9 @@ Weighted Average = 5.73%
 - Payout ratio trends
 
 ## Common Mistakes to Avoid
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 1. **Focusing on Short-Term Growth**
 - Single-year growth rates can be misleading

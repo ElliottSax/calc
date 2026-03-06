@@ -14,6 +14,9 @@ Understanding dividend growth rates is crucial for income-focused investors who 
 
 ## What Is Dividend Growth Rate?
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 Dividend growth rate represents the annual rate at which a company increases its dividend payments to shareholders. This metric is essential for:
 - Evaluating dividend sustainability
 - Projecting future income
@@ -46,6 +49,9 @@ CAGR provides a more accurate picture of dividend growth over multiple years by 
 CAGR = (Ending Value / Beginning Value)^(1/n) - 1
 ```
 Where n = number of years
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 **Example:**
 If Company XYZ paid $0.80 per share in 2018 and $1.20 in 2023 (5 years):
@@ -86,6 +92,9 @@ Average Growth Rate = (8% + 6% + 10% + 7% + 9%) / 5 = 8%
 - Lower payout ratios (40-60%) indicate room for dividend growth
 - High payout ratios (>80%) may signal unsustainable dividends
 
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
+
 ### 3. Industry Dynamics
 - Mature industries typically have lower growth rates
 - Growth industries may offer higher dividend growth potential
@@ -118,6 +127,9 @@ CAGR = ($4.76 / $3.54)^(1/5) - 1
 ### Future Income Projection
 
 Using the calculated CAGR, we can project future dividend income:
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 Initial Investment: $10,000
 Current Dividend Yield: 3%
@@ -157,6 +169,9 @@ Year 10: $513
 1. **Relying on Short-Term Data**
 - Using less than 3 years of history
 - Ignoring long-term trends
+
+**Related**: [How to Calculate Dividend Growth Rate](/how-to-calculate-dividend-growth-rate)
+
 
 2. **Overlooking Sustainability**
 - Focusing solely on growth rate

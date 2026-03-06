@@ -14,6 +14,9 @@ Planning for retirement through dividend investing can provide a reliable stream
 
 ## Understanding Dividend Income for Retirement
 
+**Related**: [Dividend Income Calculator: Plan Your Retirement](/dividend-income-calculator:-plan-your-retirement)
+
+
 ### What is Dividend Income?
 Dividend income represents regular payments that companies distribute to their shareholders from their earnings. For retirees, these payments can create a dependable income stream without selling their investment principal.
 
@@ -43,6 +46,9 @@ Annual dividend income would be:
 - Total annual dividend income: $1,134
 
 ## Planning Your Retirement Dividend Portfolio
+
+**Related**: [Dividend Income Calculator: Plan Your Retirement](/dividend-income-calculator:-plan-your-retirement)
+
 
 ### Setting Income Goals
 To determine how much dividend income you need:
@@ -75,6 +81,9 @@ $35,000 ÷ 0.03 = $1,166,667 required portfolio value
 - Aim for 2-6% yields
 - Be cautious of unusually high yields (>6%)
 
+**Related**: [Dividend Income Calculator: Plan Your Retirement](/dividend-income-calculator:-plan-your-retirement)
+
+
 2. **Dividend Growth History**
 - Look for Dividend Aristocrats (25+ years of increases)
 - Target 5-10% annual dividend growth
@@ -101,6 +110,9 @@ Expected annual income: $35,100
 - Payout ratio trends
 - Free cash flow coverage
 - Debt levels
+
+**Related**: [Dividend Income Calculator: Plan Your Retirement](/dividend-income-calculator:-plan-your-retirement)
+
 
 2. **Income Growth**
 - Year-over-year dividend increases
@@ -136,6 +148,9 @@ Before retirement:
 - Hold high-yield stocks in tax-advantaged accounts
 - Consider qualified vs. non-qualified dividends
 - Use municipal bonds for tax-free income
+
+**Related**: [Dividend Income Calculator: Plan Your Retirement](/dividend-income-calculator:-plan-your-retirement)
+
 
 ### Income Laddering
 Create multiple income streams with different payment dates:
