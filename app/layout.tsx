@@ -321,19 +321,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
 
         {/* Google Analytics 4 Tracking */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C19DC0EQ4"></script>
         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0C19DC0EQ4"
-        ></script>
-        <script>
-          {`
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-0C19DC0EQ4', {
-              send_page_view: true,
-              anonymize_ip: false
-            });
+            gtag('config', 'G-0C19DC0EQ4');
 
             // Track email signup events
             window.trackEmailSignup = (formType = 'inline') => {
@@ -384,9 +379,9 @@ export default function RootLayout({
                 });
                 maxScroll = 50;
               }
-            });
-          `}
-        </script>
+            `
+          }}
+        />
 
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
