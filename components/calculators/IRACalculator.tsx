@@ -278,7 +278,7 @@ export function IRACalculator() {
           </Card>
 
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="ira" />
+            <InlineBrokerCTA variant="featured" calculatorType="ira" finalPortfolioValue={0} />
           </div>
         </>
       )}

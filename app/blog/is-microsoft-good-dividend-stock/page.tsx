@@ -7,7 +7,7 @@ import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { InlineSignup } from '@/components/email/InlineSignup'
-import { AlertTriangle, ArrowRight, Award, BarChart3, Building2, CheckCircle2, Clock, DollarSign, Landmark, LineChart, Percent, PieChart, ShieldCheck, Star, T, Target, TrendingUp, XCircle, Zap } from 'lucide-react'
+import { AlertTriangle, ArrowRight, Award, BarChart3, Building2, CheckCircle2, Clock, DollarSign, Landmark, LineChart, Percent, PieChart, ShieldCheck, Star, Target, TrendingUp, XCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Is Microsoft (MSFT) a Good Dividend Stock? 2026 Analysis',

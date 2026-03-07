@@ -47,7 +47,7 @@ export function FourZeroOneKCalculator() {
   const [currentAge, setCurrentAge] = useState<number>(30)
   const [retirementAge, setRetirementAge] = useState<number>(65)
   const [currentSalary, setCurrentSalary] = useState<string>('75000')
-  const [currentBalance, setCurrentBalance] = useState<string>('25000')
+  const [runningBalance, setRunningBalance] = useState<string>('25000')
   const [contributionPercent, setContributionPercent] = useState<string>('10')
   const [employerMatch, setEmployerMatch] = useState<string>('50')
   const [employerMatchLimit, setEmployerMatchLimit] = useState<string>('6')
@@ -60,7 +60,7 @@ export function FourZeroOneKCalculator() {
     const age = currentAge
     const retirement = retirementAge
     const salary = parseFloat(currentSalary) || 0
-    const balance = parseFloat(currentBalance) || 0
+    const balance = parseFloat(runningBalance) || 0
     const contrib = (parseFloat(contributionPercent) || 0) / 100
     const matchPct = (parseFloat(employerMatch) || 0) / 100
     const matchLimit = (parseFloat(employerMatchLimit) || 0) / 100
@@ -73,7 +73,7 @@ export function FourZeroOneKCalculator() {
     }
 
     const years = retirement - age
-    let currentBalance = balance
+    let runningBalance = balance
     let totalEmployeeContrib = 0
     let totalEmployerContrib = 0
     let currentSalaryAmount = salary
@@ -86,20 +86,20 @@ export function FourZeroOneKCalculator() {
       const employerContrib = matchableAmount * matchPct
 
       // Add contributions
-      currentBalance += employeeContrib + employerContrib
+      runningBalance += employeeContrib + employerContrib
       totalEmployeeContrib += employeeContrib
       totalEmployerContrib += employerContrib
 
       // Calculate investment gains for the year
-      const investmentGain = currentBalance * returnRate
-      currentBalance += investmentGain
+      const investmentGain = runningBalance * returnRate
+      runningBalance += investmentGain
 
       yearlyBreakdown.push({
         age: age + year,
         year,
         employeeContribution: employeeContrib,
         employerMatch: employerContrib,
-        balance: currentBalance,
+        balance: runningBalance,
         investmentGain
       })
 
@@ -108,17 +108,17 @@ export function FourZeroOneKCalculator() {
     }
 
     const totalContributions = totalEmployeeContrib + totalEmployerContrib
-    const investmentGains = currentBalance - balance - totalContributions
+    const investmentGains = runningBalance - balance - totalContributions
 
     // 4% rule for retirement income
-    const retirementIncome = currentBalance * 0.04
+    const retirementIncome = runningBalance * 0.04
 
     // Tax savings from contributions (assumes pre-tax 401k)
     const annualTaxSavings = parseFloat(currentSalary) * contrib * taxRate
     const totalTaxSavings = annualTaxSavings * years
 
     setResult({
-      finalBalance: currentBalance,
+      finalBalance: runningBalance,
       employeeContributions: totalEmployeeContrib,
       employerContributions: totalEmployerContrib,
       totalContributions,
@@ -152,7 +152,7 @@ export function FourZeroOneKCalculator() {
       {
         label: 'Total Contributions',
         data: result.yearlyBreakdown.map((y, i) =>
-          parseFloat(currentBalance) +
+          parseFloat(runningBalance) +
           result.yearlyBreakdown.slice(0, i + 1).reduce((sum, item) =>
             sum + item.employeeContribution + item.employerMatch, 0
           )
@@ -245,12 +245,12 @@ export function FourZeroOneKCalculator() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="currentBalance">Current 401(k) Balance</Label>
+              <Label htmlFor="runningBalance">Current 401(k) Balance</Label>
               <Input
-                id="currentBalance"
+                id="runningBalance"
                 type="number"
-                value={currentBalance}
-                onChange={(e) => setCurrentBalance(e.target.value)}
+                value={runningBalance}
+                onChange={(e) => setRunningBalance(e.target.value)}
               />
             </div>
 
@@ -467,7 +467,7 @@ export function FourZeroOneKCalculator() {
 
           {/* Broker CTA */}
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="401k" />
+            <InlineBrokerCTA variant="featured" calculatorType="401k" finalPortfolioValue={0} />
           </div>
         </>
       )}

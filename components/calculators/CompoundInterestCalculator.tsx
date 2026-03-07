@@ -455,9 +455,9 @@ export function CompoundInterestCalculator() {
             when combined with compound interest and time. For example:
           </p>
           <ul>
-            <li>$200/month at 7% for 20 years = ${formatCurrency(104,550)}</li>
-            <li>$500/month at 7% for 30 years = ${formatCurrency(594,150)}</li>
-            <li>$1,000/month at 8% for 25 years = ${formatCurrency(957,880)}</li>
+            <li>$200/month at 7% for 20 years = ${formatCurrency(104550)}</li>
+            <li>$500/month at 7% for 30 years = ${formatCurrency(594150)}</li>
+            <li>$1,000/month at 8% for 25 years = ${formatCurrency(957880)}</li>
           </ul>
 
           <h3>Compound Frequency Matters</h3>

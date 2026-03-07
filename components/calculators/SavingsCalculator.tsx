@@ -323,10 +323,7 @@ export function SavingsCalculator() {
 
           {/* Broker CTA */}
           <div className="mt-8">
-            <InlineBrokerCTA
-              variant="featured"
-              calculatorType="savings"
-            />
+            <InlineBrokerCTA variant="featured" calculatorType="savings" finalPortfolioValue={0} />
           </div>
         </>
       )}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { AlertTriangle, ArrowRight, Award, BarChart3, Building2, Calendar, CheckCircle2, Clock, DollarSign, Float, Landmark, LineChart, M, Percent, PieChart, Shield, Star, Target, TrendingUp, Zap } from 'lucide-react'
+import { AlertTriangle, ArrowRight, Award, BarChart3, Building2, Calendar, CheckCircle2, Clock, DollarSign, Landmark, LineChart, Percent, PieChart, Shield, Star, Target, TrendingUp, Zap } from 'lucide-react'
 import { InlineSignup } from '@/components/email/InlineSignup'
 
 export const metadata = {

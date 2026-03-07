@@ -216,7 +216,7 @@ export function DividendGrowthCalculator() {
                     borderRadius: '8px',
                     color: '#fff'
                   }}
-                  formatter={(value: number) => [formatCurrency(value), 'Annual Income']}
+                  formatter={(value: number | undefined) => value !== undefined ? [formatCurrency(value), 'Annual Income'] : ['$0', 'Annual Income']}
                 />
                 <Line
                   type="monotone"

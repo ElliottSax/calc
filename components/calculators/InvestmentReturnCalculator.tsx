@@ -152,7 +152,7 @@ export function InvestmentReturnCalculator() {
           </Alert>
 
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="investment-return" />
+            <InlineBrokerCTA variant="featured" calculatorType="investment-return" finalPortfolioValue={0} />
           </div>
         </>
       )}
