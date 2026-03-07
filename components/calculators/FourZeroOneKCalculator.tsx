@@ -47,7 +47,7 @@ export function FourZeroOneKCalculator() {
   const [currentAge, setCurrentAge] = useState<number>(30)
   const [retirementAge, setRetirementAge] = useState<number>(65)
   const [currentSalary, setCurrentSalary] = useState<string>('75000')
-  const [runningBalance, setRunningBalance] = useState<string>('25000')
+  const [currentBalance, setCurrentBalance] = useState<string>('25000')
   const [contributionPercent, setContributionPercent] = useState<string>('10')
   const [employerMatch, setEmployerMatch] = useState<string>('50')
   const [employerMatchLimit, setEmployerMatchLimit] = useState<string>('6')
@@ -60,7 +60,7 @@ export function FourZeroOneKCalculator() {
     const age = currentAge
     const retirement = retirementAge
     const salary = parseFloat(currentSalary) || 0
-    const balance = parseFloat(runningBalance) || 0
+    const balance = parseFloat(currentBalance) || 0
     const contrib = (parseFloat(contributionPercent) || 0) / 100
     const matchPct = (parseFloat(employerMatch) || 0) / 100
     const matchLimit = (parseFloat(employerMatchLimit) || 0) / 100
@@ -152,7 +152,7 @@ export function FourZeroOneKCalculator() {
       {
         label: 'Total Contributions',
         data: result.yearlyBreakdown.map((y, i) =>
-          parseFloat(runningBalance) +
+          parseFloat(currentBalance) +
           result.yearlyBreakdown.slice(0, i + 1).reduce((sum, item) =>
             sum + item.employeeContribution + item.employerMatch, 0
           )
@@ -245,12 +245,12 @@ export function FourZeroOneKCalculator() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="runningBalance">Current 401(k) Balance</Label>
+              <Label htmlFor="currentBalance">Current 401(k) Balance</Label>
               <Input
-                id="runningBalance"
+                id="currentBalance"
                 type="number"
-                value={runningBalance}
-                onChange={(e) => setRunningBalance(e.target.value)}
+                value={currentBalance}
+                onChange={(e) => setCurrentBalance(e.target.value)}
               />
             </div>
 
