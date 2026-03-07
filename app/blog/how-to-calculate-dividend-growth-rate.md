@@ -38,6 +38,15 @@ description: Calculate Dividend Growth: Understanding dividend growth rates is c
 
 # How to Calculate Dividend Growth Rate: A Comprehensive Guide
 
+Calculate dividend growth rate using the Compound Annual Growth Rate (CAGR) formula: (Ending Dividend / Beginning Dividend)^(1/n) - 1, where n = years. Example: Johnson & Johnson grew dividends from $3.54 (2018) to $4.76 (2023) = ($4.76/$3.54)^(1/5) - 1 = 6.12% annual growth—significantly outpacing inflation's 3-4% average, protecting purchasing power.
+
+**5 Key Takeaways:**
+- **CAGR beats simple averages for accuracy**: Averaging year-over-year percentages (5.8% + 4.5% + 6.9% = 5.7% average) distorts reality versus CAGR's geometric mean accounting for compounding—$100 growing 10% then -5% yields 4.5% actual (CAGR) not 2.5% simple average
+- **Minimum 5-year history required**: Shorter periods (1-3 years) capture market noise not company trends—Coca-Cola's 2020-2021 growth (8%) looked strong but 10-year CAGR (4.2%) reveals sustainable reality, preventing overvaluation
+- **Exclude special dividends from calculations**: One-time special payments (e.g., $5 extra dividend) inflate growth rates artificially—Microsoft's 2004 $3 special dividend would show 400% "growth" versus regular 10% annual increases, misleading projections
+- **Payout ratio sustainability matters more than growth rate**: A company growing dividends 15%/year with 95% payout ratio (unsustainable) is riskier than 6% growth with 40% payout (room to maintain/increase)—high growth with high payout signals future cuts
+- **Industry comparison reveals competitive position**: REITs typically grow dividends 2-4% annually (mandated 90% payout limits growth) while tech (Apple 8-10%) and industrials (3M 5-7%) vary—comparing intra-industry prevents apples-to-oranges mistakes
+
 Understanding dividend growth rates is crucial for income-focused investors looking to build sustainable passive income streams (Source: [Department of Labor - Retirement](https://www.dol.gov/general/topic/retirement)). This guide will walk you through various methods to calculate dividend growth rates, helping you make more informed investment decisions (Source: [FINRA - Investor Education](https://www.finra.org/investors)) (Source: [SEC - Investor Information](https://www.investor.gov)).
 
 ## Why Dividend Growth Rates Matter
