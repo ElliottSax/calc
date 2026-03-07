@@ -8,8 +8,8 @@ keywords:
 slug: "the-alternative-minimum-tax-amt-and-dividend-income"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The Alternative Minimum Tax (AMT) and Dividend Income

@@ -8,8 +8,8 @@ keywords:
 slug: "the-dividend-discount-model-valuing-dividend-stocks"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The Dividend Discount Model: Valuing Dividend Stocks

@@ -8,8 +8,8 @@ keywords:
 slug: "debt-to-equity-in-dividend-stocks-how-much-is-too-much"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Debt-to-Equity in Dividend Stocks: How Much Is Too Much?

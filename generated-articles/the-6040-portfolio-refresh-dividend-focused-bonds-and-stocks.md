@@ -8,8 +8,8 @@ keywords:
 slug: "the-6040-portfolio-refresh-dividend-focused-bonds-and-stocks"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The 60/40 Portfolio Refresh: Dividend-Focused Bonds and Stocks

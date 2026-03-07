@@ -8,8 +8,8 @@ keywords:
 slug: "financial-sector-dividends-banks-insurance-real-estate"
 category: "sector-analysis"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Financial Sector Dividends: Banks, Insurance, Real Estate

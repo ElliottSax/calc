@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-etfs-vs-individual-stocks-diversification-tradeoff"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Etfs vs. Individual Stocks: Diversification Tradeoff

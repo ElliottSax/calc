@@ -8,8 +8,8 @@ keywords:
 slug: "the-dividend-cover-ratio-ensuring-payout-safety"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The Dividend Cover Ratio: Ensuring Payout Safety

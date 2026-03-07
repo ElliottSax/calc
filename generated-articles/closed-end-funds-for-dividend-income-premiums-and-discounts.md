@@ -8,8 +8,8 @@ keywords:
 slug: "closed-end-funds-for-dividend-income-premiums-and-discounts"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Closed-End Funds for Dividend Income: Premiums and Discounts

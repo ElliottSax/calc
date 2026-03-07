@@ -8,8 +8,8 @@ keywords:
 slug: "backtest-your-dividend-strategy-using-historical-data"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Backtest Your Dividend Strategy: Using Historical Data

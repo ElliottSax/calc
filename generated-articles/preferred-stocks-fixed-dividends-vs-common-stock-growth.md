@@ -8,8 +8,8 @@ keywords:
 slug: "preferred-stocks-fixed-dividends-vs-common-stock-growth"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Preferred Stocks: Fixed Dividends vs. Common Stock Growth

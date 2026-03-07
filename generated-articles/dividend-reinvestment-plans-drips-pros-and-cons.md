@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-reinvestment-plans-drips-pros-and-cons"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Reinvestment Plans (DRIPs): Pros and Cons

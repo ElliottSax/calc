@@ -8,8 +8,8 @@ keywords:
 slug: "consumer-staples-dividend-consistency-during-downturns"
 category: "sector-analysis"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Consumer Staples: Dividend Consistency During Downturns

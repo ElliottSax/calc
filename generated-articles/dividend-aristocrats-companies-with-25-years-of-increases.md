@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-aristocrats-companies-with-25-years-of-increases"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Aristocrats: Companies With 25+ Years of Increases

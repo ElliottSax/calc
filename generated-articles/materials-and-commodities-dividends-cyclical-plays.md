@@ -8,8 +8,8 @@ keywords:
 slug: "materials-and-commodities-dividends-cyclical-plays"
 category: "sector-analysis"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Materials and Commodities Dividends: Cyclical Plays

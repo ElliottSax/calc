@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-cutters-identifying-unsustainable-payouts-early"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Cutters: Identifying Unsustainable Payouts Early

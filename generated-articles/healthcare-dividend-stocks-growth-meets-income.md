@@ -8,8 +8,8 @@ keywords:
 slug: "healthcare-dividend-stocks-growth-meets-income"
 category: "sector-analysis"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Healthcare Dividend Stocks: Growth Meets Income

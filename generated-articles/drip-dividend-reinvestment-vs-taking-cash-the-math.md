@@ -8,8 +8,8 @@ keywords:
 slug: "drip-dividend-reinvestment-vs-taking-cash-the-math"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # DRIP (Dividend Reinvestment) vs. Taking Cash: The Math

@@ -8,8 +8,8 @@ keywords:
 slug: "master-limited-partnerships-mlps-high-yield-high-complexity"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Master Limited Partnerships (MLPs): High Yield, High Complexity

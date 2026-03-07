@@ -8,8 +8,8 @@ keywords:
 slug: "monthly-vs-quarterly-dividends-which-pays-out-more"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Monthly vs. Quarterly Dividends: Which Pays Out More?

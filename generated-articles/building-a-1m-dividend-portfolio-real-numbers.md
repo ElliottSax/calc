@@ -8,8 +8,8 @@ keywords:
 slug: "building-a-1m-dividend-portfolio-real-numbers"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Building a $1M Dividend Portfolio: Real Numbers

@@ -8,8 +8,8 @@ keywords:
 slug: "tax-efficient-dividend-investing-placement-strategy"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Tax-Efficient Dividend Investing: Placement Strategy

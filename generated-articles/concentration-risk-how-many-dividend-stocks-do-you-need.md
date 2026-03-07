@@ -8,8 +8,8 @@ keywords:
 slug: "concentration-risk-how-many-dividend-stocks-do-you-need"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Concentration Risk: How Many Dividend Stocks Do You Need?

@@ -8,8 +8,8 @@ keywords:
 slug: "asset-allocation-for-different-life-stages-dividend-edition"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Asset Allocation for Different Life Stages: Dividend Edition

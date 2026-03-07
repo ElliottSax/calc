@@ -8,8 +8,8 @@ keywords:
 slug: "the-barbell-strategy-safe-dividend-stocks-growth-plays"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The Barbell Strategy: Safe Dividend Stocks + Growth Plays

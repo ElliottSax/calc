@@ -8,8 +8,8 @@ keywords:
 slug: "harvest-losses-to-offset-dividend-income"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Harvest Losses to Offset Dividend Income

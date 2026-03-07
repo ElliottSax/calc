@@ -8,8 +8,8 @@ keywords:
 slug: "building-dividend-momentum-stocks-increasing-dividends-vs-stable"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Building Dividend Momentum: Stocks Increasing Dividends vs. Stable

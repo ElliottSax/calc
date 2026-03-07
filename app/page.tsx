@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { FAQSchema, DRIP_CALCULATOR_FAQS } from '@/components/seo/FAQSchema'
+import { EmailCaptureHero } from '@/components/EmailCaptureHero'
 
 // Compliance components
 import { FinancialDisclaimer } from '@/components/compliance/FinancialDisclaimer'
@@ -265,6 +266,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Email Capture Hero */}
+      <section className="py-12 bg-white dark:bg-slate-900 px-4">
+        <div className="max-w-4xl mx-auto">
+          <EmailCaptureHero />
         </div>
       </section>
 

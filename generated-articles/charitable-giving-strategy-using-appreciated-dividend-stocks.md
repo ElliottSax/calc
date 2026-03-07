@@ -8,8 +8,8 @@ keywords:
 slug: "charitable-giving-strategy-using-appreciated-dividend-stocks"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Charitable Giving Strategy: Using Appreciated Dividend Stocks

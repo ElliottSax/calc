@@ -8,8 +8,8 @@ keywords:
 slug: "best-dividend-sectors-in-2026-energy-utilities-healthcare"
 category: "sector-analysis"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Best Dividend Sectors in 2026: Energy, Utilities, Healthcare

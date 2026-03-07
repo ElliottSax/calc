@@ -8,8 +8,8 @@ keywords:
 slug: "the-dividend-trap-high-yield-stocks-about-to-cut-dividends"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The 'Dividend Trap': High Yield Stocks About to Cut Dividends

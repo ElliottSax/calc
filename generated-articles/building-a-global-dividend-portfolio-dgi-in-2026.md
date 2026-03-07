@@ -8,8 +8,8 @@ keywords:
 slug: "building-a-global-dividend-portfolio-dgi-in-2026"
 category: "portfolio-construction"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Building a Global Dividend Portfolio: DGI in 2026

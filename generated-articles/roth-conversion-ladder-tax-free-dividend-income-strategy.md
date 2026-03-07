@@ -8,8 +8,8 @@ keywords:
 slug: "roth-conversion-ladder-tax-free-dividend-income-strategy"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Roth Conversion Ladder: Tax-Free Dividend Income Strategy

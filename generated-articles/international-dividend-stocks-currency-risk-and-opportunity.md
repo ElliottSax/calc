@@ -8,8 +8,8 @@ keywords:
 slug: "international-dividend-stocks-currency-risk-and-opportunity"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # International Dividend Stocks: Currency Risk and Opportunity

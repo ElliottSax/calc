@@ -8,8 +8,8 @@ keywords:
 slug: "ex-dividend-dates-explained-timing-your-purchases"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Ex-Dividend Dates Explained: Timing Your Purchases

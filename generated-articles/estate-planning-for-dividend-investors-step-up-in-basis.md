@@ -8,8 +8,8 @@ keywords:
 slug: "estate-planning-for-dividend-investors-step-up-in-basis"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Estate Planning for Dividend Investors: Step-Up in Basis

@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-aristocrats-vs-kings-vs-champions-which-to-own"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Aristocrats vs. Kings vs. Champions: Which to Own

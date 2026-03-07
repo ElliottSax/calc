@@ -8,8 +8,8 @@ keywords:
 slug: "the-dividend-ladder-strategy-creating-predictable-income"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # The Dividend Ladder Strategy: Creating Predictable Income

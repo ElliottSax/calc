@@ -8,8 +8,8 @@ keywords:
 slug: "setting-up-qualified-dividend-accounts-iras-and-more"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Setting Up Qualified Dividend Accounts: IRAs and More

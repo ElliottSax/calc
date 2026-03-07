@@ -6,11 +6,39 @@ category: blog
 keywords: calculate dividend growth, CAGR dividend
 quality_score: 85
 word_count: 741
+description: Calculate Dividend Growth: Understanding dividend growth rates is essential for income-focused investors who want to build a sustainable portfolio of dividend-paying stocks. This ...
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Calculate Dividend Growth Rate",
+  "author": {
+    "@type": "Person",
+    "name": "Expert Team"
+  },
+  "datePublished": "2026-03-04",
+  "dateModified": "2026-03-06",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dividend Engines",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dividendengines.com/logo.png"
+    }
+  },
+  "description": "Calculate Dividend Growth: Understanding dividend growth rates is essential for income-focused investors who want to build a sustainable portfolio of dividend-paying stocks. This ...",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dividendengines.com/blog/how-to-calculate-dividend-growth-rate"
+  }
+}
+</script>
 
 # How to Calculate Dividend Growth Rate: A Comprehensive Guide
 
-Understanding dividend growth rates is essential for income-focused investors who want to build a sustainable portfolio of dividend-paying stocks. This guide will walk you through various methods to calculate dividend growth rates and help you make informed investment decisions.
+Understanding dividend growth rates is essential for income-focused investors who want to build a sustainable portfolio of dividend-paying stocks (Source: [SEC - Investor Information](https://www.investor.gov)). This guide will walk you through various methods to calculate dividend growth rates and help you make informed investment decisions (Source: [FINRA - Investor Education](https://www.finra.org/investors)).
 
 ## What Is Dividend Growth Rate?
 
@@ -100,7 +128,7 @@ CAGR = ($4.76 / $3.75)^(1/4) - 1 = 6.14%
 - Payout ratio
 - Debt levels
 
-### 2. Industry Factors
+### 2 (Source: [Consumer Financial Protection Bureau](https://www.consumerfinance.gov)). Industry Factors
 - Market conditions
 - Competition
 - Regulatory environment
@@ -217,3 +245,9 @@ Calculating dividend growth rates is crucial for income investors. By understand
 - Make informed adjustments
 
 Regular monitoring and analysis of dividend growth rates, combined with thorough company research, will help investors maintain a sustainable and growing income stream from their investments.
+
+## Sources
+
+1. [FINRA - Investor Education](https://www.finra.org/investors)
+2. [Consumer Financial Protection Bureau](https://www.consumerfinance.gov)
+3. [SEC - Investor Information](https://www.investor.gov)

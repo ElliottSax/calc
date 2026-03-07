@@ -8,8 +8,8 @@ keywords:
 slug: "building-your-first-dividend-stock-portfolio-the-10k-start"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Building Your First Dividend Stock Portfolio: The $10K Start

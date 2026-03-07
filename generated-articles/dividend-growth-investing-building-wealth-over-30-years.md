@@ -8,8 +8,8 @@ keywords:
 slug: "dividend-growth-investing-building-wealth-over-30-years"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Dividend Growth Investing: Building Wealth Over 30 Years

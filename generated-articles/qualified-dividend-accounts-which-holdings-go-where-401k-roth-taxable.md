@@ -8,8 +8,8 @@ keywords:
 slug: "qualified-dividend-accounts-which-holdings-go-where-401k-roth-taxable"
 category: "dividend-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Qualified Dividend Accounts: Which Holdings Go Where (401k, Roth, Taxable)

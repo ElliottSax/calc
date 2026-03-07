@@ -8,8 +8,8 @@ keywords:
 slug: "qualified-dividend-rate-changes-in-2026-and-beyond"
 category: "tax-optimization"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Qualified Dividend Rate Changes in 2026 and Beyond

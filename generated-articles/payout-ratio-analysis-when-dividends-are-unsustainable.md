@@ -8,8 +8,8 @@ keywords:
 slug: "payout-ratio-analysis-when-dividends-are-unsustainable"
 category: "misc-strategies"
 author: "Editor"
-date: "2026-03-03"
-updated: "2026-03-03"
+date: "2026-03-05"
+updated: "2026-03-05"
 ---
 
 # Payout Ratio Analysis: When Dividends Are Unsustainable
