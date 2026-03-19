@@ -69,6 +69,9 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Redirect old numeric blog IDs to new slug-based URLs (SEO 301 redirects)
+      // Note: Handled by dynamic route handler in app/blog/[id]/route.ts
+      // These redirects are implemented in the route handler for better flexibility
     ]
   },
 

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { TrendingUp, Clock, BookOpen, User, Calendar, ArrowRight, Search, Filter, Tag, Star, Eye, MessageCircle, Share2, Bookmark, ChevronRight, Calculator, Shield, Target } from 'lucide-react'
+import { getSlugForId } from '@/lib/blog/slug-mapping'
 
 export const metadata: Metadata = {
   title: 'Dividend Investing Blog - Strategies, Analysis & Market Updates',
@@ -132,6 +133,15 @@ const TRENDING_TOPICS = [
   { topic: 'Inflation-Protected Dividends', posts: 9, growth: '+123%' }
 ]
 
+/**
+ * Helper function to convert numeric post IDs to slug-based URLs
+ * Ensures all links use SEO-friendly slug structure
+ */
+function getPostSlug(id: string): string {
+  const slug = getSlugForId(id)
+  return slug || `dividend-post-${id}` // Fallback slug if mapping not found
+}
+
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
@@ -212,7 +222,7 @@ export default function BlogPage() {
                 </div>
 
                 <h2 className="text-3xl font-bold mb-3 hover:text-blue-600 transition-colors">
-                  <Link href={`/blog/${FEATURED_POST.id}`}>
+                  <Link href={`/blog/drip-investing-for-beginners-2026`}>
                     {FEATURED_POST.title}
                   </Link>
                 </h2>
@@ -277,7 +287,7 @@ export default function BlogPage() {
                         )}
                       </div>
                       <CardTitle className="text-xl hover:text-blue-600 transition-colors">
-                        <Link href={`/blog/${post.id}`}>
+                        <Link href={`/blog/${getPostSlug(post.id)}`}>
                           {post.title}
                         </Link>
                       </CardTitle>
@@ -444,7 +454,7 @@ export default function BlogPage() {
                       </div>
                       <div className="flex-1">
                         <Link
-                          href={`/blog/${post.id}`}
+                          href={`/blog/${getPostSlug(post.id)}`}
                           className="text-sm font-medium hover:text-blue-600 transition-colors line-clamp-2"
                         >
                           {post.title}

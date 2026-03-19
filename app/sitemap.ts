@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { DIVIDEND_ARISTOCRATS } from '@/lib/data/dividend-aristocrats'
+import { BLOG_POSTS } from '@/lib/blog/blog-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
@@ -11,6 +12,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+  }))
+
+  // Generate blog post URLs from BLOG_POSTS data
+  const blogPostPages = BLOG_POSTS.map(post => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedDate || post.publishDate),
+    changeFrequency: 'monthly' as const,
+    priority: post.featured ? 0.8 : 0.6,
+  }))
+
+  // Generate blog category pages
+  const categories = Array.from(new Set(BLOG_POSTS.map(p => p.category)))
+  const blogCategoryPages = categories.map(category => ({
+    url: `${baseUrl}/blog/category/${category.toLowerCase().replace(/\s+/g, '-')}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.5,
+  }))
+
+  // Generate blog tag pages
+  const allTags = Array.from(new Set(BLOG_POSTS.flatMap(p => p.tags)))
+  const blogTagPages = allTags.map(tag => ({
+    url: `${baseUrl}/blog/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.4,
   }))
 
   return [
@@ -122,185 +149,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.7,
     },
-    {
-      url: `${baseUrl}/blog/best-dividend-stocks-2025`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/dividend-investing-strategies`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/monthly-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/drip-investing-guide`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    // Batch 1: High-traffic blog posts
-    {
-      url: `${baseUrl}/blog/best-monthly-dividend-stocks-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog/top-dividend-etfs-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog/dividend-tax-guide-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-build-1000-month-dividend-portfolio`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/best-dividend-stocks-under-50`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    // Batch 2: Stock category posts
-    {
-      url: `${baseUrl}/blog/best-dividend-stocks-for-beginners`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/best-dividend-growth-stocks-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-calculate-dividend-yield`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/best-high-yield-reits-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/best-technology-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    // Batch 3: Sector-specific posts
-    {
-      url: `${baseUrl}/blog/ex-dividend-date-explained`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog/best-energy-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-healthcare-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-canadian-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-utility-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    // Batch 4: Sector stocks + screening guide
-    {
-      url: `${baseUrl}/blog/best-financial-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-consumer-staples-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-industrial-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/best-international-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-find-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    // Batch 5: Analysis and reinvestment how-to guides
-    {
-      url: `${baseUrl}/blog/how-to-analyze-dividend-safety`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-track-your-dividend-portfolio`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-screen-for-quality-dividend-stocks`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-read-dividend-payout-ratios`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-reinvest-dividends-for-maximum-growth`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // Dynamic blog posts from BLOG_POSTS data
+    ...blogPostPages,
+    // Dynamic blog categories
+    ...blogCategoryPages,
+    // Dynamic blog tags
+    ...blogTagPages,
     {
       url: `${baseUrl}/stocks`,
       lastModified: currentDate,
@@ -367,7 +221,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
-    // Dynamically generated stock pages (50 stocks)
+    // Dynamically generated stock pages
     ...stockPages,
   ]
 }
