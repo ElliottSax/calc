@@ -1,0 +1,281 @@
+---
+title: How to Use Capital Gains for Retirement
+slug: how-to-use-capital-gains-for-retirement
+description: This article provides valuable insights and information.
+author: Content Team
+category: guides
+tags: []
+published_date: '''2026-03-16'''
+provider: cerebras
+---
+
+# How to Use Capital Gains for Retirement
+
+Capital gains—profits earned from selling investments like stocks, ETFs, or real estate—can be a powerful tool for funding retirement. Unlike wages or social security, capital gains offer flexibility, tax advantages, and the potential for compounding growth over decades. When strategically managed, they can supplement or even replace traditional income streams in retirement.
+
+This guide explores how to use capital gains effectively in retirement, including tax planning, investment selection, withdrawal strategies, and real-world examples using popular ETFs and dividend stocks like VTI, SCHD, VOO, JNJ, and KO.
+
+---
+
+## What Are Capital Gains?
+
+Capital gains occur when you sell an asset for more than its purchase price. For example, buying 100 shares of Johnson & Johnson (JNJ) at $100 per share and selling them later at $150 generates a $5,000 capital gain.
+
+There are two types:
+
+- **Short-term capital gains**: Profits from assets held one year or less. Taxed at ordinary income rates (up to 37% in 2024).
+- **Long-term capital gains**: Profits from assets held longer than one year. Taxed at preferential rates—0%, 15%, or 20% in 2024, depending on taxable income.
+
+For retirees, long-term capital gains are typically the goal due to lower tax rates and alignment with a buy-and-hold strategy.
+
+---
+
+## Why Capital Gains Matter in Retirement
+
+Traditional retirement planning focuses on savings, pensions, and Social Security. But capital gains can provide:
+
+- **Tax-efficient income**: Long-term gains taxed at lower rates.
+- **Flexibility**: Sell assets only when needed.
+- **Growth potential**: Reinvested gains compound over time.
+- **Control**: You decide when to realize gains.
+
+According to IRS data, taxpayers aged 65+ reported $780 billion in net capital gains in 2022—demonstrating how prevalent this income source is among retirees.
+
+---
+
+## Tax Brackets for Long-Term Capital Gains (2024)
+
+Understanding tax brackets is essential for retirees using capital gains.
+
+| Filing Status | 0% Rate Threshold | 15% Rate Threshold | 20% Rate Threshold |
+|---------------|-------------------|---------------------|---------------------|
+| Single        | ≤ $47,025         | $47,026 – $518,900  | > $518,900          |
+| Married Filing Jointly | ≤ $94,050 | $94,051 – $583,750  | > $583,750          |
+| Head of Household | ≤ $63,000     | $63,001 – $551,350  | > $551,350          |
+
+*Source: IRS Rev. Proc. 2023-34*
+
+A married couple filing jointly can earn up to $94,050 in long-term capital gains in 2024 and pay **0% federal tax**, assuming no other taxable income. This creates a powerful planning opportunity.
+
+---
+
+## Strategy 1: Tax-Loss Harvesting to Offset Gains
+
+Tax-loss harvesting involves selling underperforming investments to offset capital gains. Losses can reduce taxable gains dollar-for-dollar.
+
+### Example:
+- Realized gain from selling Vanguard S&P 500 ETF (VOO): $12,000
+- Realized loss from selling a struggling tech stock: $4,000
+- **Net capital gain**: $8,000
+
+Additionally, up to $3,000 in excess losses can offset ordinary income annually. Remaining losses can be carried forward indefinitely.
+
+This strategy allows retirees to rebalance portfolios while minimizing tax bills.
+
+---
+
+## Strategy 2: Asset Location — Where to Hold Investments
+
+Not all accounts are taxed the same. Place high-growth, high-turnover assets in tax-advantaged accounts (e.g., IRAs), and tax-efficient assets like index funds in taxable accounts.
+
+| Investment Type         | Best Account Type | Reason |
+|-------------------------|-------------------|--------|
+| Growth stocks / ETFs    | Taxable           | Long-term gains taxed at lower rates |
+| Dividend stocks (e.g., KO, JNJ) | Taxable           | Qualified dividends also taxed at 0%/15%/20% |
+| Bonds / REITs           | IRA or Roth IRA   | Interest taxed as ordinary income |
+| High-turnover mutual funds | IRA             | Frequent trading generates taxable short-term gains |
+
+Holding VTI (Vanguard Total Stock Market ETF) in a taxable account allows gains and qualified dividends to benefit from favorable tax treatment.
+
+---
+
+## Strategy 3: Controlled Realization of Gains
+
+Retirees can time the sale of assets to stay within the 0% long-term capital gains bracket.
+
+### Worked Example: Married Couple, No Other Income
+
+- **Portfolio**: $1 million in VTI, bought over time at average cost basis of $150/share.
+- **Current price (2024)**: $250/share → Total value = $1,666,667 (approx. 6,667 shares).
+- **Unrealized gain**: $1,666,667 – $1,000,000 = $666,667
+
+**Plan**: Sell shares annually to generate income without exceeding the 0% capital gains threshold.
+
+- 2024 threshold for 0% rate (MFJ): $94,050
+- Standard deduction (2024): $30,700
+- **Taxable income available for 0% capital gains**: $94,050 – $30,700 = $63,350
+
+This couple can realize **$63,350 in long-term capital gains annually with no federal tax**.
+
+**How many shares to sell?**
+- Gain per share: $250 – $150 = $100
+- Shares to sell: $63,350 ÷ $100 = **634 shares**
+- Cash received: 634 × $250 = **$158,500**
+- Tax: **$0**
+
+They receive $158,500 in cash, pay no federal capital gains tax, and still have $1.5 million in remaining portfolio value.
+
+Repeat annually for 15+ years of tax-free income.
+
+---
+
+## Strategy 4: Use of Dividend Growth Stocks
+
+Dividend-paying blue-chip stocks like Johnson & Johnson (JNJ) and Coca-Cola (KO) offer dual benefits: steady income and long-term capital appreciation.
+
+### Historical Performance (2014–2024)
+
+| Stock | Initial Price (2014) | Price (2024) | Capital Gain | Dividend Growth (CAGR) |
+|-------|----------------------|-------------|-------------|-------------------------|
+| JNJ   | $95                  | $170        | 79%         | 5.8%                    |
+| KO    | $40                  | $60         | 50%         | 4.2%                    |
+
+*Source: Yahoo Finance, company filings*
+
+A retiree who bought 500 shares of JNJ in 2014:
+- Initial investment: $47,500
+- Value in 2024: $85,000
+- Capital gain: $37,500 (long-term)
+- Total dividends received: ~$18,000 (reinvested or spent)
+
+By holding and occasionally selling shares, retirees can generate tax-efficient income while preserving principal.
+
+---
+
+## Strategy 5: Roth Conversion Ladder + Capital Gains
+
+A Roth conversion ladder involves converting traditional IRA funds to Roth IRAs over time, paying taxes now to enjoy tax-free withdrawals later.
+
+This strategy complements capital gains planning.
+
+### Example: Age 60–64
+
+- Convert $40,000/year from traditional IRA to Roth IRA.
+- Pay taxes at 12% or 22% bracket.
+- After 5 years, withdraw converted amounts tax-free starting at age 65.
+
+Meanwhile, use capital gains from taxable accounts for income during conversion years—staying below the 15% capital gains threshold.
+
+This dual approach minimizes lifetime taxes and maximizes flexibility.
+
+---
+
+## Real-World Portfolio Example: $1.2 Million in Retirement
+
+Let’s build a realistic retirement plan using capital gains.
+
+### Assumptions:
+- Retiree: 65, married, filing jointly
+- Annual spending: $80,000
+- Portfolio: $1.2 million
+  - $800,000 in taxable account (VTI, SCHD)
+  - $400,000 in traditional IRA
+- No pension, Social Security delayed to 70
+
+### Portfolio Allocation:
+
+| Asset | Amount | Description |
+|------|--------|-------------|
+| VTI | $500,000 | Low-cost total market ETF |
+| SCHD | $300,000 | High-dividend, low-turnover ETF |
+| Traditional IRA | $400,000 | Tax-deferred growth |
+
+SCHD has an average annual dividend yield of 3.5% and low turnover, making it ideal for taxable accounts.
+
+### Annual Withdrawal Strategy:
+
+1. **Step 1**: Take $21,000 in dividends from SCHD and VTI.
+   - SCHD: $300,000 × 3.5% = $10,500
+   - VTI: $500,000 × 1.5% = $7,500
+   - Plus qualified dividends from capital gain distributions: ~$3,000
+   - Total: $21,000
+
+2. **Step 2**: Sell assets to cover remaining $59,000.
+
+- Realize capital gains up to $63,350 (0% bracket)
+- Sell shares of VTI with high cost basis (low gain)
+- Example: VTI trades at $250/share, average cost basis $180
+  - Gain per share: $70
+  - Shares to sell: $59,000 ÷ $70 = 843 shares
+  - Cash received: 843 × $250 = $210,750 (more than needed—can adjust)
+
+Alternatively, sell fewer shares over multiple years.
+
+**Result**: $80,000 in income, $0 federal capital gains tax.
+
+Portfolio remains largely intact due to low withdrawal rate (6.7% of taxable portfolio, but only 5.7% of total).
+
+---
+
+## Data Table: Projected Capital Gains Income (2024)
+
+| Portfolio Value | Cost Basis | Unrealized Gain | Max 0% Gain (MFJ) | Annual Tax-Free Sale | After-Tax Income |
+|-----------------|------------|------------------|--------------------|------------------------|------------------|
+| $800,000        | $500,000   | $300,000         | $63,350            | ~250 shares of VTI*     | $63,350          |
+| $1,000,000      | $600,000   | $400,000         | $63,350            | ~250 shares of VTI      | $63,350          |
+| $1,500,000      | $900,000   | $600,000         | $63,350            | ~250 shares of VTI      | $63,350          |
+
+*Assumes VTI at $250/share, $100 gain per share (simplified). Actual cost basis varies.
+
+Note: Even with large unrealized gains, retirees can take tax-free income by staying under the 0% threshold.
+
+---
+
+## Risks and Mitigations
+
+### 1. Market Downturns
+Selling during a bear market locks in losses.
+
+**Solution**: Keep 2–3 years of cash or bonds in taxable account to avoid forced sales.
+
+### 2. Bracket Creep
+Other income (e.g., pensions, RMDs) can push you into the 15% capital gains bracket.
+
+**Solution**: Delay Social Security, do Roth conversions early, use HSAs.
+
+### 3. State Taxes
+Some states (e.g., California, New Jersey) tax capital gains as ordinary income.
+
+**Solution**: Factor in state rates; consider relocation or holding state-free investments.
+
+---
+
+## Frequently Asked Questions
+
+### Q: Can I live entirely on capital gains in retirement?
+**Yes.** If you have a sufficiently large portfolio and stay below the 0% capital gains threshold, you can live tax-free on capital gains and qualified dividends. Example: A couple with $1 million in VTI can withdraw ~$63,000/year tax-free (2024).
+
+### Q: Are dividends better than capital gains?
+Both are useful. Qualified dividends are taxed like long-term gains (0%/15%/20%). Dividends provide steady cash flow; capital gains offer flexibility. A mix (e.g., SCHD + VTI) is ideal.
+
+### Q: What happens when I exceed the 0% capital gains bracket?
+Gains above the threshold are taxed at 15% (or 20% for very high income). For example, a single filer earning $50,000 in gains pays 0% on first $47,025 and 15% on the remaining $2,975 → $446.25 tax.
+
+### Q: Should I sell winners or losers first?
+Sell winners strategically to stay in the 0% bracket. Harvest losers to offset gains. Avoid wash sales (buying the same security within 30 days).
+
+### Q: How do Required Minimum Distributions (RMDs) affect capital gains planning?
+RMDs from traditional IRAs start at age 73 (2024) and increase taxable income. This can push you into the 15% capital gains bracket. Mitigate by doing Roth conversions before age 73.
+
+### Q: Is VOO better than VTI for retirement?
+VOO (S&P 500) and VTI (total market) are both excellent. VTI includes small- and mid-caps, offering slightly broader diversification. VOO has a longer history and slightly lower expense ratio (0.03% vs. 0.03%). For most retirees, the difference is negligible.
+
+---
+
+## Final Thoughts
+
+Capital gains are not a windfall—they’re the result of disciplined investing over decades. But when managed with intention, they become one of the most tax-efficient income sources in retirement.
+
+Key takeaways:
+- Use the 0% long-term capital gains bracket strategically.
+- Hold growth and dividend ETFs (VTI, SCHD, VOO) in taxable accounts.
+- Time sales to avoid high tax brackets.
+- Combine with Roth conversions and tax-loss harvesting.
+
+Retirees with $800,000+ in taxable investments can generate $60,000+ annually with **$0 federal capital gains tax**—a powerful advantage over traditional income.
+
+Start planning early. Track cost basis. Rebalance wisely. And let compounding do the heavy lifting.
+
+---
+
+*Data sources: IRS.gov, Vanguard.com, Schwab.com, Morningstar, Yahoo Finance. Past performance not indicative of future results. Consult a tax advisor for personal planning.*
