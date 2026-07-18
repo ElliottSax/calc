@@ -92,6 +92,12 @@ const nextConfig = {
   // Server external packages (moved from experimental in Next.js 15)
   serverExternalPackages: ['pino', 'pino-pretty'],
 
+  // Ship the markdown source with the dynamic blog route so fs reads resolve at
+  // runtime on Vercel (the route reads content/blog/<slug>.md on demand).
+  outputFileTracingIncludes: {
+    '/blog/[id]': ['./content/blog/**/*'],
+  },
+
   // Performance and optimization features
   experimental: {
     optimizePackageImports: [
