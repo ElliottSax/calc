@@ -2,7 +2,7 @@
 title: "Top Life Insurance Dividend Stocks: Annuities & Mortality"
 description: "Complete guide to financials dividend stocks. Explore the best life insurance dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "life insurance stocks, annuity stocks, insurance dividends, mortality play"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["life insurance stocks", "annuity stocks", "insurance dividends", "mortality play"]
