@@ -2,7 +2,7 @@
 title: "Best Trucking & Logistics Dividend Stocks: Supply Chain Leaders"
 description: "Complete guide to industrials dividend stocks. Explore the best transportation & logistics dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "trucking stocks, logistics stocks, transportation dividends, freight stocks"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["trucking stocks", "logistics stocks", "transportation dividends", "freight stocks"]
