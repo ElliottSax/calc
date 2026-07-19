@@ -1,0 +1,45 @@
+name: Autopublish
+
+# Self-publishing: every 2h a scheduled run moves one queued article from
+# article-queue/ into the site's content dir and pushes it (triggers Vercel).
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours = 12x/day
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'articles to publish this run'
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autopublish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish next article(s) from queue
+        run: node scripts/queue-publish.mjs
+        env:
+          ARTICLES_PER_RUN: ${{ github.event.inputs.count || '1' }}
+
+      - name: Commit & push
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing to publish"; exit 0
+          fi
+          git config user.name "autopublish[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "content: autopublish article"
+          git push
