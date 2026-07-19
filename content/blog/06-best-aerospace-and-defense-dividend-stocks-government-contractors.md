@@ -2,7 +2,7 @@
 title: "Best Aerospace & Defense Dividend Stocks: Government Contractors"
 description: "Complete guide to industrials dividend stocks. Explore the best aerospace & defense dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "aerospace stocks, defense stocks, defense contractors, government spending"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["aerospace stocks", "defense stocks", "defense contractors", "government spending"]
