@@ -2,7 +2,7 @@
 title: "Top Industrials Dividend Stocks: Manufacturing & Equipment"
 description: "Complete guide to industrials dividend stocks. Explore the best manufacturing & equipment dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "industrial stocks, manufacturing dividends, equipment stocks, machinery dividends"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["industrial stocks", "manufacturing dividends", "equipment stocks", "machinery dividends"]
