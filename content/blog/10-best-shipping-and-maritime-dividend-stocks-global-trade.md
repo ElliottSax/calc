@@ -2,7 +2,7 @@
 title: "Best Shipping & Maritime Dividend Stocks: Global Trade"
 description: "Complete guide to industrials dividend stocks. Explore the best shipping & maritime dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "shipping stocks, maritime dividends, containerized shipping, global trade"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["shipping stocks", "maritime dividends", "containerized shipping", "global trade"]
