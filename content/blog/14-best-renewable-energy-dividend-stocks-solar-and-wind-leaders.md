@@ -2,7 +2,7 @@
 title: "Best Renewable Energy Dividend Stocks: Solar & Wind Leaders"
 description: "Complete guide to utilities dividend stocks. Explore the best renewable energy dividend payers with sector analysis, dividend comparisons, and FAQ."
 keyword: "renewable energy stocks, solar stocks, wind stocks, clean energy dividends"
-date: 2026-03-21
+date: 2026-07-19
 type: "guide"
 category: "Dividend Investing"
 tags: ["renewable energy stocks", "solar stocks", "wind stocks", "clean energy dividends"]
