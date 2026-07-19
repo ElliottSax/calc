@@ -79,15 +79,6 @@ check_directory_exists() {
   return 0
 }
 
-validate_typescript_syntax() {
-  local file=$1
-  if ! npx tsc --noEmit "$file" 2>/dev/null; then
-    print_warning "TypeScript syntax may have issues in $file"
-    return 1
-  fi
-  return 0
-}
-
 # Check essential files
 check_migration_files() {
   print_header "Checking Migration Files"
@@ -95,7 +86,7 @@ check_migration_files() {
   local files=(
     "lib/blog/slug-mapping.ts"
     "lib/blog/blog-sitemap.ts"
-    "app/blog/[id]/route.ts"
+    "app/blog/[id]/page.tsx"
     "app/blog/page.tsx"
     "app/sitemap.ts"
     "BLOG_URL_MIGRATION.md"
@@ -139,7 +130,7 @@ verify_slug_mapping() {
     fi
   done
 
-  return $([ "$all_exist" = true ] && echo 0 || echo 1)
+  return $([ "$all_found" = true ] && echo 0 || echo 1)
 }
 
 # Check for hardcoded numeric blog links
@@ -212,26 +203,28 @@ verify_sitemap() {
 verify_route_handler() {
   print_header "Verifying Redirect Route Handler"
 
-  local route_file="app/blog/[id]/route.ts"
+  # Legacy numeric IDs are handled by the [id] page, which redirects to the slug
+  # URL via next/navigation redirect() (the old standalone route.ts was removed).
+  local route_file="app/blog/[id]/page.tsx"
 
   if ! check_file_exists "$route_file"; then
-    print_error "Route handler not found"
+    print_error "Blog [id] page not found"
     return 1
   fi
 
-  # Check for 301 status
-  if grep -q "301" "$route_file"; then
-    print_success "Route handler returns 301 status"
+  # Check for redirect of legacy numeric IDs
+  if grep -q "redirect(" "$route_file"; then
+    print_success "Page redirects legacy numeric IDs to slug URLs"
   else
-    print_error "Route handler doesn't return 301 status"
+    print_error "Page doesn't redirect legacy numeric IDs"
     return 1
   fi
 
   # Check for validation
   if grep -q "isValidBlogId\|getSlugForId" "$route_file"; then
-    print_success "Route handler validates and maps IDs"
+    print_success "Page validates and maps IDs"
   else
-    print_error "Route handler missing validation"
+    print_error "Page missing validation"
     return 1
   fi
 
@@ -307,7 +300,8 @@ build_and_test() {
 generate_report() {
   print_header "Migration Status Report"
 
-  local report_file="BLOG_URL_MIGRATION_REPORT.txt"
+  # Write to a temp dir so we don't drop an untracked artifact in the repo root.
+  local report_file="${TMPDIR:-/tmp}/BLOG_URL_MIGRATION_REPORT.txt"
 
   cat > "$report_file" << EOF
 Blog URL Migration Report
@@ -315,7 +309,7 @@ Generated: $(date)
 
 Files Created:
 - lib/blog/slug-mapping.ts
-- app/blog/[id]/route.ts
+- app/blog/[id]/page.tsx
 - lib/blog/blog-sitemap.ts
 
 Files Modified:

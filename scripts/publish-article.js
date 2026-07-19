@@ -12,7 +12,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
+// Trim trailing hyphens AFTER truncating, so an 80-char cut that lands on a
+// separator doesn't leave a dangling "-" (e.g. content/blog/foo-bar-.md).
+const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80).replace(/-+$/g, '');
 const oneLine = (s) => String(s || '').replace(/[\r\n]+/g, ' ').replace(/"/g, "'").trim();
 
 const arg = process.argv[2] || '{}';
@@ -45,6 +47,14 @@ const frontmatter = [
 const outDir = path.join(process.cwd(), 'content', 'blog');
 fs.mkdirSync(outDir, { recursive: true });
 const filePath = path.join(outDir, `${slug}.md`);
+// Refuse to silently clobber an existing post with the same slug — in an
+// automated pipeline two different titles can collide and the second write
+// would destroy the first article. Opt in with overwrite:true / --overwrite / OVERWRITE=1.
+const allowOverwrite = p.overwrite === true || process.argv.includes('--overwrite') || process.env.OVERWRITE === '1';
+if (fs.existsSync(filePath) && !allowOverwrite) {
+  console.error(`FAIL: ${slug}.md already exists (slug collision). Pass overwrite:true (or --overwrite) to replace it.`);
+  process.exit(1);
+}
 fs.writeFileSync(filePath, frontmatter + p.body.trim() + '\n');
 console.log('WROTE', filePath);
 console.log('PUBLISHED', slug, '(content/blog)');
