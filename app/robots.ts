@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
+  const raw = (process.env.NEXT_PUBLIC_APP_URL || '').trim().replace(/\/+$/, '')
+  const baseUrl = raw && !raw.includes('localhost') && !raw.includes('vercel.app') ? raw : 'https://dividendengines.com'
   
   return {
     rules: [
