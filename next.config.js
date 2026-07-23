@@ -96,6 +96,8 @@ const nextConfig = {
   // runtime on Vercel (the route reads content/blog/<slug>.md on demand).
   outputFileTracingIncludes: {
     '/blog/[id]': ['./content/blog/**/*'],
+    // The sitemap reads content/blog to list every article URL.
+    '/sitemap.xml': ['./content/blog/**/*'],
   },
 
   // Performance and optimization features
