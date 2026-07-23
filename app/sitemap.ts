@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
+import { courses } from '@/lib/data/courses'
 
 // Read content/blog at request time (the files are bundled for this route via
 // outputFileTracingIncludes in next.config.mjs).
@@ -42,6 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: '/calculators/retirement', freq: 'weekly' as const, pr: 0.9 },
     { p: '/guides', freq: 'weekly' as const, pr: 0.8 },
     { p: '/resources', freq: 'weekly' as const, pr: 0.7 },
+    { p: '/courses', freq: 'weekly' as const, pr: 0.8 },
+    ...courses.map((c) => ({ p: `/courses/${c.slug}`, freq: 'monthly' as const, pr: 0.7 })),
   ]
 
   const staticPages: MetadataRoute.Sitemap = staticPaths.map(({ p, freq, pr }) => ({
