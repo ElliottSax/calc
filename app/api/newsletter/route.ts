@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { validateRequestBody, validationSchemas } from '@/lib/validation/sanitizer'
-import { subscribeToNewsletter } from '@/lib/email/email-service'
+import { subscribeToNewsletter, sendWelcomeEmail } from '@/lib/email/email-service'
 import { logger } from '@/lib/logger'
 
 export async function POST(request: Request) {
@@ -45,6 +45,12 @@ export async function POST(request: Request) {
     }
 
     logger.info({ subscriberId: result.subscriberId }, 'Newsletter subscription successful')
+
+    // Fire-and-forget: a failed welcome email (e.g. domain not yet verified)
+    // must never fail the signup response.
+    void sendWelcomeEmail(email, firstName).catch((err) =>
+      logger.error({ err }, 'Welcome email dispatch failed')
+    )
 
     return NextResponse.json({
       success: true,

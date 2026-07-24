@@ -276,7 +276,12 @@ function mockSubscribe(params: SubscribeParams): SubscribeResponse {
 }
 
 /**
- * Send welcome email (optional)
+ * Send a welcome email to a new subscriber.
+ *
+ * Implemented for Resend (the configured provider). Sending requires a verified
+ * domain on the Resend account for the EMAIL_FROM address; until the domain
+ * verifies, Resend rejects the send and this returns false — but it is called
+ * non-blocking from the route, so a failed welcome never fails the signup.
  */
 export async function sendWelcomeEmail(
   email: string,
@@ -284,10 +289,69 @@ export async function sendWelcomeEmail(
 ): Promise<boolean> {
   const provider = getProvider()
 
-  // TODO: Implement welcome email for each provider
-  // Most providers have transactional email APIs for this
+  if (provider !== 'resend') {
+    logger.info({ provider }, 'Welcome email skipped (provider has no send implementation)')
+    return true
+  }
 
-  logger.info({ provider }, 'Welcome email would be sent here')
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    logger.warn('Welcome email skipped — RESEND_API_KEY not set')
+    return false
+  }
 
-  return true
+  const from = process.env.EMAIL_FROM || 'Dividend Engines <hello@dividendengines.com>'
+  const hi = firstName ? ` ${firstName}` : ''
+  const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://dividendengines.com'
+
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from,
+        to: [email],
+        subject: 'Welcome to Dividend Engines 📈',
+        text: `Hi${hi},
+
+Thanks for subscribing to Dividend Engines.
+
+You'll get practical dividend-investing tips and new calculator releases — no spam.
+
+Start here:
+• DRIP calculator: ${site}/calculators/drip
+• Retirement income: ${site}/calculators/retirement-income
+• Dividend growth: ${site}/calculators/dividend-growth
+
+Happy compounding,
+The Dividend Engines Team`,
+        html: `<div style="font-family:Arial,sans-serif;max-width:560px;margin:0 auto;line-height:1.6;color:#1a1a1a">
+  <h1 style="font-size:22px;margin:0 0 12px">Welcome to Dividend Engines 📈</h1>
+  <p>Hi${hi},</p>
+  <p>Thanks for subscribing. You'll get practical dividend-investing tips and new calculator releases — no spam.</p>
+  <p style="margin:20px 0"><strong>Start here:</strong></p>
+  <ul style="padding-left:18px">
+    <li><a href="${site}/calculators/drip" style="color:#0d9488">DRIP calculator</a></li>
+    <li><a href="${site}/calculators/retirement-income" style="color:#0d9488">Retirement income calculator</a></li>
+    <li><a href="${site}/calculators/dividend-growth" style="color:#0d9488">Dividend growth calculator</a></li>
+  </ul>
+  <p style="margin-top:24px">Happy compounding,<br><strong>The Dividend Engines Team</strong></p>
+</div>`,
+      }),
+    })
+
+    if (!res.ok) {
+      // Most common cause: the EMAIL_FROM domain isn't verified in Resend yet.
+      logger.error({ status: res.status, body: await res.text() }, 'Welcome email send failed')
+      return false
+    }
+    logger.info('Welcome email sent')
+    return true
+  } catch (error) {
+    logger.error({ error }, 'Welcome email send threw')
+    return false
+  }
 }
