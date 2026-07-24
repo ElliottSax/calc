@@ -11,9 +11,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3">
             <TrendingUp className="h-8 w-8 text-blue-600" />
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+            {/* Brand is a span, not an h1 — otherwise every page (esp. blog
+                articles) has the brand as its primary H1, burying the real
+                topic heading and weakening on-page relevance. */}
+            <span className="text-xl font-bold text-gray-900 dark:text-white">
               Dividend Calculator Hub
-            </h1>
+            </span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-4">
