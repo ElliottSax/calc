@@ -40,7 +40,7 @@ These are **Dividend Kings and Aristocrats** — companies that have raised thei
 
 ### The higher-income options: O, VZ, XOM
 
-If current income matters more to you than growth, Realty Income (O), Verizon (VZ), and Exxon Mobil (XOM) offer higher yields. Realty Income even pays **monthly** rather than quarterly, which many beginners find motivating. The trade-off: higher yields usually mean slower dividend growth or more sector-specific risk (real estate, telecom, energy), so keep these as a portion of the mix rather than the whole thing.
+If current income matters more to you than growth, Realty Income (O), Verizon (VZ), and Exxon Mobil (XOM) offer higher yields. Realty Income even pays **monthly** rather than quarterly, which many beginners find motivating — and if you like the idea of real-estate income, see our guide to the [best REIT dividend stocks](/blog/best-reit-dividend-stocks). The trade-off: higher yields usually mean slower dividend growth or more sector-specific risk (real estate, telecom, energy), so keep these as a portion of the mix rather than the whole thing.
 
 ### The growth-tilted picks: HD, ABT
 
