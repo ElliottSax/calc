@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 
 const CALCULATORS = [
   { href: '/calculators/drip', name: 'DRIP Calculator', desc: 'See how reinvesting dividends compounds your portfolio over time.' },
+  { href: '/calculators/dividend-yield', name: 'Dividend Yield Calculator', desc: 'Get yield, annual income, and yield on cost for any dividend stock.' },
+  { href: '/calculators/fire', name: 'FIRE Calculator', desc: 'Find your FIRE number and years to financial independence.' },
   { href: '/calculators/compound-interest', name: 'Compound Interest Calculator', desc: 'Project how any investment grows with compounding.' },
   { href: '/calculators/401k', name: '401(k) Calculator', desc: 'Plan retirement savings, including your employer match.' },
   { href: '/calculators/ira', name: 'IRA Calculator', desc: 'Compare Traditional vs. Roth IRA outcomes side by side.' },

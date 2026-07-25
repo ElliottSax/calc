@@ -41,6 +41,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // the six that do. Fixed to match app/calculators/*.
     { p: '/calculators', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/drip', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/dividend-yield', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/fire', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/compound-interest', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/401k', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/ira', freq: 'weekly' as const, pr: 0.9 },
