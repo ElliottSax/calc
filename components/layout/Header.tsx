@@ -20,9 +20,9 @@ export function Header() {
           </Link>
           
           <nav className="hidden md:flex items-center space-x-4">
-            <Link href="/">
+            <Link href="/calculators">
               <Button variant="ghost" className="text-gray-700 dark:text-gray-300">
-                DRIP Calculator
+                Calculators
               </Button>
             </Link>
             <Link href="/aristocrats">
@@ -30,12 +30,16 @@ export function Header() {
                 Aristocrats
               </Button>
             </Link>
-            <Button variant="ghost" className="text-gray-700 dark:text-gray-300">
-              Learn
-            </Button>
-            <Button variant="default">
-              Sign In
-            </Button>
+            <Link href="/blog">
+              <Button variant="ghost" className="text-gray-700 dark:text-gray-300">
+                Learn
+              </Button>
+            </Link>
+            <Link href="/calculators/drip">
+              <Button variant="default">
+                DRIP Calculator
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}

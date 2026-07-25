@@ -36,11 +36,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     { p: '', freq: 'daily' as const, pr: 1.0 },
     { p: '/blog', freq: 'daily' as const, pr: 0.8 },
+    // Real calculator routes. The previous list pointed at /yield, /growth,
+    // /comparison, /retirement — none of which exist (they 404'd) — and omitted
+    // the six that do. Fixed to match app/calculators/*.
+    { p: '/calculators', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/drip', freq: 'weekly' as const, pr: 0.9 },
-    { p: '/calculators/yield', freq: 'weekly' as const, pr: 0.9 },
-    { p: '/calculators/growth', freq: 'weekly' as const, pr: 0.9 },
-    { p: '/calculators/comparison', freq: 'weekly' as const, pr: 0.9 },
-    { p: '/calculators/retirement', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/compound-interest', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/401k', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/ira', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/savings', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/investment-return', freq: 'weekly' as const, pr: 0.9 },
     { p: '/guides', freq: 'weekly' as const, pr: 0.8 },
     { p: '/resources', freq: 'weekly' as const, pr: 0.7 },
     { p: '/courses', freq: 'weekly' as const, pr: 0.8 },
