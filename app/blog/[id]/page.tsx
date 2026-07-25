@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm'
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
+import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
 import { getSlugForId, isValidBlogId } from '@/lib/blog/slug-mapping'
 
 // The [id] segment serves two purposes:
@@ -155,6 +156,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
             {body}
           </ReactMarkdown>
+
+          {/* Lead capture — convert article readers into subscribers. Posts to
+              the Resend-backed newsletter service; welcome email delivers value. */}
+          <aside className="mt-12 rounded-2xl border border-blue-200 dark:border-gray-700 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 p-6 sm:p-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+              Get smarter about dividends
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-5">
+              Join free for practical dividend-investing tips, new calculator releases, and stock
+              ideas — no spam, unsubscribe anytime.
+            </p>
+            <EmailCaptureForm variant="inline" />
+          </aside>
         </article>
       </main>
     </>
