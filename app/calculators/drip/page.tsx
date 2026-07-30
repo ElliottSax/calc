@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   }
 }
 
+export const dynamic = 'force-dynamic'
+
 const DRIP_FAQS = [
   {
     question: 'What is a DRIP calculator?',
