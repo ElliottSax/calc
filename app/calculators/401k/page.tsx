@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   }
 }
 
+export const dynamic = 'force-dynamic'
+
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl },
   { name: 'Calculators', url: `${baseUrl}/calculators` },
