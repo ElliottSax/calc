@@ -296,6 +296,26 @@ export default function Home() {
               aristocrats, REITs, or high-yield stocks, our tool helps you make informed decisions about your
               financial future.
             </p>
+
+            <h3>Popular Dividend Guides</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/blog/best-dividend-stocks-for-beginners" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Best Dividend Stocks for Beginners</Link>
+                {' '}— a starter watchlist with yields, payout ratios, and why each stock is beginner-friendly.
+              </li>
+              <li>
+                <Link href="/blog/best-reit-dividend-stocks" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Best REIT Dividend Stocks</Link>
+                {' '}— high-yield real-estate income picks and how REIT dividends are taxed.
+              </li>
+              <li>
+                <Link href="/calculators/dividend-yield" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Dividend Yield Calculator</Link>
+                {' '}— check any stock's yield, income, and yield on cost.
+              </li>
+              <li>
+                <Link href="/calculators/fire" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">FIRE Calculator</Link>
+                {' '}— find your financial-independence number and years to retire.
+              </li>
+            </ul>
           </div>
         </div>
       </section>

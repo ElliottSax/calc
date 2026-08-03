@@ -319,6 +319,15 @@ export default function DripCalculatorPage() {
             <p className="text-lg font-semibold mt-8">
               Start planning your dividend future today with our free DRIP calculator!
             </p>
+
+            <p className="mt-6">
+              New to dividends? Start with the{' '}
+              <a href="/blog/best-dividend-stocks-for-beginners" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">best dividend stocks for beginners</a>
+              , explore{' '}
+              <a href="/blog/best-reit-dividend-stocks" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">the best REIT dividend stocks</a>
+              , or check a stock's yield with the{' '}
+              <a href="/calculators/dividend-yield" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">dividend yield calculator</a>.
+            </p>
           </div>
         </div>
       </section>
