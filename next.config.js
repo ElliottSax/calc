@@ -69,9 +69,27 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Keyword-cannibalization fixes: numbered batch pages duplicated the
+      // clean-slug money pages and split the ranking signal (two pages ~#10 for
+      // "best dividend stocks for beginners" = neither cracks page 1). Consolidate
+      // each duplicate onto its canonical so the combined signal can rank.
+      {
+        source: '/blog/05-best-dividend-stocks-for-beginners',
+        destination: '/blog/best-dividend-stocks-for-beginners',
+        permanent: true,
+      },
+      {
+        source: '/blog/04-best-reit-dividend-stocks-by-property-type',
+        destination: '/blog/best-reit-dividend-stocks',
+        permanent: true,
+      },
+      {
+        source: '/blog/06-best-reit-dividend-stocks-passive-income',
+        destination: '/blog/best-reit-dividend-stocks',
+        permanent: true,
+      },
       // Redirect old numeric blog IDs to new slug-based URLs (SEO 301 redirects)
       // Note: Handled by dynamic route handler in app/blog/[id]/route.ts
-      // These redirects are implemented in the route handler for better flexibility
     ]
   },
 
