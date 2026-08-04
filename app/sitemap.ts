@@ -23,6 +23,9 @@ function blogSlugs(): string[] {
     return fs
       .readdirSync(BLOG_DIR)
       .filter((f) => f.endsWith('.md'))
+      // Exclude the noindexed auto-generated batches (haiku-*/cerebras-*): a
+      // sitemap should only list pages you want indexed.
+      .filter((f) => !/^(haiku|cerebras)-/.test(f))
       .map((f) => f.replace(/\.md$/, ''))
   } catch {
     return []

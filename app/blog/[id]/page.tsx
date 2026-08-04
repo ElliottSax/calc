@@ -94,11 +94,18 @@ export async function generateMetadata({
   // overflows the ~60-char title limit. An optional `seoTitle` frontmatter field
   // lets a page set a tuned, keyword-first title.
   const seoTitle = cleanText(post.data.seoTitle) || `${post.title} | Dividend Engines`
+  // Auto-generated low-value pages (haiku-*/cerebras-* batches) drag down the
+  // site's quality signal and waste crawl budget — they earned ~4 clicks across
+  // ~1,900 pages in a month. noindex them (still crawlable/followable) so Google
+  // concentrates ranking signals on the real articles + tools. Reversible: drop
+  // this rule. Also excluded from the sitemap.
+  const isLowValue = /^(haiku|cerebras)-/.test(id)
   return {
     title: { absolute: seoTitle },
     description,
     alternates: { canonical: url },
     openGraph: { title: post.title, description, type: 'article', url },
+    ...(isLowValue ? { robots: { index: false, follow: true } } : {}),
   }
 }
 
