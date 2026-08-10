@@ -18,6 +18,7 @@ const CALCULATORS = [
   { href: '/calculators/dividend-income', name: 'Dividend Income Calculator', desc: 'See your monthly and annual dividend income from any portfolio.' },
   { href: '/calculators/dividend-growth', name: 'Dividend Growth Calculator', desc: 'Project how rising dividends grow your income and yield on cost.' },
   { href: '/calculators/dividend-tax', name: 'Dividend Tax Calculator', desc: 'Estimate tax on qualified and non-qualified dividends, including the 3.8% NIIT.' },
+  { href: '/calculators/payout-ratio', name: 'Dividend Payout Ratio Calculator', desc: 'See what share of earnings a company pays out — and whether its dividend is sustainable.' },
   { href: '/calculators/fire', name: 'FIRE Calculator', desc: 'Find your FIRE number and years to financial independence.' },
   { href: '/calculators/compound-interest', name: 'Compound Interest Calculator', desc: 'Project how any investment grows with compounding.' },
   { href: '/calculators/401k', name: '401(k) Calculator', desc: 'Plan retirement savings, including your employer match.' },
