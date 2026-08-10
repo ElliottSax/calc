@@ -148,10 +148,40 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   const post = loadPost(id)
   if (!post) notFound()
 
-  const { body, title, description } = post
+  const { data, body, title, description } = post
+  const url = `https://dividendengines.com/blog/${id}`
+  // FAQ rich results are the biggest CTR lever for pages ranking on page 1. Emit
+  // Article + BreadcrumbList always, and FAQPage when the post's frontmatter
+  // provides a `faq: [{ q, a }]` list (Google shows expandable Q&A in the SERP).
+  const faq = Array.isArray((data as any).faq) ? ((data as any).faq as { q: string; a: string }[]) : []
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        headline: title,
+        description: description || undefined,
+        url,
+        ...((data as any).date ? { datePublished: String((data as any).date), dateModified: String((data as any).date) } : {}),
+        author: { '@type': 'Organization', name: 'Dividend Engines' },
+        publisher: { '@type': 'Organization', name: 'Dividend Engines' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Blog', item: 'https://dividendengines.com/blog' },
+          { '@type': 'ListItem', position: 2, name: title, item: url },
+        ],
+      },
+      ...(faq.length
+        ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }]
+        : []),
+    ],
+  }
   return (
     <>
       <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main className="container mx-auto px-4 py-8">
         <article className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 leading-tight text-gray-900 dark:text-white">
