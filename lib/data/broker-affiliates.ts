@@ -13,7 +13,7 @@ export const BROKER_AFFILIATES: BrokerComparison[] = [
       id: 'schwab-001',
       merchant: 'Charles Schwab',
       url: 'https://www.schwab.com',
-      trackingId: '?ref=dividendcalchub',
+      trackingId: '',
       commission: '$100 per qualified account',
       category: 'broker',
       featured: true
@@ -48,7 +48,7 @@ export const BROKER_AFFILIATES: BrokerComparison[] = [
       id: 'fidelity-001',
       merchant: 'Fidelity',
       url: 'https://www.fidelity.com',
-      trackingId: '?s=dividendcalchub',
+      trackingId: '',
       commission: '$50-150 per account',
       category: 'broker',
       featured: true
@@ -83,7 +83,7 @@ export const BROKER_AFFILIATES: BrokerComparison[] = [
       id: 'vanguard-001',
       merchant: 'Vanguard',
       url: 'https://investor.vanguard.com',
-      trackingId: '?cmpgn=dividendcalchub',
+      trackingId: '',
       commission: '$50-100 per account',
       category: 'broker',
       featured: false
@@ -119,7 +119,7 @@ export const BROKER_AFFILIATES: BrokerComparison[] = [
       id: 'etrade-001',
       merchant: 'E*TRADE',
       url: 'https://us.etrade.com',
-      trackingId: '?offer=dividendcalchub',
+      trackingId: '',
       commission: '$75-200 per account',
       category: 'broker',
       featured: false
@@ -154,7 +154,7 @@ export const BROKER_AFFILIATES: BrokerComparison[] = [
       id: 'td-001',
       merchant: 'TD Ameritrade',
       url: 'https://www.tdameritrade.com',
-      trackingId: '?source=dividendcalchub',
+      trackingId: '',
       commission: '$100-150 per account',
       category: 'broker',
       featured: false
@@ -191,7 +191,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Morningstar Premium',
     description: 'Professional-grade investment research and portfolio analysis',
     category: 'research',
-    affiliateUrl: 'https://www.morningstar.com/premium?ref=dividendcalchub',
+    affiliateUrl: 'https://www.morningstar.com/premium',
     commission: '30% recurring',
     features: [
       'Stock & fund analysis',
@@ -205,7 +205,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Seeking Alpha Premium',
     description: 'Crowd-sourced content and analysis for dividend investors',
     category: 'research',
-    affiliateUrl: 'https://seekingalpha.com/premium?source=dividendcalchub',
+    affiliateUrl: 'https://seekingalpha.com/premium',
     commission: '25% recurring',
     features: [
       'Dividend scorecards',
@@ -219,7 +219,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Yahoo Finance Plus',
     description: 'Enhanced market data and advanced charting tools',
     category: 'data',
-    affiliateUrl: 'https://finance.yahoo.com/plus?src=dividendcalchub',
+    affiliateUrl: 'https://finance.yahoo.com/plus',
     commission: '$15 per signup',
     features: [
       'Advanced charting',
@@ -233,7 +233,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Personal Capital',
     description: 'Free wealth management and tracking tools',
     category: 'portfolio',
-    affiliateUrl: 'https://www.personalcapital.com?utm_source=dividendcalchub',
+    affiliateUrl: 'https://www.personalcapital.com',
     commission: '$100 per qualified lead',
     features: [
       'Net worth tracking',

@@ -63,7 +63,7 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
     tagline: 'The Best Platform for Dividend Investors',
     rating: 4.8,
     reviewCount: 8500,
-    affiliateLink: 'https://m1.com/affiliate-link-here',
+    affiliateLink: 'https://www.m1finance.com',
     currentPromo: {
       title: 'Get up to $200 Bonus',
       description: 'Deposit $1,000+ and get $75. Deposit $10,000+ and get $200.',
@@ -129,7 +129,7 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
     tagline: 'Best Research Tools & Customer Service',
     rating: 4.9,
     reviewCount: 45000,
-    affiliateLink: 'https://fidelity.com/affiliate-link-here',
+    affiliateLink: 'https://www.fidelity.com',
     bestFor: ['Research-focused investors', 'Retirement accounts', 'Full-service investing'],
     summary: 'Fidelity is a powerhouse with the best research tools, excellent customer service, and everything a dividend investor needs. Perfect if you want professional-grade tools.',
     fees: {
@@ -188,7 +188,7 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
     tagline: 'Best All-Around Platform',
     rating: 4.8,
     reviewCount: 38000,
-    affiliateLink: 'https://schwab.com/affiliate-link-here',
+    affiliateLink: 'https://www.schwab.com',
     bestFor: ['All-around investing', 'Banking integration', 'Full-service brokerage'],
     summary: 'Charles Schwab offers the complete package: excellent platform, great research, banking services, and perfect for dividend investors with free DRIP.',
     fees: {
@@ -247,7 +247,7 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
     tagline: 'Simplest Platform for Beginners',
     rating: 4.3,
     reviewCount: 95000,
-    affiliateLink: 'https://robinhood.com/affiliate-link-here',
+    affiliateLink: 'https://robinhood.com',
     bestFor: ['Beginners', 'Mobile-first users', 'Simple investing'],
     summary: 'Robinhood revolutionized commission-free trading and remains the easiest platform for beginners. Great for dividend investors who want simplicity.',
     fees: {
@@ -309,7 +309,7 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
     tagline: 'Best for Technical Analysis',
     rating: 4.5,
     reviewCount: 42000,
-    affiliateLink: 'https://webull.com/affiliate-link-here',
+    affiliateLink: 'https://www.webull.com',
     currentPromo: {
       title: 'Get Free Stocks',
       description: 'Deposit $100+ and get 6 free stocks (valued up to $3,000)',

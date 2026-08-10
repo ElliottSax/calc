@@ -53,7 +53,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     etoro: {
       name: 'eToro',
       baseUrl: 'https://partners.etoro.com/aw.aspx',
-      affiliateId: process.env.NEXT_PUBLIC_ETORO_ID || 'YOUR_ETORO_ID',
+      affiliateId: process.env.NEXT_PUBLIC_ETORO_ID || '',
       commission: 200, // $200 CPA
       params: {
         'aw': '1234567',
@@ -64,7 +64,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     interactive_brokers: {
       name: 'Interactive Brokers',
       baseUrl: 'https://www.interactivebrokers.com',
-      affiliateId: process.env.NEXT_PUBLIC_IB_ID || 'YOUR_IB_ID',
+      affiliateId: process.env.NEXT_PUBLIC_IB_ID || '',
       commission: 200,
       params: {
         'gmid': '',
@@ -74,7 +74,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     charles_schwab: {
       name: 'Charles Schwab',
       baseUrl: 'https://www.schwab.com',
-      affiliateId: process.env.NEXT_PUBLIC_SCHWAB_ID || 'YOUR_SCHWAB_ID',
+      affiliateId: process.env.NEXT_PUBLIC_SCHWAB_ID || '',
       commission: 100,
       params: {
         'refrid': ''
@@ -83,7 +83,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     fidelity: {
       name: 'Fidelity',
       baseUrl: 'https://www.fidelity.com',
-      affiliateId: process.env.NEXT_PUBLIC_FIDELITY_ID || 'YOUR_FIDELITY_ID',
+      affiliateId: process.env.NEXT_PUBLIC_FIDELITY_ID || '',
       commission: 150,
       params: {
         'immid': '',
@@ -93,7 +93,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     td_ameritrade: {
       name: 'TD Ameritrade',
       baseUrl: 'https://www.tdameritrade.com',
-      affiliateId: process.env.NEXT_PUBLIC_TD_ID || 'YOUR_TD_ID',
+      affiliateId: process.env.NEXT_PUBLIC_TD_ID || '',
       commission: 100,
       params: {
         'offerID': '',
@@ -103,7 +103,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     webull: {
       name: 'Webull',
       baseUrl: 'https://www.webull.com',
-      affiliateId: process.env.NEXT_PUBLIC_WEBULL_ID || 'YOUR_WEBULL_ID',
+      affiliateId: process.env.NEXT_PUBLIC_WEBULL_ID || '',
       commission: 30,
       cookieDuration: 30,
       params: {
@@ -114,7 +114,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     robinhood: {
       name: 'Robinhood',
       baseUrl: 'https://join.robinhood.com',
-      affiliateId: process.env.NEXT_PUBLIC_ROBINHOOD_ID || 'YOUR_RH_ID',
+      affiliateId: process.env.NEXT_PUBLIC_ROBINHOOD_ID || '',
       commission: 5, // Stock reward
       cookieDuration: 60,
       params: {}
@@ -124,7 +124,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     betterment: {
       name: 'Betterment',
       baseUrl: 'https://www.betterment.com',
-      affiliateId: process.env.NEXT_PUBLIC_BETTERMENT_ID || 'YOUR_BETTERMENT_ID',
+      affiliateId: process.env.NEXT_PUBLIC_BETTERMENT_ID || '',
       commission: 100,
       params: {
         'referral_key': ''
@@ -133,7 +133,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     wealthfront: {
       name: 'Wealthfront',
       baseUrl: 'https://www.wealthfront.com',
-      affiliateId: process.env.NEXT_PUBLIC_WEALTHFRONT_ID || 'YOUR_WF_ID',
+      affiliateId: process.env.NEXT_PUBLIC_WEALTHFRONT_ID || '',
       commission: 100,
       params: {
         'wfaid': ''
@@ -142,7 +142,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     m1_finance: {
       name: 'M1 Finance',
       baseUrl: 'https://m1.finance',
-      affiliateId: process.env.NEXT_PUBLIC_M1_ID || 'YOUR_M1_ID',
+      affiliateId: process.env.NEXT_PUBLIC_M1_ID || '',
       commission: 50,
       params: {
         'pid': '',
@@ -154,7 +154,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     motley_fool: {
       name: 'The Motley Fool',
       baseUrl: 'https://www.fool.com',
-      affiliateId: process.env.NEXT_PUBLIC_FOOL_ID || 'YOUR_FOOL_ID',
+      affiliateId: process.env.NEXT_PUBLIC_FOOL_ID || '',
       commission: 100,
       params: {
         'source': '',
@@ -164,7 +164,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     seeking_alpha: {
       name: 'Seeking Alpha',
       baseUrl: 'https://seekingalpha.com',
-      affiliateId: process.env.NEXT_PUBLIC_SA_ID || 'YOUR_SA_ID',
+      affiliateId: process.env.NEXT_PUBLIC_SA_ID || '',
       commission: 50,
       params: {
         'checkout': 'true',
@@ -174,7 +174,7 @@ export const AFFILIATE_CONFIG: AffiliateConfig = {
     morningstar: {
       name: 'Morningstar',
       baseUrl: 'https://www.morningstar.com',
-      affiliateId: process.env.NEXT_PUBLIC_MORNINGSTAR_ID || 'YOUR_MS_ID',
+      affiliateId: process.env.NEXT_PUBLIC_MORNINGSTAR_ID || '',
       commission: 75,
       params: {
         'cid': ''

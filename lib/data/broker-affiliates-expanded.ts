@@ -44,7 +44,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://m1.finance/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: true,
       expiresAt: undefined,
     },
@@ -82,7 +82,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.wealthfront.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: true,
     },
   },
@@ -119,7 +119,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.betterment.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: true,
     },
   },
@@ -162,7 +162,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://robinhood.com/us/en/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -204,7 +204,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.webull.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -245,7 +245,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://public.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -283,7 +283,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.fidelity.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: true,
     },
   },
@@ -320,7 +320,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.schwab.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: true,
     },
   },
@@ -357,7 +357,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://us.etrade.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -394,7 +394,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.tdameritrade.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -434,7 +434,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.interactivebrokers.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -476,7 +476,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://www.sofi.com/invest/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -514,7 +514,7 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
     affiliateLink: {
       url: 'https://investor.vanguard.com/',
-      trackingId: '?ref=dividend-calc',
+      trackingId: '',
       featured: false,
     },
   },
@@ -573,7 +573,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Morningstar Premium',
     description: 'Professional-grade investment research and portfolio analysis',
     category: 'research',
-    affiliateUrl: 'https://www.morningstar.com/premium?ref=dividendcalchub',
+    affiliateUrl: 'https://www.morningstar.com/premium',
     commission: '30% recurring',
     features: [
       'Stock & fund analysis',
@@ -587,7 +587,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Seeking Alpha Premium',
     description: 'Crowd-sourced content and analysis for dividend investors',
     category: 'research',
-    affiliateUrl: 'https://seekingalpha.com/premium?source=dividendcalchub',
+    affiliateUrl: 'https://seekingalpha.com/premium',
     commission: '25% recurring',
     features: [
       'Dividend scorecards',
@@ -601,7 +601,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Yahoo Finance Plus',
     description: 'Enhanced market data and advanced charting tools',
     category: 'data',
-    affiliateUrl: 'https://finance.yahoo.com/plus?src=dividendcalchub',
+    affiliateUrl: 'https://finance.yahoo.com/plus',
     commission: '$15 per signup',
     features: [
       'Advanced charting',
@@ -615,7 +615,7 @@ export const RECOMMENDED_TOOLS = [
     name: 'Personal Capital',
     description: 'Free wealth management and tracking tools',
     category: 'portfolio',
-    affiliateUrl: 'https://www.personalcapital.com?utm_source=dividendcalchub',
+    affiliateUrl: 'https://www.personalcapital.com',
     commission: '$100 per qualified lead',
     features: [
       'Net worth tracking',

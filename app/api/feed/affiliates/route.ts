@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { buildAffiliateUrl } from '@/lib/affiliate/config'
 
 interface AffiliateBroker {
   id: string
@@ -22,7 +23,7 @@ const AFFILIATE_BROKERS: AffiliateBroker[] = [
     id: 'charles-schwab',
     name: 'Charles Schwab',
     url: 'https://www.schwab.com',
-    affiliateUrl: 'https://refer.schwab.com/dividendcalc',
+    affiliateUrl: 'https://www.schwab.com',
     description: 'Full-service broker with excellent research tools and no commission trades',
     features: ['$0 stock trades', '$0 ETF trades', 'Fractional shares', 'DRIP available', 'No minimum'],
     minDeposit: 0,
@@ -38,7 +39,7 @@ const AFFILIATE_BROKERS: AffiliateBroker[] = [
     id: 'vanguard',
     name: 'Vanguard',
     url: 'https://investor.vanguard.com',
-    affiliateUrl: 'https://vanguard.com/refer/dividendcalc',
+    affiliateUrl: 'https://investor.vanguard.com',
     description: 'Leader in low-cost index funds and ETFs perfect for dividend investors',
     features: ['$0 Vanguard ETFs', 'Low expense ratios', 'Automatic investing', 'Tax-loss harvesting'],
     minDeposit: 3000,
@@ -54,7 +55,7 @@ const AFFILIATE_BROKERS: AffiliateBroker[] = [
     id: 'fidelity',
     name: 'Fidelity',
     url: 'https://www.fidelity.com',
-    affiliateUrl: 'https://fidelity.com/refer/dividendcalc',
+    affiliateUrl: 'https://www.fidelity.com',
     description: 'Comprehensive broker with zero-fee index funds and strong research',
     features: ['$0 trades', 'Zero expense ratio funds', 'Fractional shares', 'Strong mobile app'],
     minDeposit: 0,
@@ -70,7 +71,7 @@ const AFFILIATE_BROKERS: AffiliateBroker[] = [
     id: 'm1-finance',
     name: 'M1 Finance',
     url: 'https://www.m1finance.com',
-    affiliateUrl: 'https://m1finance.8bxp97.net/dividendcalc',
+    affiliateUrl: 'https://www.m1finance.com',
     description: 'Automated investing platform with free rebalancing and fractional shares',
     features: ['Automated rebalancing', 'Fractional shares', 'Dynamic rebalancing', 'Tax-optimized'],
     minDeposit: 100,
@@ -86,7 +87,7 @@ const AFFILIATE_BROKERS: AffiliateBroker[] = [
     id: 'etoro',
     name: 'eToro',
     url: 'https://www.etoro.com',
-    affiliateUrl: 'https://etoro.tw/dividendcalc',
+    affiliateUrl: 'https://www.etoro.com',
     description: 'Social trading platform with copy trading and fractional shares',
     features: ['Copy trading', 'Social features', 'Fractional shares', 'Cryptocurrency'],
     minDeposit: 200,
@@ -106,7 +107,10 @@ export async function GET(request: Request) {
 
   if (format === 'json') {
     return NextResponse.json({
-      brokers: AFFILIATE_BROKERS,
+      brokers: AFFILIATE_BROKERS.map(broker => ({
+        ...broker,
+        affiliateUrl: buildAffiliateUrl(broker.id, broker.affiliateUrl),
+      })),
       generated: new Date().toISOString(),
       total: AFFILIATE_BROKERS.length,
     })
@@ -144,11 +148,13 @@ function generateXMLFeed(brokers: AffiliateBroker[]): string {
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <generator>Dividend Calculator Pro Feed Generator</generator>
 
-    ${brokers.map(broker => `
+    ${brokers.map(broker => {
+    const affiliateUrl = buildAffiliateUrl(broker.id, broker.affiliateUrl)
+    return `
     <item>
       <guid isPermaLink="false">${broker.id}</guid>
       <title>${escapeXML(broker.name)} - ${escapeXML(broker.bestFor)}</title>
-      <link>${broker.affiliateUrl}</link>
+      <link>${affiliateUrl}</link>
       <description>${escapeXML(broker.description)}</description>
       <content:encoded><![CDATA[
         <h2>${broker.name}</h2>
@@ -173,22 +179,23 @@ function generateXMLFeed(brokers: AffiliateBroker[]): string {
 
         ${broker.promotions ? `<p><strong>Current Promotion:</strong> ${broker.promotions}</p>` : ''}
 
-        <p><a href="${broker.affiliateUrl}">Open Account at ${broker.name}</a></p>
+        <p><a href="${affiliateUrl}">Open Account at ${broker.name}</a></p>
       ]]></content:encoded>
 
       <category>Broker</category>
       <category>Dividend Investing</category>
       <pubDate>${new Date(broker.lastUpdated).toUTCString()}</pubDate>
 
-      <enclosure url="${broker.affiliateUrl}" type="text/html" />
+      <enclosure url="${affiliateUrl}" type="text/html" />
 
       <broker:name>${escapeXML(broker.name)}</broker:name>
       <broker:rating>${broker.rating}</broker:rating>
       <broker:minDeposit>${broker.minDeposit}</broker:minDeposit>
       <broker:commission>${escapeXML(broker.commission)}</broker:commission>
-      <broker:affiliateUrl>${broker.affiliateUrl}</broker:affiliateUrl>
+      <broker:affiliateUrl>${affiliateUrl}</broker:affiliateUrl>
     </item>
-    `).join('')}
+    `
+  }).join('')}
   </channel>
 </rss>`
 
@@ -202,7 +209,7 @@ async function generateProductFeed(): Promise<string> {
     id: broker.id,
     title: `${broker.name} Brokerage Account`,
     description: broker.description,
-    link: broker.affiliateUrl,
+    link: buildAffiliateUrl(broker.id, broker.affiliateUrl),
     price: broker.minDeposit === 0 ? 'FREE' : `${broker.minDeposit} USD`,
     brand: broker.name,
     condition: 'new',

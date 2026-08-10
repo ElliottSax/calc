@@ -14,6 +14,7 @@ import {
   Info
 } from 'lucide-react'
 import { BROKER_AFFILIATES_EXPANDED } from '@/lib/data/broker-affiliates-expanded'
+import { buildAffiliateUrl } from '@/lib/affiliate/config'
 import { trackAffiliateClick } from '@/lib/analytics/tracking'
 import { useExperiment } from '@/hooks/use-experiment'
 import type { BrokerComparison } from '@/types/monetization'
@@ -46,9 +47,9 @@ export function BrokerComparisonTable() {
     // Track A/B test conversion
     trackConversion('broker_click', 1)
 
-    // Open in new tab
+    // Open in new tab (tracking param comes from env config, never a fake default)
     window.open(
-      broker.affiliateLink.url + broker.affiliateLink.trackingId,
+      buildAffiliateUrl(broker.id, broker.affiliateLink.url),
       '_blank',
       'noopener,noreferrer'
     )

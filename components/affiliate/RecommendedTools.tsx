@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { ExternalLink, TrendingUp, Search, PieChart, BarChart3 } from 'lucide-react'
 import { RECOMMENDED_TOOLS } from '@/lib/data/broker-affiliates-expanded'
 import { trackAffiliateClick } from '@/lib/analytics/tracking'
+import { buildAffiliateUrl } from '@/lib/affiliate/config'
 
 const categoryIcons = {
   research: Search,
@@ -23,7 +24,7 @@ export function RecommendedTools() {
       placement: 'recommended-tools'
     })
 
-    window.open(tool.affiliateUrl, '_blank', 'noopener,noreferrer')
+    window.open(buildAffiliateUrl(tool.id, tool.affiliateUrl), '_blank', 'noopener,noreferrer')
   }
 
   return (

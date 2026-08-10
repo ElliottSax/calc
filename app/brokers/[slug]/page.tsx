@@ -22,6 +22,7 @@ import {
   Clock
 } from 'lucide-react'
 import { getBrokerBySlug, getAllBrokers } from '@/lib/data/broker-details'
+import { buildAffiliateUrl } from '@/lib/affiliate/config'
 
 interface BrokerPageProps {
   params: {
@@ -56,6 +57,8 @@ export default function BrokerPage({ params }: BrokerPageProps) {
   if (!broker) {
     notFound()
   }
+
+  const affiliateUrl = buildAffiliateUrl(broker.id, broker.affiliateLink)
 
   const ratingColor = broker.rating >= 4.7 ? 'text-green-600' : broker.rating >= 4.3 ? 'text-blue-600' : 'text-yellow-600'
 
@@ -109,7 +112,7 @@ export default function BrokerPage({ params }: BrokerPageProps) {
                         <div className="text-white font-bold text-xl mb-1">{broker.currentPromo.title}</div>
                         <div className="text-green-100">{broker.currentPromo.description}</div>
                       </div>
-                      <a href={broker.affiliateLink} target="_blank" rel="noopener noreferrer">
+                      <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
                         <Button size="lg" variant="secondary" className="whitespace-nowrap">
                           Claim Offer <ExternalLink className="ml-2 h-5 w-5" />
                         </Button>
@@ -120,7 +123,7 @@ export default function BrokerPage({ params }: BrokerPageProps) {
               )}
 
               {!broker.currentPromo && (
-                <a href={broker.affiliateLink} target="_blank" rel="noopener noreferrer">
+                <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="secondary">
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
@@ -326,7 +329,7 @@ export default function BrokerPage({ params }: BrokerPageProps) {
                   Join thousands of dividend investors using {broker.name} to build wealth through
                   automatic dividend reinvestment.
                 </p>
-                <a href={broker.affiliateLink} target="_blank" rel="noopener noreferrer">
+                <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="secondary">
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
