@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: '/calculators/dividend-yield', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/dividend-income', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/dividend-growth', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/dividend-tax', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/fire', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/compound-interest', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/401k', freq: 'weekly' as const, pr: 0.9 },
