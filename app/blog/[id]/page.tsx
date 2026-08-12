@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
 import { getSlugForId, isValidBlogId } from '@/lib/blog/slug-mapping'
+import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 
 // The [id] segment serves two purposes:
 //  - purely-numeric legacy IDs -> 301 redirect to the slug URL (preserves SEO)
@@ -99,7 +100,11 @@ export async function generateMetadata({
   // ~1,900 pages in a month. noindex them (still crawlable/followable) so Google
   // concentrates ranking signals on the real articles + tools. Reversible: drop
   // this rule. Also excluded from the sitemap.
-  const isLowValue = /^(haiku|cerebras)-/.test(id)
+  // Beyond the auto-generated batches, 319 of the 470 *indexed* posts turned out
+  // to be near-duplicate reprints of the other 151 (families up to 54, 39 sharing
+  // a byte-identical opening). Noindexing only the haiku-/cerebras- tail left
+  // that ratio untouched in the head. See lib/noindex-reprints.ts.
+  const isLowValue = /^(haiku|cerebras)-/.test(id) || NOINDEX_REPRINTS.has(id)
   return {
     title: { absolute: seoTitle },
     description,

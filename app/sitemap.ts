@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
 import { courses } from '@/lib/data/courses'
+import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 
 // Read content/blog at request time (the files are bundled for this route via
 // outputFileTracingIncludes in next.config.mjs).
@@ -26,6 +27,9 @@ function blogSlugs(): string[] {
       // Exclude the noindexed auto-generated batches (haiku-*/cerebras-*): a
       // sitemap should only list pages you want indexed.
       .filter((f) => !/^(haiku|cerebras)-/.test(f))
+      // Same for the near-duplicate reprints (319 of the 470 remaining posts) —
+      // they're served noindex, so don't ask Google to crawl them.
+      .filter((f) => !NOINDEX_REPRINTS.has(f.replace(/\.md$/, '')))
       .map((f) => f.replace(/\.md$/, ''))
   } catch {
     return []
