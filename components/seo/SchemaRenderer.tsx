@@ -62,13 +62,6 @@ export function SoftwareApplicationSchema({
     operatingSystem: 'Web',
     ...(ratingValue &&
       reviewCount && {
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: ratingValue.toString(),
-          reviewCount: reviewCount.toString(),
-          bestRating: '5',
-          worstRating: '1',
-        },
       }),
     author: {
       '@type': 'Organization',
@@ -327,10 +320,6 @@ export function OrganizationSchema() {
     url: 'https://dividendcalculator.pro',
     logo: 'https://dividendcalculator.pro/logo.png',
     description: 'Free dividend calculator suite with 5 powerful tools for dividend investing.',
-    sameAs: [
-      'https://twitter.com/dividendcalcpro',
-      'https://facebook.com/dividendcalculator',
-    ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',

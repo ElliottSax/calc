@@ -29,67 +29,31 @@ const FOOTER_LINKS = {
   company: [
     { label: 'About Us', href: '/about' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Success Stories', href: '#' },
-    { label: 'Affiliate Program', href: '#' },
-    { label: 'Contact', href: '#' },
   ],
   legal: [
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms of Service', href: '/terms' },
-    { label: 'Cookie Policy', href: '/cookies' },
     { label: 'Disclaimer', href: '/disclaimer' },
-    { label: 'GDPR', href: '/gdpr' },
+    { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' },
   ],
 }
 
-const SOCIAL_LINKS = [
-  { icon: Twitter, href: 'https://twitter.com/dividendcalcpro', label: 'Twitter' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/dividendcalcpro', label: 'LinkedIn' },
-  { icon: Youtube, href: 'https://youtube.com/@dividendcalcpro', label: 'YouTube' },
-  { icon: Facebook, href: 'https://facebook.com/dividendcalcpro', label: 'Facebook' },
-]
+// Social accounts intentionally absent: linking handles that do not exist reads as
+// fabrication to users and network reviewers alike. Re-add entries when real.
+const SOCIAL_LINKS: { icon: typeof Twitter; href: string; label: string }[] = []
 
+// Only claims that are true by construction. The previous set ("10,000+ Users",
+// "4.9/5 Rating") was invented -- fabricated social proof is an FTC problem and
+// the top rejection signal in affiliate-network reviews.
 const TRUST_BADGES = [
   { icon: Shield, text: 'SSL Secured' },
-  { icon: Award, text: '10,000+ Users' },
-  { icon: Star, text: '4.9/5 Rating' },
-  { icon: Users, text: 'Trusted Daily' },
+  { icon: Calculator, text: 'Free — No Signup' },
+  { icon: Users, text: 'Runs in Your Browser' },
 ]
 
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
-      {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl font-bold mb-4">
-              Join 25,000+ Smart Investors
-            </h3>
-            <p className="text-blue-100 mb-6">
-              Get weekly dividend picks, market analysis, and exclusive strategies delivered to your inbox
-            </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/70 h-12"
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-white/90"
-              >
-                Subscribe Free →
-              </Button>
-            </form>
-            <p className="text-xs text-blue-100 mt-3">
-              100% free • No spam • Unsubscribe anytime
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="py-12">
         <div className="container mx-auto px-4">
