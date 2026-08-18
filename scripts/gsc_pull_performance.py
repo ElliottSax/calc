@@ -17,11 +17,12 @@ from datetime import date, timedelta
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
+# Domain properties, not URL-prefix — verified against sites().list() 2026-08-18.
 PROPERTIES = [
-    "https://dividendengines.com/",
-    "https://quantengines.com/",
-    "https://thestackguide.com/",
-    "https://cardclassroom.com/",
+    "sc-domain:dividendengines.com",
+    "sc-domain:quantengines.com",
+    "sc-domain:thestackguide.com",
+    "sc-domain:cardclassroom.com",
 ]
 
 def main() -> int:
