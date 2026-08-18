@@ -25,6 +25,7 @@ const CALCULATORS = [
   { href: '/calculators/ira', name: 'IRA Calculator', desc: 'Compare Traditional vs. Roth IRA outcomes side by side.' },
   { href: '/calculators/savings', name: 'Savings Calculator', desc: 'Find out how to reach a specific savings goal.' },
   { href: '/calculators/investment-return', name: 'Investment Return Calculator', desc: 'Calculate ROI and annualized returns on any investment.' },
+  { href: '/calculators/trump-account', name: 'Trump Account Calculator', desc: 'Project the $1,000 federal seed to age 18, and compare against UTMA and 529 options.' },
 ]
 
 export default function CalculatorsPage() {
