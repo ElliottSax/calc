@@ -81,8 +81,8 @@ export default function TrumpAccountPage() {
       <main className="container mx-auto px-4 py-8 max-w-5xl">
         <BreadcrumbNav
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Trump Account Calculator', href: '/calculators/trump-account' },
+            { name: 'Calculators', url: '/calculators' },
+            { name: 'Trump Account Calculator', url: '/calculators/trump-account' },
           ]}
         />
 
