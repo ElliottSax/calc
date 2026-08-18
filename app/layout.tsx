@@ -17,6 +17,8 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  // FlexOffers ownership verification (publisher account, 2026-08-18)
+  other: { "fo-verify": "3ae0bfed-a3e4-4ea9-9523-dfa3ea1de19d" },
   metadataBase: new URL(siteUrl),
   title: {
     default: 'Dividend Calculator Pro - FREE DRIP Calculator & 5 Investment Tools | 2025',
