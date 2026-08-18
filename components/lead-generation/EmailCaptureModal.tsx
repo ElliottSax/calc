@@ -248,7 +248,7 @@ export function EmailCaptureModal({ trigger = 'exit', onClose, variant = 'mega' 
               </DialogTitle>
 
               <DialogDescription className="text-lg">
-                Join 10,000+ successful dividend investors and get instant access to our complete toolkit
+                Get instant access to the complete dividend toolkit
               </DialogDescription>
 
               {/* Social Proof */}

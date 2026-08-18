@@ -4,32 +4,10 @@ import { motion } from 'framer-motion'
 import { Star, Quote, TrendingUp, Users, Award } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Early Retiree",
-    avatar: "SJ",
-    quote: "This calculator showed me I could retire 5 years earlier by reinvesting dividends. Life-changing!",
-    rating: 5,
-    color: "from-blue-500 to-cyan-500"
-  },
-  {
-    name: "Michael Chen",
-    role: "Financial Advisor",
-    avatar: "MC",
-    quote: "I use this with all my clients. The visualizations make dividend investing finally click for people.",
-    rating: 5,
-    color: "from-purple-500 to-pink-500"
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Dividend Investor",
-    avatar: "ER",
-    quote: "Calculated my path to $5,000/month passive income. Now I'm actually on track to hit it in 12 years!",
-    rating: 5,
-    color: "from-green-500 to-emerald-500"
-  }
-]
+// Testimonials removed 2026-08-18: three invented people claiming specific
+// outcomes ("retire 5 years earlier", "$5,000/month passive income"). Fabricated
+// endorsements breach FTC 16 CFR 255; inventing investment results is worse.
+const testimonials: { name: string; role: string; avatar: string; quote: string; rating: number; color: string }[] = []
 
 export function SocialProof() {
   return (

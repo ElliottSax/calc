@@ -21,8 +21,8 @@ export function TrustSignals() {
     },
     {
       icon: Users,
-      title: '50,000+ Users',
-      description: 'Trusted by investors worldwide',
+      title: 'No Signup',
+      description: 'Runs entirely in your browser',
       color: 'text-purple-600',
       bgColor: 'bg-purple-100 dark:bg-purple-900/20',
     },
