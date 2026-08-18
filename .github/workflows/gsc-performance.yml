@@ -1,0 +1,35 @@
+name: GSC Performance Pull
+
+# Daily pull of Search Console clicks/impressions for all four properties.
+# Requires the GCP_SERVICE_ACCOUNT secret (service-account JSON) with the
+# account added as a user on each GSC property. Results land as a build
+# artifact — download from the run page or via `gh run download`.
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - run: pip install google-auth google-api-python-client
+
+      - name: Pull GSC performance
+        env:
+          GCP_SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+        run: python scripts/gsc_pull_performance.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gsc-performance-${{ github.run_id }}
+          path: gsc_performance.json
+          retention-days: 90
