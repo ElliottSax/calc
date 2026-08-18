@@ -24,7 +24,7 @@ export default function FreeGuidePage() {
             The Dividend Investor's Toolkit 2026
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 max-w-4xl mx-auto">
-            Everything you need to build a $100K+ dividend portfolio that pays you monthly.
+            A practical walkthrough of dividend investing mechanics — how DRIP compounding, yield, and payout timing actually work.
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
             50+ pages · 12 chapters · 5 calculators · 3 ready-to-use strategies

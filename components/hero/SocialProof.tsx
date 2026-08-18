@@ -53,24 +53,24 @@ export function SocialProof() {
               <div className="flex items-center justify-center mb-2">
                 <Users className="w-8 h-8 text-blue-400" />
               </div>
-              <div className="text-3xl font-black mb-1">100K+</div>
-              <div className="text-sm text-slate-400">Happy Users</div>
+              <div className="text-3xl font-black mb-1">5</div>
+              <div className="text-sm text-slate-400">Free Calculators</div>
             </div>
 
             <div className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
               <div className="flex items-center justify-center mb-2">
                 <TrendingUp className="w-8 h-8 text-green-400" />
               </div>
-              <div className="text-3xl font-black mb-1">$500M+</div>
-              <div className="text-sm text-slate-400">Calculated Wealth</div>
+              <div className="text-3xl font-black mb-1">$0</div>
+              <div className="text-sm text-slate-400">Cost to Use</div>
             </div>
 
             <div className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
               <div className="flex items-center justify-center mb-2">
                 <Star className="w-8 h-8 text-yellow-400" />
               </div>
-              <div className="text-3xl font-black mb-1">4.9/5</div>
-              <div className="text-sm text-slate-400">Average Rating</div>
+              <div className="text-3xl font-black mb-1">0</div>
+              <div className="text-sm text-slate-400">Signups Required</div>
             </div>
 
             <div className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
@@ -149,10 +149,6 @@ export function SocialProof() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-16 flex flex-wrap items-center justify-center gap-8 text-slate-400 text-sm"
           >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500"></div>
-              <span>Trusted by 100K+ investors</span>
-            </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-blue-500"></div>
               <span>No credit card required</span>

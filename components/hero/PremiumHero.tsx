@@ -55,10 +55,7 @@ export function PremiumHero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-blue-400" />
               <span className="text-sm font-medium text-blue-300">
-                #1 Free Dividend Calculator
-              </span>
-              <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-xs font-bold text-blue-300">
-                100K+ Users
+                Free Dividend Calculator
               </span>
             </div>
           </motion.div>
@@ -145,21 +142,21 @@ export function PremiumHero() {
           >
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                100K+
+                5
               </div>
-              <div className="text-slate-400 text-sm md:text-base">Calculations Run</div>
+              <div className="text-slate-400 text-sm md:text-base">Free Calculators</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                $500M+
+                $0
               </div>
-              <div className="text-slate-400 text-sm md:text-base">Portfolios Planned</div>
+              <div className="text-slate-400 text-sm md:text-base">Cost to Use</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">
-                4.9★
+                0
               </div>
-              <div className="text-slate-400 text-sm md:text-base">User Rating</div>
+              <div className="text-slate-400 text-sm md:text-base">Signups Required</div>
             </div>
           </motion.div>
         </div>

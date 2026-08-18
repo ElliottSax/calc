@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Free Dividend Investing Tools & Resources - Screen, Analyze, Track',
-    description: 'Professional-grade investment tools used by 10,000+ investors. Screen dividend stocks, analyze portfolios, track income. 100% FREE.',
+    description: 'Free investment tools: screen dividend stocks, analyze portfolios, and track income. No signup required.',
     images: ['/og-resources.png']
   }
 }
@@ -43,7 +43,7 @@ export default function ResourcesPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 mb-6">
               <Users className="w-4 h-4 text-green-600 dark:text-green-400" />
               <span className="text-sm font-semibold text-green-700 dark:text-green-300">
-                Used by 10,000+ investors monthly
+                Free to use — no account required
               </span>
             </div>
 
@@ -92,12 +92,12 @@ export default function ResourcesPage() {
                 <p className="text-sm text-slate-600 dark:text-slate-400">Analyzed Daily</p>
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl p-4 border border-slate-200 dark:border-slate-700">
-                <p className="text-3xl font-bold text-purple-600">10K+</p>
-                <p className="text-sm text-slate-600 dark:text-slate-400">Active Users</p>
+                <p className="text-3xl font-bold text-purple-600">5</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400">Free Calculators</p>
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl p-4 border border-slate-200 dark:border-slate-700">
-                <p className="text-3xl font-bold text-orange-600">4.9★</p>
-                <p className="text-sm text-slate-600 dark:text-slate-400">User Rating</p>
+                <p className="text-3xl font-bold text-orange-600">$0</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400">Cost to Use</p>
               </div>
             </div>
           </div>
@@ -540,7 +540,7 @@ export default function ResourcesPage() {
             </Button>
           </div>
           <p className="text-sm text-blue-200 mt-6">
-            Join 10,000+ investors • 100% Free • No spam
+            100% Free • No spam
           </p>
         </div>
       </section>

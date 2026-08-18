@@ -33,10 +33,6 @@ export default function FidelityPage() {
                 <div className="text-3xl font-bold text-green-600">24/7</div>
                 <div className="text-sm text-gray-600">Support</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">4.9★</div>
-                <div className="text-sm text-gray-600">Rating</div>
-              </div>
             </div>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               Open Fidelity Account →

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: 'Dividend Calculator Pro - FREE DRIP Calculator & 5 Investment Tools | 2025',
     template: '%s | Dividend Calculator Pro - Financial Independence Tools',
   },
-  description: '🔥 FREE dividend calculator suite with 5 powerful tools. Calculate DRIP returns up to 500% gains, compare 50+ dividend stocks, track yields, plan retirement income. Used by 10,000+ investors monthly!',
+  description: 'Free dividend calculator suite: DRIP compounding, yield, growth projection, position comparison, and retirement income planning. No signup, runs in your browser.',
   keywords: [
     'dividend calculator',
     'drip calculator',
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'FREE Dividend Calculator - Calculate 500%+ DRIP Returns | Used by 10,000+ Investors',
-    description: '🚀 Professional dividend calculator trusted by 10,000+ investors. Calculate DRIP returns, compare stocks, track yields, plan retirement. Start building $1M+ portfolio today!',
+    title: 'Free Dividend Calculator Suite - DRIP, Yield & Retirement Tools',
+    description: 'Free dividend calculators for DRIP projections, yield, and retirement income planning. Transparent assumptions you can edit; results you can export.',
     siteName: siteName,
     images: [
       {
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'FREE Dividend Calculator - 500%+ Returns | 10,000+ Users',
+    title: 'Free Dividend Calculator Suite - DRIP, Yield & Retirement Tools',
     description: '🚀 Calculate dividend returns with our professional DRIP calculator. Build passive income & achieve financial independence.',
     images: [`${siteUrl}/twitter-image.png`],
     creator: '@dividendcalcpro',

@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'DRIP Calculator 2025 - Calculate Dividend Reinvestment Returns | Free Tool',
-  description: '🔥 FREE DRIP calculator shows how dividend reinvestment can grow $10K to $100K+. See compound growth projections, compare stocks, plan retirement income. Used by 50,000+ investors!',
+  description: 'Free DRIP calculator: model dividend reinvestment over time, compare strategies, and project retirement income. Transparent assumptions you can edit.',
   keywords: [
     'drip calculator',
     'dividend reinvestment calculator',
@@ -66,7 +66,7 @@ export default function DRIPCalculatorPage() {
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 border border-blue-300/50 dark:border-blue-700/50 mb-6">
               <span className="text-sm font-semibold bg-gradient-to-r from-blue-700 to-purple-700 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-                #1 DRIP CALCULATOR • TRUSTED BY 50,000+ INVESTORS
+                FREE DRIP CALCULATOR • NO SIGNUP REQUIRED
               </span>
             </div>
 

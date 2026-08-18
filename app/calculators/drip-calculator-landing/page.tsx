@@ -20,7 +20,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Free DRIP Calculator - Calculate Dividend Reinvestment Growth | 2026',
-  description: 'Free DRIP calculator shows how dividend reinvestment compounds your wealth. Calculate 30-year projections, compare strategies, see monthly breakdowns. Used by 10,000+ investors.',
+  description: 'Free DRIP calculator: 30-year reinvestment projections, strategy comparison, and monthly breakdowns. No signup required.',
   keywords: 'DRIP calculator, dividend reinvestment calculator, dividend compound calculator, DRIP investing tool, dividend growth calculator free',
   openGraph: {
     title: 'DRIP Calculator - See How Your Dividends Compound',
@@ -48,7 +48,7 @@ export default function DripCalculatorLandingPage() {
                 <div>
                   <Badge className="mb-4 text-sm">
                     <Sparkles className="h-3 w-3 mr-1" />
-                    Used by 10,000+ Investors
+                    Free — No Signup Required
                   </Badge>
 
                   <h1 className="text-5xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
@@ -157,12 +157,12 @@ export default function DripCalculatorLandingPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                  <div className="text-4xl font-black text-slate-900 dark:text-white mb-2">10,000+</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">Calculations Daily</div>
+                  <div className="text-4xl font-black text-slate-900 dark:text-white mb-2">5</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Free Calculators</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-black text-slate-900 dark:text-white mb-2">4.9★</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">User Rating</div>
+                  <div className="text-4xl font-black text-slate-900 dark:text-white mb-2">$0</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Cost to Use</div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-slate-900 dark:text-white mb-2">$2M+</div>
@@ -311,7 +311,7 @@ export default function DripCalculatorLandingPage() {
                 Ready to See Your Financial Future?
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                Join 10,000+ investors who use our DRIP calculator to plan their dividend portfolios.
+                Use the DRIP calculator to plan your dividend portfolio — free, no account needed.
               </p>
               <a href="#calculator">
                 <Button size="lg" variant="secondary" className="gap-2 text-lg px-8">

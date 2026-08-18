@@ -26,38 +26,12 @@ export function TrustSignals() {
       color: 'text-purple-600',
       bgColor: 'bg-purple-100 dark:bg-purple-900/20',
     },
-    {
-      icon: Star,
-      title: '4.9/5 Rating',
-      description: 'From 15,234 reviews',
-      color: 'text-yellow-600',
-      bgColor: 'bg-yellow-100 dark:bg-yellow-900/20',
-    },
   ]
 
-  const testimonials = [
-    {
-      name: 'Michael Chen',
-      role: 'Dividend Investor',
-      content: 'This calculator helped me grow my portfolio from $50K to $250K in 5 years through strategic DRIP investing.',
-      rating: 5,
-      verified: true,
-    },
-    {
-      name: 'Sarah Johnson',
-      role: 'Retirement Planner',
-      content: 'The most accurate dividend calculator I\'ve used. The projections matched my actual returns within 2%.',
-      rating: 5,
-      verified: true,
-    },
-    {
-      name: 'David Williams',
-      role: 'Financial Advisor',
-      content: 'I recommend this tool to all my clients. The visualizations make complex calculations easy to understand.',
-      rating: 5,
-      verified: true,
-    },
-  ]
+  // Testimonials removed 2026-08-18: three invented people, flagged `verified: true`,
+  // one claiming a $50K -> $250K portfolio result. Fabricated endorsements violate
+  // FTC 16 CFR 255 and are the top affiliate-network rejection signal.
+  const testimonials: never[] = []
 
   return (
     <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
@@ -125,53 +99,6 @@ export function TrustSignals() {
             </div>
           </Card>
 
-          {/* Testimonials */}
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-              Trusted by Thousands of Investors
-            </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400">
-              See what our users say about their success with our calculators
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
-                    ))}
-                  </div>
-                  {testimonial.verified && (
-                    <div className="flex items-center gap-1 text-green-600 text-sm">
-                      <CheckCircle className="w-4 h-4" />
-                      <span>Verified</span>
-                    </div>
-                  )}
-                </div>
-                <p className="text-slate-700 dark:text-slate-300 mb-4 italic">
-                  "{testimonial.content}"
-                </p>
-                <div className="border-t pt-4">
-                  <div className="font-semibold text-slate-900 dark:text-white">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">
-                    {testimonial.role}
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-
-          {/* Trust Footer */}
-          <div className="mt-12 text-center">
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Featured in: Forbes • Wall Street Journal • MarketWatch • Bloomberg • CNBC
-            </p>
-          </div>
         </div>
       </div>
     </section>

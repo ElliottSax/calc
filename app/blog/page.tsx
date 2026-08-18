@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dividend Investing Blog - Build Wealth Through Dividends',
-    description: 'Join 50,000+ readers learning dividend investing strategies. Free guides, stock analysis, and portfolio tips.',
+    description: 'Guides on dividend investing strategy, stock analysis, and portfolio construction. Free to read.',
     images: ['/og-blog.png']
   }
 }
@@ -152,7 +152,7 @@ export default function BlogPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4 px-4 py-2">
               <Eye className="w-3 h-3 mr-1" />
-              50,000+ Monthly Readers
+              Free Dividend Investing Guides
             </Badge>
             <h1 className="text-5xl md:text-7xl font-black mb-6">
               Dividend Investing Insights
