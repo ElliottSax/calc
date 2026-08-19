@@ -138,12 +138,15 @@ export function PortfolioTracker() {
   metrics.totalGainLossPercent = (metrics.totalGainLoss / metrics.totalCost) * 100
   metrics.portfolioYield = (metrics.annualDividendIncome / metrics.totalValue) * 100
 
-  // Mock performance data
-  const performanceData = Array.from({ length: 30 }, (_, i) => ({
-    date: new Date(Date.now() - (29 - i) * 24 * 60 * 60 * 1000).toLocaleDateString(),
-    portfolioValue: metrics.totalValue * (0.95 + Math.random() * 0.1),
-    dividendIncome: (i * metrics.annualDividendIncome) / 365
-  }))
+  // This built a 30-day performance history by taking the CURRENT total and
+  // multiplying it by (0.95 + Math.random() * 0.1) for each day -- then charted it
+  // as the user's own portfolio performance. It was invented noise wearing the
+  // label of someone's savings history, redrawn differently on every render.
+  //
+  // We do not store historical valuations, so there is no honest chart to draw
+  // yet. Showing nothing and saying why beats showing a plausible fiction. When
+  // daily snapshots are recorded, populate this from them.
+  const performanceData: { date: string; portfolioValue: number; dividendIncome: number }[] = []
 
   // Allocation data for pie chart
   const allocationData = holdings.map(h => ({
@@ -290,6 +293,15 @@ export function PortfolioTracker() {
           </div>
         </CardHeader>
         <CardContent>
+          {performanceData.length === 0 ? (
+            <div className="flex h-[300px] flex-col items-center justify-center text-center text-sm text-gray-400">
+              <p className="font-medium text-gray-300">No performance history yet</p>
+              <p className="mt-1 max-w-sm">
+                We only chart valuations we have actually recorded. History will
+                appear here once this portfolio has been tracked for a few days.
+              </p>
+            </div>
+          ) : (
           <ResponsiveContainer width="100%" height={300}>
             <AreaChart data={performanceData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <defs>
@@ -319,6 +331,7 @@ export function PortfolioTracker() {
               />
             </AreaChart>
           </ResponsiveContainer>
+          )}
         </CardContent>
       </Card>
 

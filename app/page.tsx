@@ -12,8 +12,6 @@ const FeaturesShowcase = nextDynamic(() => import('@/components/hero/FeaturesSho
 const BehaviorTriggeredPopup = nextDynamic(() => import('@/components/lead-generation/BehaviorTriggeredPopup').then(m => ({ default: m.BehaviorTriggeredPopup })))
 const CookieConsent = nextDynamic(() => import('@/components/gdpr/CookieConsent').then(m => ({ default: m.CookieConsent })))
 
-// Force dynamic rendering to avoid static generation timeout
-export const dynamic = 'force-dynamic'
 
 export default function Home() {
   return (

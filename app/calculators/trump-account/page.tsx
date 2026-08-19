@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { TrumpAccountCalculator } from '@/components/calculators/TrumpAccountCalculator'
+import { TrumpAccountCalculatorLazy as TrumpAccountCalculator } from '@/components/calculators/TrumpAccountCalculatorLazy'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
@@ -27,9 +27,6 @@ export const metadata: Metadata = {
   alternates: { canonical: `${baseUrl}/calculators/trump-account` },
 }
 
-// Match every other calculator page: chart.js-bearing client components trip
-// prerendering, so these routes render dynamically.
-export const dynamic = 'force-dynamic'
 
 // The comparison table is the page's real job. AI Overviews cite tables ~2.5x more
 // than prose, and the honest framing -- Trump Accounts open through the federal

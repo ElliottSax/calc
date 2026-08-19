@@ -16,8 +16,12 @@ import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 // (One dynamic segment name per path level, so this can't be a separate [slug].)
 // content/blog is bundled into this function via outputFileTracingIncludes in
 // next.config.js so fs reads resolve at runtime on Vercel.
-
-export const dynamic = 'force-dynamic'
+//
+// ISR instead of force-dynamic: published post content is immutable (autopublish
+// only adds new files; it doesn't rewrite existing ones), so re-reading +
+// re-parsing the markdown file from disk on every single page view is wasted
+// work. Cache each rendered slug for an hour instead of hitting fs on every hit.
+export const revalidate = 3600
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { FourZeroOneKCalculator } from '@/components/calculators/FourZeroOneKCalculator'
+import { FourZeroOneKCalculatorLazy as FourZeroOneKCalculator } from '@/components/calculators/FourZeroOneKCalculatorLazy'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
 import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
@@ -34,8 +34,6 @@ export const metadata: Metadata = {
     canonical: `${baseUrl}/calculators/401k`
   }
 }
-
-export const dynamic = 'force-dynamic'
 
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl },

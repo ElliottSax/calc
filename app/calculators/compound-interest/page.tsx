@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { CompoundInterestCalculator } from '@/components/calculators/CompoundInterestCalculator'
+import { CompoundInterestCalculatorLazy as CompoundInterestCalculator } from '@/components/calculators/CompoundInterestCalculatorLazy'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
 import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
@@ -47,8 +47,6 @@ export const metadata: Metadata = {
     canonical: `${baseUrl}/calculators/compound-interest`
   }
 }
-
-export const dynamic = 'force-dynamic'
 
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl },

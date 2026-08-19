@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { IRACalculator } from '@/components/calculators/IRACalculator'
+import { IRACalculatorLazy as IRACalculator } from '@/components/calculators/IRACalculatorLazy'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
 import { SimpleUsageCounter } from '@/components/social-proof/UsageCounter'
@@ -15,8 +15,6 @@ export const metadata: Metadata = {
   keywords: ['ira calculator', 'roth ira calculator', 'traditional ira calculator', 'ira comparison', 'retirement calculator'],
   alternates: { canonical: `${baseUrl}/calculators/ira` }
 }
-
-export const dynamic = 'force-dynamic'
 
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl },

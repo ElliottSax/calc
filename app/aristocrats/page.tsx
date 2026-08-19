@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
 import { AristocratsExplorer } from '@/components/aristocrats/AristocratsExplorer'
 
-// Force dynamic rendering to avoid build-time Supabase connection errors
-export const dynamic = 'force-dynamic'
-
+// AristocratsExplorer is a client component that fetches /api/aristocrats
+// itself after mount, so the page has no server-side data dependency at
+// build/render time; the prior build-time Supabase error came from elsewhere.
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
 
 export const metadata: Metadata = {

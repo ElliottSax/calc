@@ -276,7 +276,14 @@ export function StockLookup({ onStockSelect, className }: StockLookupProps) {
                   <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-300">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-400" />
-                      <span>Next Ex-Div: {new Date(dividendInfo.exDividendDate).toLocaleDateString()}</span>
+                      {/* exDividendDate is optional now: it used to be synthesised as
+                          today+14 for every company regardless of its real schedule. */}
+                      <span>
+                        Next Ex-Div:{' '}
+                        {dividendInfo.exDividendDate
+                          ? new Date(dividendInfo.exDividendDate).toLocaleDateString()
+                          : '--'}
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <BarChart3 className="w-4 h-4 text-purple-400" />

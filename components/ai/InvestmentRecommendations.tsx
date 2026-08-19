@@ -62,8 +62,9 @@ export function InvestmentRecommendations({
   const generateRecommendations = async () => {
     setLoading(true)
     
-    // Simulate AI processing time
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    // A 2-second `setTimeout` sat here to "simulate AI processing time" -- an
+    // artificial delay whose only purpose was to make a hardcoded list feel like
+    // computation. Nothing is being computed, so nothing needs waiting for.
     
     const mockRecommendations = getMockRecommendations(profile as InvestmentProfile)
     setRecommendations(mockRecommendations)
@@ -205,7 +206,11 @@ export function InvestmentRecommendations({
     // Filter and customize based on user profile
     return baseRecommendations.map(rec => ({
       ...rec,
-      confidence: rec.confidence * (0.8 + Math.random() * 0.4) // Add some variance
+      // The confidence figure used to be multiplied by (0.8 + Math.random() * 0.4)
+      // "to add some variance", and the list is SORTED by confidence -- so which
+      // investment appeared most recommended was decided by a random number on every
+      // render. Ordering is now deterministic, from the stated confidence values.
+      confidence: rec.confidence
     })).sort((a, b) => b.confidence - a.confidence)
   }
 
@@ -231,14 +236,20 @@ export function InvestmentRecommendations({
       >
         <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full border border-purple-500/30">
           <Brain className="w-4 h-4 text-purple-400 mr-2" />
-          <span className="text-purple-300 text-sm font-medium">AI-Powered Analysis</span>
+          <span className="text-purple-300 text-sm font-medium">Strategy Starting Points</span>
         </div>
         <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-purple-100 bg-clip-text text-transparent">
-          Personalized Investment Strategies
+          Common Dividend Strategies
         </h2>
+        {/* This claimed "AI-Powered Analysis" and "Our AI analyzes market conditions,
+            your risk profile, and historical data". There is no AI and no market data
+            here: getMockRecommendations returns a hardcoded list. Claiming analysis
+            that does not happen is a misrepresentation anywhere, and on a site about
+            people's retirement savings it is a serious one. */}
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Our AI analyzes market conditions, your risk profile, and historical data to recommend 
-          optimal dividend investment strategies tailored specifically for you.
+          A few widely-used dividend strategies, grouped by risk appetite, as a
+          starting point for your own research. These are illustrative examples, not
+          personalised advice, and no market data is analysed to produce them.
         </p>
       </motion.div>
 

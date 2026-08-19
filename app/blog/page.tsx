@@ -173,7 +173,7 @@ export default function BlogPage() {
                 <Button variant="secondary">Subscribe</Button>
               </div>
               <p className="text-xs text-white/70 mt-2">
-                Join 25,000+ subscribers • 100% free • Unsubscribe anytime
+                100% free • Unsubscribe anytime
               </p>
             </div>
           </div>

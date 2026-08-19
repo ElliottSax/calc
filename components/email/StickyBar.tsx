@@ -100,7 +100,7 @@ export function StickyEmailBar() {
                       Get Free Dividend Investing Guide
                     </p>
                     <p className="text-xs text-blue-100 hidden sm:block">
-                      Join 2,500+ investors building passive income
+                      Build passive income, one dividend at a time
                     </p>
                   </div>
                 </div>

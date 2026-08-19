@@ -19,8 +19,10 @@ interface StockQuote {
 
 interface DividendInfo {
   symbol: string
-  dividendDate: string
-  exDividendDate: string
+  // Optional: these were previously always populated with today+30 and today+14,
+  // which is not a schedule, it is a guess wearing a date's clothes.
+  dividendDate?: string
+  exDividendDate?: string
   dividendAmount: number
   dividendYield: number
   payoutRatio: number
@@ -77,34 +79,66 @@ class StockAPIService {
       
       return data as T
     } catch (error) {
+      // This used to `return this.getMockData(cacheKey)`, which synthesised a whole
+      // quote response -- price, change, percent change -- from Math.random(). So a
+      // network failure or a rejected API key did not look like a failure at all:
+      // the caller got a well-formed quote for a real ticker made entirely of noise.
+      // Let it fail. A visible error is the only honest outcome here.
       console.error('Stock API error:', error)
-      // Return mock data for demo purposes
-      return this.getMockData(cacheKey) as T
+      throw error instanceof Error ? error : new Error(String(error))
     }
   }
 
+  /**
+   * Every field here used to fall back to an invented value:
+   *
+   *   price: parseFloat(data.close) || this.getMockPrice(symbol)
+   *
+   * and getMockPrice returned `100 + Math.random() * 200` for any symbol not in a
+   * short hardcoded list, with getMockChange returning `(Math.random() - 0.5) * 10`.
+   * NEXT_PUBLIC_STOCK_API_KEY defaults to 'demo', so a failed or unparseable
+   * response was the normal case -- and the caller received a plausible quote for
+   * a real ticker that was pure noise, with no error and no way to tell.
+   *
+   * A quote we do not have is now an error the UI must handle, not a number we
+   * make up. Losing the number is recoverable; publishing a fictional price for a
+   * real company to someone deciding what to buy is not.
+   */
   async getStockQuote(symbol: string): Promise<StockQuote> {
     const url = `${this.baseUrl}/quote?symbol=${symbol}&apikey=${this.apiKey}`
     const cacheKey = `quote_${symbol}`
-    
+
     const data = await this.fetchWithCache<any>(url, cacheKey)
-    
+
+    const num = (v: unknown): number | undefined => {
+      const n = typeof v === 'number' ? v : parseFloat(String(v))
+      return Number.isFinite(n) ? n : undefined
+    }
+
+    const price = num(data?.close)
+    if (price === undefined || price <= 0) {
+      throw new Error(
+        `No quote available for ${symbol.toUpperCase()}. The market data provider ` +
+          `returned no usable price.`
+      )
+    }
+
     return {
       symbol: symbol.toUpperCase(),
       name: data.name || this.getCompanyName(symbol),
-      price: parseFloat(data.close) || this.getMockPrice(symbol),
-      change: parseFloat(data.change) || this.getMockChange(),
-      changePercent: parseFloat(data.percent_change) || this.getMockChangePercent(),
+      price,
+      change: num(data?.change) ?? 0,
+      changePercent: num(data?.percent_change) ?? 0,
       dividendYield: this.getMockDividendYield(symbol),
       dividendAmount: this.getMockDividendAmount(symbol),
       marketCap: this.getMockMarketCap(symbol),
-      pe: parseFloat(data.pe_ratio) || this.getMockPE(symbol),
-      volume: parseInt(data.volume) || this.getMockVolume(),
+      pe: num(data?.pe_ratio) ?? 0,
+      volume: num(data?.volume) ?? 0,
       avgVolume: this.getMockAvgVolume(),
-      open: parseFloat(data.open) || this.getMockPrice(symbol),
-      high: parseFloat(data.high) || this.getMockPrice(symbol) * 1.02,
-      low: parseFloat(data.low) || this.getMockPrice(symbol) * 0.98,
-      previousClose: parseFloat(data.previous_close) || this.getMockPrice(symbol),
+      open: num(data?.open) ?? price,
+      high: num(data?.high) ?? price,
+      low: num(data?.low) ?? price,
+      previousClose: num(data?.previous_close) ?? price,
       lastUpdated: new Date().toISOString()
     }
   }
@@ -154,18 +188,17 @@ class StockAPIService {
     return Promise.all(promises)
   }
 
-  // Mock data generators for demo purposes
-  private getMockData(cacheKey: string): any {
-    const symbol = cacheKey.split('_')[1] || 'DEMO'
-    return {
-      symbol,
-      close: this.getMockPrice(symbol).toString(),
-      name: this.getCompanyName(symbol),
-      change: this.getMockChange().toString(),
-      percent_change: this.getMockChangePercent().toString()
-    }
-  }
+  // getMockData() lived here. It built a fake quote response on every API failure
+  // using getMockPrice/getMockChange/getMockChangePercent, all of which were
+  // Math.random(). Removed along with the two change generators; failures now
+  // propagate to the caller.
 
+  /**
+   * Kept ONLY as a lookup of last-known reference prices for the ten symbols
+   * listed. The `|| 100 + Math.random() * 200` tail was removed: inventing a price
+   * for an unknown ticker is the failure this class exists to avoid. Returns
+   * undefined when the symbol is not known.
+   */
   private getMockPrice(symbol: string): number {
     const prices: Record<string, number> = {
       'AAPL': 189.43,
@@ -179,16 +212,13 @@ class StockAPIService {
       'VTI': 245.31,
       'SPY': 448.90
     }
-    return prices[symbol] || 100 + Math.random() * 200
+    return prices[symbol] ?? 0
   }
 
-  private getMockChange(): number {
-    return (Math.random() - 0.5) * 10
-  }
-
-  private getMockChangePercent(): number {
-    return (Math.random() - 0.5) * 5
-  }
+  // getMockChange() and getMockChangePercent() returned (Math.random() - 0.5) * 10
+  // and * 5 -- a made-up daily move for a real company. Removed; callers now use 0
+  // when the provider gives no change figure, which reads as "unknown" rather than
+  // as a movement that did not happen.
 
   private getMockDividendYield(symbol: string): number {
     const yields: Record<string, number> = {
@@ -200,7 +230,10 @@ class StockAPIService {
       'VTI': 1.75,
       'SPY': 1.68
     }
-    return yields[symbol] || Math.random() * 4
+    // `|| Math.random() * 4` invented a dividend yield for any unlisted ticker.
+    // On a dividend site that is the single most damaging number to fabricate:
+    // yield is precisely what a reader comes here to compare. 0 reads as unknown.
+    return yields[symbol] ?? 0
   }
 
   private getMockDividendAmount(symbol: string): number {
@@ -211,7 +244,8 @@ class StockAPIService {
       'KO': 1.84,
       'PG': 3.65
     }
-    return amounts[symbol] || Math.random() * 3
+    // previously fell back to a random amount for unlisted symbols
+    return amounts[symbol] ?? 0
   }
 
   private getMockMarketCap(symbol: string): number {
@@ -222,19 +256,25 @@ class StockAPIService {
       'TSLA': 789000000000,
       'JNJ': 415000000000
     }
-    return caps[symbol] || Math.random() * 500000000000
+    // previously fell back to a random market cap for unlisted symbols
+    return caps[symbol] ?? 0
   }
 
+  // These three returned `15 + Math.random() * 25` (P/E), and random volumes in
+  // the tens of millions. A P/E ratio and a volume figure are exactly the kind of
+  // number a reader treats as measured fact. There is no reference data to fall
+  // back to, so they now return 0, which the UI should render as "--" rather than
+  // as a value.
   private getMockPE(symbol: string): number {
-    return 15 + Math.random() * 25
+    return 0
   }
 
   private getMockVolume(): number {
-    return Math.floor(Math.random() * 50000000) + 1000000
+    return 0
   }
 
   private getMockAvgVolume(): number {
-    return Math.floor(Math.random() * 30000000) + 5000000
+    return 0
   }
 
   private getCompanyName(symbol: string): string {
@@ -283,15 +323,24 @@ class StockAPIService {
 
     const base = dividendData[symbol] || {}
     
+    // Every field below fell back to Math.random(): a made-up payout ratio, a
+    // made-up 5-year growth rate, and -- worst of the set -- `consecutiveYears`,
+    // the dividend-streak number that is the entire basis of the aristocrat
+    // screens this site publishes. The two dates were not random but were just as
+    // invented: always today+14 and today+30, regardless of the company's actual
+    // schedule, presented as its ex-dividend and payment dates.
+    //
+    // Unknown is now 0 and the dates are omitted unless known. A blank field sends
+    // the reader to check a real source; a fabricated one stops them looking.
     return {
       symbol,
-      dividendDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-      exDividendDate: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-      dividendAmount: base.dividendAmount || Math.random() * 3,
-      dividendYield: base.dividendYield || Math.random() * 4,
-      payoutRatio: base.payoutRatio || 40 + Math.random() * 40,
-      dividendGrowth5Y: base.dividendGrowth5Y || Math.random() * 8,
-      consecutiveYears: base.consecutiveYears || Math.floor(Math.random() * 30),
+      dividendDate: base.dividendDate,
+      exDividendDate: base.exDividendDate,
+      dividendAmount: base.dividendAmount ?? 0,
+      dividendYield: base.dividendYield ?? 0,
+      payoutRatio: base.payoutRatio ?? 0,
+      dividendGrowth5Y: base.dividendGrowth5Y ?? 0,
+      consecutiveYears: base.consecutiveYears ?? 0,
       frequency: base.frequency || 'Quarterly'
     }
   }

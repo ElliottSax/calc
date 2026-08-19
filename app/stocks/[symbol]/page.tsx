@@ -7,8 +7,12 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { DIVIDEND_ARISTOCRATS } from '@/lib/data/dividend-aristocrats';
 
-// Force dynamic rendering to avoid build timeouts
-export const dynamic = 'force-dynamic'
+// Stock data comes from a local static array (DIVIDEND_ARISTOCRATS), not an
+// external API, so there's no reason this needs to be dynamic. ISR instead:
+// generateStaticParams stays empty to avoid pre-building every symbol at
+// build time, dynamicParams lets unknown symbols render on first request,
+// and revalidate caches each rendered symbol for an hour after that.
+export const revalidate = 3600
 export const dynamicParams = true
 
 interface StockPageProps {

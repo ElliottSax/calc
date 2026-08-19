@@ -16,8 +16,6 @@ export const metadata: Metadata = {
   alternates: { canonical: `${baseUrl}/calculators/investment-return` }
 }
 
-export const dynamic = 'force-dynamic'
-
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl },
   { name: 'Calculators', url: `${baseUrl}/calculators` },

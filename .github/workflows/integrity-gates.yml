@@ -1,0 +1,93 @@
+name: Integrity Gates
+
+# Fails the build if fabricated data or invented social proof reappears.
+#
+# Ported from the quantengines repo, which has had a gate like this for a while.
+# This repo did not, and the difference showed: components/social-proof/
+# UsageCounter.tsx rendered "47,392 Total Users" and incremented it every five
+# seconds with Math.random() so the page looked like a live traffic feed; the
+# footer claimed coverage by Forbes, WSJ, Bloomberg, CNBC and MarketWatch; a
+# dashboard charted a user's portfolio history from random noise; and an "AI"
+# recommender multiplied its confidence scores by Math.random() and then sorted
+# by the result. All of it was removed on 2026-08-19. This exists so it cannot
+# come back quietly.
+
+on:
+  push:
+    branches: [main, master, autopublish]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  integrity:
+    name: No fabricated data or invented social proof
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Randomness that fabricates DATA is banned. Randomness for element ids,
+      # skeleton shimmer widths and transaction references is legitimate, so the
+      # allowlist names those files explicitly rather than matching loosely -- an
+      # unscoped ban gets suppressed the first time it blocks something real.
+      - name: No fabricated data generators
+        run: |
+          # Decorative or identifier randomness only: transaction reference ids, skeleton
+          # shimmer widths, and the ornamental animated bars in the hero. None of these
+          # is a number a reader could mistake for a measurement.
+          # DividendSimulator is allowed because randomness IS its method: it applies
+          # year-on-year variation drawn from a scenario the user selects. It carries a
+          # visible note that each run is one simulated path, not a forecast. That is the
+          # bar for an entry here -- random as declared methodology, labelled as such.
+          #
+          # lib/ab-testing and lib/affiliate/tracking generate user and click ids and
+          # assign A/B buckets. Random assignment is the correct method for both and
+          # neither produces a number shown to a reader as a fact.
+          ALLOW='app/api/track-conversion/route.ts|components/ui/skeleton|components/skeletons/|components/hero/AnimatedHero.tsx|components/tools/DividendSimulator.tsx|lib/ab-testing/|lib/affiliate/tracking.ts|lib/error-handling/'
+          HITS=$(grep -rnE "Math\.random\(|Math\.sin\([^)]*seed|mulberry32|xorshift" \
+                   app components lib \
+                   --include="*.tsx" --include="*.ts" 2>/dev/null \
+                 | grep -Ev "$ALLOW" \
+                 | grep -Ev ":[[:space:]]*(\{?/\*|\*|//)" || true)
+          if [ -n "$HITS" ]; then
+            echo "FAIL: fabricated-data candidates outside the allowlist."
+            echo "Numbers shown to a reader must come from a real source, or not be shown."
+            echo "$HITS"
+            exit 1
+          fi
+          echo "PASS: no fabricated-data generator outside the allowlist."
+
+      # Claims about OUR audience, reach or press coverage. Claims about a
+      # PRODUCT WE REVIEW are legitimate editorial description -- "Join 500,000+
+      # investors using M1 Finance" is a fact about M1, sourced from M1 -- so the
+      # broker and blog directories are excluded rather than the phrasing being
+      # narrowed to the point of uselessness.
+      - name: No invented audience or press claims
+        run: |
+          HITS=$(grep -rnE "AS FEATURED IN|[Aa]s (seen|featured) in|[Tt]rusted [Bb]y [0-9]|[Jj]oin [0-9][0-9,]*\+? *(subscribers|investors|users|members|readers|professionals|traders)|[0-9],[0-9]{3}\+? *(downloads|users|members|joined|subscribers)|[0-9]\.[0-9]/5 *(star|rating|User Rating)" \
+                   app components lib \
+                   --include="*.tsx" --include="*.ts" 2>/dev/null \
+                 | grep -Ev "app/brokers/|app/blog/" \
+                 | grep -Ev ":[[:space:]]*(\{?/\*|\*|//)" || true)
+          if [ -n "$HITS" ]; then
+            echo "FAIL: audience, press or rating claims found."
+            echo "If the number is real, cite where it comes from and add an allowlist entry."
+            echo "If it is not, it does not go on the site."
+            echo "$HITS"
+            exit 1
+          fi
+          echo "PASS: no invented audience or press claims."
+
+      # Fake scarcity: countdowns and 'expires in' banners generated rather than
+      # sourced from a real offer end-date.
+      - name: No manufactured urgency
+        run: |
+          HITS=$(grep -rnE "expiresAt: new Date\(.*Math\.random|endDate=\{.*Math\.random" \
+                   app components lib \
+                   --include="*.tsx" --include="*.ts" 2>/dev/null \
+                 | grep -Ev ":[[:space:]]*(\{?/\*|\*|//)" || true)
+          if [ -n "$HITS" ]; then
+            echo "FAIL: a countdown or expiry is being generated, not sourced."
+            echo "$HITS"
+            exit 1
+          fi
+          echo "PASS: no manufactured expiry dates."

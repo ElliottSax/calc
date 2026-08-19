@@ -337,6 +337,16 @@ export function DividendSimulator() {
               <Card>
                 <CardHeader>
                   <CardTitle>Portfolio Growth Over Time</CardTitle>
+                  {/* This simulator applies random year-on-year variation drawn from
+                      the selected scenario's volatility, which is the right method --
+                      but it runs ONE path, so the same inputs give a different answer
+                      every run. Saying so is the difference between a simulation and
+                      a forecast. */}
+                  <p className="text-xs text-muted-foreground mt-1">
+                    One simulated path, not a forecast. Each run applies random
+                    year-to-year variation from the scenario you picked, so the same
+                    inputs will produce a different result next time.
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={400}>
