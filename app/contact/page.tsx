@@ -5,14 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { AlertCircle, Mail, Shield, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contact | Dividend Calculator Pro',
+  title: 'Contact | Dividend Engines',
   description:
-    'How to reach Dividend Calculator Pro: corrections, general questions, privacy requests, and partnership inquiries.',
+    'How to reach Dividend Engines: corrections, general questions, privacy requests, and partnership inquiries.',
 }
 
 // Same address already published on /about. One inbox, stated consistently --
 // affiliate-network reviewers check that a contact route exists and resolves.
-const EMAIL = 'support@dividendcalculator.pro'
+const EMAIL = 'hello@dividendengines.com'
 
 export default function ContactPage() {
   return (

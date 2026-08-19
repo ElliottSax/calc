@@ -65,7 +65,7 @@ export function SoftwareApplicationSchema({
       }),
     author: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
+      name: 'Dividend Engines',
     },
   };
 
@@ -172,7 +172,7 @@ export function ArticleSchema({
     '@type': 'BlogPosting',
     headline: title,
     description: description,
-    image: image || 'https://dividendcalculator.pro/og-image.jpg',
+    image: image || 'https://dividendengines.com/og-image.jpg',
     datePublished: datePublished,
     dateModified: dateModified || datePublished,
     author: {
@@ -181,10 +181,10 @@ export function ArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
+      name: 'Dividend Engines',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://dividendcalculator.pro/logo.png',
+        url: 'https://dividendengines.com/logo.png',
         width: 250,
         height: 60,
       },
@@ -287,10 +287,10 @@ export function GuideSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
+      name: 'Dividend Engines',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://dividendcalculator.pro/logo.png',
+        url: 'https://dividendengines.com/logo.png',
       },
     },
     ...(estimatedTime && {
@@ -316,14 +316,14 @@ export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': ['Organization', 'LocalBusiness'],
-    name: 'Dividend Calculator Pro',
-    url: 'https://dividendcalculator.pro',
-    logo: 'https://dividendcalculator.pro/logo.png',
+    name: 'Dividend Engines',
+    url: 'https://dividendengines.com',
+    logo: 'https://dividendengines.com/logo.png',
     description: 'Free dividend calculator suite with 5 powerful tools for dividend investing.',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
-      email: 'support@dividendcalculator.pro',
+      email: 'hello@dividendengines.com',
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -361,7 +361,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith('http')
         ? item.url
-        : `https://dividendcalculator.pro${item.url}`,
+        : `https://dividendengines.com${item.url}`,
     })),
   };
 
@@ -382,14 +382,14 @@ export function WebsiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    url: 'https://dividendcalculator.pro',
-    name: 'Dividend Calculator Pro',
+    url: 'https://dividendengines.com',
+    name: 'Dividend Engines',
     description: 'Free dividend calculator suite with 5 powerful tools.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://dividendcalculator.pro/search?q={search_term_string}',
+        urlTemplate: 'https://dividendengines.com/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

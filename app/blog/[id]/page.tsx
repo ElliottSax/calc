@@ -90,7 +90,7 @@ export async function generateMetadata({
   if (!post) return { title: 'Article Not Found | Dividend Engines' }
   const description = post.description || undefined
   const url = `https://dividendengines.com/blog/${id}`
-  // `absolute` bypasses the root layout's "%s | Dividend Calculator Pro -
+  // `absolute` bypasses the root layout's "%s | Dividend Engines -
   // Financial Independence Tools" template, which otherwise double-brands and
   // overflows the ~60-char title limit. An optional `seoTitle` frontmatter field
   // lets a page set a tuned, keyword-first title.

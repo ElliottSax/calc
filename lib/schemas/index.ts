@@ -112,8 +112,8 @@ export function generateSoftwareApplicationSchema(
     }),
     author: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
-      url: 'https://dividendcalculator.pro',
+      name: 'Dividend Engines',
+      url: 'https://dividendengines.com',
     },
   };
 }
@@ -187,7 +187,7 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     description: props.description,
     image: {
       '@type': 'ImageObject',
-      url: props.image || 'https://dividendcalculator.pro/og-image.jpg',
+      url: props.image || 'https://dividendengines.com/og-image.jpg',
       width: 1200,
       height: 630,
     },
@@ -196,14 +196,14 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     author: {
       '@type': 'Person',
       name: props.author,
-      url: 'https://dividendcalculator.pro',
+      url: 'https://dividendengines.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
+      name: 'Dividend Engines',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://dividendcalculator.pro/logo.png',
+        url: 'https://dividendengines.com/logo.png',
         width: 250,
         height: 60,
       },
@@ -213,8 +213,8 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     },
     isPartOf: {
       '@type': 'WebSite',
-      name: 'Dividend Calculator Pro',
-      url: 'https://dividendcalculator.pro',
+      name: 'Dividend Engines',
+      url: 'https://dividendengines.com',
     },
     inLanguage: 'en-US',
     wordCount: wordCount,
@@ -279,10 +279,10 @@ export function generateGuideSchema(props: GuideSchemaProps) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Dividend Calculator Pro',
+      name: 'Dividend Engines',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://dividendcalculator.pro/logo.png',
+        url: 'https://dividendengines.com/logo.png',
       },
     },
     ...(props.estimatedTime && {
@@ -304,28 +304,28 @@ export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': ['Organization', 'LocalBusiness'],
-    '@id': 'https://dividendcalculator.pro/#organization',
-    name: 'Dividend Calculator Pro',
+    '@id': 'https://dividendengines.com/#organization',
+    name: 'Dividend Engines',
     alternateName: 'DividendCalc',
-    url: 'https://dividendcalculator.pro',
+    url: 'https://dividendengines.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://dividendcalculator.pro/logo.png',
+      url: 'https://dividendengines.com/logo.png',
       width: 250,
       height: 60,
     },
     description: 'Free dividend calculator suite with 5 powerful tools for dividend investing and financial independence.',
-    sameAs: [
-      'https://twitter.com/dividendcalcpro',
-      'https://facebook.com/dividendcalculator',
-      'https://linkedin.com/company/dividend-calculator-pro',
-      'https://instagram.com/dividendcalcpro',
-    ],
+    // Empty deliberately. This previously asserted four social profiles to Google
+    // -- twitter/dividendcalcpro, facebook/dividendcalculator, and two more --
+    // none of which exist. The footer already dropped its fake social icons for
+    // exactly this reason; the schema kept making the same claim in a form only
+    // machines read. Add entries here when the accounts are real.
+    sameAs: [] as string[],
     contactPoint: [
       {
         '@type': 'ContactPoint',
         contactType: 'Customer Support',
-        email: 'support@dividendcalculator.pro',
+        email: 'hello@dividendengines.com',
         availableLanguage: ['en'],
       },
     ],
@@ -388,7 +388,7 @@ export function generateBreadcrumbSchema(
       name: item.name,
       item: item.url.startsWith('http')
         ? item.url
-        : `https://dividendcalculator.pro${item.url}`,
+        : `https://dividendengines.com${item.url}`,
     })),
   };
 }
@@ -400,14 +400,14 @@ export function generateWebsiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    url: 'https://dividendcalculator.pro',
-    name: 'Dividend Calculator Pro',
+    url: 'https://dividendengines.com',
+    name: 'Dividend Engines',
     description: 'Free dividend calculator suite with 5 powerful tools for dividend investing.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://dividendcalculator.pro/search?q={search_term_string}',
+        urlTemplate: 'https://dividendengines.com/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

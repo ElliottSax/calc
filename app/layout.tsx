@@ -3,8 +3,8 @@ import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
 import { WebVitals } from '@/components/analytics/WebVitals'
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendcalculator.pro'
-const siteName = process.env.NEXT_PUBLIC_APP_NAME || 'Dividend Calculator Pro'
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
+const siteName = process.env.NEXT_PUBLIC_APP_NAME || 'Dividend Engines'
 
 export const viewport: Viewport = {
   themeColor: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   other: { "fo-verify": "3ae0bfed-a3e4-4ea9-9523-dfa3ea1de19d" },
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Dividend Calculator Pro - FREE DRIP Calculator & 5 Investment Tools | 2025',
-    template: '%s | Dividend Calculator Pro - Financial Independence Tools',
+    default: 'Dividend Engines - FREE DRIP Calculator & 5 Investment Tools | 2025',
+    template: '%s | Dividend Engines - Financial Independence Tools',
   },
   description: 'Free dividend calculator suite: DRIP compounding, yield, growth projection, position comparison, and retirement income planning. No signup, runs in your browser.',
   keywords: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Dividend Calculator Pro - Turn $10K into $1M with DRIP Investing',
+        alt: 'Dividend Engines - Turn $10K into $1M with DRIP Investing',
       },
     ],
   },

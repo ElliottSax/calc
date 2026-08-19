@@ -3,7 +3,7 @@ import { Header } from '@/components/layout/Header'
 import { TrumpAccountCalculator } from '@/components/calculators/TrumpAccountCalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendcalculator.pro'
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dividendengines.com'
 
 export const metadata: Metadata = {
   title: 'Trump Account Calculator — Project the $1,000 Seed to Age 18',

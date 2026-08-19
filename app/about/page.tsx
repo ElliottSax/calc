@@ -3,9 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calculator, Mail, Target, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About | Dividend Calculator Pro',
+  title: 'About | Dividend Engines',
   description:
-    'Who runs Dividend Calculator Pro, why the tools are free, and how the site is funded.',
+    'Who runs Dividend Engines, why the tools are free, and how the site is funded.',
 }
 
 // Honest by design. This page previously presented invented audience statistics
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-3xl">
-      <h1 className="text-4xl font-bold mb-6">About Dividend Calculator Pro</h1>
+      <h1 className="text-4xl font-bold mb-6">About Dividend Engines</h1>
 
       <p className="text-lg text-muted-foreground mb-8">
-        Dividend Calculator Pro is an independent suite of free dividend-investing
+        Dividend Engines is an independent suite of free dividend-investing
         calculators — DRIP compounding, yield, growth projection, position comparison,
         and retirement income planning. No signup, no paywall; the tools run in your
         browser.
@@ -74,8 +74,8 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="text-muted-foreground">
             Corrections, questions, or partnership inquiries:{' '}
-            <a href="mailto:support@dividendcalculator.pro" className="underline">
-              support@dividendcalculator.pro
+            <a href="mailto:hello@dividendengines.com" className="underline">
+              hello@dividendengines.com
             </a>
             . We prioritize correction reports — if a formula or assumption looks
             wrong, we want to know.

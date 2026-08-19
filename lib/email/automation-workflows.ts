@@ -92,8 +92,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'welcome-email',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -109,8 +109,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'drip-guide',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -126,8 +126,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'broker-comparison',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
     ],
@@ -152,8 +152,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'complete-calculation',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'hello@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'hello@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -177,8 +177,8 @@ export const WORKFLOW_TEMPLATES = {
               type: 'email' as const,
               config: {
                 templateId: 'calculation-help',
-                fromName: 'Dividend Calculator Pro',
-                fromEmail: 'hello@dividendcalculator.pro',
+                fromName: 'Dividend Engines',
+                fromEmail: 'hello@dividendengines.com',
               } as EmailStepConfig,
             },
           ],
@@ -198,8 +198,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'weekly-tip-1',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'tips@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'tips@dividendengines.com',
         } as EmailStepConfig,
       },
       {
@@ -215,8 +215,8 @@ export const WORKFLOW_TEMPLATES = {
         type: 'email' as const,
         config: {
           templateId: 'weekly-tip-2',
-          fromName: 'Dividend Calculator Pro',
-          fromEmail: 'tips@dividendcalculator.pro',
+          fromName: 'Dividend Engines',
+          fromEmail: 'tips@dividendengines.com',
         } as EmailStepConfig,
       },
     ],
@@ -229,11 +229,11 @@ export const EMAIL_TEMPLATES: EmailTemplate[] = [
   {
     id: 'welcome-email',
     name: 'Welcome Email',
-    subject: 'Welcome to Dividend Calculator Pro! 🎉',
+    subject: 'Welcome to Dividend Engines! 🎉',
     preheader: 'Start building your dividend portfolio today',
     content: `
       <h1>Welcome {{firstName}}!</h1>
-      <p>Thank you for joining Dividend Calculator Pro. You're now part of a community of 50,000+ investors building wealth through dividend investing.</p>
+      <p>Thank you for joining Dividend Engines. You're now part of a community of 50,000+ investors building wealth through dividend investing.</p>
 
       <h2>Here's what you can do:</h2>
       <ul>
