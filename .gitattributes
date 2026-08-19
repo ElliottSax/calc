@@ -1,0 +1,17 @@
+# Binary files must never have line endings rewritten. Without this, committing
+# public/dividend-investors-toolkit.pdf on Windows warns "LF will be replaced by
+# CRLF the next time Git touches it" -- and on the next checkout Git would do
+# exactly that, injecting CR bytes into the PDF stream and corrupting the file
+# that /free-guide hands to every reader.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.zip   binary
