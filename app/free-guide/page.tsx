@@ -40,7 +40,7 @@ export default function FreeGuidePage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-purple-600" />
-              <span>47,000+ Downloads</span>
+              <span>Free, No Cost</span>
             </div>
           </div>
         </div>
@@ -63,18 +63,12 @@ export default function FreeGuidePage() {
               </CardContent>
             </Card>
 
-            {/* Trust Indicators */}
-            <div className="mt-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <h3 className="font-bold mb-4 text-center">Trusted By Investors At:</h3>
-              <div className="grid grid-cols-3 gap-4 text-center text-sm text-gray-600 dark:text-gray-400">
-                <div>Google</div>
-                <div>Microsoft</div>
-                <div>Amazon</div>
-                <div>Meta</div>
-                <div>Apple</div>
-                <div>Tesla</div>
-              </div>
-            </div>
+            {/* A "Trusted By Investors At:" block used to sit here listing Google,
+                Microsoft, Amazon, Meta, Apple and Tesla. We have no relationship with
+                any of them and no basis for the claim -- naming real companies as
+                endorsers is a deceptive-endorsement problem, not just puffery, and it
+                is the first thing an affiliate network looks for. Nothing replaces it:
+                we have no audience figures we can actually stand behind. */}
           </div>
 
           {/* Right Column - What's Inside */}
@@ -133,30 +127,17 @@ export default function FreeGuidePage() {
               </div>
             </div>
 
-            {/* Social Proof */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                    JM
-                  </div>
-                </div>
-                <div>
-                  <p className="text-gray-700 dark:text-gray-300 italic mb-2">
-                    "This guide helped me build my first $50K dividend portfolio. The ready-to-use strategies saved me months of research."
-                  </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    — Jennifer M., Software Engineer, San Francisco
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* A testimonial from "Jennifer M., Software Engineer, San Francisco"
+                used to sit here, claiming the guide built her a $50K portfolio. She
+                does not exist. An invented testimonial with a fabricated result is a
+                false-claim problem in a financial context, which is the worst place
+                to have one. Add a real one here if a reader ever sends one. */}
           </div>
         </div>
 
         {/* Features Grid */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why 47,000+ Investors Downloaded This Guide</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">What Makes This Guide Different</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardContent className="pt-6">
@@ -180,7 +161,7 @@ export default function FreeGuidePage() {
                   </div>
                   <h3 className="font-bold text-xl mb-2">Interactive Tools</h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Access to 5 premium calculators to model your exact situation.
+                    Access to all 5 calculators on this site, free, to model your exact situation.
                   </p>
                 </div>
               </CardContent>
@@ -206,7 +187,7 @@ export default function FreeGuidePage() {
         <div className="mt-16 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Build Your Dividend Portfolio?</h2>
           <p className="text-xl mb-6 opacity-90">
-            Join 47,000+ investors who downloaded this free guide
+            Free to download. No cost, no upsell.
           </p>
           <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
             <a href="#top">Get Instant Access →</a>
