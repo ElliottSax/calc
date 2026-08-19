@@ -22,8 +22,14 @@ export default function ThankYouPage() {
             <CheckCircle2 className="h-12 w-12 text-green-600" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">You're All Set!</h1>
+          {/* This used to say "Check your email for the download link. It should
+              arrive within 2-3 minutes." No email was ever sent -- there is no
+              sending code in /api/subscribe and no mail provider configured -- so
+              every reader was told to wait for something that never came. The guide
+              is delivered right here instead, which needs no mail provider and
+              cannot silently fail. */}
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            Check your email for the download link. It should arrive within 2-3 minutes.
+            Your guide is ready — download it below. No waiting, no email required.
           </p>
         </div>
 
@@ -37,11 +43,21 @@ export default function ThankYouPage() {
               <div className="flex-1">
                 <h2 className="text-2xl font-bold mb-2">Download Your Guide</h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Can't wait? Download the Dividend Investor's Toolkit directly:
+                  The Dividend Investor&apos;s Toolkit — 12 chapters on how dividend
+                  investing actually works. Prefer to read it in the browser?{' '}
+                  <Link href="/free-guide/read" className="underline">
+                    Read it online
+                  </Link>
+                  .
                 </p>
-                <Button size="lg" className="bg-blue-600">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download PDF Now (3.2 MB)
+                {/* Real href. The button previously had none at all, so it looked
+                    like a download and did nothing when clicked. Size is the actual
+                    file size; the old copy claimed 3.2 MB. */}
+                <Button size="lg" className="bg-blue-600" asChild>
+                  <a href="/dividend-investors-toolkit.pdf" download>
+                    <Download className="mr-2 h-5 w-5" />
+                    Download PDF (15 pages, 72 KB)
+                  </a>
                 </Button>
               </div>
             </div>

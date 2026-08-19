@@ -7,8 +7,8 @@ import { LeadMagnetForm } from '@/components/lead-magnet/LeadMagnetForm'
 import { CheckCircle2, Download, TrendingUp, Shield, DollarSign, BookOpen, Calculator, LineChart } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Free Guide: The Dividend Investor\'s Toolkit 2026 (50+ Pages)',
-  description: 'Download our comprehensive 50-page guide covering DRIP investing, dividend aristocrats, portfolio strategies, and tax optimization. 100% free.',
+  title: 'Free Guide: The Dividend Investor\'s Toolkit',
+  description: 'A free 12-chapter guide to how dividend investing actually works: yield traps, payout ratios, DRIP compounding, screening, tax treatment, and the mistakes that cost most.',
   keywords: ['dividend investing guide', 'DRIP guide', 'dividend aristocrats', 'passive income guide', 'free investing guide']
 }
 
@@ -27,7 +27,7 @@ export default function FreeGuidePage() {
             A practical walkthrough of dividend investing mechanics — how DRIP compounding, yield, and payout timing actually work.
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
-            50+ pages · 12 chapters · 5 calculators · 3 ready-to-use strategies
+            12 chapters · 15 pages · free PDF or read online
           </p>
           <div className="flex items-center justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-2">
@@ -81,8 +81,8 @@ export default function FreeGuidePage() {
                   <BookOpen className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Chapter 1-3: Foundation</h3>
-                  <p className="text-gray-600 dark:text-gray-400">DRIP basics, dividend aristocrats, yield vs. growth strategies</p>
+                  <h3 className="font-bold text-lg mb-1">Chapters 1-3: The mechanics</h3>
+                  <p className="text-gray-600 dark:text-gray-400">What a dividend is and the four dates that govern it, why a high yield is usually a warning, and whether a payout is actually affordable</p>
                 </div>
               </div>
 
@@ -91,8 +91,8 @@ export default function FreeGuidePage() {
                   <TrendingUp className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Chapter 4-6: Portfolio Building</h3>
-                  <p className="text-gray-600 dark:text-gray-400">3 ready-to-use portfolios: Conservative, Balanced, Aggressive</p>
+                  <h3 className="font-bold text-lg mb-1">Chapters 4-6: Compounding and structure</h3>
+                  <p className="text-gray-600 dark:text-gray-400">Growth versus income and yield on cost, what DRIP really compounds, and the sector concentration trap dividend portfolios fall into</p>
                 </div>
               </div>
 
@@ -101,8 +101,8 @@ export default function FreeGuidePage() {
                   <Calculator className="h-6 w-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Chapter 7-9: Advanced Strategies</h3>
-                  <p className="text-gray-600 dark:text-gray-400">Tax optimization, covered calls, dividend capture, REITs</p>
+                  <h3 className="font-bold text-lg mb-1">Chapters 7-9: Judgement</h3>
+                  <p className="text-gray-600 dark:text-gray-400">A screening process you can repeat, how to read a dividend cut months before it lands, and the tax treatment that quietly costs the most</p>
                 </div>
               </div>
 
@@ -111,8 +111,8 @@ export default function FreeGuidePage() {
                   <LineChart className="h-6 w-6 text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Chapter 10-12: Tools & Resources</h3>
-                  <p className="text-gray-600 dark:text-gray-400">Screening criteria, broker comparison, 5 interactive calculators</p>
+                  <h3 className="font-bold text-lg mb-1">Chapters 10-12: Special cases and process</h3>
+                  <p className="text-gray-600 dark:text-gray-400">Why REITs and MLPs cannot be analysed like ordinary shares, the ten mistakes that cost most, and a start-to-finish process</p>
                 </div>
               </div>
 
@@ -121,8 +121,8 @@ export default function FreeGuidePage() {
                   <DollarSign className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Bonus: 50+ Dividend Stocks Analyzed</h3>
-                  <p className="text-gray-600 dark:text-gray-400">Complete breakdown with yield, payout ratio, and 10-year history</p>
+                  <h3 className="font-bold text-lg mb-1">No stock tips, deliberately</h3>
+                  <p className="text-gray-600 dark:text-gray-400">A PDF cannot update itself, so printed prices and yields go stale on your hard drive. The guide teaches the method and sends you to our live tools for current figures</p>
                 </div>
               </div>
             </div>

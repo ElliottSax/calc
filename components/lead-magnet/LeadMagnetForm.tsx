@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -13,6 +13,10 @@ export function LeadMagnetForm() {
   const [agreedToTerms, setAgreedToTerms] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  // When the form first rendered. The server compares against this to spot bots;
+  // sending Date.now() at submit time (as this did) made the gap always ~0ms and
+  // flagged every real person as a bot.
+  const renderedAt = useRef(Date.now())
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -32,25 +36,23 @@ export function LeadMagnetForm() {
           email,
           name,
           leadMagnet: 'dividend-toolkit',
-          timestamp: Date.now(),
+          renderedAt: renderedAt.current,
         }),
       })
 
-      const data = await response.json()
-
-      if (!data.success) {
-        throw new Error(data.error || 'Subscription failed')
+      if (!response.ok) {
+        // Log it, but do not stop here. The guide is free and already sitting in
+        // /public; holding it hostage to our mailing list working would punish the
+        // reader for our outage. Previously any failure showed an alert() and the
+        // reader got nothing at all.
+        console.error('Subscription failed', await response.text().catch(() => ''))
       }
-
-      // Redirect to thank you page with download
-      window.location.href = `/free-guide/thank-you?email=${encodeURIComponent(email)}`
-
-      setSubmitted(true)
     } catch (error) {
       console.error('Subscription error:', error)
-      alert('Failed to subscribe. Please try again.')
     } finally {
       setIsSubmitting(false)
+      // Always deliver.
+      window.location.href = `/free-guide/thank-you?email=${encodeURIComponent(email)}`
     }
   }
 

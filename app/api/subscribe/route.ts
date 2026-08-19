@@ -21,8 +21,17 @@ export async function POST(request: NextRequest) {
       })
     }
 
-    // Timing check: reject submissions faster than 2 seconds (bot behavior)
-    if (timestamp && Date.now() - Number(timestamp) < 2000) {
+    // Timing check: a human takes a moment to type an email, a bot does not. This
+    // compares against when the FORM WAS RENDERED, not when it was submitted.
+    //
+    // It previously read the same way but the client sent Date.now() at submit
+    // time, so the delta was always ~0ms and every genuine signup was classified
+    // as a bot -- silently returning success while storing nothing. The client now
+    // sends `renderedAt`; `timestamp` is still accepted so older cached bundles
+    // keep working, but it can no longer trip the check on its own.
+    const renderedAt = Number(body.renderedAt ?? timestamp)
+    if (body.renderedAt && Number.isFinite(renderedAt) && Date.now() - renderedAt < 2000) {
+      logger.info({ source: 'subscribe_endpoint' }, 'Rejected suspiciously fast submission')
       return NextResponse.json({
         success: true,
         message: 'Successfully subscribed to newsletter',
