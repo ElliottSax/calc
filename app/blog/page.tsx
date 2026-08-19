@@ -357,7 +357,7 @@ export default function BlogPage() {
                       Subscribe Free →
                     </Button>
                     <p className="text-xs text-blue-100 mt-2 text-center">
-                      25,000+ investors read this
+                      Free, no signup
                     </p>
                   </div>
                 </div>
@@ -485,7 +485,7 @@ export default function BlogPage() {
                   Download Free PDF
                 </Button>
                 <p className="text-xs text-slate-500 mt-2 text-center">
-                  No email required • 5,234 downloads
+                  No email required
                 </p>
               </CardContent>
             </Card>

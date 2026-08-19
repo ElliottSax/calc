@@ -280,10 +280,15 @@ export function EmailCaptureModal({ trigger = 'exit', onClose, variant = 'mega' 
                     <div className="flex-1">
                       <p className="font-medium">{magnet.title}</p>
                       <p className="text-sm text-slate-600 dark:text-slate-400">{magnet.description}</p>
+                      {/* The struck-through `magnet.value` ("$97", "$67"...) and
+                          `magnet.downloads` ("5,234", "8,123", "12,345") were both
+                          invented -- note the 3,456 / 6,789 / 12,345 run in the data
+                          below. A struck-through price for something never offered
+                          for sale is a fabricated reference price, which is a
+                          deceptive-pricing problem on top of the fake counts. The
+                          items are free; saying so needs no fake anchor. */}
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="text-xs text-slate-500 line-through">{magnet.value}</span>
                         <Badge variant="secondary" className="text-xs">FREE</Badge>
-                        <span className="text-xs text-slate-500">• {magnet.downloads} downloads</span>
                       </div>
                     </div>
                   </div>

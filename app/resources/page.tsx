@@ -385,7 +385,7 @@ export default function ResourcesPage() {
                 <CardContent className="pt-6 space-y-4">
                   <div className="space-y-3">
                     {[
-                      { name: 'Dividend Tracker Spreadsheet', format: 'Excel', size: '245 KB', downloads: '5,234' },
+                      { name: 'Dividend Tracker Spreadsheet', format: 'Excel', size: '245 KB' },
                       { name: 'Portfolio Rebalancing Template', format: 'Excel', size: '189 KB', downloads: '3,456' },
                       { name: 'Tax Loss Harvesting Guide', format: 'PDF', size: '1.2 MB', downloads: '2,890' },
                       { name: 'Dividend Stock Checklist', format: 'PDF', size: '456 KB', downloads: '4,123' },
@@ -471,7 +471,7 @@ export default function ResourcesPage() {
       <section className="bg-slate-50 dark:bg-slate-900/50 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Trusted by Thousands of Investors</h2>
+            <h2 className="text-3xl font-bold mb-4">Free Tools, No Signup</h2>
             <p className="text-slate-600 dark:text-slate-400">
               Join our community of successful dividend investors
             </p>

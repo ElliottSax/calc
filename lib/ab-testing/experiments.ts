@@ -156,36 +156,14 @@ export const ACTIVE_EXPERIMENTS: Record<string, Experiment> = {
     active: true,
   },
 
-  socialProofType: {
-    id: 'social-proof-v1',
-    name: 'Social Proof Element Test',
-    description: 'Test different types of social proof elements',
-    variants: [
-      {
-        id: 'user-count',
-        message: '47,283 investors calculated today',
-        weight: 0.25,
-      },
-      {
-        id: 'recent-activity',
-        message: 'John from NYC just calculated $847K portfolio',
-        weight: 0.25,
-      },
-      {
-        id: 'testimonial',
-        message: '"This calculator changed my investment strategy" - Sarah M.',
-        weight: 0.25,
-      },
-      {
-        id: 'authority',
-        message: 'Featured in WSJ, Forbes, and Bloomberg',
-        weight: 0.25,
-      },
-    ],
-    metric: 'engagement_rate',
-    startDate: new Date('2026-02-01'),
-    active: true,
-  },
+  // The "socialProofType" experiment was removed 2026-08-18. It was marked
+  // active: true and all four of its variants were fabrications -- "47,283
+  // investors calculated today", "John from NYC just calculated $847K portfolio",
+  // a testimonial from a "Sarah M." who does not exist, and "Featured in WSJ,
+  // Forbes, and Bloomberg", which no publication has ever done. The experiment's
+  // stated purpose was to measure which of those false claims converted best.
+  // Nothing consumed it, so no reader saw a variant. Not replaced: an honest
+  // version of this test has no variants to run.
 };
 
 /**

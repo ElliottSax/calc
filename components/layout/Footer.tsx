@@ -68,7 +68,7 @@ export function Footer() {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold">
-                    Dividend<span className="text-blue-500">Pro</span>
+                    Dividend<span className="text-blue-500">Engines</span>
                   </h1>
                   <span className="text-xs text-slate-400">
                     Build Wealth Through Dividends
@@ -173,22 +173,17 @@ export function Footer() {
               ))}
             </div>
 
-            {/* Featured In */}
-            <div className="text-center mb-8">
-              <p className="text-xs text-slate-500 mb-3">AS FEATURED IN</p>
-              <div className="flex flex-wrap justify-center gap-6 opacity-50">
-                {['Forbes', 'WSJ', 'Bloomberg', 'CNBC', 'MarketWatch'].map(brand => (
-                  <span key={brand} className="text-slate-400 font-semibold">
-                    {brand}
-                  </span>
-                ))}
-              </div>
-            </div>
+            {/* An "AS FEATURED IN" strip used to sit here listing Forbes, WSJ,
+                Bloomberg, CNBC and MarketWatch. None of them has ever mentioned this
+                site. Fabricated press credentials naming real publications are not
+                puffery -- they are a false statement of fact that those outlets
+                themselves could act on, quite apart from the FTC. Restore this only
+                with a link to the actual article. */}
 
             {/* Bottom Bar */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-slate-800">
               <p className="text-sm text-slate-400">
-                © {new Date().getFullYear()} DividendPro. All rights reserved.
+                © {new Date().getFullYear()} Dividend Engines. All rights reserved.
               </p>
 
               <div className="flex items-center gap-6 text-sm text-slate-400">

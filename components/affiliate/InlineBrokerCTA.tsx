@@ -162,7 +162,7 @@ export function InlineBrokerCTA({
             </Button>
 
             <p className="text-center text-xs text-white/60 mt-3">
-              Trusted by thousands of dividend investors
+              Compare brokers before you open an account
             </p>
           </div>
         </Card>

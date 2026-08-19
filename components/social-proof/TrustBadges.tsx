@@ -15,7 +15,7 @@ export function TrustBadges() {
 
       <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
         <Award className="h-5 w-5 text-purple-600" />
-        <span className="text-sm font-medium">Expert Verified</span>
+        <span className="text-sm font-medium">Assumptions Shown</span>
       </div>
 
       <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
