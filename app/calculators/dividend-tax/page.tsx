@@ -5,16 +5,16 @@ import { DividendTaxCalculator } from '@/components/calculators/DividendTaxCalcu
 const url = 'https://dividendengines.com/calculators/dividend-tax'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dividend Tax Calculator — Qualified vs Ordinary (2024) | Dividend Engines' },
+  title: { absolute: 'Dividend Tax Calculator — Qualified vs Ordinary (2026) | Dividend Engines' },
   description:
-    'Free dividend tax calculator. Estimate tax on qualified and non-qualified dividends using 2024 brackets, plus the 3.8% NIIT, your total tax, effective rate, and after-tax income.',
+    'Free dividend tax calculator. Estimate tax on qualified and non-qualified dividends using 2026 brackets, plus the 3.8% NIIT, your total tax, effective rate, and after-tax income.',
   keywords: ['dividend tax calculator', 'qualified dividend tax calculator', 'dividend tax rate calculator', 'how are dividends taxed', 'net investment income tax calculator', 'ordinary vs qualified dividends'],
   alternates: { canonical: url },
   openGraph: { title: 'Dividend Tax Calculator', description: 'Estimate tax on qualified and non-qualified dividends, including NIIT.', type: 'website', url },
 }
 
 const faqs = [
-  { q: 'How are qualified dividends taxed in 2024?', a: 'Qualified dividends are taxed at the long-term capital gains rates — 0%, 15%, or 20% — based on your taxable income and filing status. For 2024, a single filer pays 0% up to $47,025, 15% up to $518,900, and 20% above that; married-filing-jointly thresholds are $94,050 and $583,750.' },
+  { q: 'How are qualified dividends taxed in 2026?', a: 'Qualified dividends are taxed at the long-term capital gains rates — 0%, 15%, or 20% — based on your taxable income and filing status. For 2026, a single filer pays 0% up to $49,450, 15% up to $545,500, and 20% above that; married-filing-jointly thresholds are $98,900 and $613,700 (source: IRS Revenue Procedure 2025-32).' },
   { q: 'What is the difference between qualified and non-qualified dividends?', a: 'Qualified dividends meet IRS holding-period rules and get the lower capital gains rates. Non-qualified (ordinary) dividends — including most REIT and money-market payouts — are taxed at your ordinary income marginal rate, which can be much higher.' },
   { q: 'What is the 3.8% NIIT on dividends?', a: 'The Net Investment Income Tax adds 3.8% on investment income (including dividends) once your modified adjusted gross income exceeds $200,000 (single) or $250,000 (married filing jointly). This calculator adds it automatically when your income crosses those thresholds.' },
   { q: 'How can I lower the tax on my dividends?', a: 'Hold dividend stocks long enough to qualify for the lower rates, keep high-yield or REIT holdings in tax-advantaged accounts like an IRA or 401(k), and be mindful of the income thresholds that push you into the 15%/20% brackets or trigger NIIT.' },

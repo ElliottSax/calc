@@ -50,6 +50,23 @@ function queueFiles() {
     .map(f => path.join(QUEUE_DIR, f));
 }
 
+// A prior batch ("Add 100 new articles via autopublisher", content/blog/haiku-*)
+// shipped with currency figures silently mangled by some no-longer-identifiable
+// step upstream of this script: "$10,000" became ",000", "$1,520" became ",520",
+// "\$10,787" became "\,787" — the "$" (and sometimes a leading backslash from
+// markdown-escaping) plus the digits before the first comma vanish, leaving a
+// bare comma-group with no digit or "$" immediately in front of it. A comma
+// directly followed by exactly a 3-digit group, with no digit/"$" before it,
+// doesn't occur in legitimate prose or real thousands-formatted numbers (those
+// always have a digit right before the comma, e.g. "10,000"), so it's a
+// reliable fingerprint. Refusing to publish on a match is cheap insurance
+// against shipping the same corruption again from an unknown source.
+const CORRUPT_CURRENCY_RE = /(?<![\d$]),\d{3}(?!\d)/;
+
+function looksCorrupted(text) {
+  return CORRUPT_CURRENCY_RE.test(text);
+}
+
 let published = 0;
 for (const qf of queueFiles()) {
   if (published >= PER_RUN) break;
@@ -59,6 +76,13 @@ for (const qf of queueFiles()) {
   const text = fs.readFileSync(qf, 'utf8');
   if (!/^---\r?\n/.test(text)) { fs.rmSync(qf); console.log(`drop (no frontmatter): ${slug}`); continue; }
   if (fs.existsSync(dest)) { fs.rmSync(qf); console.log(`drop (already published): ${slug}`); continue; }
+  if (looksCorrupted(text)) {
+    const quarantineDir = path.join(QUEUE_DIR, 'quarantine');
+    fs.mkdirSync(quarantineDir, { recursive: true });
+    fs.renameSync(qf, path.join(quarantineDir, path.basename(qf)));
+    console.log(`QUARANTINED (looks like corrupted currency figures): ${slug}`);
+    continue;
+  }
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, freshenDate(text));
   fs.rmSync(qf);

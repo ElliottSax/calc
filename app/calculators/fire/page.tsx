@@ -5,12 +5,12 @@ import { FireCalculator } from '@/components/calculators/FireCalculator'
 const url = 'https://dividendengines.com/calculators/fire'
 
 export const metadata: Metadata = {
-  title: { absolute: 'FIRE Calculator — Retirement Income & Your FIRE Number | Dividend Engines' },
+  title: { absolute: 'FIRE Calculator — 4% Rule, Retirement Income & Your FIRE Number | Dividend Engines' },
   description:
-    'How to calculate retirement income: portfolio × safe withdrawal rate. Free FIRE calculator for your FIRE number, savings rate, and years to financial independence.',
-  keywords: ['fire calculator', 'how to calculate retirement income', 'how to build wealth for retirement', 'retirement income calculator', 'financial independence calculator', 'retire early calculator', 'fire number calculator', 'savings rate calculator'],
+    'Use the 4% rule to calculate retirement income: portfolio × safe withdrawal rate. Free FIRE calculator for your FIRE number, savings rate, and years to financial independence.',
+  keywords: ['fire calculator', '4% rule calculator', '4 percent rule calculator', 'safe withdrawal rate calculator', 'how to calculate retirement income', 'how to build wealth for retirement', 'retirement income calculator', 'financial independence calculator', 'retire early calculator', 'fire number calculator', 'savings rate calculator'],
   alternates: { canonical: url },
-  openGraph: { title: 'FIRE Calculator — Retirement Income & Your FIRE Number', description: 'Calculate retirement income, your FIRE number, and years to financial independence.', type: 'website', url },
+  openGraph: { title: 'FIRE Calculator — 4% Rule, Retirement Income & Your FIRE Number', description: 'Use the 4% rule to calculate retirement income, your FIRE number, and years to financial independence.', type: 'website', url },
 }
 
 const faqs = [
@@ -20,6 +20,7 @@ const faqs = [
   { q: 'What is Coast FIRE?', a: 'Coast FIRE is when your existing investments will grow to your FIRE number by retirement age without any further contributions — so you only need to cover current expenses. Increase the age gap and set contributions low to approximate it here.' },
   { q: 'How do you calculate retirement income?', a: 'Multiply the portfolio you expect to retire with by your safe withdrawal rate: retirement income = portfolio value × withdrawal rate. A $900,000 portfolio at 4% supports $36,000 a year, or $3,000 a month, before tax. Add any pension and Social Security on top of that figure, and subtract them from your target first if you want to know how much the portfolio alone has to cover.' },
   { q: 'How do you build wealth for retirement?', a: 'Almost all of it comes from your savings rate and time invested rather than picking winners. Save a consistent percentage of income into low-cost, broadly diversified funds, capture every dollar of employer match, keep the money invested through downturns, and let each raise increase the amount saved rather than the amount spent. Cutting a recurring expense does double duty: it frees cash to invest and permanently lowers the portfolio you need, since your target is roughly 25× annual spending.' },
+  { q: 'What is the 4% rule calculator?', a: 'A 4% rule calculator answers two related questions: how much you can safely withdraw each year from a given portfolio (portfolio × 4%), and how large a portfolio you need to support a given spending level (annual expenses ÷ 4%, the same as 25× your expenses). The calculator above does both — enter your numbers to see your FIRE number and safe annual withdrawal at the 4% rate, or adjust the withdrawal rate to see how a more conservative 3–3.5% changes the target.' },
 ]
 
 export default function FirePage() {

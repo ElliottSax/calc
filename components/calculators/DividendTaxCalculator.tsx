@@ -2,9 +2,15 @@
 
 import { useMemo, useState } from 'react'
 
-// Dividend tax calculator. Qualified dividends use the 2024 long-term capital
+// Dividend tax calculator. Qualified dividends use the 2026 long-term capital
 // gains brackets (0/15/20% by taxable income); non-qualified dividends are taxed
 // at the ordinary marginal rate; NIIT adds 3.8% for high earners.
+//
+// 2026 capital-gains breakpoints sourced from IRS Revenue Procedure 2025-32
+// (tax year 2026 inflation adjustments, released 2025-10-09), cross-checked
+// against Tax Foundation's 2026 tax bracket tables (taxfoundation.org) on
+// 2026-08-19. NIIT thresholds ($200k/$250k) are fixed by statute since 2013
+// and are not inflation-adjusted -- unchanged for 2026.
 
 function money(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })
@@ -23,12 +29,12 @@ export function DividendTaxCalculator() {
 
     const getQualifiedRate = (status: 'single' | 'married', income: number) => {
       if (status === 'single') {
-        if (income <= 47025) return 0
-        if (income <= 518900) return 15
+        if (income <= 49450) return 0
+        if (income <= 545500) return 15
         return 20
       } else {
-        if (income <= 94050) return 0
-        if (income <= 583750) return 15
+        if (income <= 98900) return 0
+        if (income <= 613700) return 15
         return 20
       }
     }
@@ -115,7 +121,7 @@ export function DividendTaxCalculator() {
           <div>
             <p className="text-sm text-gray-500">After-tax dividend income</p>
             <p className="text-2xl font-bold">{money(results.afterTaxIncome)}</p>
-            <p className="text-xs text-gray-400 mt-1">Estimate only — qualified rates use 2024 brackets; consult a tax professional.</p>
+            <p className="text-xs text-gray-400 mt-1">Estimate only — qualified rates use 2026 brackets; consult a tax professional.</p>
           </div>
         </div>
       </div>
