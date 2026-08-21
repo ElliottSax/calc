@@ -64,6 +64,7 @@ export default function DividendTaxPage() {
               <Link href="/calculators/drip" className="text-primary hover:underline">DRIP Calculator →</Link>
               <Link href="/calculators/ira" className="text-primary hover:underline">IRA Calculator →</Link>
               <Link href="/calculators/dividend-yield" className="text-primary hover:underline">Dividend Yield Calculator →</Link>
+              <Link href="/calculators/wash-sale" className="text-primary hover:underline">Wash Sale Calculator →</Link>
             </div>
           </div>
         </div>
