@@ -42,11 +42,31 @@ jobs:
           # lib/ab-testing and lib/affiliate/tracking generate user and click ids and
           # assign A/B buckets. Random assignment is the correct method for both and
           # neither produces a number shown to a reader as a fact.
-          ALLOW='app/api/track-conversion/route.ts|components/ui/skeleton|components/skeletons/|components/hero/AnimatedHero.tsx|components/tools/DividendSimulator.tsx|lib/ab-testing/|lib/affiliate/tracking.ts|lib/error-handling/'
+          # Named files are only for cases where randomness is the component's whole
+          # method: DividendSimulator applies Monte-Carlo variation from a scenario
+          # the user picks, and says on screen that each run is one simulated path.
+          ALLOW='components/tools/DividendSimulator.tsx|lib/ab-testing/'
+
+          # Everything else is decided by what the randomness produces, not by which
+          # file it sits in. Naming files never converged -- this list reached eight
+          # entries before the rules below replaced most of it -- and it is blunter
+          # than it looks: allowlisting a file also excuses a fabricated figure that
+          # happens to sit beside a sparkle.
+          #
+          # Assigned to a style or animation property, randomness is decoration:
+          # particle positions, shimmer widths, float durations.
+          # Covers both object form (`height: Math.random()`) and JSX prop form
+          # (`x={Math.random() * window.innerWidth}`) -- the hero canvas uses both.
+          DECORATIVE='(left|top|right|bottom|width|height|duration|delay|opacity|rotation|scale|size|velocityX|velocityY|[xy])[[:space:]]*[:=].*Math\.random'
+          # `Math.random().toString(36)` is the identifier idiom -- transaction refs,
+          # click ids, error ids, React keys. Never a number shown to a reader.
+          IDS='Math\.random\(\)\.toString\(36\)'
           HITS=$(grep -rnE "Math\.random\(|Math\.sin\([^)]*seed|mulberry32|xorshift" \
                    app components lib \
                    --include="*.tsx" --include="*.ts" 2>/dev/null \
                  | grep -Ev "$ALLOW" \
+                 | grep -Ev "$DECORATIVE" \
+                 | grep -Ev "$IDS" \
                  | grep -Ev ":[[:space:]]*(\{?/\*|\*|//)" || true)
           if [ -n "$HITS" ]; then
             echo "FAIL: fabricated-data candidates outside the allowlist."
