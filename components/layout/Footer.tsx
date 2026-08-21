@@ -7,17 +7,22 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import {
   TrendingUp, Mail, Twitter, Linkedin, Youtube, Facebook,
-  Shield, Award, Users, Star, ExternalLink, ArrowRight,
+  Shield, Award, Users, Star, ArrowRight,
   Calculator, BookOpen, BarChart3, Newspaper, Download, Heart
 } from 'lucide-react'
 
 const FOOTER_LINKS = {
+  // All five of these pointed at '/#calculator' -- one anchor on the homepage,
+  // five different labels. The dedicated routes exist and return 200; sending
+  // every label to the same anchor wasted the internal linking and gave a reader
+  // clicking "Yield Calculator" the homepage instead.
   calculators: [
-    { label: 'DRIP Calculator', href: '/#calculator' },
-    { label: 'Yield Calculator', href: '/#calculator' },
-    { label: 'Growth Calculator', href: '/#calculator' },
-    { label: 'Comparison Tool', href: '/#calculator' },
-    { label: 'Retirement Planner', href: '/#calculator' },
+    { label: 'DRIP Calculator', href: '/calculators/drip' },
+    { label: 'Yield Calculator', href: '/calculators/dividend-yield' },
+    { label: 'Growth Calculator', href: '/calculators/dividend-growth' },
+    { label: 'Income Calculator', href: '/calculators/dividend-income' },
+    { label: 'Retirement (FIRE)', href: '/calculators/fire' },
+    { label: 'All calculators', href: '/calculators' },
   ],
   resources: [
     { label: 'Stock Screener', href: '/resources' },
@@ -192,15 +197,11 @@ export function Footer() {
                 <Link href="/sitemap" className="hover:text-white transition-colors">
                   Sitemap
                 </Link>
-                <span>•</span>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors flex items-center gap-1"
-                >
-                  GitHub <ExternalLink className="w-3 h-3" />
-                </a>
+                {/* A "GitHub" link pointed at https://github.com -- the site's own
+                    homepage, not any repository of ours. Same category as the fake
+                    social accounts removed from this file: a link that implies
+                    something exists when it does not. Restore it with a real repo
+                    URL if the code is ever published. */}
               </div>
             </div>
 
