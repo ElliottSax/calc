@@ -20,14 +20,29 @@ name: Autopublish
 #
 # Re-enable by uncommenting the schedule once the generator produces something
 # worth indexing. The queue is intact and nothing here has been deleted.
-on:
+# FULLY DISABLED 2026-08-21. Commenting out the schedule was not enough:
+# something is calling `workflow_dispatch` on this workflow every two hours at
+# :15, as ElliottSax's own authenticated actor (not github-actions[bot], so it
+# holds a personal token). `gh run list` shows dispatches still arriving after
+# the pause -- 03:15, 01:15, 23:15, 21:15 -- so the trigger has to go, not just
+# the cron.
+#
+# An exhaustive search has not identified the caller: repo scripts, BingeFlow
+# task history, GitHub Apps and webhooks, code search, Windows Task Scheduler,
+# PowerShell scheduled jobs, OpenClaw (whose config explicitly excludes sites
+# that have their own autopublisher), cross-repo dispatchers, and WSL cron (no
+# distributions installed).
+#
+# Re-enable by uncommenting whichever block is wanted. The queue is intact and
+# nothing has been deleted.
+on: {}
   # schedule:
   #   - cron: '0 */2 * * *'   # every 2 hours = 12x/day
-  workflow_dispatch:
-    inputs:
-      count:
-        description: 'articles to publish this run'
-        default: '1'
+  # workflow_dispatch:
+  #   inputs:
+  #     count:
+  #       description: 'articles to publish this run'
+  #       default: '1'
 
 permissions:
   contents: write
