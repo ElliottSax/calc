@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { courses, getCourse } from '@/lib/data/courses'
+import { SchemaRenderer } from '@/components/seo/SchemaRenderer'
+import { relatedPostsForTitle } from '@/lib/blog/course-match'
 
 export function generateStaticParams() {
   return courses.map((c) => ({ courseSlug: c.slug }))
@@ -35,13 +37,35 @@ const md = {
   a: ({ node, ...p }: any) => <a className="text-blue-600 hover:underline" {...p} />,
 }
 
+function courseSchema(course: NonNullable<ReturnType<typeof getCourse>>) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: course.title,
+    description: course.description,
+    provider: {
+      '@type': 'Organization',
+      name: 'Dividend Engines',
+      sameAs: 'https://dividendengines.com',
+    },
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'online',
+      courseWorkload: course.estimatedTime,
+    },
+  }
+}
+
 export default async function CoursePage({ params }: { params: Promise<{ courseSlug: string }> }) {
   const { courseSlug } = await params
   const course = getCourse(courseSlug)
   if (!course) notFound()
 
+  const relatedPosts = relatedPostsForTitle(course.title)
+
   return (
     <main className="container mx-auto px-4 py-12">
+      <SchemaRenderer schema={courseSchema(course)} />
       <div className="max-w-3xl mx-auto">
         <nav className="text-sm text-gray-500 mb-6">
           <Link href="/courses" className="hover:text-gray-900 dark:hover:text-white">
@@ -101,6 +125,23 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
             )}
           </section>
         ))}
+
+        {relatedPosts.length > 0 && (
+          <div className="border-t border-gray-200 dark:border-gray-700 pt-8 mb-8">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">
+              Related articles
+            </h2>
+            <ul className="space-y-1">
+              {relatedPosts.map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/blog/${post.slug}`} className="text-blue-600 hover:underline">
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
           <p className="text-gray-600 dark:text-gray-300 mb-4">
