@@ -67,7 +67,12 @@ function looksCorrupted(text) {
   return CORRUPT_CURRENCY_RE.test(text);
 }
 
+const gate = await import('./content-quality-gate.mjs');
+const CONTENT_DIR_ABS = path.join(ROOT, CONFIG.contentDir);
+const corpus = gate.corpusShingles(CONTENT_DIR_ABS);
+
 let published = 0;
+let rejected = 0;
 for (const qf of queueFiles()) {
   if (published >= PER_RUN) break;
   const slug = normalizeSlug(path.basename(qf, '.md'));
@@ -83,10 +88,28 @@ for (const qf of queueFiles()) {
     console.log(`QUARANTINED (looks like corrupted currency figures): ${slug}`);
     continue;
   }
+
+  // Boilerplate gate, alongside the corrupted-currency quarantine above. 1,903
+  // already-published articles here are mail-merge -- a topic title substituted
+  // into a fixed f-string by template scripts in ../content-engine -- and this
+  // site's own sitemap.ts now excludes them while blog/[id]/page.tsx serves them
+  // noindex. That is an admission they should not have been published.
+  //
+  // Rejected articles stay in the queue rather than being deleted.
+  const verdict = gate.check(qf, CONTENT_DIR_ABS, corpus);
+  if (!verdict.ok) {
+    rejected++;
+    console.log(`SKIP ${slug}: ${verdict.reason}`);
+    continue;
+  }
+  // A published article joins the corpus the next candidate is judged against,
+  // otherwise a batch identical to each other all looks original.
+  for (const sh of gate.shingles(gate.normalise(text))) corpus.add(sh);
+
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, freshenDate(text));
   fs.rmSync(qf);
   published++;
   console.log(`PUBLISHED ${slug} -> ${path.relative(ROOT, dest)}`);
 }
-console.log(`done: ${published}/${PER_RUN} published, ${queueFiles().length} left in queue`);
+console.log(`done: ${published}/${PER_RUN} published, ${rejected} skipped by the quality gate, ${queueFiles().length} left in queue`);
