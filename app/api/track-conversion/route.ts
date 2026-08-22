@@ -26,7 +26,9 @@ export async function POST(request: NextRequest) {
   if (rateLimitError) return rateLimitError
   try {
     const data: ConversionData = await request.json()
-    const cookieStore = cookies()
+    // Next.js 15 made cookies() async -- calling .get() on the un-awaited
+    // Promise crashed this handler on every request (Promise has no .get()).
+    const cookieStore = await cookies()
 
     // Get affiliate tracking data from cookies
     const affiliateData = cookieStore.get('affiliate_data')

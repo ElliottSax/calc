@@ -21,7 +21,12 @@ export async function createServerSupabaseClient() {
     )
   }
 
-  const cookieStore = cookies()
+  // Next.js 15 made cookies() async (it used to return the store directly) --
+  // await it once here, before building the get/set/remove closures below,
+  // so they close over the already-resolved store rather than each calling
+  // .get()/.set() on a Promise (which has no such methods and would throw at
+  // runtime the moment @supabase/ssr's client actually invoked one of them).
+  const cookieStore = await cookies()
 
   return createServerClient<Database>(
     supabaseUrl,
