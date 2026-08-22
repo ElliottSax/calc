@@ -326,6 +326,7 @@ export function SavingsCalculator() {
             <InlineBrokerCTA
               variant="featured"
               calculatorType="savings"
+              finalPortfolioValue={result.totalSaved}
             />
           </div>
         </>

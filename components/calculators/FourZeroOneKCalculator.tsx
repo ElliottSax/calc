@@ -73,7 +73,13 @@ export function FourZeroOneKCalculator() {
     }
 
     const years = retirement - age
-    let currentBalance = balance
+    // Named distinctly from the `currentBalance` state var (declared via
+    // useState above) it's seeded from -- a same-named `let` here used to
+    // shadow that state variable for this whole function body (JS/TS
+    // temporal dead zone), making the `parseFloat(currentBalance)` read
+    // above reference this not-yet-initialized local instead, which threw
+    // "Cannot access 'currentBalance' before initialization" on every call.
+    let runningBalance = balance
     let totalEmployeeContrib = 0
     let totalEmployerContrib = 0
     let currentSalaryAmount = salary
@@ -86,20 +92,20 @@ export function FourZeroOneKCalculator() {
       const employerContrib = matchableAmount * matchPct
 
       // Add contributions
-      currentBalance += employeeContrib + employerContrib
+      runningBalance += employeeContrib + employerContrib
       totalEmployeeContrib += employeeContrib
       totalEmployerContrib += employerContrib
 
       // Calculate investment gains for the year
-      const investmentGain = currentBalance * returnRate
-      currentBalance += investmentGain
+      const investmentGain = runningBalance * returnRate
+      runningBalance += investmentGain
 
       yearlyBreakdown.push({
         age: age + year,
         year,
         employeeContribution: employeeContrib,
         employerMatch: employerContrib,
-        balance: currentBalance,
+        balance: runningBalance,
         investmentGain
       })
 
@@ -108,17 +114,17 @@ export function FourZeroOneKCalculator() {
     }
 
     const totalContributions = totalEmployeeContrib + totalEmployerContrib
-    const investmentGains = currentBalance - balance - totalContributions
+    const investmentGains = runningBalance - balance - totalContributions
 
     // 4% rule for retirement income
-    const retirementIncome = currentBalance * 0.04
+    const retirementIncome = runningBalance * 0.04
 
     // Tax savings from contributions (assumes pre-tax 401k)
     const annualTaxSavings = parseFloat(currentSalary) * contrib * taxRate
     const totalTaxSavings = annualTaxSavings * years
 
     setResult({
-      finalBalance: currentBalance,
+      finalBalance: runningBalance,
       employeeContributions: totalEmployeeContrib,
       employerContributions: totalEmployerContrib,
       totalContributions,
@@ -467,7 +473,7 @@ export function FourZeroOneKCalculator() {
 
           {/* Broker CTA */}
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="401k" />
+            <InlineBrokerCTA variant="featured" calculatorType="401k" finalPortfolioValue={result.finalBalance} />
           </div>
         </>
       )}

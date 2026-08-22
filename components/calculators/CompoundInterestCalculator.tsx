@@ -410,6 +410,7 @@ export function CompoundInterestCalculator() {
             <InlineBrokerCTA
               variant="featured"
               calculatorType="compound-interest"
+              finalPortfolioValue={result.finalAmount}
             />
           </div>
 

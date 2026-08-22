@@ -152,7 +152,9 @@ export function InvestmentReturnCalculator() {
           </Alert>
 
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="investment-return" />
+            {/* result.totalReturn is misleadingly named -- set to `final` (the
+                ending value) in calculateReturn() above, not a % or delta */}
+            <InlineBrokerCTA variant="featured" calculatorType="investment-return" finalPortfolioValue={result.totalReturn} />
           </div>
         </>
       )}

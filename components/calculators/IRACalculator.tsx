@@ -278,7 +278,11 @@ export function IRACalculator() {
           </Card>
 
           <div className="mt-8">
-            <InlineBrokerCTA variant="featured" calculatorType="ira" />
+            <InlineBrokerCTA
+              variant="featured"
+              calculatorType="ira"
+              finalPortfolioValue={result.recommendation === 'roth' ? result.rothAfterTax : result.traditionalAfterTax}
+            />
           </div>
         </>
       )}
