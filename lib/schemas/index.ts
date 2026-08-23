@@ -50,7 +50,6 @@ export interface ArticleSchemaProps {
 }
 
 export interface FAQPageSchemaProps {
-  mainEntity?: string;
   faqs: Array<{
     question: string;
     answer: string;
@@ -238,10 +237,6 @@ export function generateFAQPageSchema(props: FAQPageSchemaProps) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: {
-      '@type': 'FAQPage',
-      name: props.mainEntity || 'Frequently Asked Questions',
-    },
     mainEntity: props.faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,

@@ -214,7 +214,7 @@ export function DividendGrowthCalculator() {
                     borderRadius: '8px',
                     color: '#fff'
                   }}
-                  formatter={(value: number) => [formatCurrency(value), 'Annual Income']}
+                  formatter={(value: any) => [formatCurrency(value as number), 'Annual Income']}
                 />
                 <Line
                   type="monotone"

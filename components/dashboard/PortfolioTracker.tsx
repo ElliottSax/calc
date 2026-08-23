@@ -320,7 +320,7 @@ export function PortfolioTracker() {
                   borderRadius: '8px',
                   color: '#fff'
                 }}
-                formatter={(value: number) => [`$${Number(value).toLocaleString()}`, 'Portfolio Value']}
+                formatter={(value: any) => [`$${Number(value).toLocaleString()}`, 'Portfolio Value']}
               />
               <Area
                 type="monotone"
@@ -412,7 +412,7 @@ export function PortfolioTracker() {
                       borderRadius: '8px',
                       color: '#fff'
                     }}
-                    formatter={(value: number, name: string) => [`${value}%`, name]}
+                    formatter={(value: any, name: any) => [`${value}%`, name]}
                   />
                   <RechartsPieChart data={allocationData} cx="50%" cy="50%" outerRadius={80}>
                     {allocationData.map((entry, index) => (
