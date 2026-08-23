@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 const CALCULATORS = [
   { href: '/calculators/drip', name: 'DRIP Calculator', desc: 'See how reinvesting dividends compounds your portfolio over time.' },
   { href: '/calculators/dividend-yield', name: 'Dividend Yield Calculator', desc: 'Get yield, annual income, and yield on cost for any dividend stock.' },
+  { href: '/calculators/yield-on-cost', name: 'Yield on Cost Calculator', desc: 'See your real dividend return based on what you originally paid, not the market yield.' },
   { href: '/calculators/dividend-income', name: 'Dividend Income Calculator', desc: 'See your monthly and annual dividend income from any portfolio.' },
   { href: '/calculators/dividend-growth', name: 'Dividend Growth Calculator', desc: 'Project how rising dividends grow your income and yield on cost.' },
   { href: '/calculators/dividend-tax', name: 'Dividend Tax Calculator', desc: 'Estimate tax on qualified and non-qualified dividends, including the 3.8% NIIT.' },
