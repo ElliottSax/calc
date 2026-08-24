@@ -171,8 +171,8 @@ export function BrokerComparisonTable() {
                   />
                   <FeatureItem
                     label="DRIP"
-                    value={broker.features.dividendReinvestment ?? false}
-                    positive={broker.features.dividendReinvestment ?? false}
+                    value={broker.features.dripSupport ?? false}
+                    positive={broker.features.dripSupport ?? false}
                   />
                   <FeatureItem
                     label="Int'l Stocks"

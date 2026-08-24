@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { DividendTaxCalculator } from '@/components/calculators/DividendTaxCalculator'
 
 const url = 'https://dividendengines.com/calculators/dividend-tax'
@@ -43,6 +44,14 @@ export default function DividendTaxPage() {
         </p>
 
         <DividendTaxCalculator />
+      <section id="brokers" className="py-12 border-t border-gray-200 dark:border-gray-700 mt-12">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-2">Ready to start investing?</h2>
+          <p className="text-muted-foreground mb-6">Pick a broker that makes investing simple.</p>
+          <BrokerComparisonTable />
+        </div>
+      </section>
+
 
         <div className="mt-12 max-w-2xl">
           <h2 className="text-2xl font-bold mb-4">Frequently asked questions</h2>

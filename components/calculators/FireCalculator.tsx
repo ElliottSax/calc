@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 
 // Self-contained FIRE (Financial Independence, Retire Early) calculator.
 // FIRE number = annual expenses / safe withdrawal rate. Years to FIRE is found
@@ -112,6 +113,12 @@ export function FireCalculator() {
         <p className="mt-5 text-xs text-gray-400">
           Estimates only, in today&apos;s dollars. Assumes constant return and contributions and ignores taxes and inflation adjustments.
         </p>
+        <InlineBrokerCTA
+          variant="compact"
+          finalPortfolioValue={result.fireNumber}
+          calculatorType="fire"
+          className="mt-2"
+        />
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 
 // Dividend yield calculator. Yield = annual dividend / current price. Also shows
 // annual income for a holding and yield-on-cost when a purchase price is given.
@@ -73,6 +74,13 @@ export function DividendYieldCalculator() {
             <p className="text-xl font-semibold">{r.yieldOnCost.toFixed(2)}%</p>
             <p className="text-xs text-gray-400 mt-1">Your dividend return based on what you originally paid, not today&apos;s price.</p>
           </div>
+          <InlineBrokerCTA
+            variant="compact"
+            finalPortfolioValue={price * shares}
+            finalDividendIncome={r.annualIncome}
+            calculatorType="yield"
+            className="mt-2"
+          />
         </div>
       </div>
     </div>

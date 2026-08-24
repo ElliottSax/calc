@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: 'Dividend Engines - FREE DRIP Calculator & 5 Investment Tools | 2025',
-    template: '%s | Dividend Engines - Financial Independence Tools',
+    template: '%s | Dividend Engines',
   },
   description: 'Free dividend calculator suite: DRIP compounding, yield, growth projection, position comparison, and retirement income planning. No signup, runs in your browser.',
   keywords: [

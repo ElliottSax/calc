@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
+import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { SavingsCalculator } from '@/components/calculators/SavingsCalculator'
 import { BreadcrumbNav } from '@/components/seo/BreadcrumbNav'
 import { StructuredData } from '@/components/seo/StructuredData'
@@ -97,6 +98,14 @@ export default function SavingsCalculatorPage() {
           <CompactTrustBadges />
 
           <SavingsCalculator />
+      <section id="brokers" className="py-12 border-t border-gray-200 dark:border-gray-700 mt-12">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-2">Ready to start investing?</h2>
+          <p className="text-muted-foreground mb-6">Pick a broker that makes investing simple.</p>
+          <BrokerComparisonTable />
+        </div>
+      </section>
+
 
           {/* FAQ Section */}
           <section className="mt-12">
