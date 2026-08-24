@@ -74,6 +74,8 @@ export function RetirementIncomeCalculator() {
       monthlyIncome,
       gap,
       requiredMonthly,
+      annualIncome: target,
+      totalIncomeReceived: currentIncome, // Using current income as a baseline
       shortfall: gap > 0
     })
   }
