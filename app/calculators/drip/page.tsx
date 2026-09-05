@@ -5,6 +5,8 @@ import { DripCalculator } from '@/components/calculators/DripCalculator'
 import { BrokerComparisonTable } from '@/components/affiliate/BrokerComparisonTable'
 import { FAQSchema } from '@/components/seo/FAQSchema'
 
+const url = 'https://dividendengines.com/calculators/drip'
+
 export const metadata: Metadata = {
   title: 'DRIP Calculator - Free Dividend Reinvestment Calculator | Plan Your Passive Income',
   description: 'Calculate the power of dividend reinvestment with our free DRIP calculator. Project your portfolio growth, dividend income, and compound returns over 1-30 years. Interactive charts and detailed breakdowns included.',
@@ -23,11 +25,41 @@ export const metadata: Metadata = {
     title: 'Free DRIP Calculator - Calculate Dividend Reinvestment Returns',
     description: 'See how dividend reinvestment can grow your wealth. Free calculator with interactive charts and year-by-year projections.',
     type: 'website',
-    url: 'https://yourdomain.com/calculators/drip',
+    url,
   },
   alternates: {
-    canonical: 'https://yourdomain.com/calculators/drip'
+    canonical: url
   }
+}
+
+// WebApplication + HowTo structured data: this is the site's most complete
+// calculator (presets, year-by-year table, charts, CSV/PDF export) and its
+// canonical, internally-linked URL -- the right page to carry rich schema so
+// an answer engine or Google can describe exactly what it computes and how.
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebApplication',
+      name: 'DRIP Calculator',
+      description: 'Free calculator that projects dividend reinvestment growth: portfolio value, shares owned, and dividend income year-by-year.',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'HowTo',
+      name: 'How to calculate dividend reinvestment (DRIP) growth',
+      description: 'Steps to project how automatically reinvesting dividends compounds a portfolio over time.',
+      step: [
+        { '@type': 'HowToStep', name: 'Enter your starting position', text: 'Enter your initial investment, current share price, and the stock or ETF’s annual dividend per share (or its dividend yield directly).' },
+        { '@type': 'HowToStep', name: 'Set your contribution and time horizon', text: 'Add a monthly contribution if you invest regularly, and choose how many years to project.' },
+        { '@type': 'HowToStep', name: 'Set growth assumptions', text: 'Enter an expected annual dividend growth rate and share-price appreciation rate, and enable dividend reinvestment.' },
+        { '@type': 'HowToStep', name: 'Read the year-by-year projection', text: 'The calculator compounds reinvested dividends into new shares each year and shows portfolio value, shares owned, annual dividend income, and yield on cost for every year of the projection.' },
+      ],
+    },
+  ],
 }
 
 const DRIP_FAQS = [
@@ -60,7 +92,8 @@ const DRIP_FAQS = [
 export default function DripCalculatorPage() {
   return (
     <>
-      {/* SEO: FAQ Schema for Rich Snippets */}
+      {/* SEO: WebApplication + HowTo schema, plus FAQ schema for rich snippets */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <FAQSchema faqs={DRIP_FAQS} />
 
       <Navigation />

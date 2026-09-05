@@ -20,6 +20,7 @@ import { ShareResults } from '@/components/viral/ShareResults'
 import { InlineBrokerCTA } from '@/components/affiliate/InlineBrokerCTA'
 import { FieldTooltip } from '@/components/ui/field-tooltip'
 import { DRIP_PRESETS, type PresetKey } from '@/lib/data/calculator-presets'
+import { dataExporter, ExportFormat } from '@/lib/export'
 import type { DripCalculatorInputs, DripCalculationResult, DripSummary } from '@/types/calculator'
 
 export function DripCalculator() {
@@ -136,6 +137,58 @@ export function DripCalculator() {
       setLoading(false)
     }
   }, [inputs, toast])
+
+  const handleExport = useCallback(async (format: ExportFormat) => {
+    if (!results || !summary) return
+    try {
+      const exportData = {
+        type: 'drip' as const,
+        inputs: {
+          ticker: inputs.ticker || 'N/A',
+          initialInvestment: Number(inputs.initialInvestment),
+          monthlyContribution: Number(inputs.monthlyContribution),
+          yearsToCalculate: inputs.yearsToCalculate,
+          dividendYield: `${inputs.dividendYield}%`,
+          dividendGrowthRate: `${inputs.dividendGrowthRate}%`,
+          shareAppreciationRate: `${inputs.shareAppreciationRate}%`,
+          taxRate: `${inputs.taxRate}%`,
+        },
+        results: {
+          summary: {
+            finalPortfolioValue: formatCurrency(summary.finalPortfolioValue),
+            totalContributions: formatCurrency(summary.totalContributions),
+            totalDividendsEarned: formatCurrency(summary.totalDividendsEarned),
+            totalReturnPercent: formatPercent(summary.totalReturnPercent),
+            annualizedReturn: formatPercent(summary.annualizedReturn),
+            finalDividendIncome: formatCurrency(summary.finalDividendIncome),
+            finalYieldOnCost: formatPercent(summary.finalYieldOnCost),
+          },
+          yearlyBreakdown: results.map((r) => ({
+            year: r.year,
+            portfolio: Number(r.portfolioValue),
+            dividends: Number(r.annualDividend),
+            totalDividends: Number(r.totalDividendsEarned),
+            yield: Number(r.yieldOnCost),
+          })),
+        },
+        metadata: { calculatedAt: new Date(), version: '1.0' },
+      }
+      const content = await dataExporter.export(exportData, format)
+      const filename = `drip-calculator-${inputs.ticker || 'projection'}`
+      dataExporter.download(content, filename, format)
+
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'export_results', { calculator: 'drip', format })
+      }
+    } catch (error) {
+      calculatorBrowserLogger.error('DRIP export failed', error)
+      toast({
+        variant: 'destructive',
+        title: 'Export Failed',
+        description: 'Could not generate the file. Please try again.',
+      })
+    }
+  }, [results, summary, inputs, toast])
 
   return (
     <div className="space-y-8 relative">
@@ -527,6 +580,14 @@ export function DripCalculator() {
                       <p className="text-slate-600 dark:text-slate-400 text-sm">
                         Export your dividend projection for review or sharing
                       </p>
+                      <div className="flex gap-2 mt-3 justify-center md:justify-start">
+                        <Button variant="outline" size="sm" onClick={() => handleExport(ExportFormat.CSV)}>
+                          Download CSV
+                        </Button>
+                        <Button variant="outline" size="sm" onClick={() => handleExport(ExportFormat.PDF)}>
+                          Download PDF
+                        </Button>
+                      </div>
                     </div>
                     <ShareResults
                       calculatorType="drip"

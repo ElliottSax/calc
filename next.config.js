@@ -69,6 +69,21 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Consolidate the DRIP calculator: /calculators/drip is the canonical,
+      // internally-linked URL (header nav, homepage, every other calculator's
+      // cross-link, the sitemap). These two were separate routes rendering the
+      // same <DripCalculator/> behind different marketing copy -- duplicate
+      // content that split ranking signal and duplicated fabricated stats.
+      {
+        source: '/calculators/drip-calculator',
+        destination: '/calculators/drip',
+        permanent: true,
+      },
+      {
+        source: '/calculators/drip-calculator-landing',
+        destination: '/calculators/drip',
+        permanent: true,
+      },
       // Keyword-cannibalization fixes: numbered batch pages duplicated the
       // clean-slug money pages and split the ranking signal (two pages ~#10 for
       // "best dividend stocks for beginners" = neither cracks page 1). Consolidate

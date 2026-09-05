@@ -165,7 +165,7 @@ Check once or twice a year. If a position has grown far beyond its target, trim 
     tryIt: {
       title: 'Model your retirement income',
       description: 'See what portfolio size and yield you need to cover your target annual income.',
-      href: '/calculators/drip-calculator',
+      href: '/calculators/drip',
       label: 'Open the Calculators',
     },
   },
