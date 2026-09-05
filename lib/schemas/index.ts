@@ -324,13 +324,9 @@ export function generateOrganizationSchema() {
         availableLanguage: ['en'],
       },
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '3200',
-      bestRating: '5',
-      worstRating: '1',
-    },
+    // No `aggregateRating` here on purpose -- this previously asserted a
+    // 4.9/3200 rating that was invented, the same fake-review-markup problem
+    // fixed in lib/seo/structured-data.ts. Add it back only with real reviews.
     foundingDate: '2024',
     knowsAbout: [
       'Dividend Investing',

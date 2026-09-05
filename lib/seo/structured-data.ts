@@ -39,16 +39,12 @@ export function generateCalculatorSchema(data: CalculatorStructuredData) {
       ...(data.inputFields ?? []).map(field => `Input: ${field.name}`),
       ...(data.outputFields ?? []).map(field => `Output: ${field.name}`)
     ],
-    "screenshot": {
-      "@type": "ImageObject",
-      "url": `${data.url}/screenshot.png`,
-      "caption": `${data.name} interface`
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "1250"
-    },
+    // No `screenshot` or `aggregateRating` here on purpose: this rendered a
+    // hardcoded 4.8/1250 rating (and a /screenshot.png that doesn't exist) on
+    // every calculator using this schema, regardless of whether any review
+    // ever happened. Fabricated review/rating structured data is a Google
+    // spam-policy violation with its own manual-action risk, not just an FTC
+    // one -- add both back only with real data.
     "author": {
       "@type": "Organization",
       "name": "Dividend Calculator Hub",

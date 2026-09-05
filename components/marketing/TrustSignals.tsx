@@ -1,6 +1,6 @@
 'use client'
 
-import { Shield, Award, Users, Star, CheckCircle, TrendingUp, Lock, Clock } from 'lucide-react'
+import { Shield, Award, Users, Lock } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 
 export function TrustSignals() {
@@ -14,8 +14,8 @@ export function TrustSignals() {
     },
     {
       icon: Award,
-      title: 'Industry Leader',
-      description: '#1 Dividend Calculator 2025',
+      title: 'Transparent Math',
+      description: 'Every formula and assumption is shown, not hidden',
       color: 'text-blue-600',
       bgColor: 'bg-blue-100 dark:bg-blue-900/20',
     },
@@ -54,35 +54,13 @@ export function TrustSignals() {
             ))}
           </div>
 
-          {/* Social Proof Counter */}
+          {/* A "$2.4B+ Total Value Calculated" / "523,456 Calculations This Month"
+              counter used to sit here -- both invented. Fake activity counters are
+              exactly the FTC/affiliate-network compliance risk flagged sitewide
+              (see Footer.tsx, lib/schemas/index.ts); removed rather than replaced,
+              since there's no real usage metric to show honestly in its place. */}
           <Card className="p-6 mb-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 border-blue-200 dark:border-blue-800">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-white dark:bg-slate-800 rounded-full">
-                  <TrendingUp className="w-8 h-8 text-green-600" />
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-slate-900 dark:text-white">
-                    $2.4B+
-                  </div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">
-                    Total Value Calculated
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-white dark:bg-slate-800 rounded-full">
-                  <Clock className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-slate-900 dark:text-white">
-                    523,456
-                  </div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">
-                    Calculations This Month
-                  </div>
-                </div>
-              </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-white dark:bg-slate-800 rounded-full">
                   <Lock className="w-8 h-8 text-purple-600" />
@@ -92,7 +70,7 @@ export function TrustSignals() {
                     100%
                   </div>
                   <div className="text-sm text-slate-600 dark:text-slate-400">
-                    Secure & Private
+                    Runs in your browser — nothing you enter is sent to a server
                   </div>
                 </div>
               </div>

@@ -325,13 +325,9 @@ export function OrganizationSchema() {
       contactType: 'Customer Support',
       email: 'hello@dividendengines.com',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '3200',
-      bestRating: '5',
-      worstRating: '1',
-    },
+    // No `aggregateRating` here on purpose -- see lib/schemas/index.ts. This
+    // asserted the same invented 4.9/3200 rating; fabricated review markup is
+    // a Google spam-policy violation. Add it back only with real reviews.
   };
 
   return (

@@ -140,7 +140,10 @@ export function InlineBrokerCTA({
                 <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
                   <Shield className="w-6 h-6 text-blue-400" />
                 </div>
-                <p className="text-sm text-white/80">FDIC Insured</p>
+                {/* Brokerage accounts are SIPC-protected, not FDIC-insured -- FDIC
+                    covers bank deposits. Naming the wrong protection scheme on a
+                    financial site is a real accuracy problem, not just wording. */}
+                <p className="text-sm text-white/80">SIPC Protected</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
