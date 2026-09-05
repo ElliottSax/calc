@@ -65,6 +65,18 @@ function cleanText(t: unknown): string {
   return String(t ?? '').replace(/^[\s'"]+|[\s'"]+$/g, '').replace(/\s+/g, ' ').trim()
 }
 
+// Frontmatter dates are written unquoted (date: 2026-03-21). gray-matter's YAML
+// parser turns an unquoted ISO-looking date into a native JS Date, so the old
+// `String(data.date)` call ran Date.prototype.toString() -- "Sat Mar 21 2026
+// 00:00:00 GMT+0000 (Coordinated Universal Time)" -- into datePublished, which
+// fails Google's Article rich-result validation (requires ISO 8601). Normalize
+// both Date objects and plain strings to ISO 8601 instead.
+function toISODate(value: unknown): string | undefined {
+  if (!value) return undefined
+  const d = value instanceof Date ? value : new Date(String(value))
+  return isNaN(d.getTime()) ? undefined : d.toISOString()
+}
+
 function loadPost(slug: string): { data: Record<string, any>; body: string; title: string; description: string } | null {
   const file = resolveFile(slug)
   if (!file) return null
@@ -171,7 +183,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
         headline: title,
         description: description || undefined,
         url,
-        ...((data as any).date ? { datePublished: String((data as any).date), dateModified: String((data as any).date) } : {}),
+        ...(toISODate((data as any).date)
+          ? { datePublished: toISODate((data as any).date), dateModified: toISODate((data as any).date) }
+          : {}),
         author: { '@type': 'Organization', name: 'Dividend Engines' },
         publisher: { '@type': 'Organization', name: 'Dividend Engines' },
       },
