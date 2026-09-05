@@ -93,8 +93,22 @@ function setSecurityHeaders(response: NextResponse, isApiRoute: boolean): void {
   }
 }
 
+// GA4 showed 88% of sessions (28d) coming from China/Singapore at 1.4%/3.8%
+// engagement vs. 25%/20% for real US/India traffic — headless-Chrome scraper
+// traffic (real page_view/session_start ratios, so it's not a non-JS crawler
+// like Amazonbot, just not a person). This is a US-focused dividend/investing
+// calculator site with no real audience in those regions, so blocking them at
+// the edge is a low-cost way to stop both the compute waste and the analytics
+// pollution. Revisit if this ever turns out to block real visitors.
+const BLOCKED_COUNTRIES = new Set(['CN', 'SG'])
+
 export function middleware(request: NextRequest) {
   const isApiRoute = request.nextUrl.pathname.startsWith('/api/')
+
+  const country = request.headers.get('x-vercel-ip-country')
+  if (country && BLOCKED_COUNTRIES.has(country)) {
+    return new NextResponse('Not available in your region.', { status: 403 })
+  }
 
   // Rate limit API routes
   if (isApiRoute) {
