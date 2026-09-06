@@ -1,0 +1,1402 @@
+{
+  "sc-domain:quantengines.com": {
+    "impressions": 8802,
+    "clicks": 19,
+    "ctr": 0.0021586003181095206,
+    "position": 35.01635991820041,
+    "queries": [
+      {
+        "query": "quant scanner",
+        "impressions": 98,
+        "clicks": 7,
+        "position": 5.9
+      },
+      {
+        "query": "\"from statsmodels.tsa.api import arima\"",
+        "impressions": 83,
+        "clicks": 0,
+        "position": 10.6
+      },
+      {
+        "query": "arbitrage opportunities",
+        "impressions": 71,
+        "clicks": 0,
+        "position": 37.7
+      },
+      {
+        "query": "\"from statsmodels.tsa.api import arima\" example",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 8.1
+      },
+      {
+        "query": "black-scholes model",
+        "impressions": 43,
+        "clicks": 0,
+        "position": 69.0
+      },
+      {
+        "query": "adaptive trading systems",
+        "impressions": 32,
+        "clicks": 0,
+        "position": 46.2
+      },
+      {
+        "query": "adaptive trading",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 34.5
+      },
+      {
+        "query": "forex news trading strategy",
+        "impressions": 20,
+        "clicks": 0,
+        "position": 66.4
+      },
+      {
+        "query": "fibonacci retracement",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 42.7
+      },
+      {
+        "query": "crypto options",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 57.4
+      },
+      {
+        "query": "drawdown management",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 72.5
+      },
+      {
+        "query": "currency arbitrage",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 34
+      },
+      {
+        "query": "expected shortfall",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 70.2
+      },
+      {
+        "query": "correlated forex pairs list",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 68.4
+      },
+      {
+        "query": "drawdown risk management",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 59.9
+      },
+      {
+        "query": "american options vs european options",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 34.6
+      },
+      {
+        "query": "\"binary trading\" strategy -study -news -rating -review -scam -article -forum",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 25.3
+      },
+      {
+        "query": "alpha factor investing",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 65.8
+      },
+      {
+        "query": "binomial tree",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 68
+      },
+      {
+        "query": "black scholes model",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 71.5
+      },
+      {
+        "query": "factor investing",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 59.5
+      },
+      {
+        "query": "\"bbm_20_2.0\" pandas_ta",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 9.8
+      },
+      {
+        "query": "american vs european options",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 40.8
+      },
+      {
+        "query": "crypto exchange api python",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 50.6
+      },
+      {
+        "query": "binomial trees",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 58
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://quantengines.com/blog/quant-fund-evaluation-guide",
+        "impressions": 2550,
+        "clicks": 1,
+        "position": 34.2
+      },
+      {
+        "page": "https://quantengines.com/blog/pivot-point-trading-strategy",
+        "impressions": 597,
+        "clicks": 1,
+        "position": 51.1
+      },
+      {
+        "page": "https://quantengines.com/blog/mean-reversion-strategies-guide",
+        "impressions": 184,
+        "clicks": 2,
+        "position": 38.7
+      },
+      {
+        "page": "https://quantengines.com/blog/python-backtesting-framework",
+        "impressions": 183,
+        "clicks": 1,
+        "position": 26.4
+      },
+      {
+        "page": "https://www.quantengines.com/scanner",
+        "impressions": 154,
+        "clicks": 8,
+        "position": 8.3
+      },
+      {
+        "page": "https://quantengines.com/blog/arima-models",
+        "impressions": 98,
+        "clicks": 0,
+        "position": 39.0
+      },
+      {
+        "page": "https://quantengines.com/blog/arbitrage-opportunities",
+        "impressions": 96,
+        "clicks": 0,
+        "position": 40.0
+      },
+      {
+        "page": "https://quantengines.com/blog/factor-investing-strategy-guide",
+        "impressions": 83,
+        "clicks": 1,
+        "position": 57.5
+      },
+      {
+        "page": "https://quantengines.com/blog/backtrader-vs-zipline-vs-vectorbt",
+        "impressions": 82,
+        "clicks": 1,
+        "position": 24.5
+      },
+      {
+        "page": "https://quantengines.com/blog/american-vs-european-options-exercise-implications",
+        "impressions": 60,
+        "clicks": 0,
+        "position": 39.5
+      },
+      {
+        "page": "https://quantengines.com/blog/automating-bollinger-bands-for-beginners",
+        "impressions": 59,
+        "clicks": 0,
+        "position": 33.3
+      },
+      {
+        "page": "https://quantengines.com/blog/22-forex-harmonic-patterns-trading",
+        "impressions": 46,
+        "clicks": 0,
+        "position": 65.9
+      },
+      {
+        "page": "https://quantengines.com/blog/market-regime-detection",
+        "impressions": 36,
+        "clicks": 1,
+        "position": 33.5
+      },
+      {
+        "page": "https://quantengines.com/blog/mean-reversion-trading-strategy",
+        "impressions": 35,
+        "clicks": 1,
+        "position": 37.8
+      },
+      {
+        "page": "https://quantengines.com/blog/adx-indicator-trend-strength",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 26.9
+      },
+      {
+        "page": "https://quantengines.com/blog/06-nft-trading-strategies-market-analysis",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 53.4
+      },
+      {
+        "page": "https://quantengines.com/blog/08-best-forex-news-trading",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 63.3
+      },
+      {
+        "page": "https://quantengines.com/blog/automating-bollinger-bands-in-python",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 25.3
+      },
+      {
+        "page": "https://quantengines.com/blog/12-best-forex-pair-correlation",
+        "impressions": 26,
+        "clicks": 0,
+        "position": 62.7
+      },
+      {
+        "page": "https://quantengines.com/blog/american-option-pricing",
+        "impressions": 24,
+        "clicks": 0,
+        "position": 35.1
+      }
+    ]
+  },
+  "sc-domain:cardclassroom.com": {
+    "impressions": 26714,
+    "clicks": 23,
+    "ctr": 0.0008609717750991989,
+    "position": 64.55757280826532,
+    "queries": [
+      {
+        "query": "airline credit card",
+        "impressions": 147,
+        "clicks": 0,
+        "position": 81.2
+      },
+      {
+        "query": "airlines credit card",
+        "impressions": 139,
+        "clicks": 0,
+        "position": 82.9
+      },
+      {
+        "query": "airline rewards credit cards",
+        "impressions": 78,
+        "clicks": 0,
+        "position": 87.9
+      },
+      {
+        "query": "air miles credit card",
+        "impressions": 71,
+        "clicks": 0,
+        "position": 84.6
+      },
+      {
+        "query": "airline miles credit card",
+        "impressions": 67,
+        "clicks": 0,
+        "position": 86.9
+      },
+      {
+        "query": "airline travel credit cards",
+        "impressions": 66,
+        "clicks": 0,
+        "position": 76.7
+      },
+      {
+        "query": "airfare credit cards",
+        "impressions": 61,
+        "clicks": 0,
+        "position": 76.1
+      },
+      {
+        "query": "airline rewards credit card",
+        "impressions": 61,
+        "clicks": 0,
+        "position": 84.6
+      },
+      {
+        "query": "airline credit card offers",
+        "impressions": 54,
+        "clicks": 0,
+        "position": 75.7
+      },
+      {
+        "query": "\"get freedom unlimited\"",
+        "impressions": 52,
+        "clicks": 0,
+        "position": 10.6
+      },
+      {
+        "query": "airline cards",
+        "impressions": 50,
+        "clicks": 0,
+        "position": 79.0
+      },
+      {
+        "query": "airline reward credit card",
+        "impressions": 50,
+        "clicks": 0,
+        "position": 84.2
+      },
+      {
+        "query": "airline reward card",
+        "impressions": 49,
+        "clicks": 0,
+        "position": 76.9
+      },
+      {
+        "query": "airline credit cards",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 86.1
+      },
+      {
+        "query": "airline miles card",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 82.4
+      },
+      {
+        "query": "airline travel card",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 74.7
+      },
+      {
+        "query": "airline points card",
+        "impressions": 46,
+        "clicks": 0,
+        "position": 81.9
+      },
+      {
+        "query": "airline credit card comparison",
+        "impressions": 45,
+        "clicks": 0,
+        "position": 88.8
+      },
+      {
+        "query": "airline co branded credit cards",
+        "impressions": 42,
+        "clicks": 0,
+        "position": 93.2
+      },
+      {
+        "query": "manufactured spending 2026",
+        "impressions": 39,
+        "clicks": 7,
+        "position": 3.7
+      },
+      {
+        "query": "airline status credit card",
+        "impressions": 39,
+        "clicks": 0,
+        "position": 86.4
+      },
+      {
+        "query": "air travel credit card",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 80.2
+      },
+      {
+        "query": "airline miles rewards credit card",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 85.1
+      },
+      {
+        "query": "airline mileage credit card",
+        "impressions": 32,
+        "clicks": 0,
+        "position": 91.7
+      },
+      {
+        "query": "airline mileage card",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 86.2
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://cardclassroom.com/best/airline",
+        "impressions": 3323,
+        "clicks": 0,
+        "position": 82.1
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-unlimited-review",
+        "impressions": 2192,
+        "clicks": 0,
+        "position": 70.6
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-flex-review",
+        "impressions": 1700,
+        "clicks": 0,
+        "position": 66.4
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-unlimited-vs-flex",
+        "impressions": 1614,
+        "clicks": 1,
+        "position": 65.4
+      },
+      {
+        "page": "https://cardclassroom.com/best/business",
+        "impressions": 1319,
+        "clicks": 0,
+        "position": 79.2
+      },
+      {
+        "page": "https://cardclassroom.com/blog/bank-of-america-premium-rewards-review",
+        "impressions": 1000,
+        "clicks": 0,
+        "position": 65.4
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-ink-business-preferred-review",
+        "impressions": 939,
+        "clicks": 0,
+        "position": 50.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-amazon-prime-rewards-review",
+        "impressions": 935,
+        "clicks": 0,
+        "position": 58.6
+      },
+      {
+        "page": "https://cardclassroom.com/best-cards/miles",
+        "impressions": 924,
+        "clicks": 0,
+        "position": 69.3
+      },
+      {
+        "page": "https://cardclassroom.com/blog/manufactured-spending-what-to-avoid",
+        "impressions": 818,
+        "clicks": 17,
+        "position": 16.0
+      },
+      {
+        "page": "https://cardclassroom.com/blog/ihg-premier-review",
+        "impressions": 685,
+        "clicks": 0,
+        "position": 71.3
+      },
+      {
+        "page": "https://cardclassroom.com/best-cards/student",
+        "impressions": 573,
+        "clicks": 0,
+        "position": 84.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/credit-card-rewards-calculator-guide",
+        "impressions": 563,
+        "clicks": 0,
+        "position": 77.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/capital-one-venture-x-review",
+        "impressions": 471,
+        "clicks": 0,
+        "position": 30.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-sapphire-preferred-review",
+        "impressions": 454,
+        "clicks": 0,
+        "position": 80.6
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-sapphire-reserve-review",
+        "impressions": 359,
+        "clicks": 0,
+        "position": 46.2
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-vs-amex-ecosystem",
+        "impressions": 331,
+        "clicks": 0,
+        "position": 36.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/airport-lounge-access-comparison",
+        "impressions": 298,
+        "clicks": 0,
+        "position": 51.0
+      },
+      {
+        "page": "https://cardclassroom.com/blog/best-cards-under-100-annual-fee",
+        "impressions": 293,
+        "clicks": 0,
+        "position": 28.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/citi-double-cash-review",
+        "impressions": 258,
+        "clicks": 0,
+        "position": 71.1
+      }
+    ]
+  },
+  "sc-domain:dividendengines.com": {
+    "impressions": 53598,
+    "clicks": 10,
+    "ctr": 0.00018657412590022016,
+    "position": 14.259935072204186,
+    "queries": [
+      {
+        "query": "best dividend stocks for beginners",
+        "impressions": 44852,
+        "clicks": 0,
+        "position": 9.6
+      },
+      {
+        "query": "best covered call dividend etf",
+        "impressions": 45,
+        "clicks": 0,
+        "position": 59.2
+      },
+      {
+        "query": "best dividend stocks for roth ira",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 27.9
+      },
+      {
+        "query": "best dividend stocks under $50",
+        "impressions": 19,
+        "clicks": 0,
+        "position": 9.5
+      },
+      {
+        "query": "best monthly dividend etf",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 30.7
+      },
+      {
+        "query": "best monthly dividend stocks 2026",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 28.9
+      },
+      {
+        "query": "asset allocation by age",
+        "impressions": 10,
+        "clicks": 0,
+        "position": 59.2
+      },
+      {
+        "query": "401k asset allocation by age",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 60.8
+      },
+      {
+        "query": "best dividend aristocrats",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 19.8
+      },
+      {
+        "query": "401k match percentage",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 76.9
+      },
+      {
+        "query": "401k matching example",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 79.8
+      },
+      {
+        "query": "balanced portfolio by age",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 49.2
+      },
+      {
+        "query": "best monthly dividend etfs",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 29.9
+      },
+      {
+        "query": "are mlps a good investment",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 55.1
+      },
+      {
+        "query": "top canadian dividend stocks 2026",
+        "impressions": 6,
+        "clicks": 1,
+        "position": 37.3
+      },
+      {
+        "query": "assessing a companys dividends",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 60.3
+      },
+      {
+        "query": "best brokerage for dividend investing",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 25.2
+      },
+      {
+        "query": "2026 federal long-term capital gains tax brackets",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 69.2
+      },
+      {
+        "query": "401k dividends",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 32
+      },
+      {
+        "query": "age based asset allocation",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 53.6
+      },
+      {
+        "query": "average 401k match",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 87.6
+      },
+      {
+        "query": "average employer 401k match",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 83
+      },
+      {
+        "query": "best dividend stocks for young investors",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 41.4
+      },
+      {
+        "query": "\"reinvestment benefit\" futures etf cost comparison",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 10
+      },
+      {
+        "query": "4 retirement rule calculator",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 81.8
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://dividendengines.com/blog/05-best-dividend-stocks-for-beginners",
+        "impressions": 26998,
+        "clicks": 0,
+        "position": 9.3
+      },
+      {
+        "page": "https://dividendengines.com/blog/17-how-to-calculate-dividend-yield-correctly",
+        "impressions": 248,
+        "clicks": 0,
+        "position": 74.6
+      },
+      {
+        "page": "https://dividendengines.com/blog/04-high-yield-reits-worth-buying",
+        "impressions": 98,
+        "clicks": 0,
+        "position": 24.8
+      },
+      {
+        "page": "https://dividendengines.com/blog/03-best-dividend-stocks-under-50",
+        "impressions": 91,
+        "clicks": 0,
+        "position": 19.3
+      },
+      {
+        "page": "https://dividendengines.com/blog/05-best-dividend-stocks-for-401k-retirement-accounts",
+        "impressions": 72,
+        "clicks": 0,
+        "position": 37.0
+      },
+      {
+        "page": "https://dividendengines.com/blog/17-farmland-reits-agricultural-investment",
+        "impressions": 72,
+        "clicks": 0,
+        "position": 82.2
+      },
+      {
+        "page": "https://dividendengines.com/blog/14-best-dividend-etfs-monthly-income",
+        "impressions": 65,
+        "clicks": 0,
+        "position": 35.9
+      },
+      {
+        "page": "https://dividendengines.com/blog/06-top-canadian-dividend-stocks",
+        "impressions": 62,
+        "clicks": 1,
+        "position": 14.3
+      },
+      {
+        "page": "https://dividendengines.com/blog/12-roth-ira-dividend-growth-strategy-guidetaxfree-retirement-in",
+        "impressions": 57,
+        "clicks": 0,
+        "position": 33.0
+      },
+      {
+        "page": "https://dividendengines.com/blog/03-best-dividend-aristocrats-to-buy-now",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 42.6
+      },
+      {
+        "page": "https://dividendengines.com/blog/11-best-dividend-stocks-for-traditional-irataxdeferred-growth",
+        "impressions": 43,
+        "clicks": 0,
+        "position": 34.7
+      },
+      {
+        "page": "https://dividendengines.com/blog/12-best-dividend-stocks-drip-investing",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 41.5
+      },
+      {
+        "page": "https://dividendengines.com/blog/01-best-monthly-dividend-stocks-2026",
+        "impressions": 31,
+        "clicks": 0,
+        "position": 19.8
+      },
+      {
+        "page": "https://dividendengines.com/blog/12-best-gas-utility-dividend-stocks-natural-gas-distribution",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 15.6
+      },
+      {
+        "page": "https://dividendengines.com/blog/10-best-shipping-and-maritime-dividend-stocks-global-trade",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 20.4
+      },
+      {
+        "page": "https://dividendengines.com/blog/07-best-dividend-growth-stocks-2026",
+        "impressions": 27,
+        "clicks": 0,
+        "position": 11.7
+      },
+      {
+        "page": "https://dividendengines.com/blog/11-best-oil-dividend-stocks-high-yield",
+        "impressions": 25,
+        "clicks": 0,
+        "position": 48.4
+      },
+      {
+        "page": "https://dividendengines.com/blog/02-top-10-dividend-etfs-for-passive-income",
+        "impressions": 24,
+        "clicks": 0,
+        "position": 26.4
+      },
+      {
+        "page": "https://dividendengines.com/blog/16-how-to-build-1000-month-dividend-portfolio",
+        "impressions": 23,
+        "clicks": 0,
+        "position": 23.7
+      },
+      {
+        "page": "https://dividendengines.com/blog/haiku-build-million-dollar-retirement-portfolio",
+        "impressions": 22,
+        "clicks": 1,
+        "position": 20.8
+      }
+    ]
+  },
+  "https://cardclassroom.com/": {
+    "impressions": 26545,
+    "clicks": 23,
+    "ctr": 0.0008664531926916557,
+    "position": 64.57630438877378,
+    "queries": [
+      {
+        "query": "airline credit card",
+        "impressions": 147,
+        "clicks": 0,
+        "position": 81.2
+      },
+      {
+        "query": "airlines credit card",
+        "impressions": 139,
+        "clicks": 0,
+        "position": 82.9
+      },
+      {
+        "query": "airline rewards credit cards",
+        "impressions": 78,
+        "clicks": 0,
+        "position": 87.9
+      },
+      {
+        "query": "air miles credit card",
+        "impressions": 71,
+        "clicks": 0,
+        "position": 84.6
+      },
+      {
+        "query": "airline miles credit card",
+        "impressions": 67,
+        "clicks": 0,
+        "position": 86.9
+      },
+      {
+        "query": "airline travel credit cards",
+        "impressions": 66,
+        "clicks": 0,
+        "position": 76.7
+      },
+      {
+        "query": "airfare credit cards",
+        "impressions": 61,
+        "clicks": 0,
+        "position": 76.1
+      },
+      {
+        "query": "airline rewards credit card",
+        "impressions": 61,
+        "clicks": 0,
+        "position": 84.6
+      },
+      {
+        "query": "airline credit card offers",
+        "impressions": 54,
+        "clicks": 0,
+        "position": 75.7
+      },
+      {
+        "query": "\"get freedom unlimited\"",
+        "impressions": 52,
+        "clicks": 0,
+        "position": 10.6
+      },
+      {
+        "query": "airline cards",
+        "impressions": 50,
+        "clicks": 0,
+        "position": 79.0
+      },
+      {
+        "query": "airline reward credit card",
+        "impressions": 50,
+        "clicks": 0,
+        "position": 84.2
+      },
+      {
+        "query": "airline reward card",
+        "impressions": 49,
+        "clicks": 0,
+        "position": 76.9
+      },
+      {
+        "query": "airline credit cards",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 86.1
+      },
+      {
+        "query": "airline miles card",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 82.4
+      },
+      {
+        "query": "airline travel card",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 74.7
+      },
+      {
+        "query": "airline points card",
+        "impressions": 46,
+        "clicks": 0,
+        "position": 81.9
+      },
+      {
+        "query": "airline credit card comparison",
+        "impressions": 45,
+        "clicks": 0,
+        "position": 88.8
+      },
+      {
+        "query": "airline co branded credit cards",
+        "impressions": 42,
+        "clicks": 0,
+        "position": 93.2
+      },
+      {
+        "query": "manufactured spending 2026",
+        "impressions": 39,
+        "clicks": 7,
+        "position": 3.7
+      },
+      {
+        "query": "airline status credit card",
+        "impressions": 39,
+        "clicks": 0,
+        "position": 86.4
+      },
+      {
+        "query": "air travel credit card",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 80.2
+      },
+      {
+        "query": "airline miles rewards credit card",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 85.1
+      },
+      {
+        "query": "airline mileage credit card",
+        "impressions": 32,
+        "clicks": 0,
+        "position": 91.7
+      },
+      {
+        "query": "airline mileage card",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 86.2
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://cardclassroom.com/best/airline",
+        "impressions": 3323,
+        "clicks": 0,
+        "position": 82.1
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-unlimited-review",
+        "impressions": 2192,
+        "clicks": 0,
+        "position": 70.6
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-flex-review",
+        "impressions": 1700,
+        "clicks": 0,
+        "position": 66.4
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-freedom-unlimited-vs-flex",
+        "impressions": 1614,
+        "clicks": 1,
+        "position": 65.4
+      },
+      {
+        "page": "https://cardclassroom.com/best/business",
+        "impressions": 1319,
+        "clicks": 0,
+        "position": 79.2
+      },
+      {
+        "page": "https://cardclassroom.com/blog/bank-of-america-premium-rewards-review",
+        "impressions": 1000,
+        "clicks": 0,
+        "position": 65.4
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-ink-business-preferred-review",
+        "impressions": 939,
+        "clicks": 0,
+        "position": 50.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-amazon-prime-rewards-review",
+        "impressions": 935,
+        "clicks": 0,
+        "position": 58.6
+      },
+      {
+        "page": "https://cardclassroom.com/best-cards/miles",
+        "impressions": 924,
+        "clicks": 0,
+        "position": 69.3
+      },
+      {
+        "page": "https://cardclassroom.com/blog/manufactured-spending-what-to-avoid",
+        "impressions": 818,
+        "clicks": 17,
+        "position": 16.0
+      },
+      {
+        "page": "https://cardclassroom.com/blog/ihg-premier-review",
+        "impressions": 685,
+        "clicks": 0,
+        "position": 71.3
+      },
+      {
+        "page": "https://cardclassroom.com/best-cards/student",
+        "impressions": 573,
+        "clicks": 0,
+        "position": 84.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/credit-card-rewards-calculator-guide",
+        "impressions": 563,
+        "clicks": 0,
+        "position": 77.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/capital-one-venture-x-review",
+        "impressions": 471,
+        "clicks": 0,
+        "position": 30.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-sapphire-preferred-review",
+        "impressions": 454,
+        "clicks": 0,
+        "position": 80.6
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-sapphire-reserve-review",
+        "impressions": 359,
+        "clicks": 0,
+        "position": 46.2
+      },
+      {
+        "page": "https://cardclassroom.com/blog/chase-vs-amex-ecosystem",
+        "impressions": 331,
+        "clicks": 0,
+        "position": 36.7
+      },
+      {
+        "page": "https://cardclassroom.com/blog/airport-lounge-access-comparison",
+        "impressions": 298,
+        "clicks": 0,
+        "position": 51.0
+      },
+      {
+        "page": "https://cardclassroom.com/blog/best-cards-under-100-annual-fee",
+        "impressions": 293,
+        "clicks": 0,
+        "position": 28.8
+      },
+      {
+        "page": "https://cardclassroom.com/blog/citi-double-cash-review",
+        "impressions": 258,
+        "clicks": 0,
+        "position": 71.1
+      }
+    ]
+  },
+  "sc-domain:thestackguide.com": {
+    "impressions": 4330,
+    "clicks": 0,
+    "ctr": 0,
+    "position": 70.93764434180139,
+    "queries": [
+      {
+        "query": "best cheap seo tools",
+        "impressions": 134,
+        "clicks": 0,
+        "position": 83.2
+      },
+      {
+        "query": "backlink analysis moz",
+        "impressions": 93,
+        "clicks": 0,
+        "position": 68.0
+      },
+      {
+        "query": "budget seo software tools",
+        "impressions": 82,
+        "clicks": 0,
+        "position": 80.3
+      },
+      {
+        "query": "ai tools for nonprofits",
+        "impressions": 70,
+        "clicks": 0,
+        "position": 93.0
+      },
+      {
+        "query": "building a sales funnel",
+        "impressions": 66,
+        "clicks": 0,
+        "position": 55
+      },
+      {
+        "query": "budget seo tools",
+        "impressions": 64,
+        "clicks": 0,
+        "position": 75.2
+      },
+      {
+        "query": "bridge page funnel",
+        "impressions": 62,
+        "clicks": 0,
+        "position": 62.7
+      },
+      {
+        "query": "ai store management",
+        "impressions": 58,
+        "clicks": 0,
+        "position": 86.4
+      },
+      {
+        "query": "ai for nonprofits",
+        "impressions": 56,
+        "clicks": 0,
+        "position": 80.9
+      },
+      {
+        "query": "ai software for retail stores",
+        "impressions": 45,
+        "clicks": 0,
+        "position": 90.7
+      },
+      {
+        "query": "build a sales funnel",
+        "impressions": 45,
+        "clicks": 0,
+        "position": 49.2
+      },
+      {
+        "query": "ai fundraising tools",
+        "impressions": 43,
+        "clicks": 0,
+        "position": 76.1
+      },
+      {
+        "query": "ai for travel agents",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 84.0
+      },
+      {
+        "query": "budget crm software",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 51.2
+      },
+      {
+        "query": "creating a sales funnel",
+        "impressions": 33,
+        "clicks": 0,
+        "position": 56
+      },
+      {
+        "query": "build sales funnels",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 56.5
+      },
+      {
+        "query": "cursor vs copilot",
+        "impressions": 27,
+        "clicks": 0,
+        "position": 76.6
+      },
+      {
+        "query": "ai software for retail",
+        "impressions": 26,
+        "clicks": 0,
+        "position": 82.3
+      },
+      {
+        "query": "ai tools for travel advisors",
+        "impressions": 26,
+        "clicks": 0,
+        "position": 88
+      },
+      {
+        "query": "ai tools for vets",
+        "impressions": 25,
+        "clicks": 0,
+        "position": 94.1
+      },
+      {
+        "query": "automated legal research",
+        "impressions": 24,
+        "clicks": 0,
+        "position": 87.1
+      },
+      {
+        "query": "ai for nonprofit fundraising",
+        "impressions": 23,
+        "clicks": 0,
+        "position": 77.2
+      },
+      {
+        "query": "build sales funnel",
+        "impressions": 23,
+        "clicks": 0,
+        "position": 57.5
+      },
+      {
+        "query": "best ai note taking tool for therapists",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 85.1
+      },
+      {
+        "query": "create sales funnels",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 49.7
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://www.thestackguide.com/how-to-build-a-sales-funnel-in",
+        "impressions": 1035,
+        "clicks": 0,
+        "position": 57.7
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/best-ai-tools-for-nonprofits-fundraising",
+        "impressions": 457,
+        "clicks": 0,
+        "position": 83.0
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/top-10-seo-tools-on-a-budget",
+        "impressions": 349,
+        "clicks": 0,
+        "position": 80.6
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/moz-vs-ahrefs-backlink-analysis",
+        "impressions": 316,
+        "clicks": 0,
+        "position": 65.3
+      },
+      {
+        "page": "https://www.thestackguide.com/compare/github-copilot-vs-cursor",
+        "impressions": 290,
+        "clicks": 0,
+        "position": 73.8
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/roam-research-vs-logseq-note-taking",
+        "impressions": 204,
+        "clicks": 0,
+        "position": 59.1
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/ai-tools-for-retail-store-managers-inventory",
+        "impressions": 202,
+        "clicks": 0,
+        "position": 86.5
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/best-ai-tools-for-travel-agents-bookings",
+        "impressions": 177,
+        "clicks": 0,
+        "position": 87.3
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/best-ai-tools-for-project-management-automation-2026",
+        "impressions": 162,
+        "clicks": 0,
+        "position": 87.7
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/ai-tools-for-veterinarians-practice-management",
+        "impressions": 150,
+        "clicks": 0,
+        "position": 88.8
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/best-seo-tools-for-growth",
+        "impressions": 124,
+        "clicks": 0,
+        "position": 64.3
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/pipedrive-vs-hubspot-sales-pipeline",
+        "impressions": 83,
+        "clicks": 0,
+        "position": 65.0
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/superhuman-vs-gmail-productivity-email",
+        "impressions": 64,
+        "clicks": 0,
+        "position": 61
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/best-ai-tools-for-therapists-note-taking",
+        "impressions": 50,
+        "clicks": 0,
+        "position": 82.3
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/top-10-crm-platforms-on-a-budget",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 48.6
+      },
+      {
+        "page": "https://www.thestackguide.com/how-to-use-notion-for-marketing-teams",
+        "impressions": 43,
+        "clicks": 0,
+        "position": 29.4
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/claude-code-vs-replit-ai-2026-best-for-full-stack-development",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 57.9
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/intercom-vs-zendesk-customer-support",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 83.8
+      },
+      {
+        "page": "https://www.thestackguide.com/categories/ai-email-marketing",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 76.5
+      },
+      {
+        "page": "https://www.thestackguide.com/blog/ai-tools-for-lawyers-legal-research-automation",
+        "impressions": 37,
+        "clicks": 0,
+        "position": 86.9
+      }
+    ]
+  }
+}

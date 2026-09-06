@@ -38,14 +38,18 @@ jobs:
           # year-on-year variation drawn from a scenario the user selects. It carries a
           # visible note that each run is one simulated path, not a forecast. That is the
           # bar for an entry here -- random as declared methodology, labelled as such.
+          # 2026-09-06: DividendSimulator was moved to components/_dormant-enhanced/
+          # (dead code -- unreachable from any route) as part of a dormant-cluster sweep;
+          # it is still allowlisted by its new path in case the cluster is ever revived.
           #
-          # lib/ab-testing and lib/affiliate/tracking generate user and click ids and
-          # assign A/B buckets. Random assignment is the correct method for both and
-          # neither produces a number shown to a reader as a fact.
+          # lib/ab-testing (also dormant as of 2026-09-06, see lib/ab-testing/_dormant-experiment/)
+          # and lib/affiliate/tracking (dormant, see lib/affiliate/_dormant-tracking/) generate
+          # user and click ids and assign A/B buckets. Random assignment is the correct method
+          # for both and neither produces a number shown to a reader as a fact.
           # Named files are only for cases where randomness is the component's whole
           # method: DividendSimulator applies Monte-Carlo variation from a scenario
           # the user picks, and says on screen that each run is one simulated path.
-          ALLOW='components/tools/DividendSimulator.tsx|lib/ab-testing/'
+          ALLOW='components/_dormant-enhanced/tools/DividendSimulator.tsx|lib/ab-testing/'
 
           # Everything else is decided by what the randomness produces, not by which
           # file it sits in. Naming files never converged -- this list reached eight
