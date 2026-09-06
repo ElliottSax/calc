@@ -1,9 +1,42 @@
-# ⚠️ SESSION CHECKPOINT — 2026-09-06 (finish-vs-delete pass, + follow-up fix) — READ THIS FIRST ⚠️
+# ⚠️ SESSION CHECKPOINT — 2026-09-06 (content-engine pipeline investigated, deleted) — READ THIS FIRST ⚠️
 # ============================================================
-# Everything below this block is stale (Feb 2026 / earlier 09-06 sweep). Read
+# Everything below this block is stale (Feb 2026 / earlier 09-06 sweeps). Read
 # this before trusting anything further down. See also the "dead-code sweep"
 # and 2026-09-05 checkpoints further down for prior context.
 # ============================================================
+
+## 2026-09-06 (later): content-engine's generated-article pipeline for this site — investigated, confirmed unsafe, deleted
+A separate repo, `C:\projects\content-engine`, has an article-generation
+pipeline that targets this site (dividendengines.com). **It was never
+connected to production** — this site's live content system (the
+`content/*.md` blog described elsewhere in this file) has zero rows/
+references pointing back to that pipeline's output. It sat as gitignored,
+untracked local output only, at `content-engine/output/articles/calc`.
+A quality investigation of that output directory (2,294 files, 2,275 of them
+`.md` articles, generated in 5 bursts over 2026-03-21 to 03-23) returned
+`confirmed-unsafe-delete`, with the same defect signature as this site's
+already-penalized `haiku-*`/`cerebras-*` batch: 78% of files (1,778/2,275) had
+malformed YAML frontmatter (literal `'''''''...'''''''`-style corrupted
+quoting), 77% (1,760/2,275) shared the identical content-free placeholder
+description `"This article provides valuable insights and information."`, and
+dozens of files shipped raw unrendered template output as their entire visible
+content — e.g. `17-best-defensive-dividend-stocks-recession.md`'s "Top 10
+Dividend Stocks" table was literally `| Stock Option 1 | STO1 | 3.5% |
+Quarterly | Quality dividend payer |` through `Stock Option 10`, naming zero
+real stocks, and another file listed Oracle (ORCL, a software company) as a
+"medical-device dividend stock." Only ~4/15 sampled files were genuinely
+usable. Given this site already has a live Google scaled-content penalty from
+a batch of this same size/character, connecting this in bulk would very
+likely reproduce or compound it.
+**Action taken: the entire output directory was deleted** (24MB, 2,294 files,
+gitignored/untracked so not recoverable from git history — this was a plain
+disk cleanup, not a git operation). Nothing from it was published or wired in.
+If content-engine's pipeline is ever pointed at this site again, the same
+frontmatter-corruption and placeholder-boilerplate bugs need to be fixed at
+the generator level before any output is trusted — don't assume a fresh run is
+clean without re-sampling it. Full investigation detail lives only in this
+note now (the source data is gone); see also `content-engine/CLAUDE.md`'s
+"Known Issues" section for that repo's own record of the same event.
 
 ## 2026-09-06 (same day, follow-up): fabricated rating/reviews found live in app/layout.tsx
 A second, independent pass re-verifying the dormant-cluster decisions below
