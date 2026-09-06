@@ -1,9 +1,53 @@
-# ⚠️ SESSION CHECKPOINT — 2026-09-05 — READ THIS FIRST, IT SUPERSEDES BELOW ⚠️
+# ⚠️ SESSION CHECKPOINT — 2026-09-06 — READ THIS FIRST, IT SUPERSEDES BELOW ⚠️
 # ============================================================
-# Everything below this block is stale (Feb 2026). A long session today
-# audited + fixed this site and 3 siblings (affiliate/credit/quant). Read
-# this before trusting anything in the "Current State" section below.
+# Everything below this block is stale (Feb 2026). Read this before trusting
+# anything in the "Current State" section below. See also the 2026-09-05
+# checkpoint further down for the prior day's audit + fixes.
 # ============================================================
+
+## 2026-09-06: dead-code sweep (deleted 104 files, dormant-flagged ~35 more)
+Ran an independent re-verification of a dead-code/bloat audit, then acted on
+what checked out (commit 6e15523, pushed to origin/main, deploy verified
+Ready + live pages curled 200):
+- **Deleted** (confirmed non-routes / unreferenced, zero live-URL impact):
+  97 `app/blog/*/page.mdx` files (MDX isn't configured anywhere in this repo
+  — no `@next/mdx`, no `pageExtensions` override — so these were never
+  routes; 90 had a byte-parity `content/blog/*.md` twin already serving that
+  URL, 2 were old paths already redirected, 5 were already-404 underscore
+  variants), plus 7 orphaned `content/*.md` root files nothing reads.
+- **Renamed to `_dormant-*`** (zero importers from `app/` or
+  `middleware.ts`, confirmed by grep + a clean `tsc --noEmit`): whole
+  directories `lib/{error-handling,monitoring,accessibility,responsive,
+  performance,schemas}`, `components/{ads,market,marketing,stocks,enhanced}`
+  (the last being `EnhancedDripCalculator.tsx` + 16 files reachable only
+  through it — a whole second, unrouted DRIP calculator variant), and
+  ~15 single files moved out of otherwise-live folders (old
+  `lib/data/broker-affiliates.ts`, `lib/affiliate/tracking.ts`, the legacy
+  `lib/blog/{blog-sitemap,blog-data,blog-content,articles-manifest}.ts` +
+  `page-template.tsx` "50 SEO articles" pipeline, three separate dead
+  web-vitals implementations, etc.). Each new `_dormant-*` directory has a
+  `DORMANT.md` explaining what it was and what decision (finish-and-launch vs
+  delete) is still open — **nothing was deleted here, only flagged**, since
+  it may be unfinished-but-wanted work. Fixed `lib/data/broker-affiliates.ts`
+  being called "Current" further down this file — it's the dormant one now;
+  `-expanded.ts` is what's actually imported.
+- **Deliberately NOT touched**, per the standing deferral below: the 1,999
+  noindexed haiku-*/cerebras-* posts and 319 noindexed template-reprint
+  posts. These are live, crawlable, noindexed URLs — not dead code — and
+  their fate (delete vs. leave noindexed) was already explicitly deferred
+  once, after the 6346f5a accidental-deletion incident. Also left alone:
+  `scripts/seo-article-swarm.py` / `generate-blog-posts.ps1` /
+  `article-topics.json` (the swarm generators — flagged as a decision, not
+  auto-deleted) and ~111 root-level session-summary `.md`/`.txt` files
+  (low-priority repo noise, not individually verified).
+- **Also noticed, not acted on** (outside this sweep's scope): `app/blog/
+  page.tsx` (the blog INDEX page, distinct from the `[id]` post route) is
+  still a hardcoded mock with a fabricated "Senior Analyst" byline and view/
+  comment counts, and links to `/blog/topic/*`, `/blog/category/*`,
+  `/blog/tag/*` routes that don't exist — it doesn't list the real 151
+  indexed posts. The integrity-gates workflow excludes `app/blog/`, so this
+  is invisible to it. Same class of issue as the fabricated social proof
+  removed elsewhere on 2026-08-19/09-05 — worth a follow-up pass.
 
 ## What actually happened since the Feb 2026 status below
 - **This site got hit with a Google scaled-content penalty.** The content/
@@ -90,8 +134,8 @@ components/
     BrokerComparisonTable.tsx - Uses BROKER_AFFILIATES
 lib/
   data/
-    broker-affiliates.ts - Current (5 brokers)
-    broker-affiliates-expanded.ts - Ready to use (15+ brokers)
+    broker-affiliates.ts - DORMANT as of 2026-09-06, moved to _dormant-broker-affiliates/ (5 brokers, unused)
+    broker-affiliates-expanded.ts - Current, actually imported (15+ brokers)
 ```
 
 ### 📊 REVENUE OPTIMIZATION PATH
