@@ -62,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: '/calculators/compound-interest', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/401k', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/ira', freq: 'weekly' as const, pr: 0.9 },
+    { p: '/calculators/rmd', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/savings', freq: 'weekly' as const, pr: 0.9 },
     { p: '/calculators/investment-return', freq: 'weekly' as const, pr: 0.9 },
     { p: '/guides', freq: 'weekly' as const, pr: 0.8 },

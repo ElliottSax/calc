@@ -26,6 +26,7 @@ const CALCULATORS = [
   { href: '/calculators/compound-interest', name: 'Compound Interest Calculator', desc: 'Project how any investment grows with compounding.' },
   { href: '/calculators/401k', name: '401(k) Calculator', desc: 'Plan retirement savings, including your employer match.' },
   { href: '/calculators/ira', name: 'IRA Calculator', desc: 'Compare Traditional vs. Roth IRA outcomes side by side.' },
+  { href: '/calculators/rmd', name: 'RMD Calculator', desc: 'Calculate your required minimum distribution, the shortfall penalty, and a year-by-year withdrawal schedule.' },
   { href: '/calculators/savings', name: 'Savings Calculator', desc: 'Find out how to reach a specific savings goal.' },
   { href: '/calculators/investment-return', name: 'Investment Return Calculator', desc: 'Calculate ROI and annualized returns on any investment.' },
   { href: '/calculators/trump-account', name: 'Trump Account Calculator', desc: 'Project the $1,000 federal seed to age 18, and compare against UTMA and 529 options.' },
