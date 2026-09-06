@@ -1,9 +1,23 @@
-# ⚠️ SESSION CHECKPOINT — 2026-09-06 (finish-vs-delete pass) — READ THIS FIRST ⚠️
+# ⚠️ SESSION CHECKPOINT — 2026-09-06 (finish-vs-delete pass, + follow-up fix) — READ THIS FIRST ⚠️
 # ============================================================
 # Everything below this block is stale (Feb 2026 / earlier 09-06 sweep). Read
 # this before trusting anything further down. See also the "dead-code sweep"
 # and 2026-09-05 checkpoints further down for prior context.
 # ============================================================
+
+## 2026-09-06 (same day, follow-up): fabricated rating/reviews found live in app/layout.tsx
+A second, independent pass re-verifying the dormant-cluster decisions below
+found one thing the original pass missed: `app/layout.tsx`'s sitewide
+`WebApplication` JSON-LD block (injected on every page, not just one) still
+carried an invented `aggregateRating` (4.9 stars, ratingCount 12847,
+reviewCount 3456) plus two fully fabricated `Review` entries ("John D.",
+"Sarah M.", including an invented "$50K -> $250K" testimonial). This is the
+exact same fake-rating/testimonial pattern already stripped elsewhere on this
+site — `components/seo/SchemaRenderer.tsx`'s `OrganizationSchema` even has a
+comment recording that earlier removal — but this occurrence in `layout.tsx`
+was never caught by that pass. Removed both blocks (commit 6ea7aaf). Real
+`aggregateRating`/`review` data can be added back once it reflects actual
+reviews, not before.
 
 ## 2026-09-06 (later same day): dormant-cluster decisions — all 30 deleted, none revived
 The earlier sweep below renamed ~30 dead clusters to `_dormant-*` with a
