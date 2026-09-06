@@ -1,5 +1,5 @@
 ---
-title: Dividend Mutual Funds vs ETFs: Comparison and Strategy
+title: "Dividend Mutual Funds vs ETFs: Comparison and Strategy"
 description: Choose between dividend mutual funds and ETFs. Compare fees, performance, tax efficiency, and fund selection.
 date: 2026-03-21
 category: dividend-strategies

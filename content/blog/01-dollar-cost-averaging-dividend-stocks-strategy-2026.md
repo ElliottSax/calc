@@ -1,5 +1,5 @@
 ---
-title: Dollar Cost Averaging Dividend Stocks Strategy: Complete 2026 Guide
+title: "Dollar Cost Averaging Dividend Stocks Strategy: Complete 2026 Guide"
 description: Master dollar cost averaging for dividend investing. Learn timing, calculation methods, and 2026 implementation strategies to reduce risk.
 date: 2026-03-21
 category: dividend-strategies

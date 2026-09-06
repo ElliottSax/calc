@@ -1,5 +1,5 @@
 ---
-title: Geographic Diversification in Dividend Investing: Global Strategy
+title: "Geographic Diversification in Dividend Investing: Global Strategy"
 description: Expand globally with dividend investing. Learn emerging markets, developed markets, and currency considerations for international dividends.
 date: 2026-03-21
 category: dividend-strategies

@@ -1,5 +1,5 @@
 ---
-title: Dividend Yield on Cost (YOC): Calculation and Strategy
+title: "Dividend Yield on Cost (YOC): Calculation and Strategy"
 description: Calculate and track yield on cost. Learn how YOC reveals hidden returns from dividend growth.
 date: 2026-03-21
 category: dividend-strategies

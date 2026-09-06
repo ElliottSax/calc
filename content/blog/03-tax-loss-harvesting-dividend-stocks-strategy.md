@@ -1,5 +1,5 @@
 ---
-title: Tax Loss Harvesting with Dividend Stocks: Complete Strategy Guide
+title: "Tax Loss Harvesting with Dividend Stocks: Complete Strategy Guide"
 description: Maximize tax efficiency through dividend stock loss harvesting. Learn rules, calculations, and avoid wash-sale violations while building wealth.
 date: 2026-03-21
 category: dividend-strategies

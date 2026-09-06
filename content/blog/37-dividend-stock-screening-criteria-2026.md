@@ -1,5 +1,5 @@
 ---
-title: Dividend Stock Screening Criteria: 2026 Framework
+title: "Dividend Stock Screening Criteria: 2026 Framework"
 description: Develop dividend screening criteria. Learn financial metrics, quality thresholds, and automated screening tools.
 date: 2026-03-21
 category: dividend-strategies

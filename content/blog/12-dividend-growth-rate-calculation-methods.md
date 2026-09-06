@@ -1,5 +1,5 @@
 ---
-title: Dividend Growth Rate Calculation: Methods and Projections
+title: "Dividend Growth Rate Calculation: Methods and Projections"
 description: Calculate historical and projected dividend growth rates. Learn CAGR formulas and forecast future dividend income.
 date: 2026-03-21
 category: dividend-strategies

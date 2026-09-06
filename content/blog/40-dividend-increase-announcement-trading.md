@@ -1,5 +1,5 @@
 ---
-title: Trading Dividend Increase Announcements: Strategy Guide
+title: "Trading Dividend Increase Announcements: Strategy Guide"
 description: Capitalize on dividend increase announcements. Learn timing, market reactions, and trading strategies.
 date: 2026-03-21
 category: dividend-strategies

@@ -1,5 +1,5 @@
 ---
-title: Sector Diversification for Dividend Portfolios: 2026 Strategy
+title: "Sector Diversification for Dividend Portfolios: 2026 Strategy"
 description: Diversify dividend portfolios across sectors. Learn allocation percentages, sector characteristics, and risk management.
 date: 2026-03-21
 category: dividend-strategies

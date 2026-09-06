@@ -1,5 +1,5 @@
 ---
-title: Dividend Payout Ratio Analysis: Safe Levels and Calculation
+title: "Dividend Payout Ratio Analysis: Safe Levels and Calculation"
 description: Calculate and analyze dividend payout ratios. Learn safe payout levels by industry and predict dividend sustainability.
 date: 2026-03-21
 category: dividend-strategies

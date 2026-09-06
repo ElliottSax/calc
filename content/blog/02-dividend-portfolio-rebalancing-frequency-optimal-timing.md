@@ -1,5 +1,5 @@
 ---
-title: Dividend Portfolio Rebalancing: Frequency and Optimal Timing 2026
+title: "Dividend Portfolio Rebalancing: Frequency and Optimal Timing 2026"
 description: Learn when and how to rebalance dividend portfolios. Expert timing strategies, frequency analysis, and tax-efficient rebalancing methods for 2026.
 date: 2026-03-21
 category: dividend-strategies

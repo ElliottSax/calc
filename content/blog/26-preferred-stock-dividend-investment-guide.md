@@ -1,5 +1,5 @@
 ---
-title: Preferred Stock Dividends: Complete Investment Guide
+title: "Preferred Stock Dividends: Complete Investment Guide"
 description: Invest in preferred stocks for higher dividends. Learn advantages, risks, and optimal portfolio allocation.
 date: 2026-03-21
 category: dividend-strategies

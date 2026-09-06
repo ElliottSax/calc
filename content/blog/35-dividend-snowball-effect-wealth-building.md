@@ -1,5 +1,5 @@
 ---
-title: Dividend Snowball Effect: Wealth Building Strategy
+title: "Dividend Snowball Effect: Wealth Building Strategy"
 description: Harness the snowball effect of compounding dividends. Calculate 10, 20, and 30-year wealth projections.
 date: 2026-03-21
 category: dividend-strategies

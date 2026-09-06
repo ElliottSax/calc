@@ -1,5 +1,5 @@
 ---
-title: Total Return vs Dividend Yield: Strategy Comparison
+title: "Total Return vs Dividend Yield: Strategy Comparison"
 description: Compare total return and dividend yield approaches. Learn which strategy builds more wealth long-term.
 date: 2026-03-21
 category: dividend-strategies

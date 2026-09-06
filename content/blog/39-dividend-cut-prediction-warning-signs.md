@@ -1,5 +1,5 @@
 ---
-title: Dividend Cut Warning Signs: Prediction and Prevention
+title: "Dividend Cut Warning Signs: Prediction and Prevention"
 description: Predict dividend cuts before announcement. Learn early warning signals and risk mitigation strategies.
 date: 2026-03-21
 category: dividend-strategies

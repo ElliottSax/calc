@@ -1,5 +1,5 @@
 ---
-title: Dividend Sustainability Metrics: Analysis and Prediction
+title: "Dividend Sustainability Metrics: Analysis and Prediction"
 description: Evaluate dividend sustainability with advanced metrics. Predict cuts and identify at-risk dividends before they're announced.
 date: 2026-03-21
 category: dividend-strategies

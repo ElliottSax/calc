@@ -1,5 +1,5 @@
 ---
-title: Dividend Coverage Ratio: Calculation and Analysis Guide
+title: "Dividend Coverage Ratio: Calculation and Analysis Guide"
 description: Master dividend coverage ratios. Learn calculations, benchmarks, and how to predict dividend cuts using coverage metrics.
 date: 2026-03-21
 category: dividend-strategies

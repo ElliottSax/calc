@@ -1,5 +1,5 @@
 ---
-title: Dividend Stocks vs Growth Stocks: Return Comparison Analysis
+title: "Dividend Stocks vs Growth Stocks: Return Comparison Analysis"
 description: Compare long-term returns of dividend vs growth stocks. Analyze risk-adjusted returns and hybrid strategies.
 date: 2026-03-21
 category: dividend-strategies

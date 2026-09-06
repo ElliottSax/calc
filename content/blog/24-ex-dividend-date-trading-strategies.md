@@ -1,5 +1,5 @@
 ---
-title: Ex-Dividend Date Trading: Strategies and Timing
+title: "Ex-Dividend Date Trading: Strategies and Timing"
 description: Master ex-dividend date mechanics and trading. Learn timing considerations and realistic return expectations.
 date: 2026-03-21
 category: dividend-strategies

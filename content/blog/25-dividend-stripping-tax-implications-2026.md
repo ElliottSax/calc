@@ -1,5 +1,5 @@
 ---
-title: Dividend Stripping: Tax Implications and Avoidance 2026
+title: "Dividend Stripping: Tax Implications and Avoidance 2026"
 description: Understand dividend stripping rules and avoid IRS complications. Learn what constitutes stripping and how to stay compliant.
 date: 2026-03-21
 category: dividend-strategies

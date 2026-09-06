@@ -1,5 +1,5 @@
 ---
-title: Dividend Aristocrats vs Dividend Kings: Complete Comparison
+title: "Dividend Aristocrats vs Dividend Kings: Complete Comparison"
 description: Compare dividend aristocrats and kings. Analyze performance differences, benefits, and investment strategies for each class.
 date: 2026-03-21
 category: dividend-strategies

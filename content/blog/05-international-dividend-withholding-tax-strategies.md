@@ -1,5 +1,5 @@
 ---
-title: International Dividend Withholding Tax Strategies: 2026 Guide
+title: "International Dividend Withholding Tax Strategies: 2026 Guide"
 description: Navigate international dividend taxes. Learn withholding rates, tax credits, and treaty benefits for foreign dividend stocks.
 date: 2026-03-21
 category: dividend-strategies

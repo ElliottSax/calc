@@ -1,5 +1,5 @@
 ---
-title: High Dividend Yield Trap: Avoidance Strategies and Detection
+title: "High Dividend Yield Trap: Avoidance Strategies and Detection"
 description: Identify dividend yield traps. Learn red flags, detection methods, and safety metrics to avoid dangerous high-yield stocks.
 date: 2026-03-21
 category: dividend-strategies

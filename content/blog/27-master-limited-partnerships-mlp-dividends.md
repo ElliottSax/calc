@@ -1,5 +1,5 @@
 ---
-title: Master Limited Partnership (MLP) Dividends: Complete Guide
+title: "Master Limited Partnership (MLP) Dividends: Complete Guide"
 description: Understand MLP dividend income and taxes. Learn K-1 complexity, depreciation deductions, and cash flow characteristics.
 date: 2026-03-21
 category: dividend-strategies

@@ -1,5 +1,5 @@
 ---
-title: Dividend Stocks in Recession: Performance and Strategy
+title: "Dividend Stocks in Recession: Performance and Strategy"
 description: Analyze dividend stock performance during recessions. Learn defensive strategies and recession-proof dividend stocks.
 date: 2026-03-21
 category: dividend-strategies

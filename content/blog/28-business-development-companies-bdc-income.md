@@ -1,5 +1,5 @@
 ---
-title: Business Development Company (BDC) Dividends: Investor Guide
+title: "Business Development Company (BDC) Dividends: Investor Guide"
 description: Generate income from BDCs. Learn structure, high yields, leverage risks, and portfolio allocation strategies.
 date: 2026-03-21
 category: dividend-strategies

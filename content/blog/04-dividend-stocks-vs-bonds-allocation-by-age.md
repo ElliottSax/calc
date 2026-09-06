@@ -1,5 +1,5 @@
 ---
-title: Dividend Stocks vs Bonds Allocation by Age: 2026 Strategy
+title: "Dividend Stocks vs Bonds Allocation by Age: 2026 Strategy"
 description: Optimal portfolio allocation by age group. Compare dividend stocks vs bonds for different life stages with data-driven allocation models.
 date: 2026-03-21
 category: dividend-strategies

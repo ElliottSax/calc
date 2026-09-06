@@ -1,5 +1,5 @@
 ---
-title: Dividend Safety Score: Evaluation and Prediction Method
+title: "Dividend Safety Score: Evaluation and Prediction Method"
 description: Create dividend safety scores. Learn metric weighting and predictive models for dividend sustainability.
 date: 2026-03-21
 category: dividend-strategies

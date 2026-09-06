@@ -1,5 +1,5 @@
 ---
-title: Living Off Dividends in Retirement: Calculation Guide
+title: "Living Off Dividends in Retirement: Calculation Guide"
 description: Calculate dividend needs for retirement. Learn safe withdrawal rates and sustainable income levels.
 date: 2026-03-21
 category: dividend-strategies

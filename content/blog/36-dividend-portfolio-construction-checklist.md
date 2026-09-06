@@ -1,5 +1,5 @@
 ---
-title: Building a Dividend Portfolio: Construction Checklist
+title: "Building a Dividend Portfolio: Construction Checklist"
 description: Step-by-step dividend portfolio construction. Learn allocation, selection criteria, and maintenance processes.
 date: 2026-03-21
 category: dividend-strategies

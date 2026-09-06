@@ -1,5 +1,5 @@
 ---
-title: Closed-End Funds (CEF): Dividend and Leverage Strategies
+title: "Closed-End Funds (CEF): Dividend and Leverage Strategies"
 description: Maximize CEF dividend income. Learn premium/discount analysis, leverage effects, and timing strategies.
 date: 2026-03-21
 category: dividend-strategies

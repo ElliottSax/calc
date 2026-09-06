@@ -1,5 +1,5 @@
 ---
-title: Dividend Compounding Calculator: Projection and Planning
+title: "Dividend Compounding Calculator: Projection and Planning"
 description: Calculate compound dividend growth. Learn projection formulas and long-term wealth building potential.
 date: 2026-03-21
 category: dividend-strategies

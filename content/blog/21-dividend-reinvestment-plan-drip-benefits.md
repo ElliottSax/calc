@@ -1,5 +1,5 @@
 ---
-title: Dividend Reinvestment Plans (DRIP): Benefits and Strategy
+title: "Dividend Reinvestment Plans (DRIP): Benefits and Strategy"
 description: Maximize DRIP benefits for compounding. Learn mechanics, tax implications, and DRIP optimization techniques.
 date: 2026-03-21
 category: dividend-strategies

@@ -1,5 +1,5 @@
 ---
-title: Qualified vs Ordinary Dividend Income: Tax Impact 2026
+title: "Qualified vs Ordinary Dividend Income: Tax Impact 2026"
 description: Understand qualified vs ordinary dividend taxation. Calculate tax liability and optimize dividend income for minimum tax burden.
 date: 2026-03-21
 category: dividend-strategies

@@ -1,5 +1,5 @@
 ---
-title: Dividend Stocks as Inflation Protection: 2026 Analysis
+title: "Dividend Stocks as Inflation Protection: 2026 Analysis"
 description: Use dividend stocks to hedge inflation. Analyze real returns and identify stocks with pricing power to beat inflation.
 date: 2026-03-21
 category: dividend-strategies
