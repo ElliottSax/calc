@@ -1,11 +1,59 @@
-# ⚠️ SESSION CHECKPOINT — 2026-09-06 — READ THIS FIRST, IT SUPERSEDES BELOW ⚠️
+# ⚠️ SESSION CHECKPOINT — 2026-09-06 (finish-vs-delete pass) — READ THIS FIRST ⚠️
 # ============================================================
-# Everything below this block is stale (Feb 2026). Read this before trusting
-# anything in the "Current State" section below. See also the 2026-09-05
-# checkpoint further down for the prior day's audit + fixes.
+# Everything below this block is stale (Feb 2026 / earlier 09-06 sweep). Read
+# this before trusting anything further down. See also the "dead-code sweep"
+# and 2026-09-05 checkpoints further down for prior context.
 # ============================================================
 
-## 2026-09-06: dead-code sweep (deleted 104 files, dormant-flagged ~35 more)
+## 2026-09-06 (later same day): dormant-cluster decisions — all 30 deleted, none revived
+The earlier sweep below renamed ~30 dead clusters to `_dormant-*` with a
+DORMANT.md each, deliberately deferring finish-vs-delete. That decision is now
+made: **all 30 were deleted outright** (`git rm -r`), nothing was revived.
+Reasoning by group:
+- **Parallel blog/SEO pipeline** (`app/blog/_dormant-page-template`,
+  `lib/blog/_dormant-legacy-system` — the "50 SEO articles" manifest +
+  generator scaffolding): deleted, no debate. This site has a live Google
+  scaled-content penalty from 1,999 AI-mass-generated near-duplicate articles
+  (see below). A second scaled-content generator is the exact failure pattern
+  that caused that penalty — there is no safe "finish and launch" path for it
+  on this site.
+- **Enhanced DRIP calculator suite** (`components/_dormant-enhanced/`,
+  ~17 files centered on `EnhancedDripCalculator.tsx`): read in full against
+  the live `components/calculators/DripCalculator.tsx` before deciding.
+  Deleted, not revived — it fails on multiple independent grounds, not just
+  one: (1) `news/MarketInsights.tsx` renders hardcoded `mockNews` fake
+  headlines — exactly the fabricated-content pattern already stripped
+  sitewide elsewhere (fake ratings, fake testimonials, "FDIC Insured" error);
+  (2) `stockApi.ts` depends on an unconfigured third-party API
+  (`api.twelvedata.com`, no key set) — a new external dependency the task
+  explicitly ruled out; (3) it never imports `InlineBrokerCTA` at all, so
+  swapping it in would delete the site's actual broker-affiliate revenue
+  mechanism from the DRIP page; (4) it hardcodes its own dark
+  purple/gamified theme and a separate `ThemeToggle`, ignoring the site's
+  real theme system. The live `DripCalculator.tsx` is the more complete,
+  correct, already-monetized component (it has the CSV/PDF export, viral
+  `ShareResults`, and `InlineBrokerCTA` — see the 2026-09-05 checkpoint's
+  DRIP-calculator fixes). No swap was made.
+- **Everything else** (27 smaller clusters — duplicate analytics/web-vitals/
+  error-handling/rate-limiter implementations, a stale 5-broker affiliate
+  list, unrouted stock-profile/related-stocks pages, unwired popups/modals/
+  hero variants/ad slots, an accessibility trio, a PWA hook + service worker,
+  email-sequence scaffolding, etc.): deleted. None qualified as the "trivial,
+  zero-risk wire-in" exception — every one either duplicated something a live
+  system already covers, needed a real product/business decision (which page
+  gets the CTA, whether to run ads, whether to commit to a drip-email
+  campaign), or (accessibility helpers) needed nontrivial integration work
+  (matching DOM ids across pages, wrapping existing modals) rather than a
+  single missing import line. Full per-cluster reasoning was in each
+  DORMANT.md, now removed along with the code.
+- Not touched: the live `WebVitals.tsx` → `/api/analytics/vitals` console-log
+  stub mismatch flagged in one of the deleted DORMANT.md files (the real
+  `/api/vitals/route.ts` sits unused) — that's a live-code bug, out of scope
+  for this dormant-cluster pass, still open.
+- Verified after deletion: `npx tsc --noEmit` clean, deploy reached Ready,
+  homepage + `/calculators/drip` both curl 200.
+
+## 2026-09-06 (morning): dead-code sweep (deleted 104 files, dormant-flagged ~35 more)
 Ran an independent re-verification of a dead-code/bloat audit, then acted on
 what checked out (commit 6e15523, pushed to origin/main, deploy verified
 Ready + live pages curled 200):
@@ -134,7 +182,7 @@ components/
     BrokerComparisonTable.tsx - Uses BROKER_AFFILIATES
 lib/
   data/
-    broker-affiliates.ts - DORMANT as of 2026-09-06, moved to _dormant-broker-affiliates/ (5 brokers, unused)
+    broker-affiliates.ts - DELETED 2026-09-06 (stale 5-broker predecessor, unused)
     broker-affiliates-expanded.ts - Current, actually imported (15+ brokers)
 ```
 
