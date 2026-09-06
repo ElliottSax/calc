@@ -131,7 +131,13 @@ export async function generateMetadata({
 }
 
 const components = {
-  h1: ({ node, ...p }: any) =><h1 className="text-3xl font-bold mt-10 mb-4" {...p} />,
+  // The page itself renders the article title as the page's one <h1> (below).
+  // Markdown bodies routinely open with their own "# Title" line duplicating
+  // that title -- rendering it as a real <h1> gave every article page two
+  // level-1 headings, a WCAG 1.3.1 heading-hierarchy violation repeated across
+  // the whole blog. Demoted to <h2> (same size as before) so it nests as a
+  // section under the page's real h1 instead of competing with it.
+  h1: ({ node, ...p }: any) =><h2 className="text-3xl font-bold mt-10 mb-4" {...p} />,
   h2: ({ node, ...p }: any) =><h2 className="text-2xl font-bold mt-8 mb-3" {...p} />,
   h3: ({ node, ...p }: any) =><h3 className="text-xl font-semibold mt-6 mb-2" {...p} />,
   p: ({ node, ...p }: any) =><p className="mb-4 leading-7 text-gray-700 dark:text-gray-300" {...p} />,
@@ -219,7 +225,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
           {/* Lead capture — convert article readers into subscribers. Posts to
               the Resend-backed newsletter service; welcome email delivers value. */}
-          <aside className="mt-12 rounded-2xl border border-blue-200 dark:border-gray-700 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 p-6 sm:p-8">
+          <aside
+            id="signup-form"
+            className="mt-12 rounded-2xl border border-blue-200 dark:border-gray-700 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 p-6 sm:p-8"
+          >
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
               Get smarter about dividends
             </h2>

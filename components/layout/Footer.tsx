@@ -72,9 +72,12 @@ export function Footer() {
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold">
+                  {/* Not an h1: same reasoning as Header.tsx -- the brand
+                      isn't the page topic, and this renders on every page
+                      alongside that page's real h1. */}
+                  <p className="text-2xl font-bold">
                     Dividend<span className="text-blue-500">Engines</span>
-                  </h1>
+                  </p>
                   <span className="text-xs text-slate-400">
                     Build Wealth Through Dividends
                   </span>

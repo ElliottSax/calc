@@ -403,38 +403,43 @@ export const DripCharts = React.memo(function DripCharts({ results, comparisonRe
         <TabsList className="grid w-full grid-cols-5 mb-8 p-1.5 backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-700/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-xl">
           <TabsTrigger
             value="growth"
+            aria-label="Growth"
             className="flex items-center gap-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-100 data-[state=active]:text-white dark:data-[state=active]:text-slate-900 data-[state=active]:shadow-lg transition-all duration-300 rounded-lg font-medium"
           >
-            <TrendingUp className="h-4 w-4" />
+            <TrendingUp className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">Growth</span>
           </TabsTrigger>
           <TabsTrigger
             value="composition"
+            aria-label="Composition"
             className="flex items-center gap-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-100 data-[state=active]:text-white dark:data-[state=active]:text-slate-900 data-[state=active]:shadow-lg transition-all duration-300 rounded-lg font-medium"
           >
-            <PieChart className="h-4 w-4" />
+            <PieChart className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">Composition</span>
           </TabsTrigger>
           <TabsTrigger
             value="dividends"
+            aria-label="Dividends"
             className="flex items-center gap-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-100 data-[state=active]:text-white dark:data-[state=active]:text-slate-900 data-[state=active]:shadow-lg transition-all duration-300 rounded-lg font-medium"
           >
-            <BarChart3 className="h-4 w-4" />
+            <BarChart3 className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">Dividends</span>
           </TabsTrigger>
           <TabsTrigger
             value="shares"
+            aria-label="Shares"
             className="flex items-center gap-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-100 data-[state=active]:text-white dark:data-[state=active]:text-slate-900 data-[state=active]:shadow-lg transition-all duration-300 rounded-lg font-medium"
           >
-            <LineChartIcon className="h-4 w-4" />
+            <LineChartIcon className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">Shares</span>
           </TabsTrigger>
           {comparisonData && (
             <TabsTrigger
               value="comparison"
+              aria-label="Compare"
               className="flex items-center gap-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-100 data-[state=active]:text-white dark:data-[state=active]:text-slate-900 data-[state=active]:shadow-lg transition-all duration-300 rounded-lg font-medium"
             >
-              <Activity className="h-4 w-4" />
+              <Activity className="h-4 w-4" aria-hidden="true" />
               <span className="hidden sm:inline">Compare</span>
             </TabsTrigger>
           )}

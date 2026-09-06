@@ -97,7 +97,11 @@ export function EmailCaptureForm({ variant = 'inline', onSuccess }: EmailCapture
             </div>
           </div>
           <form onSubmit={handleSubmit} className="flex gap-2">
+            <Label htmlFor="banner-email" className="sr-only">
+              Email address
+            </Label>
             <Input
+              id="banner-email"
               type="email"
               placeholder="Enter your email"
               value={email}
