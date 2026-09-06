@@ -65,6 +65,12 @@ export const metadata: Metadata = {
   },
 
   // Open Graph
+  // images previously pointed at /og-image.png and /twitter-image.png -- neither
+  // file exists in public/, so every page that doesn't set its own openGraph
+  // image (i.e. every page; nothing in the app references this route) served a
+  // 404 image link to Facebook/Twitter/LinkedIn/Slack when shared. app/api/og
+  // is a working dynamic OG-image generator (next/og, correct 1200x630) that
+  // was built but never wired up anywhere -- use it as the sitewide default.
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -74,7 +80,7 @@ export const metadata: Metadata = {
     siteName: siteName,
     images: [
       {
-        url: `${siteUrl}/og-image.png`,
+        url: `${siteUrl}/api/og?title=${encodeURIComponent('Free Dividend Calculator Suite')}&description=${encodeURIComponent('DRIP, Yield & Retirement Tools')}&type=default`,
         width: 1200,
         height: 630,
         alt: 'Dividend Engines - Turn $10K into $1M with DRIP Investing',
@@ -87,7 +93,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Dividend Calculator Suite - DRIP, Yield & Retirement Tools',
     description: '🚀 Calculate dividend returns with our professional DRIP calculator. Build passive income & achieve financial independence.',
-    images: [`${siteUrl}/twitter-image.png`],
+    images: [`${siteUrl}/api/og?title=${encodeURIComponent('Free Dividend Calculator Suite')}&description=${encodeURIComponent('DRIP, Yield & Retirement Tools')}&type=default`],
     creator: '@dividendcalcpro',
     site: '@dividendcalcpro',
   },

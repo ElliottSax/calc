@@ -26,6 +26,18 @@ export const metadata: Metadata = {
     description: 'See how dividend reinvestment can grow your wealth. Free calculator with interactive charts and year-by-year projections.',
     type: 'website',
     url,
+    // No images set previously -> inherited the root layout's default, so the
+    // site's most complete calculator shared with the same generic preview
+    // image as every other page. app/api/og is a working dynamic generator;
+    // give this page its own.
+    images: [
+      {
+        url: `https://dividendengines.com/api/og?title=${encodeURIComponent('Free DRIP Calculator')}&description=${encodeURIComponent('Calculate Dividend Reinvestment Returns')}&type=calculator`,
+        width: 1200,
+        height: 630,
+        alt: 'DRIP Calculator - Free Dividend Reinvestment Calculator',
+      },
+    ],
   },
   alternates: {
     canonical: url
