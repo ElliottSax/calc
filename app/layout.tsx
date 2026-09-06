@@ -208,43 +208,13 @@ export default function RootLayout({
           price: '0',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock'
-        },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          bestRating: '5',
-          worstRating: '1',
-          ratingCount: '12847',
-          reviewCount: '3456'
-        },
-        review: [
-          {
-            '@type': 'Review',
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: '5',
-              bestRating: '5'
-            },
-            author: {
-              '@type': 'Person',
-              name: 'John D.'
-            },
-            reviewBody: 'Best dividend calculator I have used. The visualizations really help understand compound growth!'
-          },
-          {
-            '@type': 'Review',
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: '5',
-              bestRating: '5'
-            },
-            author: {
-              '@type': 'Person',
-              name: 'Sarah M.'
-            },
-            reviewBody: 'Turned my $50K investment into $250K in 5 years using this calculator to plan my strategy.'
-          }
-        ]
+        }
+        // No `aggregateRating`/`review` here on purpose -- this previously asserted
+        // an invented 4.9-star / 12,847-rating / 3,456-review count plus two
+        // fabricated reviews ("John D.", "Sarah M."). Fabricated review/rating
+        // markup is a Google spam-policy violation; see the same fix already made
+        // in components/seo/SchemaRenderer.tsx's OrganizationSchema. Add real
+        // aggregateRating/review data back only when it reflects actual reviews.
       },
       {
         '@type': 'BreadcrumbList',
