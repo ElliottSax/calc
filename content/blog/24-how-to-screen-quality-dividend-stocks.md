@@ -634,6 +634,6 @@ Receive our "Dividend Stock Screening Template" immediately—replicate our exac
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to evaluate your screened candidates. Model their dividend growth trajectory and see which offers the best long-term potential. Make data-driven selection decisions.
 
 **Related Reading:**
-- [How to Find Dividend Stocks Before They're Popular](/articles/find-dividend-stocks)
-- [How to Analyze Dividend Safety](/articles/dividend-safety)
-- [How to Calculate Dividend Yield Correctly](/articles/dividend-yield-calculation)
+- [How to Find Dividend Stocks Before They're Popular](/blog/18-how-to-find-dividend-stocks-before-popular)
+- [How to Analyze Dividend Safety](/blog/19-how-to-analyze-dividend-safety)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)

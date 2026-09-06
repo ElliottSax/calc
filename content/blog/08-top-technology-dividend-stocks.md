@@ -425,6 +425,6 @@ Use our [DRIP Calculator](/calculators/drip) to model how tech dividend reinvest
 
 Use our [DRIP Calculator](/calculators/drip) to model technology dividend growth over your specific time horizon. See how cloud, AI, and semiconductor growth compounds alongside dividend reinvestment.
 
-**[Sign Up for Tech Dividend Updates](signup-form)**
+**[Sign Up for Tech Dividend Updates](#signup-form)**
 
 Get weekly analysis of Microsoft, Apple, Broadcom, and emerging tech dividend opportunities. Learn how AI and cloud computing trends drive technology dividend stocks.

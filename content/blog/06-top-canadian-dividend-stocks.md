@@ -469,6 +469,6 @@ Use our [DRIP Calculator](/calculators/drip) to model how Canadian dividend rein
 
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model Canadian exposure within your overall dividend strategy. See how yield enhancement and dividend growth compound differently.
 
-**[Sign Up for Canadian Dividend Updates](signup-form)**
+**[Sign Up for Canadian Dividend Updates](#signup-form)**
 
 Get weekly analysis of top Canadian dividend stocks, currency insights, and portfolio optimization strategies for North American dividend investors.

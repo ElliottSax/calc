@@ -436,6 +436,6 @@ Use our [DRIP Calculator](/calculators/drip) to model how healthcare dividend re
 
 Use our [DRIP Calculator](/calculators/drip) to model healthcare dividend growth over your specific timeline. See how pharmaceutical innovation and aging population trends compound into extraordinary wealth.
 
-**[Sign Up for Healthcare Dividend Updates](signup-form)**
+**[Sign Up for Healthcare Dividend Updates](#signup-form)**
 
 Get weekly analysis of pharmaceutical advances, healthcare trends, and portfolio optimization strategies for income investors. Learn how aging population demographics drive healthcare dividend growth.

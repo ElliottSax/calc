@@ -504,7 +504,6 @@ All dividends in taxable = $9,125 × 15% = $1,369 tax
    - Track shares purchased through DRIP
    - Calculate cost basis
    - Monitor compounding impact
-   - Download: [dividendcalculator.com/templates](/templates)
 
 2. **Sharesight** ($19/month)
    - Automatic DRIP tracking
@@ -519,7 +518,7 @@ All dividends in taxable = $9,125 × 15% = $1,369 tax
 **Our Calculators:**
 
 - **[Dividend Reinvestment Calculator](/calculators/drip)** - Project DRIP impact over time
-- **[Compound Growth Calculator](/calculators/compound-growth)** - Model reinvestment scenarios
+- **[Compound Interest Calculator](/calculators/compound-interest)** - Model reinvestment scenarios
 - **[Tax Impact Calculator](/calculators/dividend-tax)** - Estimate tax on reinvested dividends
 
 ## Frequently Asked Questions
@@ -560,7 +559,7 @@ The best time to start reinvesting was 20 years ago. The second-best time is tod
 - [Retirement Income Calculator](/calculators/retirement-income)
 
 **Related Articles:**
-- [How to Build a Dividend Portfolio from Scratch](/articles/25-how-to-build-dividend-portfolio-from-scratch)
-- [How to Minimize Taxes on Dividend Income](/articles/31-how-to-minimize-taxes-on-dividend-income)
-- [How to Calculate Dividend Yield Correctly](/articles/17-how-to-calculate-dividend-yield-correctly)
-- [Best Dividend Stocks for Beginners](/articles/05-best-dividend-stocks-for-beginners)
+- [How to Build a Dividend Portfolio from Scratch](/blog/25-build-a-dividend-portfolio-from-scratch)
+- [How to Minimize Taxes on Dividend Income](/blog/31-minimize-taxes-on-dividend-income)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [Best Dividend Stocks for Beginners](/blog/best-dividend-stocks-for-beginners)

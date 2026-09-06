@@ -447,6 +447,6 @@ The best dividend ETF portfolio is one you'll maintain through market volatility
 
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model personalized projections based on your initial investment, monthly contributions, and expected dividend yields. See exactly how dividend reinvestment transforms time into wealth.
 
-**[Sign Up for Weekly Dividend ETF Updates](signup-form)**
+**[Sign Up for Weekly Dividend ETF Updates](#signup-form)**
 
 Get curated dividend ETF analysis, quarterly performance reviews, and allocation optimization strategies delivered weekly. Track market conditions affecting dividend stocks and adjust your portfolio proactively.

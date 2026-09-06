@@ -427,6 +427,6 @@ Receive our "Dividend Stock Discovery Checklist" immediately—the exact framewo
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to evaluate your discoveries. Input potential stocks and compare their growth projections against your portfolio. See which candidates offer the best long-term potential.
 
 **Related Reading:**
-- [How to Screen for Quality Dividend Stocks](/articles/dividend-screener)
-- [How to Analyze Dividend Safety](/articles/dividend-safety)
-- [How to Read Dividend Payout Ratios](/articles/payout-ratio)
+- [How to Screen for Quality Dividend Stocks](/blog/24-how-to-screen-quality-dividend-stocks)
+- [How to Analyze Dividend Safety](/blog/19-how-to-analyze-dividend-safety)
+- [How to Read Dividend Payout Ratios](/blog/34-read-and-understand-payout-ratios)

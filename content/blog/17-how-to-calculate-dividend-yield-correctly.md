@@ -351,6 +351,6 @@ Receive your "Dividend Yield Quick Reference Guide" (free PDF) immediately upon 
 Stop doing manual calculations. Use our [Dividend Growth Calculator](/calculators/dividend-growth) to automatically calculate yields and project future dividend income. Input multiple stocks and see your total portfolio yield instantly.
 
 **Related Reading:**
-- [How to Build a $1,000/Month Dividend Portfolio](/articles/1000-month-portfolio)
-- [How to Read Dividend Payout Ratios](/articles/payout-ratio)
-- [How to Analyze Dividend Safety](/articles/dividend-safety)
+- [How to Build a $1,000/Month Dividend Portfolio](/blog/16-how-to-build-1000-month-dividend-portfolio)
+- [How to Read Dividend Payout Ratios](/blog/34-read-and-understand-payout-ratios)
+- [How to Analyze Dividend Safety](/blog/19-how-to-analyze-dividend-safety)

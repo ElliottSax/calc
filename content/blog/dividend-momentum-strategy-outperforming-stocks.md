@@ -89,7 +89,6 @@ To model scenarios and test the dividend momentum strategy, use the following ca
 
 * [Dividend Growth Calculator](/calculators/dividend-growth)
 * [DRIP Calculator](/calculators/drip)
-* [Momentum Factor Screener](/calculators/momentum-factor)
 
 Example inputs:
 
@@ -120,7 +119,7 @@ A: Rebalance your portfolio regularly to maintain your target asset allocation a
 4. **Q: What are the risks associated with the dividend momentum strategy?**
 A: The dividend momentum strategy carries risks such as high turnover, concentration risk, momentum crashes, dividend cuts, interest rate risk, and tax complexity.
 5. **Q: How can I model scenarios and test the dividend momentum strategy?**
-A: Use the [Dividend Growth Calculator](/calculators/dividend-growth), [DRIP Calculator](/calculators/drip), and [Momentum Factor Screener](/calculators/momentum-factor) to model scenarios and test the dividend momentum strategy.
+A: Use the [Dividend Growth Calculator](/calculators/dividend-growth) and [DRIP Calculator](/calculators/drip) to model scenarios and test the dividend momentum strategy.
 
 ## CONCLUSION
 

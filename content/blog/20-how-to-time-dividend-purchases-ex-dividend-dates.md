@@ -450,6 +450,6 @@ Receive our "Dividend Calendar Template" immediately—track all your ex-dividen
 Use our [DRIP Calculator](/calculators/drip) to model your dividend timing strategy. See how ex-dividend date management optimizes your portfolio's monthly income distribution. Test different stock allocation strategies.
 
 **Related Reading:**
-- [How to Build a Dividend Ladder](/articles/dividend-ladder)
-- [How to Reinvest Dividends for Maximum Growth](/articles/reinvest-dividends)
-- [How to Build a $1,000/Month Dividend Portfolio](/articles/1000-month-portfolio)
+- [How to Build a Dividend Ladder](/blog/21-how-to-build-dividend-ladder)
+- [How to Reinvest Dividends for Maximum Growth](/blog/22-how-to-reinvest-dividends-maximum-growth)
+- [How to Build a $1,000/Month Dividend Portfolio](/blog/16-how-to-build-1000-month-dividend-portfolio)

@@ -262,11 +262,10 @@ $1,000/month: 10-12 years at $2,000/month investment. Depends on contribution ra
 
 ## Internal Resources
 
-- [Dividend Calculator](/calculators/dividend-calculator)
-- [Portfolio Allocation Tool](/calculators/portfolio-allocation)
-- [Passive Income Calculator](/calculators/passive-income)
-- [Dividend Aristocrats List](/resources/dividend-aristocrats)
-- [Tax Planning Guides](/guides/tax-planning)
+- [Dividend Calculator](/calculators/dividend-income)
+- [Retirement Income Calculator](/calculators/retirement-income)
+- [Dividend Aristocrats List](/aristocrats)
+- [Dividend Tax Calculator](/calculators/dividend-tax)
 
 ## Call to Action
 

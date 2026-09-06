@@ -488,6 +488,6 @@ Use our [DRIP Calculator](/calculators/drip) and [Dividend Growth Calculator](/c
 
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model 20-30 year dividend growth scenarios. See how dividend reinvestment and capital appreciation compound into extraordinary outcomes.
 
-**[Sign Up for Dividend Growth Tips](signup-form)**
+**[Sign Up for Dividend Growth Tips](#signup-form)**
 
 Join thousands of long-term investors receiving weekly analysis of dividend growth opportunities, new dividend aristocrat selections, and portfolio optimization for exponential wealth creation.

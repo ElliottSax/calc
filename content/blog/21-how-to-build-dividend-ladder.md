@@ -564,6 +564,6 @@ Receive our "Dividend Ladder Template Spreadsheet" immediately—customize it fo
 Use our [DRIP Calculator](/calculators/drip) to design your specific dividend ladder. Input your capital, target monthly income, and desired rungs. See exactly which stocks to buy and when to buy them.
 
 **Related Reading:**
-- [How to Time Dividend Purchases (Ex-Dividend Dates)](/articles/ex-dividend-dates)
-- [How to Build a $1,000/Month Dividend Portfolio](/articles/1000-month-portfolio)
-- [How to Reinvest Dividends for Maximum Growth](/articles/reinvest-dividends)
+- [How to Time Dividend Purchases (Ex-Dividend Dates)](/blog/20-how-to-time-dividend-purchases-ex-dividend-dates)
+- [How to Build a $1,000/Month Dividend Portfolio](/blog/16-how-to-build-1000-month-dividend-portfolio)
+- [How to Reinvest Dividends for Maximum Growth](/blog/22-how-to-reinvest-dividends-maximum-growth)

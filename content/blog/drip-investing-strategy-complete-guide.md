@@ -587,6 +587,6 @@ The sooner you start, the more time compounding has to work. A 30-year-old start
 
 Use our [DRIP Calculator](/calculators/drip) to model your portfolio growth with reinvestment and the [Compound Interest Calculator](/calculators/compound-interest) to visualize the mathematics.
 
-**[Sign Up for DRIP Investing Insights](signup-form)**
+**[Sign Up for DRIP Investing Insights](#signup-form)**
 
 Receive strategies for maximizing dividend reinvestment, stock recommendations for DRIPs, tax optimization tips, and portfolio updates. Join thousands of investors compounding their way to financial freedom.

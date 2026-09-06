@@ -428,6 +428,6 @@ Receive our "Dividend Safety Scorecard Template" immediately—track all your ho
 Use our [Retirement Income Calculator](/calculators/retirement-income) to stress-test your dividend income. Model dividend cuts and see portfolio impact. Understand which stocks pose safety risks to your retirement income.
 
 **Related Reading:**
-- [How to Calculate Dividend Yield Correctly](/articles/dividend-yield-calculation)
-- [How to Read Dividend Payout Ratios](/articles/payout-ratio)
-- [How to Screen for Quality Dividend Stocks](/articles/dividend-screener)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [How to Read Dividend Payout Ratios](/blog/34-read-and-understand-payout-ratios)
+- [How to Screen for Quality Dividend Stocks](/blog/24-how-to-screen-quality-dividend-stocks)

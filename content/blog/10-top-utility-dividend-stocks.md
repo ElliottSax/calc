@@ -448,6 +448,6 @@ Use our [DRIP Calculator](/calculators/drip) to model how utility dividend reinv
 
 Use our [DRIP Calculator](/calculators/drip) to model utility dividend growth over your specific timeline. See how essential services provide reliable wealth accumulation for decades.
 
-**[Sign Up for Utility Dividend Updates](signup-form)**
+**[Sign Up for Utility Dividend Updates](#signup-form)**
 
 Get weekly analysis of utility rate decisions, renewable energy trends, and portfolio optimization for utility dividend investors. Learn how energy transition creates dividend growth opportunities.

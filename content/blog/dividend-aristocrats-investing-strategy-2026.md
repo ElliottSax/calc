@@ -463,8 +463,8 @@ Start building your Aristocrats portfolio today. The companies that have raised 
 
 **Ready to build your Dividend Aristocrats portfolio?**
 
-Use our [Dividend Aristocrats Screener](/calculators/aristocrats-screener) to compare all current members and our [Portfolio Builder](/calculators/portfolio-builder) to design your optimal allocation.
+Use our [Dividend Aristocrats Screener](/aristocrats) to compare all current members and plan your optimal allocation.
 
-**[Sign Up for Dividend Aristocrats Updates](signup-form)**
+**[Sign Up for Dividend Aristocrats Updates](#signup-form)**
 
 Receive alerts when Aristocrats are added or removed, quarterly earnings analysis, and valuation opportunities. Join elite dividend investors building generational wealth.

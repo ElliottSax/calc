@@ -610,6 +610,6 @@ Receive our "DRIP Spreadsheet Template" immediately—track all reinvested divid
 Use our [DRIP Calculator](/calculators/drip) to see exactly how dividend reinvestment transforms your wealth over time. Model your specific investment amount, timeline, and yield expectations. See the difference DRIP makes in your financial future.
 
 **Related Reading:**
-- [How to Build a $1,000/Month Dividend Portfolio](/articles/1000-month-portfolio)
-- [How to Calculate Dividend Yield Correctly](/articles/dividend-yield-calculation)
-- [How to Build a Dividend Ladder](/articles/dividend-ladder)
+- [How to Build a $1,000/Month Dividend Portfolio](/blog/16-how-to-build-1000-month-dividend-portfolio)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [How to Build a Dividend Ladder](/blog/21-how-to-build-dividend-ladder)

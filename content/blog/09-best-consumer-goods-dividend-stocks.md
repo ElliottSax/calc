@@ -83,10 +83,10 @@ Blend both - ETFs for diversification, individual stocks for customization.
 
 ## Related Calculators
 
-- [Dividend Income Calculator](/calculators/dividend-calculator)
+- [Dividend Income Calculator](/calculators/dividend-income)
 - [Dividend Growth Projector](/calculators/dividend-growth)
-- [Dividend Safety Analyzer](/calculators/dividend-safety)
-- [Portfolio Income Generator](/calculators/portfolio-income)
+- [Dividend Safety Analyzer](/calculators/payout-ratio)
+- [Retirement Income Calculator](/calculators/retirement-income)
 
 ## Conclusion
 

@@ -21,7 +21,7 @@ card: '''"summary_large_image"'''
 
 ## Quick Answer
 
-**Tech sector dividend leaders** offers investors diverse opportunities for dividend income in 2026. The top picks balance current yield (0.8% to 3.1%), dividend growth (+10.2% to +3.2% annually), and financial stability. Use our [Dividend Calculator](/calculators/dividend) to model your income potential across different investment amounts.
+**Tech sector dividend leaders** offers investors diverse opportunities for dividend income in 2026. The top picks balance current yield (0.8% to 3.1%), dividend growth (+10.2% to +3.2% annually), and financial stability. Use our [Dividend Calculator](/calculators/dividend-income) to model your income potential across different investment amounts.
 
 ## Introduction
 
@@ -60,7 +60,7 @@ Conversely, lower-yielding dividend growers (1-3%) offer:
 - Lower volatility
 - Better long-term total returns
 
-Your optimal allocation depends on age, risk tolerance, and income needs. Use our [Portfolio Allocation Calculator](/calculators/asset-allocation) to determine your ideal mix.
+Your optimal allocation depends on age, risk tolerance, and income needs. Use our Portfolio Allocation Calculator to determine your ideal mix.
 
 ## Top 5 Dividend Stocks Comparison
 
@@ -158,7 +158,7 @@ Historical analysis reveals consistent dividend increases averaging +13.1% annua
 
 Current valuation metrics suggest reasonable pricing relative to dividend growth prospects. The stock trades at a dividend yield premium to both historical averages and sector peers, potentially indicating market inefficiency.
 
-Use our [Stock Valuation Calculator](/calculators/stock-valuation) to assess TXN's intrinsic value based on dividend discount models.
+Use our Stock Valuation Calculator to assess TXN's intrinsic value based on dividend discount models.
 
 ### 5. Cisco Systems (CSCO)
 
@@ -202,7 +202,7 @@ Construct a balanced dividend portfolio using the following allocation guideline
 - 30% Moderate-yield dividend growers
 - 50% Low-yield dividend aristocrats
 
-Calculate your personalized allocation using our [Portfolio Allocation Calculator](/calculators/asset-allocation).
+Calculate your personalized allocation using our Portfolio Allocation Calculator.
 
 ### Diversification Across Sectors
 
@@ -366,13 +366,13 @@ Calculate crossover points using our [Dividend Growth Calculator](/calculators/d
 
 Maximize your dividend investing success with our free calculator tools:
 
-- **[Dividend Calculator](/calculators/dividend)** - Calculate annual income from dividend stocks
+- **[Dividend Calculator](/calculators/dividend-income)** - Calculate annual income from dividend stocks
 - **[Dividend Yield Calculator](/calculators/dividend-yield)** - Determine dividend yield percentages
 - **[Dividend Growth Calculator](/calculators/dividend-growth)** - Model dividend growth scenarios
 - **[DRIP Calculator](/calculators/drip)** - Analyze dividend reinvestment plans
-- **[Portfolio Allocation Calculator](/calculators/asset-allocation)** - Optimize portfolio mix
-- **[Stock Valuation Calculator](/calculators/stock-valuation)** - Assess intrinsic value
-- **[Tax Impact Calculator](/calculators/tax-impact)** - Estimate after-tax returns
+- **Portfolio Allocation Calculator** - Optimize portfolio mix
+- Stock Valuation methods - Assess intrinsic value
+- **[Tax Impact Calculator](/calculators/dividend-tax)** - Estimate after-tax returns
 
 ## Broker Comparison for Dividend Investors
 
@@ -407,7 +407,7 @@ Tech sector dividend leaders provides diverse opportunities for income-focused i
 4. **Optimize tax efficiency** through strategic account placement
 5. **Reinvest dividends** during accumulation phase for maximum compounding
 
-Start building your dividend portfolio today by selecting 3-5 stocks from our top picks, then systematically add positions over time. Use our [Dividend Calculator](/calculators/dividend) to model your income potential and track progress toward financial goals.
+Start building your dividend portfolio today by selecting 3-5 stocks from our top picks, then systematically add positions over time. Use our [Dividend Calculator](/calculators/dividend-income) to model your income potential and track progress toward financial goals.
 
 Ready to begin? [Compare top brokers](#broker-comparison) and open your commission-free dividend investing account today.
 

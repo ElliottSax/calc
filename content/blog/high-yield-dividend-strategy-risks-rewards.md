@@ -344,7 +344,7 @@ Using screeners (Finviz, Seeking Alpha, Dividend.com):
 | May | - | $500 | - | $500 |
 | Jun | - | - | $500 | $500 |
 
-**Build using the [Dividend Ladder Calculator](/calculators/dividend-ladder).**
+**Build using our [Dividend Ladder guide](/blog/21-how-to-build-dividend-ladder).**
 
 ### Strategy 3: Covered Calls on High-Yield Holdings
 
@@ -471,8 +471,8 @@ The income you build through high-yield investing can fund your lifestyle, accel
 
 **Ready to build your high-income portfolio?**
 
-Use our [High Yield Dividend Calculator](/calculators/high-yield) to model income scenarios and the [Dividend Safety Analyzer](/calculators/dividend-safety) to evaluate sustainability.
+Use our [Yield on Cost Calculator](/calculators/yield-on-cost) to model income scenarios and the [Dividend Safety Analyzer](/calculators/payout-ratio) to evaluate sustainability.
 
-**[Sign Up for High-Yield Investment Alerts](signup-form)**
+**[Sign Up for High-Yield Investment Alerts](#signup-form)**
 
 Receive weekly alerts on high-yield opportunities, dividend sustainability analysis, and risk management strategies. Join income-focused investors earning 7-10% safely.

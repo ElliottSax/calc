@@ -616,6 +616,6 @@ Receive our "Dividend Tracking Spreadsheet" immediately—fully customized, plug
 Use our [Retirement Income Calculator](/calculators/retirement-income) to track progress toward your dividend income goals. Monitor how close you are to your target monthly income. Adjust strategy based on real data.
 
 **Related Reading:**
-- [How to Calculate Dividend Yield Correctly](/articles/dividend-yield-calculation)
-- [How to Build a $1,000/Month Dividend Portfolio](/articles/1000-month-portfolio)
-- [How to Reinvest Dividends for Maximum Growth](/articles/reinvest-dividends)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [How to Build a $1,000/Month Dividend Portfolio](/blog/16-how-to-build-1000-month-dividend-portfolio)
+- [How to Reinvest Dividends for Maximum Growth](/blog/22-how-to-reinvest-dividends-maximum-growth)

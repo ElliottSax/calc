@@ -440,6 +440,6 @@ The most transformative aspect of REIT investing isn't today's 3-6% yield—it's
 
 Use our [DRIP Calculator](/calculators/drip) to model REITs specific to your situation. See how dividend reinvestment transforms rental properties into wealth generators.
 
-**[Sign Up for Weekly REIT Analysis](signup-form)**
+**[Sign Up for Weekly REIT Analysis](#signup-form)**
 
 Get curated REIT updates, property market insights, and portfolio optimization strategies delivered weekly. Learn which property types offer the best opportunities in 2026.

@@ -548,13 +548,10 @@ Download our free **Dividend Safety Analysis Template**:
 - Portfolio-wide dashboard
 - Quarterly tracking features
 
-Available at: [dividendcalculator.com/templates](/templates)
-
 **Our Calculators:**
 
-- **[Dividend Safety Analyzer](/calculators/dividend-safety)** - Input ticker, get instant safety score
+- **[Dividend Safety Analyzer](/calculators/payout-ratio)** - Input ticker, get instant safety score
 - **[Payout Ratio Calculator](/calculators/payout-ratio)** - Calculate and compare ratios
-- **[Free Cash Flow Calculator](/calculators/free-cash-flow)** - Analyze FCF coverage
 
 ## Frequently Asked Questions
 
@@ -594,7 +591,7 @@ Remember: a high yield means nothing if the dividend gets cut. Always prioritize
 - [Retirement Income Calculator](/calculators/retirement-income)
 
 **Related Articles:**
-- [How to Build a Dividend Portfolio from Scratch](/articles/25-how-to-build-dividend-portfolio-from-scratch)
-- [How to Read and Understand Payout Ratios](/articles/34-how-to-read-understand-payout-ratios)
-- [How to Identify Dividend Traps Before You Invest](/articles/36-how-to-identify-dividend-traps)
-- [Best Dividend Stocks for Beginners](/articles/05-best-dividend-stocks-for-beginners)
+- [How to Build a Dividend Portfolio from Scratch](/blog/25-build-a-dividend-portfolio-from-scratch)
+- [How to Read and Understand Payout Ratios](/blog/34-read-and-understand-payout-ratios)
+- [How to Identify Dividend Traps Before You Invest](/blog/36-identify-dividend-traps-before-you-invest)
+- [Best Dividend Stocks for Beginners](/blog/best-dividend-stocks-for-beginners)

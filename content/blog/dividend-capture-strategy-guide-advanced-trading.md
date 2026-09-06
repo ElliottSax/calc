@@ -94,7 +94,6 @@ To model dividend capture strategy scenarios, use online calculators such as:
 
 - [Dividend Growth Calculator](/calculators/dividend-growth)
 - [DRIP Calculator](/calculators/drip)
-- [Dividend Capture Calculator](/calculators/dividend-capture)
 
 Example inputs:
 

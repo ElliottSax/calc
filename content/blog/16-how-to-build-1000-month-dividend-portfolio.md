@@ -110,7 +110,7 @@ With $100,000+ accumulated, focus on optimization:
 
 **Ladder Your Dividend Dates**
 
-Structure purchases so dividends arrive throughout the month, creating consistent income flow. Our guide "[How to Build a Dividend Ladder](/articles/dividend-ladder)" provides detailed methodology.
+Structure purchases so dividends arrive throughout the month, creating consistent income flow. Our guide "[How to Build a Dividend Ladder](/blog/21-how-to-build-dividend-ladder)" provides detailed methodology.
 
 **Rebalance Annually**
 
@@ -241,7 +241,7 @@ February/May/August/November: Procter & Gamble
 March/June/September/December: Coca-Cola + Chevron
 ```
 
-By strategically timing purchases, you create a predictable monthly income stream. Our article "[How to Build a Dividend Ladder](/articles/dividend-ladder)" provides the complete methodology.
+By strategically timing purchases, you create a predictable monthly income stream. Our article "[How to Build a Dividend Ladder](/blog/21-how-to-build-dividend-ladder)" provides the complete methodology.
 
 ## Frequently Asked Questions
 
@@ -282,6 +282,6 @@ We'll send you our "Dividend Portfolio Checklist" (free PDF) when you sign up—
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model your specific situation. Input your current portfolio, monthly contributions, and target yield to see exactly when you'll reach your income goals.
 
 **Related Reading:**
-- [How to Calculate Dividend Yield Correctly](/articles/dividend-yield-calculation)
-- [How to Analyze Dividend Safety](/articles/dividend-safety)
-- [How to Screen for Quality Dividend Stocks](/articles/dividend-screener)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [How to Analyze Dividend Safety](/blog/19-how-to-analyze-dividend-safety)
+- [How to Screen for Quality Dividend Stocks](/blog/24-how-to-screen-quality-dividend-stocks)

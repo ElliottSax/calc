@@ -609,7 +609,6 @@ Ignore ex-dividend dates for long-term investing. Buy based on fundamental value
 - **[Dividend Growth Calculator](/calculators/dividend-growth)** - Project future income
 - **[Dividend Yield Calculator](/calculators/dividend-yield)** - Calculate yields accurately
 - **[Retirement Income Calculator](/calculators/retirement-income)** - Plan retirement needs
-- **[Portfolio Rebalancing Tool](/calculators/rebalancing)** - Optimize allocations
 
 ## Frequently Asked Questions
 
@@ -649,7 +648,7 @@ Take action today: open a brokerage account, start with 5-10 Dividend Aristocrat
 - [Retirement Income Calculator](/calculators/retirement-income)
 
 **Related Articles:**
-- [How to Analyze Dividend Safety Before Investing](/articles/19-how-to-analyze-dividend-safety)
-- [How to Calculate Dividend Yield Correctly](/articles/17-how-to-calculate-dividend-yield-correctly)
-- [Best Dividend Stocks for Beginners](/articles/05-best-dividend-stocks-for-beginners)
-- [How to Screen for Quality Dividend Stocks](/articles/24-how-to-screen-quality-dividend-stocks)
+- [How to Analyze Dividend Safety Before Investing](/blog/19-how-to-analyze-dividend-safety)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [Best Dividend Stocks for Beginners](/blog/best-dividend-stocks-for-beginners)
+- [How to Screen for Quality Dividend Stocks](/blog/24-how-to-screen-quality-dividend-stocks)

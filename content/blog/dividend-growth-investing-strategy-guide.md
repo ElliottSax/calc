@@ -378,6 +378,6 @@ Start small, stay consistent, and let the power of compounding dividend growth w
 
 Use our [Dividend Growth Calculator](/calculators/dividend-growth) to project your income trajectory and [DRIP Calculator](/calculators/drip) to optimize reinvestment strategies.
 
-**[Sign Up for Weekly Dividend Growth Insights](signup-form)**
+**[Sign Up for Weekly Dividend Growth Insights](#signup-form)**
 
 Receive expert analysis on dividend growth stocks, portfolio strategies, and market opportunities delivered to your inbox weekly. Join thousands of dividend growth investors building financial independence.

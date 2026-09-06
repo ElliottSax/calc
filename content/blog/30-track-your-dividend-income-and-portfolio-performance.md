@@ -358,7 +358,6 @@ Dividend reinvestment and dividend growth increased annual income by 69% while p
 - [Dividend Growth Calculator](/calculators/dividend-growth)
 - [Dividend Yield Calculator](/calculators/dividend-yield)
 - [Retirement Income Calculator](/calculators/retirement-income)
-- [Portfolio Rebalancing Tool](/calculators/rebalancing)
 
 ## Frequently Asked Questions
 
@@ -398,7 +397,7 @@ The best time to start building dividend income was 20 years ago. The second-bes
 - [Retirement Income Calculator](/calculators/retirement-income)
 
 **Related Articles:**
-- [How to Build a Dividend Portfolio from Scratch](/articles/25-how-to-build-dividend-portfolio-from-scratch)
-- [How to Analyze Dividend Safety Before Investing](/articles/26-how-to-analyze-dividend-safety-before-investing)
-- [How to Calculate Dividend Yield Correctly](/articles/17-how-to-calculate-dividend-yield-correctly)
-- [Best Dividend Stocks for Beginners](/articles/05-best-dividend-stocks-for-beginners)
+- [How to Build a Dividend Portfolio from Scratch](/blog/25-build-a-dividend-portfolio-from-scratch)
+- [How to Analyze Dividend Safety Before Investing](/blog/26-analyze-dividend-safety-before-investing)
+- [How to Calculate Dividend Yield Correctly](/blog/17-how-to-calculate-dividend-yield-correctly)
+- [Best Dividend Stocks for Beginners](/blog/best-dividend-stocks-for-beginners)

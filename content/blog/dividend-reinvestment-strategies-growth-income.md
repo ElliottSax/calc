@@ -131,4 +131,4 @@ A: Focusing too much on dividend income may lead to an over-reliance on a specif
 
 Dividend reinvestment is a powerful strategy for building wealth over time. By understanding the core principles, implementing a strategic approach, and utilizing advanced techniques, you can optimize your dividend reinvestment strategy for sustainable dividend income. Remember to regularly review and adjust your strategy to maintain your target asset allocation and achieve your financial objectives.
 
-To get started with dividend reinvestment, visit our [Dividend Calculator](/calculators/dividend-calculator) and explore our range of investment tools and resources. By mastering dividend reinvestment, you'll be well on your way to achieving long-term financial success.
+To get started with dividend reinvestment, visit our [Dividend Calculator](/calculators/dividend-income) and explore our range of investment tools and resources. By mastering dividend reinvestment, you'll be well on your way to achieving long-term financial success.

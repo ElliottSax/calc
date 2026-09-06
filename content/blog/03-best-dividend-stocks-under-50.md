@@ -437,6 +437,6 @@ Start small, think long-term, and let compound returns work their magic.
 
 Use our [DRIP Calculator](/calculators/drip) to model specific positions and see how monthly dividend reinvestment transforms cheap dividend stocks into wealth generators over 20+ years.
 
-**[Sign Up for Weekly Sub-$50 Stock Alerts](signup-form)**
+**[Sign Up for Weekly Sub-$50 Stock Alerts](#signup-form)**
 
 Get weekly updates on emerging opportunities in sub-$50 dividend stocks, dividend increase announcements, and portfolio optimization strategies for income investors.

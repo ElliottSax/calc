@@ -109,7 +109,7 @@ To model scenarios and optimize your portfolio, use the following dividend calcu
 
 * [Dividend Growth Calculator](/calculators/dividend-growth)
 * [DRIP Calculator](/calculators/drip)
-* [Dividend Ladder Calculator](/calculators/dividend-ladder)
+* [Dividend Ladder guide](/blog/21-how-to-build-dividend-ladder)
 
 Example inputs and outputs:
 
@@ -137,4 +137,4 @@ A: Regularly review and adjust the portfolio every 6-12 months to maintain the d
 
 The dividend ladder strategy offers a powerful way to create a consistent, monthly income stream from quarterly payers. By following the implementation steps, using advanced techniques, and leveraging dividend calculators, you can optimize your portfolio and achieve your income goals. Remember to regularly review and adjust your portfolio to maintain the desired dividend income and asset allocation.
 
-To get started, use our [Dividend Ladder Calculator](/calculators/dividend-ladder) to model scenarios and optimize your portfolio.
+To get started, use our [Dividend Ladder guide](/blog/21-how-to-build-dividend-ladder) to model scenarios and optimize your portfolio.
