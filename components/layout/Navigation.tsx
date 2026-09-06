@@ -33,17 +33,25 @@ type NavSection = {
   items?: NavItem[]
 }
 
+// Every "Calculators" item used to point at the same '/#calculator' homepage
+// anchor regardless of label -- the same wasted-internal-linking bug already
+// fixed in Footer.tsx (see its FOOTER_LINKS comment). Dedicated routes exist
+// for all of these now; point each label at its real page. "Compare" kept
+// only "Brokers" (a real homepage anchor) and dropped "Robo-Advisors" /
+// "Dividend ETFs", which had no page of their own beyond that same anchor.
+// "Community" is dropped entirely: Achievements/Leaderboard/Forum/Success
+// Stories all linked to a bare "#" -- no such pages exist on this site.
 const NAVIGATION: NavSection[] = [
   {
     label: 'Calculators',
     icon: Calculator,
-    href: '/#calculator',
+    href: '/calculators',
     items: [
-      { label: 'DRIP Calculator', href: '/#calculator', badge: 'Popular' },
-      { label: 'Yield Calculator', href: '/#calculator' },
-      { label: 'Growth Calculator', href: '/#calculator' },
-      { label: 'Comparison Tool', href: '/#calculator' },
-      { label: 'Retirement Planner', href: '/#calculator', badge: 'New' },
+      { label: 'DRIP Calculator', href: '/calculators/drip', badge: 'Popular' },
+      { label: 'Yield Calculator', href: '/calculators/dividend-yield' },
+      { label: 'Growth Calculator', href: '/calculators/dividend-growth' },
+      { label: 'Comparison Tool', href: '/tools/compare' },
+      { label: 'Retirement Planner', href: '/calculators/retirement-income', badge: 'New' },
     ]
   },
   {
@@ -68,22 +76,6 @@ const NAVIGATION: NavSection[] = [
     label: 'Compare',
     icon: BarChart3,
     href: '/#brokers',
-    items: [
-      { label: 'Brokers', href: '/#brokers' },
-      { label: 'Robo-Advisors', href: '/#brokers' },
-      { label: 'Dividend ETFs', href: '/#brokers' },
-    ]
-  },
-  {
-    label: 'Community',
-    icon: Users,
-    href: '#',
-    items: [
-      { label: 'Achievements', href: '#', badge: 'Beta' },
-      { label: 'Leaderboard', href: '#' },
-      { label: 'Forum', href: '#' },
-      { label: 'Success Stories', href: '#' },
-    ]
   },
 ]
 
@@ -142,9 +134,13 @@ export function Navigation() {
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse" />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-xl font-bold text-slate-900 dark:text-white">
+                {/* Not an h1: this renders on every page that uses this nav
+                    (including the DRIP calculator, which has its own "DRIP
+                    Calculator" h1), so a brand h1 here duplicated the page's
+                    real heading -- a WCAG 1.3.1 heading-hierarchy violation. */}
+                <p className="text-xl font-bold text-slate-900 dark:text-white">
                   Dividend<span className="text-blue-600">Pro</span>
-                </h1>
+                </p>
                 <span className="text-xs text-slate-600 dark:text-slate-400">
                   Build Wealth Daily
                 </span>
@@ -207,13 +203,19 @@ export function Navigation() {
             {/* Right Side Actions */}
             <div className="flex items-center gap-2">
               {/* Search Button */}
-              <Button variant="ghost" size="icon" className="hidden sm:flex">
-                <Search className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hidden sm:flex" aria-label="Search">
+                <Search className="w-5 h-5" aria-hidden="true" />
               </Button>
 
               {/* Dark Mode Toggle */}
-              <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
-                {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleDarkMode}
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                aria-pressed={isDark}
+              >
+                {isDark ? <Sun className="w-5 h-5" aria-hidden="true" /> : <Moon className="w-5 h-5" aria-hidden="true" />}
               </Button>
 
               {/* CTA Button */}
@@ -229,8 +231,11 @@ export function Navigation() {
                 size="icon"
                 className="lg:hidden"
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? 'Close menu' : 'Open menu'}
+                aria-expanded={isOpen}
+                aria-controls="mobile-nav-menu"
               >
-                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
               </Button>
             </div>
           </div>
@@ -238,7 +243,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t bg-white dark:bg-slate-900">
+          <div id="mobile-nav-menu" className="lg:hidden border-t bg-white dark:bg-slate-900">
             <div className="container mx-auto px-4 py-4 space-y-2">
               {NAVIGATION.map((item) => (
                 <div key={item.label}>
