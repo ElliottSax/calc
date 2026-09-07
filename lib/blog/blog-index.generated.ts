@@ -14,12 +14,6 @@ export interface BlogIndexEntry {
 
 export const BLOG_INDEX: BlogIndexEntry[] = [
   {
-    "slug": "01_best_pharmaceutical_dividend_stocks_2026",
-    "title": "Best pharmaceutical dividend stocks 2026",
-    "category": "",
-    "tags": []
-  },
-  {
     "slug": "01-best-healthcare-reits-medical-properties-2026",
     "title": "Best Healthcare REITs Medical Properties 2026",
     "category": "",
@@ -29,17 +23,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "slug": "01-best-monthly-dividend-stocks-2026",
     "title": "Best Monthly Dividend Stocks 2026: Top Picks for Consistent Income",
     "category": "Dividend Investing",
-    "tags": [
-      "monthly dividends",
-      "dividend stocks",
-      "passive income",
-      "2026"
-    ]
-  },
-  {
-    "slug": "01-best-pharmaceutical-dividend-stocks-2026",
-    "title": "Best pharmaceutical dividend stocks 2026",
-    "category": "Calc",
     "tags": []
   },
   {
@@ -55,28 +38,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "01-how-to-retire-early-with-dividend-income-complete-guide",
-    "title": "How to Retire Early With Dividend Income in 2026: Complete Guide",
-    "category": "Articles",
-    "tags": [
-      "retire early with dividend income"
-    ]
-  },
-  {
-    "slug": "02_top_biotech_dividend_stocks_high_yield",
-    "title": "Top biotech dividend stocks high yield",
-    "category": "",
-    "tags": []
-  },
-  {
-    "slug": "02-best-dividend-portfolio-for-age-50-retirees-complete-allocation",
-    "title": "Best Dividend Portfolio for Age 50 Retirees: Complete Allocation Strategy",
-    "category": "Articles",
-    "tags": [
-      "dividend portfolio age 50"
-    ]
-  },
-  {
     "slug": "02-top-10-dividend-aristocrats-analysis",
     "title": "Top 10 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks",
     "category": "",
@@ -86,13 +47,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "slug": "02-top-10-dividend-etfs-for-passive-income",
     "title": "Top 10 Dividend ETFs for Passive Income: 2026 Investment Guide",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "ETFs"
-    ]
+    "tags": []
   },
   {
     "slug": "02-top-biotech-dividend-stocks-high-yield",
@@ -101,35 +56,10 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "03_best_medical_device_dividend_stocks",
-    "title": "Best medical device dividend stocks",
-    "category": "",
-    "tags": []
-  },
-  {
     "slug": "03-best-dividend-stocks-under-50",
     "title": "Best Dividend Stocks Under $50: Affordable Income Investing in 2026",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
-  },
-  {
-    "slug": "03-best-medical-device-dividend-stocks",
-    "title": "Best medical device dividend stocks",
-    "category": "Calc",
     "tags": []
-  },
-  {
-    "slug": "03-dividend-investing-strategy-for-age-60-retireesincome-and-st",
-    "title": "Dividend Investing Strategy for Age 60 Retirees: Income & Stability Focus",
-    "category": "Articles",
-    "tags": [
-      "dividend investing age 60 retirees"
-    ]
   },
   {
     "slug": "03-monthly-dividend-stocks-guide",
@@ -138,36 +68,10 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "04_best_reit_dividend_stocks_by_property_type",
-    "title": "Best REIT dividend stocks by property type",
-    "category": "",
-    "tags": []
-  },
-  {
-    "slug": "04-best-reit-dividend-stocks-by-property-type",
-    "title": "Best REIT dividend stocks by property type",
-    "category": "Calc",
-    "tags": []
-  },
-  {
     "slug": "04-high-yield-reits-worth-buying",
     "title": "High-Yield REITs Worth Buying in 2026: Best Real Estate Dividends",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "REITs"
-    ]
-  },
-  {
-    "slug": "04-how-to-generate-5000-monthly-dividend-incomestepbystep-guide",
-    "title": "How to Generate $5,000 Monthly Dividend Income: Step-by-Step Guide",
-    "category": "Articles",
-    "tags": [
-      "5000 monthly dividend income"
-    ]
+    "tags": []
   },
   {
     "slug": "04-reits-vs-dividend-stocks",
@@ -176,46 +80,9 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "05_top_retail_reit_dividend_stocks_2026",
-    "title": "Top retail REIT dividend stocks 2026",
-    "category": "",
-    "tags": []
-  },
-  {
-    "slug": "05-best-dividend-stocks-for-401k-retirement-accounts",
-    "title": "Best Dividend Stocks for 401(k) Retirement Accounts in 2026",
-    "category": "Articles",
-    "tags": [
-      "dividend stocks 401k"
-    ]
-  },
-  {
-    "slug": "05-best-dividend-stocks-for-beginners",
-    "title": "Best Dividend Stocks for Beginners: Start Your Passive Income Journey",
-    "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
-  },
-  {
     "slug": "05-tax-efficient-dividend-investing",
     "title": "Tax-Efficient Dividend Investing 2026: Maximize Your After-Tax Returns",
     "category": "",
-    "tags": []
-  },
-  {
-    "slug": "05-top-retail-reit-dividend-stocks-2026",
-    "title": "Top retail REIT dividend stocks 2026",
-    "category": "Calc",
-    "tags": []
-  },
-  {
-    "slug": "06-best-industrial-reit-dividend-stocks",
-    "title": "Best industrial REIT dividend stocks",
-    "category": "Calc",
     "tags": []
   },
   {
@@ -225,39 +92,15 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "06-dividend-portfolio-allocation-by-age-guide-2026asset-mix-str",
-    "title": "Dividend Portfolio Allocation by Age Guide 2026: Asset Mix Strategy",
-    "category": "Articles",
-    "tags": [
-      "dividend portfolio allocation by age"
-    ]
-  },
-  {
     "slug": "06-top-canadian-dividend-stocks",
     "title": "Top Canadian Dividend Stocks: 2026 Guide to North American Income",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
+    "tags": []
   },
   {
     "slug": "07-best-dividend-growth-stocks-2026",
     "title": "Best Dividend Growth Stocks 2026: Build Wealth Through Dividend Increases",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
-  },
-  {
-    "slug": "07-best-office-reit-dividend-stocks-recovery",
-    "title": "Best office REIT dividend stocks recovery",
-    "category": "Calc",
     "tags": []
   },
   {
@@ -267,39 +110,22 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "07-how-to-live-off-dividends-at-age-40financial-independence-bl",
-    "title": "How to Live Off Dividends at Age 40: Financial Independence Blueprint",
-    "category": "Articles",
-    "tags": []
-  },
-  {
-    "slug": "08-best-dividend-reinvestment-strategy-for-retirement",
-    "title": "Best Dividend Reinvestment Strategy for Retirement in 2026",
-    "category": "Articles",
-    "tags": []
-  },
-  {
     "slug": "08-building-1k-monthly-dividend-income",
     "title": "Building $1K Monthly Dividend Income: The Complete Roadmap 2026",
     "category": "",
     "tags": []
   },
   {
-    "slug": "08-top-data-center-reit-dividend-stocks",
-    "title": "Top data center REIT dividend stocks",
-    "category": "Calc",
+    "slug": "08-drip-calculator-annual-vs-monthly-reinvestment-timing",
+    "title": "What DRIP Timing Actually Costs You: Annual vs. Monthly Reinvestment",
+    "category": "dividend-strategies",
     "tags": []
   },
   {
     "slug": "08-top-technology-dividend-stocks",
     "title": "Top Technology Dividend Stocks 2026: High Growth Meets Income",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
+    "tags": []
   },
   {
     "slug": "09-best-consumer-goods-dividend-stocks",
@@ -311,17 +137,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "slug": "09-best-healthcare-dividend-stocks",
     "title": "Best Healthcare Dividend Stocks 2026: Aging Population Wealth",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
-  },
-  {
-    "slug": "09-best-telecom-dividend-stocks-5g-growth",
-    "title": "Best telecom dividend stocks 5G growth",
-    "category": "Calc",
     "tags": []
   },
   {
@@ -331,50 +146,15 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "tags": []
   },
   {
-    "slug": "09-taxefficient-dividend-withdrawal-strategiesmaximize-aftertax",
-    "title": "Tax-Efficient Dividend Withdrawal Strategies: Maximize After-Tax Returns",
-    "category": "Articles",
-    "tags": []
-  },
-  {
     "slug": "10-dividend-reinvestment-calculator-guide",
     "title": "Complete Guide to Using the Dividend Reinvestment Calculator 2026",
     "category": "",
     "tags": []
   },
   {
-    "slug": "10-how-to-build-a-2-million-dividend-portfoliocomplete-roadmap",
-    "title": "How to Build a $2 Million Dividend Portfolio: Complete Roadmap",
-    "category": "Articles",
-    "tags": []
-  },
-  {
-    "slug": "10-top-cable-provider-dividend-stocks-2026",
-    "title": "Top cable provider dividend stocks 2026",
-    "category": "Calc",
-    "tags": []
-  },
-  {
     "slug": "10-top-utility-dividend-stocks",
     "title": "Top Utility Dividend Stocks 2026: Reliable Income and Growth",
     "category": "Dividend Investing",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026"
-    ]
-  },
-  {
-    "slug": "11-best-dividend-stocks-for-traditional-irataxdeferred-growth",
-    "title": "Best Dividend Stocks for Traditional IRA in 2026: Tax-Deferred Growth",
-    "category": "Articles",
-    "tags": []
-  },
-  {
-    "slug": "11-best-oil-dividend-stocks-high-yield",
-    "title": "Best oil dividend stocks high yield",
-    "category": "Calc",
     "tags": []
   },
   {
@@ -387,122 +167,61 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "slug": "16-how-to-build-1000-month-dividend-portfolio",
     "title": "How to Build a $1,000/Month Dividend Portfolio",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "17-how-to-calculate-dividend-yield-correctly",
     "title": "How to Calculate Dividend Yield Correctly",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "18-how-to-find-dividend-stocks-before-popular",
     "title": "How to Find Dividend Stocks Before They're Popular",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "19-how-to-analyze-dividend-safety",
     "title": "How to Analyze Dividend Safety",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "20-how-to-time-dividend-purchases-ex-dividend-dates",
     "title": "How to Time Dividend Purchases (Ex-Dividend Dates)",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "21-how-to-build-dividend-ladder",
     "title": "How to Build a Dividend Ladder",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "22-how-to-reinvest-dividends-maximum-growth",
     "title": "How to Reinvest Dividends for Maximum Growth",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "23-how-to-track-dividend-portfolio",
     "title": "How to Track Your Dividend Portfolio",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "24-how-to-screen-quality-dividend-stocks",
     "title": "How to Screen for Quality Dividend Stocks",
     "category": "Investment Guides",
-    "tags": [
-      "dividend stocks",
-      "passive income",
-      "investing",
-      "2026",
-      "how-to"
-    ]
+    "tags": []
   },
   {
     "slug": "25-build-a-dividend-portfolio-from-scratch",
     "title": "How to Build a Dividend Portfolio from Scratch",
     "category": "Investment Guides",
-    "tags": [
-      "dividend investing",
-      "passive income",
-      "dividends",
-      "2026",
-      "how-to",
-      "build dividend portfolio"
-    ]
+    "tags": []
   },
   {
     "slug": "26-analyze-dividend-safety-before-investing",
@@ -722,306 +441,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
       "passive income",
       "investing"
     ]
-  },
-  {
-    "slug": "cerebras-calculating-401k-growth-for-retirement",
-    "title": "Calculating 401k Growth for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-capital-gains-for-long-term-growth",
-    "title": "Calculating Capital Gains for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-capital-gains-in-2026",
-    "title": "Calculating Capital Gains in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-capital-gains-safely",
-    "title": "Calculating Capital Gains Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-capital-gains-using-tools",
-    "title": "Calculating Capital Gains using Tools",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-dividend-growth-for-long-term-growth",
-    "title": "Calculating Dividend Growth for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-dividend-growth-for-retirement",
-    "title": "Calculating Dividend Growth for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-drip-returns-fast",
-    "title": "Calculating DRIP Returns Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-drip-returns-for-long-term-growth",
-    "title": "Calculating DRIP Returns for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-drip-returns-using-tools",
-    "title": "Calculating DRIP Returns using Tools",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-passive-income-fast",
-    "title": "Calculating Passive Income Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-passive-income-for-retirement",
-    "title": "Calculating Passive Income for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-passive-income-in-2026",
-    "title": "Calculating Passive Income in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-passive-income-with-reinvestment",
-    "title": "Calculating Passive Income with Reinvestment",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-portfolio-yield-for-beginners",
-    "title": "Calculating Portfolio Yield for Beginners",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-portfolio-yield-with-reinvestment",
-    "title": "Calculating Portfolio Yield with Reinvestment",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-stock-valuation-in-2026",
-    "title": "Calculating Stock Valuation in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-stock-valuation-with-reinvestment",
-    "title": "Calculating Stock Valuation with Reinvestment",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-wealth-building-fast",
-    "title": "Calculating Wealth Building Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-wealth-building-for-long-term-growth",
-    "title": "Calculating Wealth Building for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-wealth-building-for-retirement",
-    "title": "Calculating Wealth Building for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-wealth-building-safely",
-    "title": "Calculating Wealth Building Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-calculating-wealth-building-with-reinvestment",
-    "title": "Calculating Wealth Building with Reinvestment",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-capital-gains-for-retirement",
-    "title": "How to Use Capital Gains for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-capital-gains-safely",
-    "title": "How to Use Capital Gains Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-capital-gains-using-tools",
-    "title": "How to Use Capital Gains using Tools",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-compound-interest-for-beginners",
-    "title": "How to Use Compound Interest for Beginners",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-compound-interest-for-long-term-growth",
-    "title": "How to Use Compound Interest for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-compound-interest-using-tools",
-    "title": "How to Use Compound Interest using Tools",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-dividend-growth-for-long-term-growth",
-    "title": "How to Use Dividend Growth for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-dividend-growth-in-2026",
-    "title": "How to Use Dividend Growth in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-dividend-growth-safely",
-    "title": "How to Use Dividend Growth Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-drip-returns-for-retirement",
-    "title": "How to Use DRIP Returns for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-passive-income-in-2026",
-    "title": "How to Use Passive Income in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-passive-income-safely",
-    "title": "How to Use Passive Income Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-portfolio-yield-fast",
-    "title": "How to Use Portfolio Yield Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-portfolio-yield-for-beginners",
-    "title": "How to Use Portfolio Yield for Beginners",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-portfolio-yield-for-retirement",
-    "title": "How to Use Portfolio Yield for Retirement",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-portfolio-yield-in-2026",
-    "title": "How to Use Portfolio Yield in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-portfolio-yield-using-tools",
-    "title": "How to Use Portfolio Yield using Tools",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-how-to-use-retirement-income-in-2026",
-    "title": "How to Use Retirement Income in 2026",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-401k-growth-for-beginners",
-    "title": "Maximizing 401k Growth for Beginners",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-capital-gains-for-long-term-growth",
-    "title": "Maximizing Capital Gains for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-capital-gains-with-reinvestment",
-    "title": "Maximizing Capital Gains with Reinvestment",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-compound-interest-fast",
-    "title": "Maximizing Compound Interest Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-compound-interest-for-long-term-growth",
-    "title": "Maximizing Compound Interest for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-dividend-growth-safely",
-    "title": "Maximizing Dividend Growth Safely",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-drip-returns-fast",
-    "title": "Maximizing DRIP Returns Fast",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-drip-returns-for-long-term-growth",
-    "title": "Maximizing DRIP Returns for Long-term Growth",
-    "category": "guides",
-    "tags": []
-  },
-  {
-    "slug": "cerebras-maximizing-passive-income-for-long-term-growth",
-    "title": "Maximizing Passive Income for Long-term Growth",
-    "category": "guides",
-    "tags": []
   },
   {
     "slug": "consumer-staples-dividend-stocks",
