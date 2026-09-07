@@ -12,8 +12,17 @@ export function WebVitals() {
 
     // Send to analytics in production
     if (process.env.NODE_ENV === 'production') {
-      const body = JSON.stringify(metric)
-      const url = '/api/analytics/vitals'
+      // Was posting to /api/analytics/vitals, a route that doesn't exist --
+      // every report silently failed. The real handler is /api/vitals
+      // (app/api/vitals/route.ts), which expects url/timestamp/userAgent
+      // alongside the metric fields, not just the raw web-vitals payload.
+      const body = JSON.stringify({
+        ...metric,
+        url: window.location.href,
+        timestamp: Date.now(),
+        userAgent: navigator.userAgent,
+      })
+      const url = '/api/vitals'
 
       // Use `navigator.sendBeacon()` if available, falling back to `fetch()`
       if (navigator.sendBeacon) {
