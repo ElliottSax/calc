@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     'Every page on Dividend Engines: calculators, guides, courses and articles.',
 }
 
-// Content changes only when the publisher runs, so an hourly cache is always at
-// least as fresh as the deployed content and avoids a readdirSync over
-// content/blog (2,400+ files) on every request. Same reasoning as app/sitemap.ts.
-export const revalidate = 3600
+// Fully static -- see app/sitemap.ts for why this isn't ISR (revalidate)
+// anymore: the Cloudflare/OpenNext deployment has no real filesystem for
+// content/blog at request time, so a runtime readdirSync silently returns
+// nothing there. Built once at build time instead, from real Node fs.
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 

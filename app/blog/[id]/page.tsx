@@ -7,7 +7,7 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
-import { getSlugForId, isValidBlogId } from '@/lib/blog/slug-mapping'
+import { getSlugForId, isValidBlogId, BLOG_SLUG_MAP } from '@/lib/blog/slug-mapping'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 
 // The [id] segment serves two purposes:
@@ -17,13 +17,39 @@ import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 // content/blog is bundled into this function via outputFileTracingIncludes in
 // next.config.js so fs reads resolve at runtime on Vercel.
 //
-// ISR instead of force-dynamic: published post content is immutable (autopublish
-// only adds new files; it doesn't rewrite existing ones), so re-reading +
-// re-parsing the markdown file from disk on every single page view is wasted
-// work. Cache each rendered slug for an hour instead of hitting fs on every hit.
-export const revalidate = 3600
+// Full static generation, not ISR. This route reads content/blog/<slug>.md via
+// fs at render time; that's fine on Vercel (a real Node.js fs, files bundled by
+// outputFileTracingIncludes), but on the Cloudflare deployment (OpenNext,
+// Workers runtime) there's no real filesystem backing content/blog for
+// on-demand reads even though the .md files ARE included in the deployed
+// bundle -- fs.readFileSync/readdirSync silently fail to find them at request
+// time there (confirmed: every /blog/<slug> 404'd on the Cloudflare preview
+// until this was made fully static). generateStaticParams below pre-renders
+// every post at build time (real Node fs, works everywhere) instead, which
+// also fits the existing update model: autopublish only adds new files and
+// triggers its own rebuild, so a full rebuild always has current content.
+// dynamicParams = false means any slug NOT in generateStaticParams 404s
+// immediately rather than attempting a runtime fs read that would fail
+// silently on Cloudflare.
+export const dynamicParams = false
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
+
+export function generateStaticParams(): { id: string }[] {
+  const legacyIds = Object.keys(BLOG_SLUG_MAP)
+  let fileSlugs: string[] = []
+  try {
+    fileSlugs = fs
+      .readdirSync(BLOG_DIR)
+      .filter((f) => f.endsWith('.md'))
+      .map((f) => f.replace(/\.md$/, ''))
+  } catch {
+    fileSlugs = []
+  }
+  const curatedSlugs = Object.keys(SLUG_TO_FILE)
+  const all = new Set([...legacyIds, ...fileSlugs, ...curatedSlugs])
+  return Array.from(all).map((id) => ({ id }))
+}
 
 // A handful of curated posts use a clean slug that differs from the numbered file.
 const SLUG_TO_FILE: Record<string, string> = {

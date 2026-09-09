@@ -4,13 +4,17 @@ import path from 'path'
 import { courses } from '@/lib/data/courses'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 
-// Read content/blog at request time (the files are bundled for this route via
-// outputFileTracingIncludes in next.config.mjs). Content only changes via the
-// autopublish job (every 2h, and each run triggers its own rebuild), so an
-// hourly ISR cache is always at least as fresh as the deployed content while
-// avoiding a full `readdirSync` over content/blog (2000+ files) on every
-// crawler hit to /sitemap.xml.
-export const revalidate = 3600
+// Fully static (no revalidate): built once from content/blog at build time
+// via real Node fs, then served as a static file. Not ISR -- the Cloudflare
+// deployment (OpenNext/Workers runtime) has no real filesystem backing
+// content/blog for on-demand reads at request time even though the .md files
+// are included in the deployed bundle, so a runtime readdirSync silently
+// returns nothing there (confirmed: this shipped 0 blog URLs on the
+// Cloudflare preview when it still had `revalidate = 3600`). Content only
+// changes via the autopublish job, and each run triggers its own rebuild, so
+// static-at-build-time is always at least as fresh as the deployed content --
+// same reasoning the old comment gave for ISR, just without a runtime fs call.
+
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 

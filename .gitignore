@@ -29,6 +29,15 @@ yarn-error.log*
 # Vercel
 .vercel
 
+# Cloudflare / OpenNext
+.open-next/
+.wrangler/
+cloudflare-env.d.ts
+.dev.vars
+
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Syndication drafts (content-prep only, not part of the site build)
+syndication-drafts/

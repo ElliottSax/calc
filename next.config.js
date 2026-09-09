@@ -142,6 +142,15 @@ const nextConfig = {
       'framer-motion',
       'date-fns'
     ],
+    // Single-worker static generation, opt-in via CF_BUILD=1. This build
+    // statically renders ~2,470 blog posts (see app/blog/[id]/page.tsx --
+    // generateStaticParams was added for Cloudflare/OpenNext compatibility,
+    // since that runtime has no filesystem access to content/blog at request
+    // time). Next's default worker-pool concurrency for that many pages needs
+    // more headroom than this dev machine reliably has free; capping to one
+    // worker traded build speed for not OOM-crashing mid-build. Not set for
+    // the normal Vercel build path, which has its own dedicated build memory.
+    ...(process.env.CF_BUILD ? { cpus: 1 } : {}),
   },
 }
 

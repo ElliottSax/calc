@@ -6,7 +6,13 @@
 import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
 
-export const runtime = 'edge'
+// Was 'edge' for Vercel's edge network. Cloudflare deployment (OpenNext)
+// bundles all routes into a single Node.js-compat Worker function and
+// errors if any route declares edge runtime separately without explicit
+// per-route bundle splitting. next/og's ImageResponse (satori-based) works
+// fine under the Node.js runtime too, so this is a safe drop, not a
+// functional change.
+export const runtime = 'nodejs'
 
 export async function GET(request: NextRequest) {
   try {
