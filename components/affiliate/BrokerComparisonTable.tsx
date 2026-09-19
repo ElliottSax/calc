@@ -7,7 +7,6 @@ import { Badge } from '@/components/ui/badge'
 import { 
   Check, 
   X, 
-  Star, 
   ExternalLink, 
   ChevronDown, 
   ChevronUp,
@@ -64,10 +63,21 @@ export function BrokerComparisonTable() {
             <Info className="h-5 w-5 text-blue-600 mt-0.5" />
             <div className="text-sm">
               <p className="font-medium text-blue-900 dark:text-blue-100">Affiliate Disclosure</p>
+              {/*
+                The previous copy claimed the rankings were "based on extensive research
+                and user feedback". There is no user feedback: this site collects none,
+                and the star ratings that used to appear below were hand-written
+                constants (removed -- see the comment in the broker header). Claiming a
+                feedback-based methodology next to a paid link is the same
+                deceptive-endorsement exposure as the fake ratings themselves, so the
+                copy now describes what the ordering actually is.
+              */}
               <p className="text-blue-700 dark:text-blue-200 mt-1">
                 We may earn a commission when you open an account through links on this page.
-                This doesn&apos;t affect our rankings or reviews. All opinions are our own based on
-                extensive research and user feedback.
+                It never changes the order below, which is our own editorial ranking based on
+                the published account features shown here &mdash; minimum deposit, commissions,
+                fractional shares and dividend-reinvestment support. It is not a user-review
+                score, and we do not collect user reviews.
               </p>
             </div>
           </div>
@@ -85,7 +95,7 @@ export function BrokerComparisonTable() {
                 size="sm"
                 onClick={() => setSortBy('rating')}
               >
-                By Rating
+                Our ranking
               </Button>
               <Button
                 variant={sortBy === 'name' ? 'default' : 'outline'}
@@ -112,23 +122,25 @@ export function BrokerComparisonTable() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold">{broker.name}</h3>
-                      <div className="flex items-center gap-2 mt-1">
-                        <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`h-4 w-4 ${
-                                i < Math.floor(broker.rating)
-                                  ? 'text-yellow-400 fill-current'
-                                  : 'text-gray-300'
-                              }`}
-                            />
-                          ))}
-                        </div>
-                        <span className="text-sm text-gray-600">
-                          {broker.rating} ({broker.reviewCount.toLocaleString()} reviews)
-                        </span>
-                      </div>
+                      {/*
+                        The star row and "(N reviews)" count that used to sit here were
+                        fabricated: `rating` and `reviewCount` in
+                        lib/data/broker-affiliates-expanded.ts are hand-written constants
+                        (M1 Finance shipped live as "4.8 (12,500 reviews)"), and this site
+                        has never collected a single user review. Presenting invented
+                        numbers as aggregated user reviews immediately above a monetized
+                        CTA is a deceptive-endorsement problem under the FTC Endorsement
+                        Guides, not a cosmetic one -- and it is the third instance of this
+                        exact pattern in this portfolio, after the invented
+                        `aggregateRating` in this repo's app/layout.tsx and the "347 people
+                        applied this week" counter on cardclassroom.com.
+
+                        `rating` is kept as the ordering key only. That is defensible as an
+                        editorial ranking, which is how it is now labelled -- see the sort
+                        control above and the note below the CTA. Restoring a real star
+                        rating needs a real source (collected reviews, or a cited
+                        third-party score with a link), not these constants.
+                      */}
                       <p className="text-sm text-gray-600 mt-1">
                         Best for: <span className="font-medium">{broker.bestFor}</span>
                       </p>

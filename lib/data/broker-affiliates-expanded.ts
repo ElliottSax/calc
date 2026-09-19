@@ -362,42 +362,18 @@ export const BROKER_AFFILIATES_EXPANDED: BrokerComparison[] = [
     },
   },
 
-  {
-    id: 'tdameritrade',
-    name: 'TD Ameritrade',
-    rating: 4.6,
-    reviewCount: 32000,
-    bestFor: 'Research & Education',
-    features: {
-      minDeposit: 0,
-      commissionFree: true,
-      fractionalShares: false,
-      dripSupport: true,
-      research: true,
-      education: true,
-    },
-    pros: [
-      'thinkorswim platform',
-      'Extensive educational resources',
-      'Excellent research tools',
-      'Paper trading available',
-      'Strong customer support',
-    ],
-    cons: [
-      'No fractional shares',
-      'Being merged with Schwab',
-      'Platform overkill for buy-and-hold',
-    ],
-    commission: {
-      type: 'CPA',
-      amount: 40,
-    },
-    affiliateLink: {
-      url: 'https://www.tdameritrade.com/',
-      trackingId: '',
-      featured: false,
-    },
-  },
+  // TD Ameritrade was removed 2026-09-19. It is not a brokerage any more:
+  // Schwab acquired it and finished migrating the last client accounts in May
+  // 2024, so thinkorswim is now a Schwab platform and there is nothing here to
+  // open an account with. The entry listed it as a live recommendation with its
+  // own score, and its CTA pointed at https://www.tdameritrade.com/, which now
+  // just redirects to schwab.com/welcome-to-schwab (verified). The entry's own
+  // cons list said "Being merged with Schwab" — written while that was still
+  // future tense and never revisited. Charles Schwab is already in this list,
+  // so this was also a duplicate of a broker readers can actually use.
+  //
+  // Anything added back here needs checking against the broker's current
+  // status, not its status when the row was written.
 
   // Tier 4: Specialized Brokers
   {
