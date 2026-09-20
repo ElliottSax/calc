@@ -92,13 +92,32 @@ describe('POST /api/subscribe', () => {
   })
 
   it('returns silent success when submitted too fast (bot)', async () => {
+    // The timing check only trips on `renderedAt` (when the form was drawn),
+    // not the legacy `timestamp` field alone -- see the route's own comment.
+    // `timestamp` sent at submit time is always ~0ms old and would reject
+    // every genuine signup as a bot, which is the exact regression that
+    // comment documents fixing. A real bot test has to send `renderedAt`.
     const response = await POST(makeRequest({
       email: 'fast@bot.com',
-      timestamp: Date.now() - 500, // only 500ms ago
+      renderedAt: Date.now() - 500, // only 500ms ago
     }))
     expect(response.status).toBe(200)
     expect(response.data.success).toBe(true)
     const { subscribeToNewsletter } = await import('@/lib/email/email-service')
     expect(subscribeToNewsletter).not.toHaveBeenCalled()
+  })
+
+  it('does not reject a genuine signup for having an old `timestamp` with no `renderedAt`', async () => {
+    // Regression guard for the false-positive-bot-rejection bug: legacy
+    // clients that only send `timestamp` (set at submit time, so always
+    // recent) must still be able to subscribe.
+    const response = await POST(makeRequest({
+      email: 'real@person.com',
+      timestamp: Date.now(),
+    }))
+    expect(response.status).toBe(200)
+    expect(response.data.success).toBe(true)
+    const { subscribeToNewsletter } = await import('@/lib/email/email-service')
+    expect(subscribeToNewsletter).toHaveBeenCalled()
   })
 })

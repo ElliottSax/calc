@@ -80,8 +80,14 @@ describe('escapeSQLString', () => {
   })
 
   it('handles typical SQL injection string', () => {
+    // Doubling every single quote is the standard SQL-string escaping
+    // technique; it neutralizes the quote (a literal `''` inside a quoted
+    // string is not a string terminator) but doesn't remove the substring
+    // "';" from the output when the input contained "';" -- asserting
+    // otherwise was never a meaningful invariant. What actually matters is
+    // that the exact expected escaped string comes out.
     const result = escapeSQLString("'; DROP TABLE users; --")
-    expect(result).not.toContain("';")
+    expect(result).toBe("''; DROP TABLE users; --")
     expect(result).toContain("''")
   })
 })
