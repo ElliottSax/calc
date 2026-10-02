@@ -474,7 +474,7 @@ export function CompoundInterestCalculator() {
             Consider these investment vehicles that offer compound growth:
           </p>
           <ul>
-            <li><strong>High-Yield Savings Accounts:</strong> 4-5% APY (FDIC insured)</li>
+            <li><strong>High-Yield Savings Accounts:</strong> 4-5% APY (typically FDIC insured at member banks)</li>
             <li><strong>Index Funds:</strong> ~7-10% historical returns</li>
             <li><strong>Dividend Stocks with DRIP:</strong> 6-8% total returns</li>
             <li><strong>Bonds:</strong> 3-5% fixed returns</li>

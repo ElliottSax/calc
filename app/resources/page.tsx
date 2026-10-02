@@ -457,7 +457,7 @@ export default function ResourcesPage() {
 
                   <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-950/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
                     <p className="text-sm font-medium text-yellow-800 dark:text-yellow-200">
-                      🎁 Limited Time: Get all premium resources FREE with email signup
+                      🎁 Get all premium resources free with email signup
                     </p>
                   </div>
                 </CardContent>
@@ -465,61 +465,6 @@ export default function ResourcesPage() {
             </div>
           </TabsContent>
         </Tabs>
-      </section>
-
-      {/* Trust Section */}
-      <section className="bg-slate-50 dark:bg-slate-900/50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Free Tools, No Signup</h2>
-            <p className="text-slate-600 dark:text-slate-400">
-              Join our community of successful dividend investors
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                name: 'Michael R.',
-                role: 'Retired Engineer',
-                content: 'The portfolio analyzer helped me optimize my holdings and increase my dividend income by 35% in just 6 months.',
-                rating: 5
-              },
-              {
-                name: 'Sarah L.',
-                role: 'Financial Advisor',
-                content: 'I recommend these tools to all my clients. The stock screener is as good as paid alternatives costing $100+/month.',
-                rating: 5
-              },
-              {
-                name: 'David K.',
-                role: 'Small Business Owner',
-                content: 'Built my entire retirement portfolio using these calculators. Now generating $8K/month in passive income!',
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-white dark:bg-slate-800">
-                <CardContent className="pt-6">
-                  <div className="flex mb-4">
-                    {[1,2,3,4,5].map(i => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">
-                    "{testimonial.content}"
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-500" />
-                    <div>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* CTA Section */}

@@ -111,8 +111,8 @@ export function Navigation() {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 text-center text-sm">
         <div className="container mx-auto px-4 flex items-center justify-center gap-2">
           <Zap className="w-4 h-4" />
-          <span className="font-semibold">Limited Time:</span>
-          <span>Get $752 in FREE Resources - No Credit Card Required!</span>
+          <span className="font-semibold">Free:</span>
+          <span>Download our dividend investing resources - No Credit Card Required</span>
           <Link href="#email-capture">
             <Badge variant="secondary" className="ml-2 cursor-pointer hover:bg-white/90">
               Claim Now →

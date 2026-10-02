@@ -238,7 +238,7 @@ export default function Home() {
               Get the Dividend Investor's Toolkit
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-              50-page comprehensive guide covering DRIP investing, dividend aristocrats, 3 ready-to-use portfolio strategies, and tax optimization. Downloaded by 47,000+ investors.
+              50-page comprehensive guide covering DRIP investing, dividend aristocrats, 3 ready-to-use portfolio strategies, and tax optimization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

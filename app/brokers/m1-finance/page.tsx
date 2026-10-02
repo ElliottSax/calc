@@ -279,7 +279,7 @@ export default function M1FinancePage() {
           <section className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-8 text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Ready to Automate Your Dividend Investing?</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Join 500,000+ investors using M1 Finance for automated portfolio management and free DRIP.
+              Use M1 Finance for automated portfolio management and free DRIP.
               Get $150 bonus when you fund your account.
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-12">

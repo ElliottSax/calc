@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: BrokerPageProps): Promise<Met
 
   return {
     title: `${broker.name} Review 2026 - ${broker.tagline}`,
-    description: `Complete review of ${broker.name} for dividend investors. Fees, features, pros & cons. ${broker.rating}/5 rating from ${broker.reviewCount.toLocaleString()} reviews.`,
+    description: `Complete review of ${broker.name} for dividend investors. Fees, features, pros & cons.`,
     keywords: `${broker.name} review, ${broker.name} dividend investing, best broker for dividends, ${broker.name} DRIP`,
   }
 }
@@ -80,30 +80,6 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
               <p className="text-2xl text-slate-200 mb-6">
                 {broker.tagline}
               </p>
-
-              {/* Rating */}
-              <div className="flex items-center gap-6 mb-8">
-                <div className="flex items-center gap-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`h-6 w-6 ${
-                        i < Math.floor(broker.rating)
-                          ? 'text-yellow-400 fill-current'
-                          : 'text-gray-400'
-                      }`}
-                    />
-                  ))}
-                </div>
-                <div>
-                  <div className={`text-3xl font-bold ${ratingColor}`}>
-                    {broker.rating}/5
-                  </div>
-                  <div className="text-sm text-slate-300">
-                    {broker.reviewCount.toLocaleString()} reviews
-                  </div>
-                </div>
-              </div>
 
               {/* CTA */}
               {broker.currentPromo && (
