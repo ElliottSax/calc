@@ -63,7 +63,6 @@ const CALCULATORS = [
 const SECTIONS = [
   ['/', 'Home'],
   ['/blog', 'Articles'],
-  ['/guides', 'Guides'],
   ['/courses', 'Courses'],
   ['/resources', 'Resources'],
   ['/free-guide', "The Dividend Investor's Toolkit"],

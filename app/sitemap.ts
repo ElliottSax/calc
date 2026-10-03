@@ -75,7 +75,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: '/brokers/charles-schwab', freq: 'monthly' as const, pr: 0.7 },
     { p: '/brokers/robinhood', freq: 'monthly' as const, pr: 0.7 },
     { p: '/brokers/wealthfront', freq: 'monthly' as const, pr: 0.7 },
-    { p: '/guides', freq: 'weekly' as const, pr: 0.8 },
     { p: '/resources', freq: 'weekly' as const, pr: 0.7 },
     { p: '/courses', freq: 'weekly' as const, pr: 0.8 },
     ...courses.map((c) => ({ p: `/courses/${c.slug}`, freq: 'monthly' as const, pr: 0.7 })),
