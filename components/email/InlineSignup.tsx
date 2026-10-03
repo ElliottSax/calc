@@ -18,7 +18,7 @@ export function InlineSignup({
   variant = 'default',
   title,
   description,
-  buttonText = 'Get Free Guide',
+  buttonText = 'Subscribe',
   source = 'inline'
 }: InlineSignupProps) {
   const [email, setEmail] = useState('')
@@ -26,8 +26,8 @@ export function InlineSignup({
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
 
-  const defaultTitle = 'Start Building Dividend Income Today'
-  const defaultDescription = 'Get our free Dividend Investing Starter Kit + weekly tips delivered to your inbox'
+  const defaultTitle = 'Get New Dividend Calculators and Tips'
+  const defaultDescription = 'Free email updates when we release new calculators and dividend-investing guides. Unsubscribe anytime.'
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -59,7 +59,10 @@ export function InlineSignup({
         throw new Error(data.error || 'Subscription failed')
       }
 
-      // Track signup
+      // Track signup (GA4 + PostHog)
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'email_signup', { source, variant })
+      }
       if (typeof window !== 'undefined' && (window as any).posthog) {
         (window as any).posthog.capture('email_signup', {
           source,
@@ -86,7 +89,7 @@ export function InlineSignup({
             Check Your Email!
           </h3>
           <p className="text-green-700 dark:text-green-200">
-            We've sent you the Dividend Investing Starter Kit. Check your inbox (and spam folder) in the next few minutes.
+            You're subscribed. A welcome email with links to our calculators is on its way (check spam if it doesn't arrive in a few minutes).
           </p>
         </CardContent>
       </Card>
@@ -96,6 +99,7 @@ export function InlineSignup({
   if (variant === 'compact') {
     return (
       <div className="p-4 bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800">
+        <p className="text-sm font-medium mb-2">{title || 'Get new calculators and dividend tips by email'}</p>
         <form onSubmit={handleSubmit} className="flex gap-2">
           <Input
             type="email"

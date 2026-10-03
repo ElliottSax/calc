@@ -62,6 +62,13 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
 
   const affiliateUrl = buildAffiliateUrl(broker.id, broker.affiliateLink)
 
+  // Only show a promo that carries a future expiry date. Undated or lapsed offers
+  // are unverifiable (M1's lapsed 2026-03-31) and a stale offer beside a CTA misleads.
+  const activePromo =
+    broker.currentPromo?.expiresAt && new Date(broker.currentPromo.expiresAt) > new Date()
+      ? broker.currentPromo
+      : undefined
+
   const ratingColor = broker.rating >= 4.7 ? 'text-green-600' : broker.rating >= 4.3 ? 'text-blue-600' : 'text-yellow-600'
 
   return (
@@ -82,13 +89,13 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
               </p>
 
               {/* CTA */}
-              {broker.currentPromo && (
+              {activePromo && (
                 <Card className="bg-gradient-to-r from-green-500 to-emerald-500 border-0 mb-6">
                   <CardContent className="pt-6">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                       <div>
-                        <div className="text-white font-bold text-xl mb-1">{broker.currentPromo.title}</div>
-                        <div className="text-green-100">{broker.currentPromo.description}</div>
+                        <div className="text-white font-bold text-xl mb-1">{activePromo.title}</div>
+                        <div className="text-green-100">{activePromo.description}</div>
                       </div>
                       <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
                         <Button size="lg" variant="secondary" className="whitespace-nowrap">
@@ -100,7 +107,7 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
                 </Card>
               )}
 
-              {!broker.currentPromo && (
+              {!activePromo && (
                 <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="secondary">
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
@@ -312,9 +319,9 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
-                {broker.currentPromo && (
+                {activePromo && (
                   <p className="text-sm text-blue-100 mt-4">
-                    {broker.currentPromo.title} • {broker.currentPromo.description}
+                    {activePromo.title} • {activePromo.description}
                   </p>
                 )}
               </CardContent>

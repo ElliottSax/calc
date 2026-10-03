@@ -28,16 +28,8 @@ export default function M1FinancePage() {
             </p>
             <div className="flex justify-center gap-4 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">$150</div>
-                <div className="text-sm text-gray-600">Signup Bonus</div>
-              </div>
-              <div className="text-center">
                 <div className="text-3xl font-bold text-green-600">$0</div>
                 <div className="text-sm text-gray-600">Commissions</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">4.8★</div>
-                <div className="text-sm text-gray-600">User Rating</div>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
