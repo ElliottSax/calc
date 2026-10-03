@@ -380,4 +380,4 @@ Use our [Dividend Growth Calculator](/calculators/dividend-growth) to project yo
 
 **[Sign Up for Weekly Dividend Growth Insights](#signup-form)**
 
-Receive expert analysis on dividend growth stocks, portfolio strategies, and market opportunities delivered to your inbox weekly. Join thousands of dividend growth investors building financial independence.
+Receive expert analysis on dividend growth stocks, portfolio strategies, and market opportunities delivered to your inbox weekly. Built for dividend growth investors.

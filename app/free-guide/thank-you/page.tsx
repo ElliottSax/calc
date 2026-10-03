@@ -125,7 +125,7 @@ export default function ThankYouPage() {
                   </div>
                   <h3 className="font-bold text-lg mb-2">Choose a Broker</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                    Compare top DRIP brokers and get signup bonuses
+                    Compare brokers for dividend reinvestment
                   </p>
                   <Link href="/tools/compare">
                     <Button variant="outline" size="sm">Compare Brokers</Button>

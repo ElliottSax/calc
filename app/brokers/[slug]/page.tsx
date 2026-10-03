@@ -332,7 +332,7 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
               <p className="text-slate-600 dark:text-slate-400 mb-4">
                 Not sure if {broker.name} is right for you?
               </p>
-              <Link href="/about#brokers">
+              <Link href="/brokers">
                 <Button variant="outline">
                   Compare All Brokers
                 </Button>

@@ -378,13 +378,12 @@ Maximize your dividend investing success with our free calculator tools:
 
 ### Top Brokers for Commission-Free Dividend Investing
 
-| Broker | Commission | Dividend Reinvestment | Research Tools | Mobile App | Get Started |
-|--------|------------|----------------------|----------------|------------|-------------|
-| **Fidelity** | $0 | Free automatic DRIP | Excellent | 4.8/5 stars | [Open Account](https://www.fidelity.com/) |
-| **Charles Schwab** | $0 | Free automatic DRIP | Excellent | 4.7/5 stars | [Open Account](https://www.schwab.com/) |
-| **Vanguard** | $0 | Free automatic DRIP | Good | 4.5/5 stars | [Open Account](https://investor.vanguard.com/) |
-| **E*TRADE** | $0 | Free automatic DRIP | Excellent | 4.6/5 stars | [Open Account](https://us.etrade.com/) |
-| **TD Ameritrade** | $0 | Free automatic DRIP | Excellent | 4.7/5 stars | [Open Account](https://www.tdameritrade.com/) |
+| Broker | Commission | Dividend Reinvestment | Get Started |
+|--------|------------|----------------------|-------------|
+| **Fidelity** | $0 | Free automatic DRIP | [Open Account](https://www.fidelity.com/) |
+| **Charles Schwab** | $0 | Free automatic DRIP | [Open Account](https://www.schwab.com/) |
+| **Vanguard** | $0 | Free automatic DRIP | [Open Account](https://investor.vanguard.com/) |
+| **E*TRADE** | $0 | Free automatic DRIP | [Open Account](https://us.etrade.com/) |
 
 **Broker Selection Criteria:**
 

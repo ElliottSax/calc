@@ -213,7 +213,7 @@ export function LeadMagnetsPage() {
             you can implement immediately.
           </p>
           <p className="text-sm text-blue-200">
-            Join thousands of investors who have already downloaded our free guides.
+            Free to download. No credit card required.
           </p>
         </div>
       </section>

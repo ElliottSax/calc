@@ -490,4 +490,4 @@ Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model 20-3
 
 **[Sign Up for Dividend Growth Tips](#signup-form)**
 
-Join thousands of long-term investors receiving weekly analysis of dividend growth opportunities, new dividend aristocrat selections, and portfolio optimization for exponential wealth creation.
+Get dividend growth ideas, new dividend aristocrat selections and portfolio tips by email.

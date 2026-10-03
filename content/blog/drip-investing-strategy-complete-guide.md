@@ -589,4 +589,4 @@ Use our [DRIP Calculator](/calculators/drip) to model your portfolio growth with
 
 **[Sign Up for DRIP Investing Insights](#signup-form)**
 
-Receive strategies for maximizing dividend reinvestment, stock recommendations for DRIPs, tax optimization tips, and portfolio updates. Join thousands of investors compounding their way to financial freedom.
+Receive strategies for maximizing dividend reinvestment, stock recommendations for DRIPs, tax optimization tips, and portfolio updates. Built for investors compounding through reinvestment.

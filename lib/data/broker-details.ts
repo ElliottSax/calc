@@ -337,7 +337,6 @@ export const BROKER_DETAILS: Record<string, BrokerDetail> = {
       'Extended hours trading (4am-8pm)',
       'Free DRIP and fractional shares',
       'No account fees',
-      'Good signup bonuses',
       'Desktop and mobile apps',
       'Options trading included'
     ],

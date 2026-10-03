@@ -31,7 +31,7 @@ export function SocialProof() {
               <div className="flex items-center justify-center mb-2">
                 <Users className="w-8 h-8 text-blue-400" />
               </div>
-              <div className="text-3xl font-black mb-1">5</div>
+              <div className="text-3xl font-black mb-1">17</div>
               <div className="text-sm text-slate-400">Free Calculators</div>
             </div>
 
@@ -55,8 +55,8 @@ export function SocialProof() {
               <div className="flex items-center justify-center mb-2">
                 <Award className="w-8 h-8 text-purple-400" />
               </div>
-              <div className="text-3xl font-black mb-1">#1</div>
-              <div className="text-sm text-slate-400">Free Calculator</div>
+              <div className="text-3xl font-black mb-1">Free</div>
+              <div className="text-sm text-slate-400">No Account Needed</div>
             </div>
           </motion.div>
 
@@ -69,10 +69,10 @@ export function SocialProof() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              Loved by <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">100,000+</span> Investors
+              Free calculators for <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">dividend</span> investors
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Join thousands who've transformed their financial future with our calculator
+              Model reinvestment, yield and income in seconds. No signup needed.
             </p>
           </motion.div>
 

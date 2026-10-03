@@ -299,7 +299,7 @@ The dividend aristocrats of tomorrow—the stocks paying uninterrupted dividends
 
 **Ready to automate your dividend tracking and projections?**
 
-Join thousands of investors using our dividend calculators to optimize their portfolio returns. Get instant access to our [DRIP Calculator](/calculators/drip) and [Dividend Growth Calculator](/calculators/dividend-growth).
+Use our dividend calculators to model your portfolio returns. Get instant access to our [DRIP Calculator](/calculators/drip) and [Dividend Growth Calculator](/calculators/dividend-growth).
 
 **[Sign Up for Weekly Dividend Tips and Analysis](#signup-form)**
 
