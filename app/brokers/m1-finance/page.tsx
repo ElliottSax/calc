@@ -6,11 +6,12 @@ import { Badge } from '@/components/ui/badge'
 import { CheckCircle2, XCircle, TrendingUp, DollarSign, Zap, Shield, Users } from 'lucide-react'
 import { TrustBadges } from '@/components/social-proof/TrustBadges'
 import { CompactTestimonials } from '@/components/social-proof/Testimonials'
+import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
-  title: 'M1 Finance Review 2026 - Best Broker for DRIP & Dividend Investing',
-  description: 'Complete M1 Finance review: automated portfolio management, free DRIP, fractional shares, and Pies for dividend investors. $150 bonus available.',
-  keywords: ['m1 finance review', 'm1 finance dividend investing', 'best drip broker', 'automated investing']
+  title: 'M1 Finance Review 2026 - Automated DRIP & Dividend Investing',
+  description: 'M1 Finance review: automated portfolio management, free DRIP, fractional shares, and Pies for dividend investors.',
+  keywords: ['m1 finance review', 'm1 finance dividend investing', 'automated drip broker', 'automated investing']
 }
 
 export default function M1FinancePage() {
@@ -21,10 +22,10 @@ export default function M1FinancePage() {
         <div className="max-w-5xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-green-600">EDITOR'S CHOICE - Best for DRIP</Badge>
+            <Badge className="mb-4 bg-green-600">Built for automated DRIP</Badge>
             <h1 className="text-5xl font-bold mb-4">M1 Finance Review 2026</h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-              The best broker for automated dividend investing with free DRIP, fractional shares, and intelligent portfolio management.
+              A broker built around automated dividend investing, with free DRIP, fractional shares, and automatic portfolio rebalancing.
             </p>
             <div className="flex justify-center gap-4 mb-8">
               <div className="text-center">
@@ -33,13 +34,20 @@ export default function M1FinancePage() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+              <BrokerCta
+                brokerId="m1-finance"
+                brokerName="M1 Finance"
+                baseUrl="https://www.m1finance.com"
+                placement="broker-page-hero"
+                className="bg-blue-600 hover:bg-blue-700 text-lg px-8"
+              >
                 Open M1 Finance Account →
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                Compare All Brokers
+              </BrokerCta>
+              <Button asChild size="lg" variant="outline" className="text-lg px-8">
+                <a href="#comparison">See how it compares</a>
               </Button>
             </div>
+            <AffiliateNotice />
           </div>
 
           <TrustBadges />
@@ -92,7 +100,7 @@ export default function M1FinancePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Borrow against your portfolio at competitive rates (6-7%). Access liquidity without selling positions.
+                  Borrow against your portfolio instead of selling positions. Borrowing rates vary and carry risk; check M1 for current rates and terms.
                 </CardContent>
               </Card>
             </div>
@@ -210,7 +218,7 @@ export default function M1FinancePage() {
           </section>
 
           {/* Comparison Table */}
-          <section className="mb-12">
+          <section id="comparison" className="mb-12">
             <h2 className="text-3xl font-bold mb-6">M1 Finance vs Competitors</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -233,7 +241,7 @@ export default function M1FinancePage() {
                     <td className="p-3 font-medium">Auto DRIP</td>
                     <td className="p-3 text-center">✅</td>
                     <td className="p-3 text-center">✅</td>
-                    <td className="p-3 text-center">❌</td>
+                    <td className="p-3 text-center">Check Robinhood</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-3 font-medium">Fractional Shares</td>
@@ -271,13 +279,19 @@ export default function M1FinancePage() {
           <section className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-8 text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Ready to Automate Your Dividend Investing?</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Use M1 Finance for automated portfolio management and free DRIP.
-              Get $150 bonus when you fund your account.
+              M1 Finance offers automated portfolio management and free DRIP.
+              Promotions and terms change, so confirm the current details on M1&apos;s own site.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-12">
-              Open M1 Finance Account - Get $150 Bonus →
-            </Button>
-            <p className="text-sm text-gray-500 mt-4">No minimum deposit • Free DRIP • Cancel anytime</p>
+            <BrokerCta
+              brokerId="m1-finance"
+              brokerName="M1 Finance"
+              baseUrl="https://www.m1finance.com"
+              placement="broker-page-bottom-cta"
+              className="bg-blue-600 hover:bg-blue-700 text-lg px-12"
+            >
+              Open M1 Finance Account →
+            </BrokerCta>
+            <AffiliateNotice />
           </section>
 
           {/* FAQ */}
@@ -287,7 +301,7 @@ export default function M1FinancePage() {
               {[
                 {
                   q: 'Is M1 Finance really free?',
-                  a: 'Yes, M1 Finance charges zero commissions on stock and ETF trades. Their revenue comes from M1 Plus subscriptions ($125/year), M1 Borrow interest, and securities lending.'
+                  a: 'Yes, M1 Finance charges zero commissions on stock and ETF trades. M1 earns revenue from other sources such as its paid M1 Plus tier, M1 Borrow interest, and securities lending. Check M1 for current pricing.'
                 },
                 {
                   q: 'What are M1 Finance Pies?',
@@ -295,11 +309,11 @@ export default function M1FinancePage() {
                 },
                 {
                   q: 'Does M1 Finance automatically reinvest dividends?',
-                  a: 'Yes! M1 automatically reinvests all dividends with fractional shares at no cost. Every penny of your dividends goes back to work immediately.'
+                  a: 'Yes. M1 automatically reinvests dividends into fractional shares at no cost, according to your pie allocation.'
                 },
                 {
                   q: 'Can I use M1 Finance for retirement accounts?',
-                  a: 'Absolutely. M1 supports Traditional IRA, Roth IRA, SEP IRA, and even 401(k) rollovers. Many users love M1 for automated retirement investing.'
+                  a: 'M1 offers retirement account types such as Traditional and Roth IRAs. Check M1 for the full list of account types it currently supports.'
                 }
               ].map((faq, i) => (
                 <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-lg p-4">

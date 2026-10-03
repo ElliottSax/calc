@@ -1,15 +1,15 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { CheckCircle2, XCircle, Award } from 'lucide-react'
 import { TrustBadges } from '@/components/social-proof/TrustBadges'
+import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
-  title: 'Fidelity Review 2026 - Best Overall Broker for Dividend Investors',
-  description: 'Complete Fidelity review: zero commissions, excellent research, fractional shares, and 24/7 customer service. Best overall choice for serious investors.',
-  keywords: ['fidelity review', 'fidelity dividend investing', 'best broker overall']
+  title: 'Fidelity Review 2026 - Full-Service Broker for Dividend Investors',
+  description: 'Fidelity review for dividend investors: $0 commissions on online stock and ETF trades, research tools, fractional shares, and phone support.',
+  keywords: ['fidelity review', 'fidelity dividend investing', 'full service broker']
 }
 
 export default function FidelityPage() {
@@ -19,40 +19,43 @@ export default function FidelityPage() {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-purple-600">BEST OVERALL</Badge>
+            <Badge className="mb-4 bg-purple-600">FULL-SERVICE BROKER</Badge>
             <h1 className="text-5xl font-bold mb-4">Fidelity Review 2026</h1>
             <p className="text-xl text-gray-600 mb-6">
-              The gold standard for serious investors. World-class research, 24/7 support, and zero commissions.
+              A full-service broker with research tools, phone support, and $0 commissions on online stock and ETF trades.
             </p>
             <div className="flex justify-center gap-4 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">$100</div>
-                <div className="text-sm text-gray-600">Signup Bonus</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">24/7</div>
-                <div className="text-sm text-gray-600">Support</div>
+                <div className="text-3xl font-bold text-blue-600">$0</div>
+                <div className="text-sm text-gray-600">Stock &amp; ETF commissions</div>
               </div>
             </div>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <BrokerCta
+              brokerId="fidelity"
+              brokerName="Fidelity Investments"
+              baseUrl="https://www.fidelity.com"
+              placement="broker-page-hero"
+              className="bg-blue-600 hover:bg-blue-700"
+            >
               Open Fidelity Account →
-            </Button>
+            </BrokerCta>
+            <AffiliateNotice />
           </div>
 
           <TrustBadges />
 
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">Why Fidelity is #1</h2>
+            <h2 className="text-3xl font-bold mb-6">Why Dividend Investors Consider Fidelity</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-blue-600" />
-                    Industry-Leading Research
+                    Research Tools
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Access professional-grade research tools, stock screeners, and analysis reports typically reserved for institutional investors.
+                  Stock screeners, analyst research reports, and planning tools are available to account holders.
                 </CardContent>
               </Card>
               
@@ -61,16 +64,16 @@ export default function FidelityPage() {
                   <CardTitle>Zero Commission Trading</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  $0 commissions on stocks, ETFs, and options. Free DRIP on all dividend-paying stocks with fractional share support.
+                  $0 commissions on online US stock and ETF trades (options carry per-contract fees). Dividend reinvestment and fractional shares are available; check Fidelity for the current details.
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle>24/7 Customer Support</CardTitle>
+                  <CardTitle>Customer Support</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Talk to real humans anytime, day or night. Phone, chat, and in-person branch support available.
+                  Phone and chat support, plus branch locations. Check Fidelity for current support hours.
                 </CardContent>
               </Card>
 
@@ -91,11 +94,11 @@ export default function FidelityPage() {
               <Card className="border-green-200">
                 <CardHeader><CardTitle className="text-green-600">Pros</CardTitle></CardHeader>
                 <CardContent className="space-y-3">
-                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Best-in-class research and tools</span></div>
-                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>24/7 excellent customer service</span></div>
-                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Zero commissions on stocks/ETFs</span></div>
-                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>3,500+ no-transaction-fee mutual funds</span></div>
-                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Strong mobile and desktop platforms</span></div>
+                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Broad research and planning tools</span></div>
+                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Phone and chat customer support</span></div>
+                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>$0 commissions on online stock and ETF trades</span></div>
+                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Large selection of no-transaction-fee mutual funds</span></div>
+                  <div className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" /><span>Mobile and desktop platforms</span></div>
                 </CardContent>
               </Card>
 
@@ -103,7 +106,7 @@ export default function FidelityPage() {
                 <CardHeader><CardTitle className="text-red-600">Cons</CardTitle></CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex gap-2"><XCircle className="h-5 w-5 text-red-600 mt-0.5" /><span>Interface can feel dated</span></div>
-                  <div className="flex gap-2"><XCircle className="h-5 w-5 text-red-600 mt-0.5" /><span>No automated portfolio management</span></div>
+                  <div className="flex gap-2"><XCircle className="h-5 w-5 text-red-600 mt-0.5" /><span>Self-directed accounts are hands-on; automated investing is a separate product</span></div>
                   <div className="flex gap-2"><XCircle className="h-5 w-5 text-red-600 mt-0.5" /><span>Learning curve for beginners</span></div>
                 </CardContent>
               </Card>
@@ -111,13 +114,20 @@ export default function FidelityPage() {
           </section>
 
           <section className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg p-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Join 40+ Million Investors</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Look at Fidelity?</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Fidelity manages over $12 trillion in assets. Trusted by professionals and beginners alike.
+              Fees, features and promotions change. Confirm the current terms on Fidelity&apos;s own site before you open an account.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Open Fidelity Account - Get $100 Bonus →
-            </Button>
+            <BrokerCta
+              brokerId="fidelity"
+              brokerName="Fidelity Investments"
+              baseUrl="https://www.fidelity.com"
+              placement="broker-page-bottom-cta"
+              className="bg-blue-600 hover:bg-blue-700"
+            >
+              Open Fidelity Account →
+            </BrokerCta>
+            <AffiliateNotice />
           </section>
         </div>
       </main>

@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
-import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
-  title: 'Charles Schwab Review 2026 - Best for Comprehensive Services',
-  description: 'Charles Schwab review: full-service broker with banking, $0 commissions, excellent research, and local branches. $100 bonus available.',
+  title: 'Charles Schwab Review 2026 - Full-Service Broker',
+  description: 'Charles Schwab review: full-service broker with banking, $0 commissions on stock and ETF trades, research tools and local branches.',
   keywords: ['charles schwab review', 'schwab dividend investing', 'full service broker']
 }
 
@@ -15,25 +15,35 @@ export default function CharlesSchwabPage() {
       <Header />
       <main className="container mx-auto px-4 py-8 max-w-5xl">
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-orange-600">BEST FULL-SERVICE</Badge>
+          <Badge className="mb-4 bg-orange-600">FULL-SERVICE BROKER</Badge>
           <h1 className="text-5xl font-bold mb-4">Charles Schwab Review 2026</h1>
           <p className="text-xl text-gray-600 mb-6">
-            The complete financial services powerhouse. Banking, investing, and retirement planning all in one place.
+            Banking, investing, and retirement planning in one place.
           </p>
-          <Button size="lg" className="bg-blue-600">Open Charles Schwab Account →</Button>
+          <BrokerCta
+            brokerId="charles-schwab"
+            brokerName="Charles Schwab"
+            baseUrl="https://www.schwab.com"
+            placement="broker-page-hero"
+            className="bg-blue-600"
+          >
+            Open Charles Schwab Account →
+          </BrokerCta>
+          <AffiliateNotice />
         </div>
         <div className="prose dark:prose-invert max-w-none">
           <h2>Why Schwab Stands Out</h2>
-          <p>With $8+ trillion in client assets, Schwab is one of the largest and most trusted names in financial services.</p>
+          <p>Schwab is one of the largest US brokerages, with a wide product range and a branch network.</p>
           <h3>Key Benefits</h3>
           <ul>
-            <li>$0 commissions on stocks, ETFs, and options</li>
-            <li>Schwab Intelligent Portfolios (robo-advisor) - free</li>
-            <li>300+ local branches for in-person support</li>
-            <li>Integrated banking with no ATM fees worldwide</li>
+            <li>$0 commissions on online stock and ETF trades (options carry per-contract fees)</li>
+            <li>Schwab Intelligent Portfolios robo-advisor</li>
+            <li>Local branches for in-person support</li>
+            <li>Banking available alongside your brokerage account</li>
             <li>thinkorswim platform for advanced traders</li>
-            <li>Excellent research and educational resources</li>
+            <li>Research and educational resources</li>
           </ul>
+          <p>Fees and features change. Confirm the current terms on Schwab&apos;s own site.</p>
         </div>
       </main>
     </>
