@@ -23,6 +23,7 @@ import {
 } from 'lucide-react'
 import { getBrokerBySlug, getAllBrokers } from '@/lib/data/broker-details'
 import { buildAffiliateUrl } from '@/lib/affiliate/config'
+import { TrackedAffiliateLink } from '@/components/affiliate/TrackedAffiliateLink'
 
 interface BrokerPageProps {
   params: Promise<{
@@ -97,22 +98,22 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
                         <div className="text-white font-bold text-xl mb-1">{activePromo.title}</div>
                         <div className="text-green-100">{activePromo.description}</div>
                       </div>
-                      <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
+                      <TrackedAffiliateLink href={affiliateUrl} brokerSlug={broker.id} brokerName={broker.name} placement="broker-page-promo-banner">
                         <Button size="lg" variant="secondary" className="whitespace-nowrap">
                           Claim Offer <ExternalLink className="ml-2 h-5 w-5" />
                         </Button>
-                      </a>
+                      </TrackedAffiliateLink>
                     </div>
                   </CardContent>
                 </Card>
               )}
 
               {!activePromo && (
-                <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
+                <TrackedAffiliateLink href={affiliateUrl} brokerSlug={broker.id} brokerName={broker.name} placement="broker-page-hero">
                   <Button size="lg" variant="secondary">
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
-                </a>
+                </TrackedAffiliateLink>
               )}
             </div>
           </div>
@@ -311,14 +312,13 @@ export default async function BrokerPage({ params }: BrokerPageProps) {
                   Ready to Start Dividend Investing with {broker.name}?
                 </h2>
                 <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-                  Join thousands of dividend investors using {broker.name} to build wealth through
-                  automatic dividend reinvestment.
+                  Open a {broker.name} account to invest in dividend stocks with automatic dividend reinvestment.
                 </p>
-                <a href={affiliateUrl} target="_blank" rel="noopener noreferrer">
+                <TrackedAffiliateLink href={affiliateUrl} brokerSlug={broker.id} brokerName={broker.name} placement="broker-page-bottom-cta">
                   <Button size="lg" variant="secondary">
                     Open {broker.name} Account <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
-                </a>
+                </TrackedAffiliateLink>
                 {activePromo && (
                   <p className="text-sm text-blue-100 mt-4">
                     {activePromo.title} • {activePromo.description}

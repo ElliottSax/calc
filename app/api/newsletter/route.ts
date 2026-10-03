@@ -64,12 +64,18 @@ export async function POST(request: Request) {
     })
   } catch (error) {
     logger.error({ error }, 'Newsletter subscription error')
+    // Bad client input (unparseable JSON or failed validation) is a 400, not a server fault.
+    const message = error instanceof Error ? error.message : ''
+    const isClientError =
+      error instanceof SyntaxError ||
+      message.startsWith('Invalid request body') ||
+      message.startsWith('Validation failed')
     return NextResponse.json(
       {
         error: error instanceof Error ? error.message : 'Failed to subscribe to newsletter',
         success: false,
       },
-      { status: 500 }
+      { status: isClientError ? 400 : 500 }
     )
   }
 }
