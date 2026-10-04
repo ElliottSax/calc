@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/brokers/wealthfront' },
   title: 'Wealthfront Review 2026 - Robo-Advisor for Passive Investors',
   description: 'Wealthfront review: automated investing, tax-loss harvesting, and a high-yield cash account for hands-off investors.',
   keywords: ['wealthfront review', 'robo advisor', 'automated investing']

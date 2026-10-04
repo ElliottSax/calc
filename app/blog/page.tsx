@@ -14,6 +14,7 @@ import { BlogIndexClient } from './BlogIndexClient'
 // server component and keep exporting real metadata.
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/blog' },
   title: 'Dividend Investing Blog - Strategies, Analysis & Market Updates',
   description: `${BLOG_INDEX.length} free guides on dividend investing, DRIP strategies, stock analysis, and passive income.`,
   keywords: [

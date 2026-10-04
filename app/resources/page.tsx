@@ -9,6 +9,7 @@ import { Search, PieChart, Calculator, BookOpen, TrendingUp, Download, Calendar,
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/resources' },
   title: 'Free Financial Tools & Resources | Stock Screener, Portfolio Analyzer',
   description: 'Access professional dividend investing tools FREE. Stock screener with 50+ filters, portfolio analyzer, DRIP calculators, educational guides, and downloadable resources.',
   keywords: [

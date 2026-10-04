@@ -17,6 +17,14 @@ const SELF_CANONICAL: Record<string, string> = {
   'app/sitemap/page.tsx': '/sitemap',
   'app/terms/page.tsx': '/terms',
   'app/tools/compare/page.tsx': '/tools/compare',
+  'app/blog/page.tsx': '/blog',
+  'app/resources/page.tsx': '/resources',
+  'app/stocks/layout.tsx': '/stocks',
+  'app/brokers/fidelity/page.tsx': '/brokers/fidelity',
+  'app/brokers/m1-finance/page.tsx': '/brokers/m1-finance',
+  'app/brokers/charles-schwab/page.tsx': '/brokers/charles-schwab',
+  'app/brokers/robinhood/page.tsx': '/brokers/robinhood',
+  'app/brokers/wealthfront/page.tsx': '/brokers/wealthfront',
 }
 
 describe('self-referencing canonicals', () => {

@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/brokers/robinhood' },
   title: 'Robinhood Review 2026 - Mobile-First Investing for Beginners',
   description: 'Robinhood review: simple mobile app, fractional shares and $0 commissions on stock and ETF trades for first-time investors.',
   keywords: ['robinhood review', 'beginner investing app', 'mobile trading']

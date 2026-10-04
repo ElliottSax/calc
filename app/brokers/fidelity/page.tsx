@@ -7,6 +7,7 @@ import { TrustBadges } from '@/components/social-proof/TrustBadges'
 import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/brokers/fidelity' },
   title: 'Fidelity Review 2026 - Full-Service Broker for Dividend Investors',
   description: 'Fidelity review for dividend investors: $0 commissions on online stock and ETF trades, research tools, fractional shares, and phone support.',
   keywords: ['fidelity review', 'fidelity dividend investing', 'full service broker']

@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/brokers/charles-schwab' },
   title: 'Charles Schwab Review 2026 - Full-Service Broker',
   description: 'Charles Schwab review: full-service broker with banking, $0 commissions on stock and ETF trades, research tools and local branches.',
   keywords: ['charles schwab review', 'schwab dividend investing', 'full service broker']

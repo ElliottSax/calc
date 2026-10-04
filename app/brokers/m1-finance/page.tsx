@@ -9,6 +9,7 @@ import { CompactTestimonials } from '@/components/social-proof/Testimonials'
 import { BrokerCta, AffiliateNotice } from '@/components/affiliate/BrokerCta'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/brokers/m1-finance' },
   title: 'M1 Finance Review 2026 - Automated DRIP & Dividend Investing',
   description: 'M1 Finance review: automated portfolio management, free DRIP, fractional shares, and Pies for dividend investors.',
   keywords: ['m1 finance review', 'm1 finance dividend investing', 'automated drip broker', 'automated investing']
