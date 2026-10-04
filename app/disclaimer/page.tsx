@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/disclaimer' },
   title: 'Disclaimer | Dividend Engines',
 }
 

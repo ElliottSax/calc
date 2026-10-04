@@ -9,6 +9,7 @@ import { Header } from '@/components/layout/Header'
 import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
 import { getSlugForId, isValidBlogId, BLOG_SLUG_MAP } from '@/lib/blog/slug-mapping'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
+import { fallbackDescription } from '@/lib/blog/fallback-description'
 
 // The [id] segment serves two purposes:
 //  - purely-numeric legacy IDs -> 301 redirect to the slug URL (preserves SEO)
@@ -130,7 +131,9 @@ export async function generateMetadata({
   const { id } = await params
   const post = loadPost(id)
   if (!post) return { title: 'Article Not Found | Dividend Engines' }
-  const description = post.description || undefined
+  // Posts without a frontmatter description (the 01-10 numbered guides) fall back to
+  // their first prose paragraph instead of shipping with no meta description.
+  const description = post.description || fallbackDescription(post.body) || undefined
   const url = `https://dividendengines.com/blog/${id}`
   // `absolute` bypasses the root layout's "%s | Dividend Engines -
   // Financial Independence Tools" template, which otherwise double-brands and

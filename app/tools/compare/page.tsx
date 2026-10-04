@@ -8,6 +8,7 @@ import { CompactTrustBadges } from '@/components/social-proof/TrustBadges'
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://calc-bay-one.vercel.app'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/tools/compare' },
   title: 'Broker Comparison Tool - Compare Top Investment Brokers 2026',
   description: 'Compare top investment brokers side-by-side. Free interactive tool to find the best broker for dividend investing, DRIP, research, and more.',
   keywords: ['broker comparison', 'best broker', 'compare brokers', 'investment broker comparison tool']

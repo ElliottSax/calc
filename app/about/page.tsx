@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calculator, Mail, Target, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/about' },
   title: 'About | Dividend Engines',
   description:
     'Who runs Dividend Engines, why the tools are free, and how the site is funded.',

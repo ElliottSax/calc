@@ -5,6 +5,7 @@ import path from 'path'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/sitemap' },
   title: 'Sitemap | Dividend Engines',
   description:
     'Every page on Dividend Engines: calculators, guides, courses and articles.',

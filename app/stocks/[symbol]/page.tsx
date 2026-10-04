@@ -47,6 +47,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `https://dividendengines.com/stocks/${ticker.toLowerCase()}` },
     keywords: [
       `${ticker} dividend calculator`,
       `${ticker} DRIP calculator`,

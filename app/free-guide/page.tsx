@@ -7,6 +7,7 @@ import { LeadMagnetForm } from '@/components/lead-magnet/LeadMagnetForm'
 import { CheckCircle2, Download, TrendingUp, Shield, DollarSign, BookOpen, Calculator, LineChart } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dividendengines.com/free-guide' },
   title: 'Free Guide: The Dividend Investor\'s Toolkit',
   description: 'A free 12-chapter guide to how dividend investing actually works: yield traps, payout ratios, DRIP compounding, screening, tax treatment, and the mistakes that cost most.',
   keywords: ['dividend investing guide', 'DRIP guide', 'dividend aristocrats', 'passive income guide', 'free investing guide']

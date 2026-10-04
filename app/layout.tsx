@@ -140,13 +140,11 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
 
   // Additional
+  // No hreflang `languages` block: /en-gb and /en-ca return 404, so every page that
+  // inherited this metadata advertised two dead alternates. Add them back only
+  // when those locale pages exist.
   alternates: {
     canonical: siteUrl,
-    languages: {
-      'en-US': siteUrl,
-      'en-GB': `${siteUrl}/en-gb`,
-      'en-CA': `${siteUrl}/en-ca`,
-    },
   },
   category: 'finance',
 }
