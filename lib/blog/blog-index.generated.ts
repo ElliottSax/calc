@@ -553,12 +553,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     ]
   },
   {
-    "slug": "dividend-etf-articles-summary",
-    "title": "Dividend ETF Articles Generation Report",
-    "category": "Articles",
-    "tags": []
-  },
-  {
     "slug": "dividend-etf-portfolio-strategy-passive-income",
     "title": "Dividend ETF Portfolio Strategy: Building Passive Income with Index Funds",
     "category": "Dividend Investing Strategies",
@@ -883,12 +877,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     ]
   },
   {
-    "slug": "GENERATION_SUMMARY",
-    "title": "REIT Articles Generation Summary",
-    "category": "",
-    "tags": []
-  },
-  {
     "slug": "growth-stocks-that-pay-dividends",
     "title": "Growth Stocks That Pay Dividends",
     "category": "Dividend Investing",
@@ -1080,12 +1068,6 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "slug": "quality-dividend-investing-strategy-sustainable-income",
     "title": "Quality Dividend Investing Strategy: Sustainable Income from Elite Companies",
     "category": "Dividend Investing Strategies",
-    "tags": []
-  },
-  {
-    "slug": "README",
-    "title": "Dividend ETF Investment Strategy Articles",
-    "category": "Articles",
     "tags": []
   },
   {

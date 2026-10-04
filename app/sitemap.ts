@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import { courses } from '@/lib/data/courses'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
+import { NOINDEX_STAGE1 } from '@/lib/noindex-stage1'
 
 // Fully static (no revalidate): built once from content/blog at build time
 // via real Node fs, then served as a static file. Not ISR -- the Cloudflare
@@ -38,6 +39,8 @@ function blogSlugs(): string[] {
       // Same for the near-duplicate reprints (319 of the 470 remaining posts) —
       // they're served noindex, so don't ask Google to crawl them.
       .filter((f) => !NOINDEX_REPRINTS.has(f.replace(/\.md$/, '')))
+      // Thin-content stage 1 (2026-10-04): 13 noindexed posts, still reachable.
+      .filter((f) => !NOINDEX_STAGE1.has(f.replace(/\.md$/, '')))
       .map((f) => f.replace(/\.md$/, ''))
   } catch {
     return []

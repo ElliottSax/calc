@@ -66,6 +66,11 @@ const nextConfig = {
   // Redirects for common patterns
   async redirects() {
     return [
+      // Generator notes that were served as blog posts until 2026-10-04 (thin-content
+      // stage 1): the files are deleted; send their URLs to the blog index.
+      { source: '/blog/README', destination: '/blog', permanent: true },
+      { source: '/blog/GENERATION_SUMMARY', destination: '/blog', permanent: true },
+      { source: '/blog/dividend-etf-articles-summary', destination: '/blog', permanent: true },
       {
         source: '/calculator',
         destination: '/',

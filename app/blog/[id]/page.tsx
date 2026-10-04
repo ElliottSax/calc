@@ -9,6 +9,7 @@ import { Header } from '@/components/layout/Header'
 import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
 import { getSlugForId, isValidBlogId, BLOG_SLUG_MAP } from '@/lib/blog/slug-mapping'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
+import { NOINDEX_STAGE1 } from '@/lib/noindex-stage1'
 import { fallbackDescription } from '@/lib/blog/fallback-description'
 import { needsFiguresNote, figuresNoteText } from '@/lib/blog/figures-note'
 
@@ -150,7 +151,9 @@ export async function generateMetadata({
   // to be near-duplicate reprints of the other 151 (families up to 54, 39 sharing
   // a byte-identical opening). Noindexing only the haiku-/cerebras- tail left
   // that ratio untouched in the head. See lib/noindex-reprints.ts.
-  const isLowValue = /^(haiku|cerebras)-/.test(id) || NOINDEX_REPRINTS.has(id)
+  // Thin-content stage 1 (2026-10-04) adds 13 more; see lib/noindex-stage1.ts.
+  const isLowValue =
+    /^(haiku|cerebras)-/.test(id) || NOINDEX_REPRINTS.has(id) || NOINDEX_STAGE1.has(id)
   return {
     title: { absolute: seoTitle },
     description,
