@@ -60,7 +60,6 @@ The 2026 dividend ETF landscape features:
 | Schwab U.S. Dividend | SCHD | 3.2% | 0.06% | $24B | +85% | Low costs |
 | Vanguard Dividend | VIG | 2.4% | 0.06% | $41B | +88% | Growth + income |
 | iShares MSCI USA ESG Select | SUSA | 2.0% | 0.20% | $28B | +92% | ESG screening |
-| Invesco Dividend | PLD | 3.9% | 0.12% | $3.8B | +76% | Higher yield |
 | Global X Super Dividend | SDIV | 7.1% | 0.45% | $890M | +45% | Aggressive income |
 | Vanguard International High Div | VYMI | 4.2% | 0.12% | $11B | +52% | International |
 
@@ -131,7 +130,7 @@ For most investors, VIG's combination of low costs, broad holdings, and excellen
 
 ### High-Yield ETFs: Aggressive Income Strategy
 
-**Global X Super Dividend (SDIV)** and **Invesco Dividend (PLD)** target yields double the broad market average.
+**Global X Super Dividend (SDIV)** targets a yield roughly double the broad market average.
 
 **SDIV characteristics:**
 - **Yield:** 7.1% (highest on this list)
@@ -142,16 +141,10 @@ For most investors, VIG's combination of low costs, broad holdings, and excellen
 
 SDIV's 7.1% yield comes from higher-volatility stocks and includes return-of-capital distributions. This works for investors prioritizing current income over capital appreciation.
 
-**PLD characteristics:**
-- **Yield:** 3.9%
-- **Expense ratio:** 0.12%
-- **Holdings:** 50 highest-yielding dividend stocks
-- **More balanced:** Higher yield than VYM/SCHD without extreme concentration
-
 **Strategy for high-yield ETFs:**
 Reserve 10-20% of your dividend portfolio for high-yield ETFs. Use 80%+ in core holdings (SCHD/VYM) for stability. This barbell approach balances:
 - Core stability and growth (80% in SCHD/VYM)
-- Aggressive income (20% in SDIV/PLD)
+- Aggressive income (up to 20% in SDIV)
 
 ### International Dividend ETFs: Global Income
 
@@ -287,9 +280,8 @@ These four offer market-leading cost efficiency. Over 20 years on $100,000, the 
 ### Highest Yields (Income Maximization)
 
 1. **Global X Super Dividend (SDIV):** 7.1%
-2. **Invesco Dividend (PLD):** 3.9%
-3. **Vanguard International High Dividend (VYMI):** 4.2%
-4. **Schwab U.S. Dividend (SCHD):** 3.2%
+2. **Vanguard International High Dividend (VYMI):** 4.2%
+3. **Schwab U.S. Dividend (SCHD):** 3.2%
 
 Higher yields often involve higher volatility. Balance yield hunger against portfolio stability.
 
@@ -435,7 +427,7 @@ Dividend ETFs represent the most efficient vehicle for building passive income. 
 The optimal approach:
 - **Core holding (70%):** SCHD or VIG based on your growth preferences
 - **Diversification (20%):** VYM for broader exposure or VYMI for international
-- **Income enhancement (10%):** SDIV for high yields or PLD for balanced approach
+- **Income enhancement (10%):** SDIV for high current yield, accepting slower growth
 
 Start with your timeline and risk tolerance. Use our [Dividend Growth Calculator](/calculators/dividend-growth) to model how contributions and reinvestment transform initial investments into life-changing wealth over 20-30 years.
 

@@ -352,8 +352,6 @@ DRIP creates dozens of purchase lots at different prices. Complicated tax report
 **Solution:**
 Use broker's average cost basis method. Most brokers handle this automatically.
 
-## Real-World Examples and Calculations
-
 ## Example 1: 25-Year Reinvestment Journey
 
 **Profile:**

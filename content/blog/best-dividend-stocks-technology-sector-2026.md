@@ -293,7 +293,7 @@ A "good" dividend yield depends on your investment goals and risk tolerance. In 
 - **Moderate investors:** 4.0-6.0% yields balancing growth and income
 - **Aggressive investors:** 6.0-10.0% yields accepting higher volatility
 
-Beware yields exceeding 10%, which often signal dividend cut risks or fundamental business challenges. Compare yields to 10-year Treasury rates (currently ~4.5%) to assess relative value.
+Beware yields exceeding 10%, which often signal dividend cut risks or fundamental business challenges.
 
 Use our [Dividend Yield Calculator](/calculators/dividend-yield) to evaluate whether a stock's yield justifies its risks.
 

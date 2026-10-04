@@ -11,10 +11,6 @@ ticker: T
 word_count: '''2442'''
 ---
 
-
-
-
-
 # AT&T Dividend Analysis 2026: Recovery After Warner Bros Discovery Spinoff
 
 ## Executive Summary

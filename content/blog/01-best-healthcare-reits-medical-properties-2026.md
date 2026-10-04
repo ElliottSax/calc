@@ -16,7 +16,7 @@ Healthcare REITs Medical Properties 2026 represent a critical segment of the rea
 
 ## Market Overview & Current Conditions
 
-The healthcare sector reits, medical office properties, healthcare facility investments sector has experienced significant transformation over the past three years. Market data shows Medical office buildings representing approximately 18-25% of overall REIT market capitalization. Recent trends indicate:
+The healthcare sector reits, medical office properties, healthcare facility investments sector has experienced significant transformation over the past three years. Recent trends indicate:
 
 - **Market Growth**: Sector showing 12-18% year-over-year growth in valuations
 - **Yield Environment**: Current FFO yields ranging from 3.2% to 6.8% depending on asset quality and location
@@ -42,8 +42,6 @@ Hospitals provide portfolio diversification with:
 - Adaptive tenant mixes
 - Revenue diversification opportunities
 - Typically 7-12 year lease structures
-
-Market data shows Hospitals commanding premium valuations of 12-16x FFO.
 
 ### Outpatient facilities & Nursing homes
 Additional property categories provide:

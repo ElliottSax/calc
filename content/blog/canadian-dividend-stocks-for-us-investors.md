@@ -17,11 +17,11 @@ As a US investor, diversifying your portfolio with international stocks can be a
 ## Analysis
 Canadian dividend stocks offer a unique combination of stability, growth, and income. Many of these companies have a long history of paying consistent dividends, making them attractive to investors seeking regular income. Additionally, the Canadian economy is closely tied to the US economy, making it easier for US investors to understand and navigate. Some of the top Canadian dividend stocks include:
 
-* Enbridge Inc. (ENB), a leading energy infrastructure company with a current yield of 4.8% and a payout ratio of 70%. Enbridge has a strong track record of dividend growth, with a 5-year compound annual growth rate (CAGR) of 10.3%.
-* Royal Bank of Canada (RY), one of the largest banks in Canada, with a current yield of 3.9% and a payout ratio of 45%. Royal Bank has a long history of dividend payments, with a 5-year CAGR of 7.1%.
-* Telus Corporation (TU), a leading telecommunications company, with a current yield of 4.2% and a payout ratio of 75%. Telus has a strong track record of dividend growth, with a 5-year CAGR of 8.5%.
-* Canadian National Railway Company (CNI), a major railway company, with a current yield of 1.9% and a payout ratio of 35%. Canadian National has a long history of dividend payments, with a 5-year CAGR of 10.1%.
-* Toronto-Dominion Bank (TD), another major bank in Canada, with a current yield of 3.7% and a payout ratio of 45%. Toronto-Dominion has a strong track record of dividend growth, with a 5-year CAGR of 8.1%.
+* Enbridge Inc. Enbridge has a strong track record of dividend growth, with a 5-year compound annual growth rate (CAGR) of 10.3%.
+* Royal Bank has a long history of dividend payments, with a 5-year CAGR of 7.1%.
+* Telus has a strong track record of dividend growth, with a 5-year CAGR of 8.5%.
+* Canadian National has a long history of dividend payments, with a 5-year CAGR of 10.1%.
+* Toronto-Dominion has a strong track record of dividend growth, with a 5-year CAGR of 8.1%.
 
 These stocks offer a great combination of income, growth, and stability, making them attractive to US investors.
 

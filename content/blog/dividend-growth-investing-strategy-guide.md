@@ -38,7 +38,7 @@ Three mechanisms drive superior returns:
 
 **1. Income Compounding:** Each dividend increase raises your yield on cost. A stock bought at 3% yield growing dividends 10% annually delivers 7.7% yield on cost after 10 years.
 
-**2. Price Appreciation:** Dividend increases typically signal business strength, supporting stock price growth. Research shows dividend growers outperform non-payers by 2-3% annually.
+**2. Price Appreciation:** Dividend increases typically signal business strength, supporting stock price growth.
 
 **3. Market Cycle Resilience:** Companies raising dividends during recessions demonstrate financial resilience, reducing downside volatility during bear markets.
 

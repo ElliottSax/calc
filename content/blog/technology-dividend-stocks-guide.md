@@ -18,11 +18,11 @@ As a retail investor, navigating the complex world of dividend investing can be 
 Technology dividend stocks are issued by companies that operate in the technology sector and distribute a portion of their earnings to shareholders in the form of dividends. These stocks can provide a relatively stable source of income, as well as potential long-term capital appreciation. When evaluating technology dividend stocks, investors should consider key metrics such as current yield, payout ratio, and growth rate. The current yield represents the annual dividend payment as a percentage of the stock's current price, while the payout ratio indicates the percentage of earnings allocated to dividend payments. A sustainable payout ratio, typically below 50%, is crucial for ensuring the long-term viability of dividend payments. The growth rate, on the other hand, reflects the company's ability to increase its dividend payments over time.
 
 Some notable technology dividend stocks include:
-- **Intel Corporation (INTC)**, with a current yield of 2.35% and a payout ratio of 34.6%. Intel has consistently increased its dividend payments, with a 5-year growth rate of 5.3%.
-- **Cisco Systems, Inc. (CSCO)**, offering a current yield of 3.14% and a payout ratio of 43.8%. Cisco has demonstrated a strong commitment to dividend growth, with a 5-year growth rate of 7.1%.
-- **Microsoft Corporation (MSFT)**, with a current yield of 1.23% and a payout ratio of 29.4%. Microsoft has consistently increased its dividend payments, with a 5-year growth rate of 10.3%.
-- **IBM Corporation (IBM)**, providing a current yield of 4.93% and a payout ratio of 64.1%. While IBM's payout ratio is relatively high, the company has a long history of dividend payments and a 5-year growth rate of 3.5%.
-- **Texas Instruments Incorporated (TXN)**, with a current yield of 2.83% and a payout ratio of 48.5%. Texas Instruments has consistently increased its dividend payments, with a 5-year growth rate of 12.1%.
+- Intel has consistently increased its dividend payments, with a 5-year growth rate of 5.3%.
+- **Cisco Systems, Inc. Cisco has demonstrated a strong commitment to dividend growth, with a 5-year growth rate of 7.1%.
+- Microsoft has consistently increased its dividend payments, with a 5-year growth rate of 10.3%.
+- While IBM's payout ratio is relatively high, the company has a long history of dividend payments and a 5-year growth rate of 3.5%.
+- Texas Instruments has consistently increased its dividend payments, with a 5-year growth rate of 12.1%.
 
 ## Comparison
 When comparing technology dividend stocks, investors should consider factors such as industry trends, competitive advantage, and financial health. For example, companies like Microsoft and Cisco operate in the software and networking segments, respectively, which are expected to experience significant growth in the coming years. In contrast, companies like Intel and Texas Instruments are more focused on the semiconductor industry, which is subject to cyclical fluctuations. IBM, on the other hand, has a diversified portfolio of businesses, including cloud computing, artificial intelligence, and cybersecurity. By evaluating these factors, investors can make informed decisions about which technology dividend stocks align with their investment goals and risk tolerance.

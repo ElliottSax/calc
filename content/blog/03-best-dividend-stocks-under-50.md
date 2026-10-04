@@ -60,9 +60,8 @@ Lower prices accelerate reinvestment benefits. A 5% dividend on a $40 stock ($2/
 | Arch Capital | ACGL | $41.80 | 2.1% | 25% | Insurance | +127% | [Open](https://www.investopedia.com/terms/b/brokerage.asp) |
 | Enbridge | ENB | $39.90 | 6.3% | 70% | Energy | +42% | [Open](https://www.investopedia.com/terms/b/brokerage.asp) |
 | MPLX LP | MPLX | $45.20 | 7.9% | 75% | Energy Infrastructure | +67% | [Open](https://www.investopedia.com/terms/b/brokerage.asp) |
-| Certent LLC | CUZ | $29.50 | 4.8% | 55% | Specialty Finance | +58% | [Open](https://www.investopedia.com/terms/b/brokerage.asp) |
 
-*Note: Some stocks may trade above $50 during strong markets; verify current prices at your broker.
+*Note: Prices, yields, payout ratios and 5-year returns are approximate snapshots from when this guide was written (early 2026), not live quotes. Some of these stocks trade above $50 in strong markets — verify current prices and yields on each stock's page ([MO](/stocks/MO), [O](/stocks/O), [NGG](/stocks/NGG), [ACGL](/stocks/ACGL), [ENB](/stocks/ENB), [MPLX](/stocks/MPLX)) or at your broker before buying.*
 
 ## Understanding Cheap Dividend Stocks: Categories and Characteristics
 
@@ -213,17 +212,16 @@ Suitable for: Investors with dividend investing experience, 10-year horizon
 - $4,000 ENB (Energy diversification)
 - $3,500 National Grid (Utility stability)
 - $2,500 Altria (High yield)
-- $2,000 Arch Capital (Growth potential)
-- $1,500 Certent (Special situations)
+- $3,500 Arch Capital (Growth potential)
 
-**Annual income:** $1,150
-**Monthly income:** ~$96
-**Overall yield:** 4.6%
+**Annual income:** roughly $1,100 at the snapshot yields above
+**Monthly income:** ~$90
+**Overall yield:** ~4.5%
 
 This allocation emphasizes:
 - Continued ETF diversification foundation (SCHD)
-- Individual company conviction (6 positions)
-- Sector balance (utilities, energy, financials)
+- Individual company conviction (5 positions)
+- Sector balance (utilities, energy, insurance)
 - Growth components (Arch Capital)
 
 ### Advanced Portfolio: $50,000+ Investment

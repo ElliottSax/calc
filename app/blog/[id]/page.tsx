@@ -10,6 +10,7 @@ import { EmailCaptureForm } from '@/components/forms/EmailCaptureForm'
 import { getSlugForId, isValidBlogId, BLOG_SLUG_MAP } from '@/lib/blog/slug-mapping'
 import { NOINDEX_REPRINTS } from '@/lib/noindex-reprints'
 import { fallbackDescription } from '@/lib/blog/fallback-description'
+import { needsFiguresNote, figuresNoteText } from '@/lib/blog/figures-note'
 
 // The [id] segment serves two purposes:
 //  - purely-numeric legacy IDs -> 301 redirect to the slug URL (preserves SEO)
@@ -247,6 +248,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
           </h1>
           {description && (
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{description}</p>
+          )}
+          {/* Posts that pair named securities with percentages were written on a specific
+              day; say so instead of letting a 2026-03 yield read as a live quote. */}
+          {needsFiguresNote(body) && (
+            <p
+              data-figures-note
+              className="mb-8 rounded-lg border border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/40 px-4 py-3 text-sm text-amber-900 dark:text-amber-200"
+            >
+              <strong>About the figures:</strong> {figuresNoteText((data as any).date)}
+            </p>
           )}
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
             {body}

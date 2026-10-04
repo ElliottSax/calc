@@ -12,7 +12,7 @@ publishDate: '''''''2026-03-19'''''''
 
 As we navigate the complex landscape of 2026, investors are increasingly seeking strategies to maximize dividend income while minimizing risk. Sector rotation dividend strategy offers a compelling solution by identifying cyclical dividend stocks that align with the economic cycle phases. This approach allows you to tap into the growth potential of industries poised for expansion, while also providing a stable source of income through dividend payments.
 
-A staggering 75% of dividend stocks have historically outperformed the broader market during economic upswings, according to our analysis of S&P 500 data. By timing cyclical dividend stocks, you can potentially capture a larger share of this growth. In this article, we will guide you through the strategic framework, implementation steps, and advanced techniques required to execute a sector rotation dividend strategy.
+By timing cyclical dividend stocks, you can potentially capture a larger share of this growth. In this article, we will guide you through the strategic framework, implementation steps, and advanced techniques required to execute a sector rotation dividend strategy.
 
 ## STRATEGIC FRAMEWORK
 

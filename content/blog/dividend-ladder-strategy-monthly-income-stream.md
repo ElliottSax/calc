@@ -12,7 +12,7 @@ publishDate: '''''''2026-03-19'''''''
 
 As a dividend investor in 2026, you're likely seeking ways to generate steady, monthly income from your dividend-paying stocks. The dividend ladder strategy can help you achieve this goal, leveraging quarterly payers to create a seamless cash flow. By staggering ex-dividend dates and creating a 12-stock ladder, you can enjoy predictable, monthly dividend income. In this article, we'll walk you through the strategic framework, implementation steps, and advanced techniques to help you master the dividend ladder.
 
-According to a recent survey, 71% of dividend investors aim to generate 50% or more of their income from dividend-paying stocks. However, many struggle to achieve this goal due to irregular dividend payments. The dividend ladder strategy addresses this challenge, allowing you to create a consistent monthly income stream from quarterly payers.
+However, many struggle to achieve this goal due to irregular dividend payments. The dividend ladder strategy addresses this challenge, allowing you to create a consistent monthly income stream from quarterly payers.
 
 In this article, you'll learn how to:
 

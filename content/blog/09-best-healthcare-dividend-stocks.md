@@ -263,10 +263,7 @@ Healthcare REITs combine:
 - Real asset backing (properties)
 - Inflation protection (lease escalators)
 
-**Example: Healthplex Realty Trust**
-- Yield: 5.8%
-- Occupancy: 92%+ (strong demand)
-- 5-year return: +18%
+Large healthcare REITs include Welltower (WELL) and Ventas (VTR), both focused on senior housing and medical office properties.
 
 Suitable for: Healthcare dividend investors seeking real estate exposure with aging population tailwinds.
 

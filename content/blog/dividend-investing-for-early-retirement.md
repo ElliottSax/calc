@@ -16,12 +16,6 @@ As the concept of early retirement gains popularity, many investors are turning 
 
 ## Analysis
 When it comes to dividend investing, it's essential to focus on stocks with a strong track record of paying consistent dividends. One key metric to consider is the current yield, which represents the annual dividend payment per share divided by the stock's current price. As of 2026, some top dividend-paying stocks include:
-- **Johnson & Johnson (JNJ)**, with a current yield of 2.65% and a payout ratio of 54.2%
-- **Procter & Gamble (PG)**, with a current yield of 2.43% and a payout ratio of 63.1%
-- **Coca-Cola (KO)**, with a current yield of 2.93% and a payout ratio of 77.2%
-- ** Realty Income (O)**, with a current yield of 4.23% and a payout ratio of 85.1%
-- **3M (MMM)**, with a current yield of 3.54% and a payout ratio of 54.5%
-- **ExxonMobil (XOM)**, with a current yield of 4.95% and a payout ratio of 53.8%
 
 These stocks have demonstrated a commitment to paying dividends, with some, like Johnson & Johnson, boasting over 50 years of consecutive dividend payments. It's also crucial to consider the growth rate of dividends, as this can significantly impact the overall return on investment. For instance, **Realty Income** has a 5-year dividend growth rate of 4.2%, while **3M** has a 5-year dividend growth rate of 8.5%.
 

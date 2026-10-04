@@ -52,7 +52,6 @@ Here are the leading Telecom Equipment dividend stocks:
 |---------|--------|---|---|---|
 | Cisco | CSCO, Nokia | 2.5-4.0% | 30-50% | Strong |
 
-
 ### Detailed Stock Analysis
 
 **Leading Telecom Equipment Dividend Payers:**

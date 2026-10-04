@@ -19,11 +19,11 @@ The utility sector is comprised of companies that provide essential services suc
 
 ## Comparison
 Let's examine some of the best utility stocks for dividends, using current 2026 data. 
-- **Exelon Corporation (EXC)**: With a current dividend yield of 3.42% and a payout ratio of 64.1%, Exelon is an attractive option for income investors. The company has a strong track record of dividend growth, with a 5-year dividend growth rate of 6.3%.
-- **Duke Energy Corporation (DUK)**: Duke Energy offers a current dividend yield of 3.83% and a payout ratio of 73.2%. The company has a solid dividend growth rate of 4.2% over the past 5 years.
-- **NextEra Energy, Inc. (NEE)**: NextEra Energy boasts a current dividend yield of 2.51% and a payout ratio of 54.5%. The company has an impressive 5-year dividend growth rate of 10.3%, driven by its strong performance in the renewable energy sector.
-- **Dominion Energy, Inc. (D)**: Dominion Energy provides a current dividend yield of 4.13% and a payout ratio of 83.2%. The company has a 5-year dividend growth rate of 4.5%, with a focus on expanding its natural gas infrastructure.
-- **CMS Energy Corporation (CMS)**: CMS Energy offers a current dividend yield of 3.25% and a payout ratio of 64.5%. The company has a 5-year dividend growth rate of 7.1%, driven by its commitment to renewable energy and energy efficiency initiatives.
+- The company has a strong track record of dividend growth, with a 5-year dividend growth rate of 6.3%.
+- The company has a solid dividend growth rate of 4.2% over the past 5 years.
+- **NextEra Energy, Inc. The company has an impressive 5-year dividend growth rate of 10.3%, driven by its strong performance in the renewable energy sector.
+- **Dominion Energy, Inc. The company has a 5-year dividend growth rate of 4.5%, with a focus on expanding its natural gas infrastructure.
+- The company has a 5-year dividend growth rate of 7.1%, driven by its commitment to renewable energy and energy efficiency initiatives.
 
 ## Strategy
 When building a dividend portfolio with utility stocks, it's essential to consider a long-term approach. Investing in a mix of established players with strong track records and newer companies with growth potential can help balance risk and reward. It's also crucial to monitor dividend yields, payout ratios, and growth rates to ensure that your investments remain aligned with your income goals. Reinvesting dividends can significantly enhance the growth of your portfolio over time, taking advantage of the power of compounding. Additionally, diversifying your portfolio across different sectors and asset classes can help mitigate risk and increase potential returns.

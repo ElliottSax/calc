@@ -182,7 +182,7 @@ REITs provide real estate exposure to small investors:
 **Conservative REIT Portfolio:**
 - Digital Realty (DLR) - Data centers, high growth
 - Realty Income (O) - Diversified, proven
-- National Retail (NRT) - Net-lease (tenant-maintained)
+- National Retail Properties (NNN) - Net-lease (tenant-maintained)
 
 **Income-Focused REIT Portfolio:**
 - Realty Income (O) - 4% yield

@@ -19,13 +19,6 @@ When evaluating dividend stocks, it's essential to consider a combination of fac
 
 Some of the top dividend stocks for 2026 include:
 
-* **Johnson & Johnson (JNJ)**, with a current yield of 2.85% and a payout ratio of 53.21%. JNJ has consistently increased its dividend over the past 59 years, with a 5-year CAGR of 6.23%.
-* **Procter & Gamble (PG)**, offering a yield of 2.64% and a payout ratio of 59.15%. PG has a long history of dividend growth, with a 5-year CAGR of 4.21%.
-* **ExxonMobil (XOM)**, with a yield of 4.93% and a payout ratio of 44.19%. XOM has increased its dividend for 39 consecutive years, with a 5-year CAGR of 4.51%.
-* **3M (MMM)**, providing a yield of 3.53% and a payout ratio of 51.35%. MMM has a 103-year history of paying dividends and has increased its payout for 103 consecutive years, with a 5-year CAGR of 3.45%.
-* **Coca-Cola (KO)**, with a yield of 2.95% and a payout ratio of 74.19%. KO has increased its dividend for 59 consecutive years, with a 5-year CAGR of 4.11%.
-* **Real Estate Investment Trust (REIT) Realty Income (O)**, offering a yield of 4.23% and a payout ratio of 83.19%. O has increased its dividend for 114 consecutive quarters, with a 5-year CAGR of 3.91%.
-
 ## Comparison
 When comparing these dividend stocks, it's essential to consider your individual investment goals and risk tolerance. For example, if you prioritize a high yield, ExxonMobil (XOM) and Realty Income (O) may be more attractive options. However, if you prefer a lower payout ratio and a long history of dividend growth, Johnson & Johnson (JNJ) or Procter & Gamble (PG) might be a better fit. It's also crucial to evaluate the company's underlying business, industry trends, and competitive position to ensure the dividend is sustainable.
 

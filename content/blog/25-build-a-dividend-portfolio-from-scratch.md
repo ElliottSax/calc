@@ -436,8 +436,6 @@ Stock price drops by approximately the dividend amount on ex-dividend date, elim
 **Solution:**
 Ignore ex-dividend dates for long-term investing. Buy based on fundamental value, not dividend capture.
 
-## Real-World Examples and Calculations
-
 ## Example 1: $10,000 Dividend Aristocrats Portfolio
 
 **Goal:** Build stable, growing dividend income with low risk
@@ -618,7 +616,7 @@ A: You can start with as little as $500 using fractional shares, but $5,000-$10,
 
 **Q: Should I invest all at once or use dollar-cost averaging?**
 
-A: Research shows lump-sum investing outperforms dollar-cost averaging (DCA) roughly 66% of the time. However, DCA provides psychological comfort and reduces timing risk. A hybrid approach works well: invest 50% immediately, then DCA the remaining 50% over 3 months. This balances time-in-market benefits with risk management.
+A: A 2012 Vanguard study found that investing a lump sum immediately beat spreading it out over a year roughly two-thirds of the time across U.S., U.K. and Australian markets. However, DCA provides psychological comfort and reduces timing risk. A hybrid approach works well: invest 50% immediately, then DCA the remaining 50% over 3 months. This balances time-in-market benefits with risk management.
 
 **Q: What's a realistic dividend yield to target?**
 
@@ -626,7 +624,7 @@ A: For most investors, target 3-5% weighted average yield. Lower yields (2-3%) f
 
 **Q: How many dividend stocks should I own?**
 
-A: Aim for 15-20 individual stocks to achieve adequate diversification without overwhelming yourself. Research shows diversification benefits plateau after 15-20 holdings. Below 10 stocks, you carry significant concentration risk. Above 25 stocks, tracking becomes difficult and performance dilution occurs.
+A: Aim for 15-20 individual stocks to achieve adequate diversification without overwhelming yourself. In the classic diversification literature most of the benefit arrives within roughly the first 15-30 holdings; the exact number is debated. Below 10 stocks, you carry significant concentration risk. Above 25 stocks, tracking becomes difficult and performance dilution occurs.
 
 **Q: Should beginners choose individual stocks or dividend ETFs?**
 

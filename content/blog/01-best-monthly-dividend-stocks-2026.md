@@ -27,9 +27,9 @@ In 2026, as economic uncertainty persists, investors increasingly value the cert
 
 ### Current Dividend Yield Environment
 
-The 2026 dividend yield landscape reflects a normalized interest rate environment. With the federal funds rate stabilizing around 4.25-4.50%, dividend yields remain attractive compared to money market funds and savings accounts.
+The 2026 dividend yield landscape reflects a normalized interest rate environment.
 
-Monthly dividend stocks currently yield between 4.5% and 8.5% annually—substantially higher than the 4.3% average for S&P 500 dividend stocks. This yield premium compensates for volatility while providing superior income generation.
+This yield premium compensates for volatility while providing superior income generation.
 
 ### Sustainability and Growth Potential
 

@@ -10,7 +10,7 @@ publishDate: '''''''2026-03-19'''''''
 
 ## INTRODUCTION
 
-In the world of dividend investing, it's essential to separate the winners from the losers. By leveraging momentum and dividend performance, you can create a sustainable income-generating portfolio that outperforms the market. According to a study by Morningstar, dividend momentum stocks have outperformed non-momentum dividend stocks by 4.5% annually over the past 10 years (2026 data). By mastering the dividend momentum strategy, you can capture this outperformance and ride the wave of top-performing dividend stocks.
+In the world of dividend investing, it's essential to separate the winners from the losers. By leveraging momentum and dividend performance, you can create a sustainable income-generating portfolio that outperforms the market. By mastering the dividend momentum strategy, you can capture this outperformance and ride the wave of top-performing dividend stocks.
 
 In 2026, the stock market is expected to remain volatile, with interest rates fluctuating and economic growth uncertain. A dividend momentum strategy can help you navigate these challenges by focusing on stocks with a proven track record of delivering consistent dividend growth and share price appreciation. By following this comprehensive guide, you'll learn how to implement the dividend momentum strategy, construct a winning portfolio, and manage risk to maximize your returns.
 

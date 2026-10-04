@@ -53,7 +53,6 @@
 | 39 | International REITs Global Diversification | 2,297 | international-reits-global-diversification |
 | 40 | Private REITs vs Public REITs Comparison | 2,306 | private-reits-vs-public-reits-comparison |
 
-
 ## Key Topics Covered
 
 ### Property Type Deep-Dives (20 articles)

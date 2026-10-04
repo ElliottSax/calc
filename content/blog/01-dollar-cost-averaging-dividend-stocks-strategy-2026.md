@@ -197,7 +197,7 @@ DCA doesn't change dividend tax treatment, but consistent reinvestment creates a
 ## FAQ: Dollar Cost Averaging for Dividend Investing
 
 **Q: Is DCA better than lump sum investing?**
-A: Research shows lump sum investing slightly outperforms DCA 2/3 of the time over long periods (10+ years). However, DCA significantly reduces regret and stress. For most investors, the psychological benefit justifies modest return differences.
+A: A 2012 Vanguard study found that investing a lump sum immediately beat spreading it out over a year roughly two-thirds of the time across U.S., U.K. and Australian markets. However, DCA significantly reduces regret and stress. For most investors, the psychological benefit justifies modest return differences.
 
 **Q: How long should I practice DCA?**
 A: Minimum 5 years for meaningful results. Ideally, 10-30 years for compounding effects. The longer your timeline, the better DCA works.

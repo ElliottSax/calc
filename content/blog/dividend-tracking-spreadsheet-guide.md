@@ -12,16 +12,10 @@ tags:
 ---
 
 ## Introduction
-As a dividend investor, tracking your portfolio's performance is crucial to making informed decisions and maximizing returns. One essential tool for achieving this is a dividend tracking spreadsheet. In this article, we will provide a comprehensive guide on how to create and utilize a dividend tracking spreadsheet, complete with real-world examples and data from 2026. By the end of this guide, you will be equipped with the knowledge to optimize your dividend investing strategy and take your portfolio to the next level.
+As a dividend investor, tracking your portfolio's performance is crucial to making informed decisions and maximizing returns. One essential tool for achieving this is a dividend tracking spreadsheet. By the end of this guide, you will be equipped with the knowledge to optimize your dividend investing strategy and take your portfolio to the next level.
 
 ## Analysis
 A dividend tracking spreadsheet is a powerful tool that allows you to monitor your portfolio's dividend income, yield, payout ratio, and growth rate in real-time. To demonstrate the effectiveness of this tool, let's analyze six dividend-paying stocks: Johnson & Johnson (JNJ), Procter & Gamble (PG), Coca-Cola (KO), 3M (MMM), ExxonMobil (XOM), and Realty Income (O). As of 2026, these stocks have the following dividend metrics:
-- Johnson & Johnson (JNJ): 2.7% current yield, 54.1% payout ratio, 5-year dividend growth rate of 6.2%
-- Procter & Gamble (PG): 2.4% current yield, 60.3% payout ratio, 5-year dividend growth rate of 4.1%
-- Coca-Cola (KO): 3.1% current yield, 77.4% payout ratio, 5-year dividend growth rate of 4.5%
-- 3M (MMM): 3.5% current yield, 63.2% payout ratio, 5-year dividend growth rate of 2.9%
-- ExxonMobil (XOM): 5.1% current yield, 54.5% payout ratio, 5-year dividend growth rate of 1.4%
-- Realty Income (O): 4.3% current yield, 86.1% payout ratio, 5-year dividend growth rate of 3.2%
 By tracking these metrics, you can identify trends, opportunities, and potential risks within your portfolio.
 
 ## Comparison

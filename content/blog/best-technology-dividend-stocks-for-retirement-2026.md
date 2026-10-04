@@ -18,11 +18,11 @@ As the world becomes increasingly dependent on technology, investing in technolo
 When evaluating technology dividend stocks, it's essential to consider several key factors. First, we look at the current yield, which represents the annual dividend payment per share as a percentage of the stock's current price. A higher yield can be attractive, but it's also important to consider the payout ratio, which indicates the percentage of earnings paid out as dividends. A payout ratio below 100% suggests that the company can sustain its dividend payments. Additionally, we examine the growth rate of the dividend payments over time, as a rising dividend can increase the investor's income stream.
 
 Some of the top technology dividend stocks for 2026 include:
-- **Intel Corporation (INTC)**, with a current yield of 2.35% and a payout ratio of 34.6%. Intel has increased its dividend payments by 5.5% annually over the past five years.
-- **Cisco Systems, Inc. (CSCO)**, offering a current yield of 3.23% and a payout ratio of 43.8%. Cisco has grown its dividend payments by 7.1% annually over the past five years.
-- **IBM Corporation (IBM)**, with a current yield of 4.72% and a payout ratio of 83.5%. IBM has increased its dividend payments by 4.3% annually over the past five years.
-- **Microsoft Corporation (MSFT)**, featuring a current yield of 1.15% and a payout ratio of 29.4%. Microsoft has grown its dividend payments by 10.3% annually over the past five years.
-- **Texas Instruments Incorporated (TXN)**, with a current yield of 2.83% and a payout ratio of 58.3%. Texas Instruments has increased its dividend payments by 12.1% annually over the past five years.
+- Intel has increased its dividend payments by 5.5% annually over the past five years.
+- **Cisco Systems, Inc. Cisco has grown its dividend payments by 7.1% annually over the past five years.
+- IBM has increased its dividend payments by 4.3% annually over the past five years.
+- Microsoft has grown its dividend payments by 10.3% annually over the past five years.
+- Texas Instruments has increased its dividend payments by 12.1% annually over the past five years.
 
 ## Comparison
 When comparing these technology dividend stocks, it's clear that each has its strengths and weaknesses. For example, **IBM** offers the highest current yield, but its payout ratio is relatively high, which may indicate a higher risk of dividend cuts in the future. On the other hand, **Microsoft** has the lowest payout ratio and the highest dividend growth rate, making it an attractive option for long-term investors. **Intel** and **Cisco** offer a balance between yield and growth, with moderate payout ratios and steady dividend increases.

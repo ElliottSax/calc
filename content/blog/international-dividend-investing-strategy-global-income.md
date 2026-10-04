@@ -54,7 +54,6 @@ Let's consider a hypothetical portfolio of international dividend stocks, alloca
 
 | Stock | Country | Dividend Yield | Payout Ratio |
 | --- | --- | --- | --- |
-| Royal Dutch Shell | UK/Netherlands | 5.5% | 60% |
 | Telus Corporation | Canada | 4.2% | 60% |
 | Commonwealth Bank of Australia | Australia | 4.5% | 70% |
 | Nestle SA | Switzerland | 3.2% | 50% |

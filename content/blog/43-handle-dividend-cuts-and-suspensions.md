@@ -121,8 +121,6 @@ Buy-and-forget leads to holding deteriorating positions through dividend cuts.
 
 **Solution:** Review portfolio quarterly. Update safety metrics and watch for warning signs.
 
-## Real-World Examples and Calculations
-
 ## Example 1: Building a $10,000 Starter Portfolio
 
 **Goal:** Create diversified dividend portfolio with 4% yield
@@ -260,7 +258,7 @@ A: For most investors, 3-5% is realistic and sustainable. Yields below 2% may no
 
 **Q: How many dividend stocks should I own?**
 
-A: Aim for 15-20 individual stocks for adequate diversification. Below 10 stocks carries concentration risk. Above 25 stocks becomes difficult to track effectively. Research shows diversification benefits plateau after 15-20 holdings.
+A: Aim for 15-20 individual stocks for adequate diversification. Below 10 stocks carries concentration risk. Above 25 stocks becomes difficult to track effectively. In the classic diversification literature most of the benefit arrives within roughly the first 15-30 holdings; the exact number is debated.
 
 **Q: Should I reinvest dividends automatically?**
 

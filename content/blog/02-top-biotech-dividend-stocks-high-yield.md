@@ -83,7 +83,6 @@ TECH completes our stock analysis with a company offering solid dividend income 
 | BMRN Co | BMRN | 1.5% | 40% | 3.9% | Biotechnology |
 | TECH Co | TECH | 0.0% | 35% | 1.8% | Biotechnology |
 
-
 The comparison table above highlights the diversity of dividend opportunities within biotechnology. Yields range from 0.0% to 3.2%, accommodating different income objectives. Payout ratios vary by company, with most maintaining sustainable levels between 30-60%. The 5-year dividend growth rates demonstrate management commitment to rewarding shareholders with increasing distributions.
 
 ### Investment Considerations

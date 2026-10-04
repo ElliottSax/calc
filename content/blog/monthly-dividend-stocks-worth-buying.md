@@ -17,12 +17,9 @@ Monthly dividend stocks have gained significant attention in recent years, parti
 ## Analysis
 When evaluating monthly dividend stocks, it's essential to consider several key metrics, including current yield, payout ratio, and growth rate. The current yield represents the annual dividend payment per share, divided by the stock's current price. A payout ratio, on the other hand, indicates the percentage of earnings allocated to dividend payments. A growth rate reflects the historical increase in dividend payments over time. By examining these metrics, investors can assess the sustainability and potential of a monthly dividend stock.
 
-For instance, let's consider the example of Realty Income (O), a well-established real estate investment trust (REIT) with a history of paying monthly dividends. As of 2026, Realty Income offers a current yield of 4.2%, with a payout ratio of 83% and a 5-year dividend growth rate of 4.5%. Another example is AGNC Investment Corp (AGNC), a mortgage REIT that distributes monthly dividends, boasting a current yield of 10.3%, a payout ratio of 94%, and a 5-year dividend growth rate of 2.1%.
+For instance, let's consider the example of Realty Income (O), a well-established real estate investment trust (REIT) with a history of paying monthly dividends. As of 2026, Realty Income offers a current yield of 4.2%, with a payout ratio of 83% and a 5-year dividend growth rate of 4.5%.
 
 Other notable monthly dividend stocks include:
-- STAG Industrial (STAG), with a current yield of 4.1%, a payout ratio of 74%, and a 5-year dividend growth rate of 5.2%.
-- Gladstone Commercial (GOOD), offering a current yield of 7.1%, a payout ratio of 93%, and a 5-year dividend growth rate of 1.8%.
-- Global Net Lease (GNL), featuring a current yield of 9.5%, a payout ratio of 89%, and a 5-year dividend growth rate of 3.5%.
 
 ## Comparison
 When comparing monthly dividend stocks, it's crucial to weigh the trade-offs between yield, payout ratio, and growth rate. While a higher yield may seem appealing, it's essential to assess the sustainability of the dividend payments. A lower payout ratio can indicate a more secure dividend, as the company has more room to maneuver in case of earnings fluctuations. On the other hand, a higher growth rate can contribute to long-term wealth creation, as the dividend payments increase over time.

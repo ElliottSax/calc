@@ -150,7 +150,7 @@ REITs must distribute 90% of income as dividends, making them high-yield DRIP ca
 
 **Examples:**
 - Realty Income (O) - "Monthly Dividend Company"
-- National Retail Properties (NRT)
+- National Retail Properties (NNN)
 - Digital Realty (DLR)
 - Medical Properties Trust (MPW)
 

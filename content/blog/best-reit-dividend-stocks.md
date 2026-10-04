@@ -21,18 +21,18 @@ This isn't investment advice, but it's a practical shortlist of income-focused R
 
 | REIT | Ticker | Yield | Sector | Why it's reliable |
 |---|---|---|---|---|
-| Realty Income | O | 5.5% | Net lease retail | Monthly dividends; 100+ consecutive quarterly increases |
-| Agree Realty | ADC | 4.1% | Net lease retail | Monthly payer; high-quality tenants, low payout |
-| W. P. Carey | WPC | 5.8% | Diversified net lease | Global, inflation-linked leases |
-| VICI Properties | VICI | 5.3% | Gaming / experiential | Long triple-net leases with casino operators |
-| Prologis | PLD | 3.4% | Industrial / logistics | Warehouses riding e-commerce demand |
-| American Tower | AMT | 3.3% | Cell towers | Essential 5G infrastructure, contracted growth |
-| Public Storage | PSA | 4.3% | Self-storage | Recession-resistant, low operating costs |
-| Federal Realty | FRT | 4.4% | Shopping centers | Dividend King — 50+ years of increases |
-| STAG Industrial | STAG | 4.2% | Industrial | Monthly dividends; single-tenant warehouses |
-| National Retail Properties | NNN | 5.6% | Net lease retail | 30+ straight years of dividend increases |
+| Realty Income | [O](/stocks/O) | ~5.5% | Net lease retail | Monthly dividends; 100+ consecutive quarterly increases |
+| Agree Realty | [ADC](/stocks/ADC) | ~4.1% | Net lease retail | Monthly payer; high-quality tenants, low payout |
+| W. P. Carey | [WPC](/stocks/WPC) | ~5.8% | Diversified net lease | Global, inflation-linked leases |
+| VICI Properties | [VICI](/stocks/VICI) | ~5.3% | Gaming / experiential | Long triple-net leases with casino operators |
+| Prologis | [PLD](/stocks/PLD) | ~3.4% | Industrial / logistics | Warehouses riding e-commerce demand |
+| American Tower | [AMT](/stocks/AMT) | ~3.3% | Cell towers | Essential 5G infrastructure, contracted growth |
+| Public Storage | [PSA](/stocks/PSA) | ~4.3% | Self-storage | Recession-resistant, low operating costs |
+| Federal Realty | [FRT](/stocks/FRT) | ~4.4% | Shopping centers | Dividend King — 50+ years of increases |
+| STAG Industrial | [STAG](/stocks/STAG) | ~4.2% | Industrial | Monthly dividends; single-tenant warehouses |
+| National Retail Properties | [NNN](/stocks/NNN) | ~5.6% | Net lease retail | 30+ straight years of dividend increases |
 
-*Yields move with share prices; treat these as a snapshot and check current figures before buying.*
+*Yields move with share prices. These are approximate figures compiled when this article was written (July 2026) — a snapshot, not a live quote. Click a ticker for current data and check the figures before buying.*
 
 ### Monthly-paying REITs: O, ADC, STAG
 

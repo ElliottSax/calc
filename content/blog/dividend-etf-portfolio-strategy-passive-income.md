@@ -11,7 +11,7 @@ publishDate: '''''''2026-03-19'''''''
 
 ## INTRODUCTION
 
-In the current market landscape of 2026, investors are increasingly seeking reliable sources of passive income to supplement their portfolios. One effective strategy for achieving this goal is through dividend ETFs, which offer a convenient and diversified way to tap into the power of dividend-paying stocks. According to a recent study, the average dividend yield for the S&P 500 index has hovered around 2% for the past decade, providing a steady stream of income for investors.
+In the current market landscape of 2026, investors are increasingly seeking reliable sources of passive income to supplement their portfolios. One effective strategy for achieving this goal is through dividend ETFs, which offer a convenient and diversified way to tap into the power of dividend-paying stocks.
 
 By leveraging dividend ETFs, you can create a diversified portfolio that generates consistent returns, regardless of market fluctuations. In this article, we will explore a comprehensive dividend ETF portfolio strategy, providing you with the knowledge and tools to build a sustainable passive income stream using index funds.
 
@@ -26,20 +26,11 @@ The dividend ETF portfolio strategy outlined in this article is centered around 
 
 To implement this strategy, you should consider the following selection criteria:
 
-| ETF | Description | Dividend Yield | Expense Ratio |
-| --- | --- | --- | --- |
-| VYM | Vanguard High Dividend Yield ETF | 3.23% | 0.06% |
-| SCHD | Schwab U.S. Dividend Equity ETF | 2.53% | 0.03% |
-| VIG | Vanguard Dividend Appreciation ETF | 2.22% | 0.06% |
-| DGRO | iShares Core S\&P U.S. Dividend Growth ETF | 2.11% | 0.04% |
-| NOBL | SPDR S\&P 500 Dividend ETF | 2.41% | 0.35% |
-
 ## IMPLEMENTATION STEPS
 
 To build a dividend ETF portfolio, follow these step-by-step instructions:
 
 1. **Set your investment goal**: Determine your desired level of passive income and risk tolerance.
-2. **Choose your ETFs**: Select a mix of ETFs from the table above, considering your investment goal and risk tolerance.
 3. **Allocate your portfolio**: Divide your investment between the selected ETFs, aiming for a diversified portfolio.
 4. **Rebalance your portfolio**: Regularly review and adjust your portfolio to maintain the desired asset allocation.
 5. **Monitor and adjust**: Continuously monitor your portfolio's performance and rebalance as needed.

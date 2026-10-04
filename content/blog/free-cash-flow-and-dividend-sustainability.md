@@ -18,11 +18,6 @@ As a dividend investor, one of the most critical factors to consider when evalua
 Free cash flow is a crucial metric in evaluating a company's ability to pay dividends because it provides insight into the company's cash-generating capabilities. A company with a high free cash flow can afford to pay dividends, invest in growth initiatives, and service its debt obligations. On the other hand, a company with a low or negative free cash flow may struggle to maintain its dividend payments, let alone invest in its business or pay off debt. To assess dividend sustainability using free cash flow, investors should consider the following key metrics: current yield, payout ratio, and growth rate. The current yield represents the annual dividend payment per share divided by the stock's current price. The payout ratio, expressed as a percentage, is the ratio of the annual dividend payment per share to the company's earnings per share. The growth rate, typically measured over a five-year period, reflects the company's ability to increase its dividend payments over time.
 
 For example, consider the following dividend-paying stocks: ExxonMobil (XOM), 3M (MMM), Procter & Gamble (PG), Coca-Cola (KO), and Realty Income (O). As of 2026, these stocks have the following characteristics:
-- ExxonMobil (XOM): current yield of 5.1%, payout ratio of 43%, and a five-year dividend growth rate of 4.5%
-- 3M (MMM): current yield of 3.8%, payout ratio of 54%, and a five-year dividend growth rate of 7.1%
-- Procter & Gamble (PG): current yield of 2.6%, payout ratio of 62%, and a five-year dividend growth rate of 4.2%
-- Coca-Cola (KO): current yield of 3.1%, payout ratio of 74%, and a five-year dividend growth rate of 5.5%
-- Realty Income (O): current yield of 4.5%, payout ratio of 83%, and a five-year dividend growth rate of 4.1%
 These stocks demonstrate varying levels of dividend sustainability based on their free cash flow, payout ratios, and growth rates.
 
 ## Comparison

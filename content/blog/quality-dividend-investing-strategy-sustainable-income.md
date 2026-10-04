@@ -10,7 +10,7 @@ publishDate: '''''''2026-03-19'''''''
 
 ## INTRODUCTION
 
-In the current market landscape of 2026, investors are seeking reliable sources of income that can withstand economic downturns and volatile market conditions. One such strategy that has proven its worth is quality dividend investing, which focuses on identifying and investing in elite companies with strong dividend track records, robust financials, and sustainable growth potential. According to a recent study, high-quality dividend stocks have outperformed their lower-quality counterparts by as much as 40% over the past decade.
+In the current market landscape of 2026, investors are seeking reliable sources of income that can withstand economic downturns and volatile market conditions. One such strategy that has proven its worth is quality dividend investing, which focuses on identifying and investing in elite companies with strong dividend track records, robust financials, and sustainable growth potential.
 
 With the Federal Reserve signaling a potential rate hike in 2026, investors are increasingly turning to dividend investing as a hedge against inflation and market volatility. By adopting a quality dividend investing strategy, you can create a sustainable income stream that not only provides a steady return but also reduces your overall portfolio risk. In this article, we will explore the core principles, selection criteria, and implementation steps for a quality dividend investing strategy that can help you achieve your financial goals.
 
@@ -82,13 +82,7 @@ Disadvantages:
 
 ## CALCULATOR INTEGRATION
 
-To model scenarios and calculate the potential returns of a quality dividend investing portfolio, use our Dividend Growth Calculator and DRIP Calculator. For example, assuming an initial investment of $100,000 in Johnson & Johnson (JNJ) with a dividend yield of 3.5% and a dividend growth rate of 5% per annum, the calculator would project a total return of 25% per annum over a 10-year period.
-
-| Year | Dividend Yield | Dividend Growth Rate | Total Return |
-| --- | --- | --- | --- |
-| 2026 | 3.5% | 5% | 25% |
-| 2027 | 3.65% | 5% | 25% |
-| 2028 | 3.85% | 5% | 25% |
+To model scenarios and calculate the potential returns of a quality dividend investing portfolio, use our [Dividend Growth Calculator](/calculators/dividend-growth) and [DRIP Calculator](/calculators/drip). Enter a starting amount, the current yield of the stock or fund you are considering, and a dividend growth rate you believe is sustainable; the calculators show how the income stream and total value compound year by year under those assumptions. The result is only as good as the inputs — use a company's actual recent dividend growth rather than a hoped-for figure.
 
 ## FIVE FAQs
 

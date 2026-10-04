@@ -32,22 +32,22 @@ This isn't investment advice, but it is a practical starting point: a shortlist 
 
 | Stock | Ticker | Yield | Payout ratio | Consecutive years of increases | Why it's beginner-friendly |
 |---|---|---|---|---|---|
-| Johnson & Johnson | JNJ | 2.7% | 54% | 59 | Diversified healthcare; recession-resistant demand |
-| Procter & Gamble | PG | 2.5% | 63% | 66 | Everyday consumer staples people buy in any economy |
-| Coca-Cola | KO | 2.9% | 74% | 59 | Global brand, extremely predictable cash flow |
-| PepsiCo | PEP | 2.6% | 71% | 49 | Snacks + drinks; faster dividend growth than KO |
-| 3M | MMM | 3.5% | 54% | 100+ | Industrial staple with a century of payments |
-| Realty Income | O | 5.4% | High (REIT) | 25+ | Monthly dividends; "The Monthly Dividend Company" |
-| Verizon | VZ | 6.3% | 55% | 18 | High current income from a stable telecom |
-| Exxon Mobil | XOM | 3.4% | 47% | 40+ | Energy exposure with a strong balance sheet |
-| Home Depot | HD | 2.4% | 55% | 14 | Durable retailer with strong dividend growth |
-| Abbott Laboratories | ABT | 1.9% | 50% | 50+ | Lower yield, but steady growth and stability |
+| Johnson & Johnson | [JNJ](/stocks/JNJ) | ~2.7% | ~54% | 59+ | Diversified healthcare; recession-resistant demand |
+| Procter & Gamble | [PG](/stocks/PG) | ~2.5% | ~63% | 66+ | Everyday consumer staples people buy in any economy |
+| Coca-Cola | [KO](/stocks/KO) | ~2.9% | ~74% | 59+ | Global brand, extremely predictable cash flow |
+| PepsiCo | [PEP](/stocks/PEP) | ~2.6% | ~71% | 49+ | Snacks + drinks; faster dividend growth than KO |
+| Colgate-Palmolive | [CL](/stocks/CL) | ~2.3% | ~57% | 60+ | Toothpaste and soap sell in every economy; raised every year since the 1960s |
+| Realty Income | [O](/stocks/O) | ~5.4% | High (REIT) | 25+ | Monthly dividends; "The Monthly Dividend Company" |
+| Verizon | [VZ](/stocks/VZ) | ~6.3% | ~55% | 18+ | High current income from a stable telecom |
+| Exxon Mobil | [XOM](/stocks/XOM) | ~3.4% | ~47% | 40+ | Energy exposure with a strong balance sheet |
+| Home Depot | [HD](/stocks/HD) | ~2.4% | ~55% | 14+ | Durable retailer with strong dividend growth |
+| Abbott Laboratories | [ABT](/stocks/ABT) | ~1.9% | ~50% | 50+ | Lower yield, but steady growth and stability |
 
-*Yields and payout ratios move with share prices; treat the figures above as a snapshot, not a live quote. Always check current numbers before buying.*
+*Yields and payout ratios move with share prices. The figures above are approximate and were compiled when this article was written (July 2026) — a snapshot, not a live quote. Click a ticker for current data, and always check the numbers before buying. (3M, which appeared in an earlier version of this list, was removed after it cut its dividend in 2024, ending a 64-year streak of increases.)*
 
-### The blue-chip core: JNJ, PG, KO, PEP, MMM
+### The blue-chip core: JNJ, PG, KO, PEP, CL
 
-These are **Dividend Kings and Aristocrats** — companies that have raised their dividend for 25+ (often 50+) consecutive years. Johnson & Johnson has increased its payout for 59 straight years; Procter & Gamble for 66; 3M for over a century. You're not buying them for excitement — you're buying decades of proven reliability. For a first dividend portfolio, this group is the ballast.
+These are **Dividend Kings and Aristocrats** — companies that have raised their dividend for 25+ (often 50+) consecutive years. Johnson & Johnson has increased its payout for roughly 60 straight years, Procter & Gamble for more than 65, and Colgate-Palmolive every year since the early 1960s. You're not buying them for excitement — you're buying decades of proven reliability. For a first dividend portfolio, this group is the ballast.
 
 ### The higher-income options: O, VZ, XOM
 
@@ -96,4 +96,4 @@ Want to see the difference reinvesting makes? Our **[DRIP calculator](/calculato
 
 ## The bottom line
 
-The best dividend stocks for beginners aren't the flashiest — they're the durable ones: JNJ, PG, KO, PEP, MMM, O, VZ, XOM, HD, and ABT. Build a small, diversified basket, turn on reinvestment, add to it regularly, and let compounding do the heavy lifting. Start by modeling your own numbers with the **[DRIP calculator](/calculators/drip)**, then open an account and begin — consistency, not perfection, is what builds a dividend portfolio.
+The best dividend stocks for beginners aren't the flashiest — they're the durable ones: JNJ, PG, KO, PEP, CL, O, VZ, XOM, HD, and ABT. Build a small, diversified basket, turn on reinvestment, add to it regularly, and let compounding do the heavy lifting. Start by modeling your own numbers with the **[DRIP calculator](/calculators/drip)**, then open an account and begin — consistency, not perfection, is what builds a dividend portfolio.

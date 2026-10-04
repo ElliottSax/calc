@@ -15,13 +15,12 @@ tags:
 As a retail investor, navigating economic recessions can be challenging, especially when it comes to dividend investing. During times of economic uncertainty, many investors flee to safer assets, such as bonds or money market funds. However, dividend stocks can provide a relatively stable source of income and potentially lower volatility, making them an attractive option for investors seeking to generate returns during recessions. In this article, we will delve into the world of dividend stocks during economic recessions, exploring their benefits, analyzing specific examples, and providing a strategy for investors to consider.
 
 ## Analysis
-Dividend stocks are often characterized by their ability to generate consistent income, which can be particularly valuable during economic downturns. Companies with a history of paying dividends tend to be more established, with strong financials and a proven track record of weathering economic storms. When selecting dividend stocks during a recession, it's essential to focus on companies with a stable payout ratio, a history of dividend growth, and a strong balance sheet. According to recent data from 2026, some of the top dividend stocks in the S&P 500 include:
+Dividend stocks are often characterized by their ability to generate consistent income, which can be particularly valuable during economic downturns. Companies with a history of paying dividends tend to be more established, with strong financials and a proven track record of weathering economic storms. When selecting dividend stocks during a recession, it's essential to focus on companies with a stable payout ratio, a history of dividend growth, and a strong balance sheet.
 
-* ExxonMobil (XOM), with a current yield of 5.2% and a payout ratio of 53%. ExxonMobil has a long history of paying dividends, with a 5-year dividend growth rate of 4.5%.
-* Procter & Gamble (PG), with a current yield of 2.6% and a payout ratio of 64%. Procter & Gamble has increased its dividend for 65 consecutive years, with a 5-year dividend growth rate of 3.5%.
-* Coca-Cola (KO), with a current yield of 3.1% and a payout ratio of 77%. Coca-Cola has a long history of paying dividends, with a 5-year dividend growth rate of 4.8%.
-* 3M (MMM), with a current yield of 3.5% and a payout ratio of 54%. 3M has increased its dividend for 103 consecutive years, with a 5-year dividend growth rate of 3.2%.
-* Johnson & Johnson (JNJ), with a current yield of 2.8% and a payout ratio of 52%. Johnson & Johnson has a long history of paying dividends, with a 5-year dividend growth rate of 5.5%.
+* ExxonMobil has a long history of paying dividends, with a 5-year dividend growth rate of 4.5%.
+* Procter & Gamble has increased its dividend for 65 consecutive years, with a 5-year dividend growth rate of 3.5%.
+* Coca-Cola has a long history of paying dividends, with a 5-year dividend growth rate of 4.8%.
+* Johnson & Johnson has a long history of paying dividends, with a 5-year dividend growth rate of 5.5%.
 
 These companies have demonstrated their ability to maintain and grow their dividend payments during economic recessions, making them attractive options for investors seeking stable income.
 

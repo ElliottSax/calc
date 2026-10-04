@@ -371,8 +371,6 @@ Buy-and-forget leads to holding through deterioration and dividend cuts.
 
 **Solution:** Quarterly review of all five safety metrics. Set calendar reminders.
 
-## Real-World Examples and Calculations
-
 ## Example 1: Analyzing Johnson & Johnson (JNJ) - Very Safe
 
 **Data (from 2023 10-K and Yahoo Finance):**
