@@ -1,0 +1,12 @@
+[
+  { "source": "/blog/foreign-dividend-tax-withholding", "destination": "/blog/05-international-dividend-withholding-tax-strategies" },
+  { "source": "/blog/dividend-growth-rate-calculator", "destination": "/calculators/dividend-growth" },
+  { "source": "/blog/how-to-calculate-dividend-yield", "destination": "/blog/17-how-to-calculate-dividend-yield-correctly" },
+  { "source": "/blog/dividend-income-vs-capital-gains", "destination": "/blog/06-qualified-dividend-income-vs-ordinary-income-tax" },
+  { "source": "/blog/how-to-screen-for-quality-dividend-stocks", "destination": "/blog/24-how-to-screen-quality-dividend-stocks" },
+  { "source": "/blog/dividend-discount-model-calculator", "destination": "/calculators/dividend-growth" },
+  { "source": "/blog/how-to-read-dividend-payout-ratios", "destination": "/blog/34-read-and-understand-payout-ratios" },
+  { "source": "/blog/best-dividend-growth-stocks-2026", "destination": "/blog/07-best-dividend-growth-stocks-2026" },
+  { "source": "/blog/how-to-find-dividend-stocks", "destination": "/blog/18-how-to-find-dividend-stocks-before-popular" },
+  { "source": "/news", "destination": "/blog" }
+]

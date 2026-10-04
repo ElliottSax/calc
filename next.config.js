@@ -1,3 +1,5 @@
+const rankedRedirects = require('./lib/redirects/ranked-404-redirects.json')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -103,6 +105,11 @@ const nextConfig = {
         destination: '/blog/best-reit-dividend-stocks',
         permanent: true,
       },
+      // Pages that ranked in Search Console (positions ~6-30) but were deleted by the 2026-03-16
+      // auto-publish commit 38af51a, which dropped 63 static blog pages. Each now permanently
+      // redirects to its closest live successor. See lib/redirects/ranked-404-redirects.json
+      // and __tests__/content/ranked-redirects.test.ts (every target must resolve).
+      ...rankedRedirects.map(({ source, destination }) => ({ source, destination, permanent: true })),
       // Redirect old numeric blog IDs to new slug-based URLs (SEO 301 redirects)
       // Note: Handled by dynamic route handler in app/blog/[id]/route.ts
     ]
