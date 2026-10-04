@@ -47,6 +47,7 @@ export async function generateMetadata({ params }: BrokerPageProps): Promise<Met
   }
 
   return {
+    alternates: { canonical: `https://dividendengines.com/brokers/${broker.slug}` },
     title: `${broker.name} Review 2026 - ${broker.tagline}`,
     description: `Complete review of ${broker.name} for dividend investors. Fees, features, pros & cons.`,
     keywords: `${broker.name} review, ${broker.name} dividend investing, best broker for dividends, ${broker.name} DRIP`,

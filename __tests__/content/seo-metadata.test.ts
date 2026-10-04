@@ -39,6 +39,14 @@ describe('self-referencing canonicals', () => {
   })
 })
 
+describe('dynamic broker pages', () => {
+  it('/brokers/[slug] canonicalises to its own slug (it serves fidelity, m1-finance, schwab, robinhood)', () => {
+    expect(read('app/brokers/[slug]/page.tsx')).toContain(
+      'canonical: `https://dividendengines.com/brokers/${broker.slug}`',
+    )
+  })
+})
+
 describe('root layout metadata', () => {
   const layout = read('app/layout.tsx')
   it('does not advertise hreflang alternates that 404', () => {
