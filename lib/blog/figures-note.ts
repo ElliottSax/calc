@@ -6,11 +6,17 @@
 const TICKER_WITH_PCT = /\([A-Z]{1,5}(?:[.-][A-Z]{1,2})?\)[^.\n]{0,120}\d+(?:\.\d+)?\s*%/
 const TABLE_ROW_WITH_PCT = /^\|[^\n]*\d+(?:\.\d+)?\s*%[^\n]*\|\s*$/m
 
-/** True when the markdown body attaches percentages to named securities (tickers or table rows). */
+const ANY_TICKER = /\b[A-Z]{1,5}\b\s*(?:\(TSX\))?\s*\|/ // a ticker cell in a table row
+const PAREN_TICKER = /\([A-Z]{1,5}(?:[.-][A-Z]{1,2})?\)/
+
+/** True when the markdown body attaches percentages to named securities (tickers or table rows).
+ *  Posts whose percentages are computed from stated assumptions and name no securities (the
+ *  DRIP-timing article's year-by-year table) get no note. */
 export function needsFiguresNote(body: string): boolean {
   if (!body) return false
   const prose = body.replace(/```[\s\S]*?```/g, ' ')
-  return TICKER_WITH_PCT.test(prose) || TABLE_ROW_WITH_PCT.test(prose)
+  if (TICKER_WITH_PCT.test(prose)) return true
+  return TABLE_ROW_WITH_PCT.test(prose) && (PAREN_TICKER.test(prose) || ANY_TICKER.test(prose))
 }
 
 /** "March 2026" for a parseable frontmatter date, otherwise null. */

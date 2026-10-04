@@ -96,11 +96,18 @@ describe('indexable blog posts carry no unsourced or impossible figures', () => 
 describe('figures note helper', () => {
   it('fires for ticker + percentage and for percentage table rows', () => {
     expect(needsFiguresNote('Johnson & Johnson (JNJ) yields about 2.7% today.')).toBe(true)
-    expect(needsFiguresNote('| Stock | Yield |\n|---|---|\n| Coca-Cola | 2.9% |\n')).toBe(true)
+    expect(needsFiguresNote('| Stock | Ticker | Yield |\n|---|---|---|\n| Coca-Cola | KO | 2.9% |\n')).toBe(true)
   })
   it('stays quiet for prose without security figures', () => {
     expect(needsFiguresNote('Reinvesting dividends compounds over time. Start early.')).toBe(false)
     expect(needsFiguresNote('A 30% withholding tax applies in some countries.')).toBe(false)
+  })
+  it('stays quiet for computed tables that name no security (the DRIP-timing article)', () => {
+    const drip = readFileSync(path.join(BLOG, '08-drip-calculator-annual-vs-monthly-reinvestment-timing.md'), 'utf8')
+    expect(needsFiguresNote(drip)).toBe(false)
+    expect(needsFiguresNote('| Year | Annual | Monthly | Gap |\n|---|---|---|---|\n| 1 | $16,340 | $17,357 | 6.23% |\n')).toBe(false)
+    const beginners = readFileSync(path.join(BLOG, 'best-dividend-stocks-for-beginners.md'), 'utf8')
+    expect(needsFiguresNote(beginners)).toBe(true)
   })
   it('formats the written month or returns null', () => {
     expect(writtenMonth('2026-03-22')).toBe('March 2026')
