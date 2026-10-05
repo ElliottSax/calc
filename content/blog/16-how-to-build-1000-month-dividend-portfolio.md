@@ -63,13 +63,13 @@ Start with 5-8 high-quality, stable dividend payers. These large-cap stocks form
 | Coca-Cola (KO) | Consumer Staples | 2.9% | 23.1 | 61 years |
 | Procter & Gamble (PG) | Consumer Staples | 2.1% | 25.2 | 67 years |
 | Chevron (CVX) | Energy | 3.8% | 10.2 | 39 years |
-| AT&T (T) | Telecom | 6.5% | 8.1 | 39 years |
+| AT&T (T) | Telecom | 6.5% | 8.1 | Cut in 2022 |
 
 **Why these stocks?**
 - Proven business models
 - Consistent dividend histories
 - Lower volatility
-- Dividend Aristocrat status (25+ years of consecutive increases)
+- Long dividend-increase records at most of them (AT&T is the exception: it cut its dividend in 2022)
 
 **Dividend ETF Complement (30% of Portfolio)**
 
@@ -89,7 +89,6 @@ These companies offer higher dividend growth potential:
 
 - **Realty Income (O):** 3.6% yield, monthly distributions, 27 years of increases
 - **Universal Health Services (UHS):** 1.8% yield, strong growth track record
-- **Broadmark Realty Capital (BRMK):** 8.5% yield (mortgage REIT, higher volatility)
 
 **Sector Diversification**
 

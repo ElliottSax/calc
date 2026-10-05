@@ -74,7 +74,6 @@ Before searching, define your requirements:
 - Annual payout ratio: 30-60% (room for growth, sustainable)
 - Dividend yield: 2.5-7% (avoid yields above 8%, usually warning signs)
 - Debt-to-equity ratio: Below 1.0 (financial strength)
-- 5-year dividend growth rate: Minimum 3% annually (optional but preferred)
 
 **Financial Health Checks:**
 - Debt levels manageable
@@ -298,7 +297,7 @@ Monitor economic indicators and rotate accordingly.
 
 **Key insight:** Data center exposure was a secular growth tailwind, but many investors focused only on yield.
 
-### Case Study 2: Finding Broadmark Realty Capital (BRMK)
+### Case Study 2: Finding a Small-Cap Mortgage REIT (hypothetical example)
 
 **The Discovery Process:**
 
@@ -308,7 +307,7 @@ Monitor economic indicators and rotate accordingly.
 4. **Comparison:** Valuation lower than similar mortgage REITs
 5. **Risk Assessment:** Interest rate sensitive, acceptable risk
 
-**Result:** Investors finding this early captured 8%+ yield with modest capital appreciation.
+**Result (illustrative):** A screen like this can surface an 8%+ yield, but a yield that high also reflects higher risk, so the research above matters more than the headline number.
 
 **Key insight:** Less popular sectors offer better risk-adjusted returns.
 

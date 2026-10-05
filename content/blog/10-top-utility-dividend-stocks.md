@@ -88,8 +88,8 @@ Electric utilities provide electricity to residential, commercial, and industria
 - **Payout ratio:** 65%
 
 **Why NEE excels:**
-- Florida population growth (2M+ annually) drives electricity demand
-- Renewable energy business (wind, solar) growing 20%+ annually
+- Florida population growth supports electricity demand
+- Renewable energy business (wind, solar) is a growth driver
 - Regulatory approval for rate increases supporting growth
 - Management focus on dividend growth (below-median payout ratios)
 
@@ -360,8 +360,8 @@ This demonstrates how utility dividend reinvestment compounds over 30 years to r
 - Simplified management
 
 **Popular utility ETFs:**
-- Vanguard Utilities (VPU): 0.10% expense ratio, $17B assets
-- Schwab U.S. Utilities (SCHB): 0.03% expense ratio
+- Vanguard Utilities (VPU): broad U.S. utilities
+- Utilities Select Sector SPDR (XLU): large-cap U.S. utilities
 - iShares Global Clean Energy (ICLN): Renewable focus
 
 **Individual utility stocks advantages:**
@@ -387,7 +387,7 @@ Over 30-year periods, utilities generate 7-12% total returns—solid wealth crea
 **Q: Should I hold utilities in taxable or tax-advantaged accounts?**
 
 A: Utilities generate qualified dividend income (taxed at preferential rates in taxable accounts). However:
-- **Tax-advantaged (IRA):** Locks in 20% long-term rate on dividends
+- **Tax-advantaged (IRA/401(k)):** Dividends are not taxed each year inside the account; traditional-account withdrawals are taxed as ordinary income, and qualified Roth withdrawals are tax-free
 - **Taxable account:** Qualifies for 15% preferential rate
 - **Overall:** Probably slight advantage to taxable accounts
 

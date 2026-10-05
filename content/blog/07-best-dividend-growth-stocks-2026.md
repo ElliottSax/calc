@@ -71,9 +71,7 @@ This demonstrates how dividend growth transforms modest initial investments into
 | Nike | NKE | 0.8% | 8-10% | +45% | Apparel/footwear |
 | Home Depot | HD | 2.1% | 10-12% | +68% | Home improvement retail |
 | Lowe's | LOW | 1.5% | 8-10% | +82% | Home improvement retail |
-| Dollar Tree | DLTR | 0% | N/A | +125% | Discount retail |
 | Costco | COST | 0.7% | 8-10% | +94% | Membership retail |
-| Adobe | ADBE | 0% | N/A | +68% | Software |
 
 ## Understanding Dividend Growth: Why Some Companies Excel
 
@@ -184,12 +182,6 @@ Retailers with strong brands can raise prices and grow profitably.
 Dividend aristocrats—companies with 25+ consecutive dividend increase years—represent the most reliable dividend growers.
 
 **Aristocrats among growth stocks:**
-
-**3M Company (MMM):**
-- **Dividend growth:** 62 years of increases
-- **Recent yield:** 3.2%
-- **Challenge:** Industrial slowdown post-2020
-- **Recovery:** 2024-2026 improvement evident
 
 **Illinois Tool Works (ITW):**
 - **Dividend growth:** 58 years of increases
@@ -476,7 +468,7 @@ This approach creates exponential wealth growth through:
 The optimal dividend growth portfolio balances:
 - **Growth leaders (40%):** Microsoft, Apple, Visa, Mastercard
 - **Proven performers (40%):** Home Depot, Costco, Lowe's, Nike
-- **Aristocrat stability (20%):** 3M, Illinois Tool Works, Stanley Black & Decker
+- **Aristocrat stability (20%):** Illinois Tool Works, Stanley Black & Decker
 
 Start young, contribute monthly, reinvest all dividends, and hold for 25+ years. Your initial $30,000 investment plus $500 monthly contributions becomes $847,000+ through the magic of dividend growth and compounding.
 

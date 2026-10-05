@@ -123,7 +123,7 @@ Example inputs and outputs:
 ## FIVE FAQs
 
 1. **Q: How do I select the right stocks for my dividend ladder?**
-A: Look for stocks with a history of quarterly dividend payments, a dividend yield of 3% or higher, and a dividend growth rate of 5% or higher over the past 5 years.
+
 2. **Q: How do I stagger the ex-dividend dates?**
 A: Spread the ex-dividend dates across the month, ensuring a consistent cash flow. You can use a dividend calendar or a spreadsheet to plan the ex-dividend dates.
 3. **Q: How do I calculate the monthly dividend income?**

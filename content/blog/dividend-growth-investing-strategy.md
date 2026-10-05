@@ -20,7 +20,7 @@ At the heart of dividend growth investing is the concept of identifying companie
 Over the past five years, JNJ has managed to increase its dividend by about 6% annually. These companies are often considered staples in a dividend growth portfolio due to their stable cash flows and commitment to dividend payments.
 
 ## Comparison
-When comparing different dividend growth stocks, it's essential to consider not just the yield but also the growth potential and stability of the dividend payments. Coca-Cola, with its iconic brand and global reach, offers a current yield of around 3.1% and has a payout ratio of about 77%, with a five-year dividend growth rate of roughly 5%. These companies demonstrate the ability to grow their dividends over time, making them attractive for investors seeking both income and potential for capital appreciation.
+When comparing different dividend growth stocks, it's essential to consider not just the yield but also the growth potential and stability of the dividend payments. These companies demonstrate the ability to grow their dividends over time, making them attractive for investors seeking both income and potential for capital appreciation.
 
 ## Strategy
 Implementing a dividend growth investing strategy involves several steps. First, investors should set clear financial goals, including the desired income level and time horizon. Next, they should screen for potential stocks based on criteria such as dividend yield, payout ratio, and dividend growth history. It's crucial to diversify the portfolio across different sectors to mitigate risk.

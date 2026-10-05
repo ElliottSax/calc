@@ -447,7 +447,7 @@ Ignore ex-dividend dates for long-term investing. Buy based on fundamental value
 | Johnson & Johnson | JNJ | $155 | 4 | $620 | 2.9% | $18.00 |
 | Procter & Gamble | PG | $165 | 4 | $660 | 2.4% | $15.84 |
 | Coca-Cola | KO | $58 | 11 | $638 | 3.1% | $19.78 |
-| 3M | MMM | $95 | 7 | $665 | 5.8% | $38.57 |
+| Example holding (hypothetical) | XXX | $95 | 7 | $665 | 5.8% | $38.57 |
 | McDonald's | MCD | $295 | 2 | $590 | 2.2% | $12.98 |
 | Target | TGT | $145 | 4 | $580 | 2.8% | $16.24 |
 | Lowe's | LOW | $240 | 3 | $720 | 2.1% | $15.12 |

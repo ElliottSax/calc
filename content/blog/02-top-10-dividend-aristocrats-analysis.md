@@ -1,4 +1,4 @@
-# Top 10 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks
+# Top 9 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks
 
 ## What Are Dividend Aristocrats?
 
@@ -16,7 +16,7 @@ Dividend Aristocrats serve multiple purposes for investors:
 4. **Compounding Power** - DRIP works exceptionally well with growing dividends
 5. **Lower Risk** - Less likely to cut dividends
 
-## The Top 10 Dividend Aristocrats of 2026
+## The Top 9 Dividend Aristocrats of 2026
 
 ### #1: Procter & Gamble (PG)
 
@@ -62,7 +62,7 @@ The Coca-Cola Company is the world's largest beverage company. From Coke and Spr
 - Iconic global brand
 - Consistent 6%+ dividend growth
 - Inflation hedge (raises prices with inflation)
-- Dividend paid since 1893 (oldest in U.S.)
+- Has paid a dividend every year since 1920
 
 **DRIP Potential (20-year projection):**
 - Starting yield: 3.1%
@@ -119,44 +119,9 @@ Johnson & Johnson is a healthcare conglomerate with three divisions: pharmaceuti
 
 ---
 
-### #4: 3M Company (MMM)
+### #4: Emerson Electric (EMR)
 
 **Rank:** #4 by tenure
-**Consecutive Years of Increases:** 65 years
-**Current Yield:** 2.3%
-**Average Annual Growth:** 5.8%
-
-**Company Overview:**
-3M manufactures 70,000+ products across industrial, safety, healthcare, and consumer segments. From scotch tape to adhesives to medical devices, 3M is an essential component in global supply chains.
-
-**Why It's a Top Aristocrat:**
-- Industrial diversification
-- Consistent 5-6% dividend growth
-- Strong cash generation
-- Global economic indicator stock
-
-**DRIP Potential (20-year projection):**
-- Starting yield: 2.3%
-- Final yield (growing 5.8%): ~6.2%
-- Portfolio example: $10,000 → $24,800 after 20 years
-
-**Recent Challenges and Opportunities:**
-- Faced litigation (PFAS chemicals) affecting stock price
-- Provides investment opportunity for patient DRIP investors
-- Recent dividend increases suggest management confidence
-
-**Industrial Sector Benefits:**
-- Capital-light business model
-- Recurring replacement demand
-- Essential to manufacturing worldwide
-
-**Best for:** Value investors with contrarian outlook + dividend patience
-
----
-
-### #5: Emerson Electric (EMR)
-
-**Rank:** #5 by tenure
 **Consecutive Years of Increases:** 68 years
 **Current Yield:** 1.8%
 **Average Annual Growth:** 8.2%
@@ -165,7 +130,7 @@ Johnson & Johnson is a healthcare conglomerate with three divisions: pharmaceuti
 Emerson Electric designs and manufactures technology and engineering services serving industrial, commercial, and residential markets. Automation and climate control are core competencies.
 
 **Why It's a Top Aristocrat:**
-- Highest dividend growth rate among top 10 (8.2%)
+- Highest dividend growth rate among these nine (8.2%)
 - Industrial automation exposure
 - Essential infrastructure company
 - Consistent earnings growth
@@ -189,9 +154,9 @@ Emerson Electric designs and manufactures technology and engineering services se
 
 ---
 
-### #6: Lowe's (LOW)
+### #5: Lowe's (LOW)
 
-**Rank:** #6 by tenure
+**Rank:** #5 by tenure
 **Consecutive Years of Increases:** 65 years
 **Current Yield:** 1.9%
 **Average Annual Growth:** 7.1%
@@ -224,9 +189,9 @@ Lowe's is a leading home improvement retailer with 2,200+ stores. DIY and profes
 
 ---
 
-### #7: General Dynamics (GD)
+### #6: General Dynamics (GD)
 
-**Rank:** #7 by tenure
+**Rank:** #6 by tenure
 **Consecutive Years of Increases:** 65 years
 **Current Yield:** 1.7%
 **Average Annual Growth:** 9.1%
@@ -235,7 +200,7 @@ Lowe's is a leading home improvement retailer with 2,200+ stores. DIY and profes
 General Dynamics is a leading defense contractor providing military aircraft, shipbuilding, technology services, and combat systems.
 
 **Why It's a Top Aristocrat:**
-- Highest growth rate in top 10 (9.1%)
+- Highest growth rate in these nine (9.1%)
 - Stable government contracts
 - Aerospace and defense sector strength
 - Strong cash generation
@@ -260,9 +225,9 @@ General Dynamics is a leading defense contractor providing military aircraft, sh
 
 ---
 
-### #8: Consolidated Edison (ED)
+### #7: Consolidated Edison (ED)
 
-**Rank:** #8 by tenure
+**Rank:** #7 by tenure
 **Consecutive Years of Increases:** 53 years
 **Current Yield:** 3.6%
 **Average Annual Growth:** 3.8%
@@ -296,9 +261,9 @@ Consolidated Edison provides electricity and natural gas to 10+ million customer
 
 ---
 
-### #9: Target (TGT)
+### #8: Target (TGT)
 
-**Rank:** #9 by tenure
+**Rank:** #8 by tenure
 **Consecutive Years of Increases:** 55 years
 **Current Yield:** 2.2%
 **Average Annual Growth:** 6.9%
@@ -332,9 +297,9 @@ Target operates 1,900+ general merchandise stores. A major player in U.S. retail
 
 ---
 
-### #10: Realty Income (O)
+### #9: Realty Income (O)
 
-**Rank:** #10 on our list
+**Rank:** #9 on our list
 **Consecutive Years of Increases:** 27 years
 **Current Yield:** 4.0%
 **Average Annual Growth:** 4.2%
@@ -375,7 +340,6 @@ Realty Income is a REIT (Real Estate Investment Trust) that owns commercial prop
 | PG | 68 | 2.1% | 6.5% | $27,400 | Long-term growth |
 | KO | 62 | 3.1% | 6.0% | $32,100 | Balanced |
 | JNJ | 62 | 2.8% | 6.8% | $31,600 | Conservative |
-| MMM | 65 | 2.3% | 5.8% | $24,800 | Value |
 | EMR | 68 | 1.8% | 8.2% | $35,200 | Growth |
 | LOW | 65 | 1.9% | 7.1% | $29,300 | Housing optimists |
 | GD | 65 | 1.7% | 9.1% | $36,100 | Aggressive growth |

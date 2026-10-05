@@ -17,7 +17,7 @@ Building a dividend ladder is a popular investment strategy used by income-seeki
 ## Analysis
 To build an effective dividend ladder, investors need to focus on high-quality dividend-paying stocks with a strong track record of consistent payments and growth. One key metric to consider is the current yield, which represents the annual dividend payment as a percentage of the stock's current price.
 
-Other important considerations include the dividend growth rate and the frequency of dividend payments. Stocks like 3M (MMM) and Procter & Gamble (PG) have a long history of consistent dividend payments and growth, with 5-year dividend growth rates of 8.5% and 6.3%, respectively.
+Other important considerations include the dividend growth rate and the frequency of dividend payments.
 
 ## Comparison
 When building a dividend ladder, it's essential to compare and contrast different dividend-paying stocks to create a diversified portfolio. For example, investors may want to consider a combination of stocks with different ex-dividend dates, such as January, April, July, and October, to create a consistent income stream throughout the year.

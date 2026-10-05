@@ -194,10 +194,9 @@ Suitable for: Early retirees, income prioritizers, ages 60+
 - 15% Vanguard International High Dividend (VYMI): $15,000
 - 10% Global X Super Dividend (SDIV): $10,000
 
-**Expected annual income:** $2,100
-**Expected dividend yield:** 3.5%
+**Illustrative annual income:** $3,500 ($100,000 x a 3.5% blended yield)
+**Illustrative blended yield:** 3.5% (fund yields change; check current figures)
 **Volatility:** Moderate (below broad market)
-**Growth potential:** 4-6% annually
 
 This allocation balances:
 - Core stability (75% in SCHD + VYM)
@@ -215,9 +214,8 @@ Suitable for: Working investors, ages 40-55, dividend reinvestors
 - 10% Vanguard International High Dividend (VYMI): $10,000
 - 5% iShares MSCI USA ESG Select (SUSA): $5,000
 
-**Expected annual income:** $1,300
-**Expected dividend yield:** 2.6%
-**Growth potential:** 7-9% annually (higher capital appreciation)
+**Illustrative annual income:** $2,600 ($100,000 x a 2.6% blended yield)
+**Illustrative blended yield:** 2.6% (fund yields change; check current figures)
 **Tax efficiency:** Excellent (low turnover)
 
 This allocation emphasizes:
@@ -236,9 +234,8 @@ Suitable for: Young investors, ages 25-40, long-term horizon, reinvesting
 - 15% Vanguard International High Dividend (VYMI): $15,000
 - 5% Global X Super Dividend (SDIV): $5,000
 
-**Expected annual income:** $1,100
-**Expected dividend yield:** 2.2%
-**Growth potential:** 8-11% annually
+**Illustrative annual income:** $2,200 ($100,000 x a 2.2% blended yield)
+**Illustrative blended yield:** 2.2% (fund yields change; check current figures)
 **Reinvestment benefit:** Monthly contributions + dividend reinvestment compound dramatically
 
 This allocation focuses on:
@@ -275,7 +272,7 @@ This demonstrates how monthly contributions combined with dividend reinvestment 
 3. **Vanguard Dividend (VIG):** 0.06%
 4. **Vanguard International High Dividend (VYMI):** 0.12%
 
-These four offer market-leading cost efficiency. Over 20 years on $100,000, the difference between 0.06% and 0.50% fees equals roughly $4,000 in extra wealth.
+These four offer market-leading cost efficiency. Over 20 years on $100,000 at an assumed 6% annual return before fees, the difference between a 0.06% and a 0.50% fee is roughly $25,000 in ending wealth (about $317,000 versus $292,000). That is an illustration of fee drag, not a forecast.
 
 ### Highest Yields (Income Maximization)
 

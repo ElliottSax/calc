@@ -82,7 +82,7 @@ X **High expectations**: Investors may have high expectations for dividend growt
 
 Here are 2-3 advanced techniques for incorporating rising dividend stocks into your investment portfolio:
 
-1. **Dividend capture strategy**: Invest in rising dividend stocks with high dividend yields and sell before the ex-dividend date to capture the dividend payment.
+1. **Dividend capture strategy**: Buy a rising dividend stock before its ex-dividend date and sell on or after that date to collect the payment. Selling before the ex-dividend date forfeits the dividend, and the share price typically falls by about the dividend amount on the ex-date, so after trading costs and taxes this rarely adds value.
 2. **Covered call strategy**: Sell covered calls on rising dividend stocks to generate additional income and potentially increase returns.
 3. **Dividend reinvestment plan (DRIP)**: Implement a DRIP to automatically reinvest dividend payments and take advantage of compounding.
 

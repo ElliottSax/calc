@@ -72,10 +72,10 @@ Effective dividend tracking transforms your portfolio from a collection of stock
 | PG | 40 | $130 | $165 | $3.65 | $146 | 2.81% | 2.21% |
 
 **Portfolio Totals:**
-- Total invested: $13,300
-- Current value: $16,770
+- Total invested: $17,650
+- Current value: $20,150
 - Annual income: $556
-- Portfolio yield on cost: 4.18%
+- Portfolio yield on cost: 3.15%
 
 ## Automate Data Updates
 
@@ -216,7 +216,7 @@ Concentrating in one sector (utilities, REITs) creates massive risk during secto
 
 **Mistake 3: Not Reinvesting Dividends**
 
-Taking dividends as cash during accumulation phase costs 40-60% of long-term wealth.
+Taking dividends as cash during the accumulation phase gives up the compounding that reinvesting would have produced.
 
 **Solution:** Enable automatic DRIP if you're more than 10 years from retirement.
 
@@ -245,7 +245,7 @@ Buy-and-forget leads to holding deteriorating positions through dividend cuts.
 | Realty Income | O | $1,300 | 5.2% | $67.60 |
 | Coca-Cola | KO | $1,000 | 3.1% | $31.00 |
 | Verizon | VZ | $1,200 | 6.5% | $78.00 |
-| 3M | MMM | $1,000 | 5.8% | $58.00 |
+| Example holding (hypothetical) | XXX | $1,000 | 5.8% | $58.00 |
 | Microsoft | MSFT | $800 | 0.8% | $6.40 |
 | AT&T | T | $1,000 | 5.8% | $58.00 |
 
@@ -373,7 +373,7 @@ A: Aim for 15-20 individual stocks for adequate diversification. Below 10 stocks
 
 **Q: Should I reinvest dividends automatically?**
 
-A: Yes, if you're more than 10 years from retirement. Automatic dividend reinvestment (DRIP) compounds your returns and can increase portfolio value by 40-60% over 20-30 years. Only take dividends as cash if you need the income for living expenses.
+A: Yes, if you're more than 10 years from retirement. Automatic dividend reinvestment (DRIP) compounds your returns because each payout buys more shares that go on to pay further dividends. Only take dividends as cash if you need the income for living expenses.
 
 **Q: How often should I review my dividend portfolio?**
 

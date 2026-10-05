@@ -28,13 +28,7 @@ Stock price and dividend quality are unrelated. A $40 stock can offer superior d
 
 ### Increased Dividend Yield Potential
 
-Lower-priced stocks often offer higher dividend yields. Among our top sub-$50 picks:
-
-- **Yield range:** 3.5-6.5%
-- **Average yield:** 4.8%
-- **Typical large-cap yield:** 2.5-3.5%
-
-This 1-3% yield advantage compounds significantly over 20+ years.
+Lower-priced stocks sometimes offer higher dividend yields, but a yield that is high because the share price has fallen is often a warning sign of a payout at risk, not a bargain. Compare each stock's yield with its payout ratio and dividend history rather than assuming a cheap share price means a better income stream. Any yield advantage compounds over 20+ years only if the dividend is actually maintained.
 
 ### Entry Point in Quality Companies
 

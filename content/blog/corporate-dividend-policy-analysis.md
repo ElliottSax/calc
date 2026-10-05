@@ -20,7 +20,7 @@ When analyzing a company's dividend policy, there are several key factors to con
 In addition to current yield and payout ratio, dividend growth rate is also a critical factor in evaluating a company's dividend policy. A company with a strong track record of dividend growth is more likely to continue increasing its dividend payments in the future.
 
 ## Comparison
-Comparing the dividend policies of different companies can help you identify the most attractive investment opportunities. However, CVX has a lower payout ratio of 43% versus XOM's 54%, indicating that CVX may have more room to increase its dividend payments in the future. Another example is the comparison of the dividend growth rates of JNJ and PG, which shows that JNJ has a 5-year dividend growth rate of 6.3% versus PG's 5-year dividend growth rate of 4.1%.
+Comparing the dividend policies of different companies can help you identify the most attractive investment opportunities. However, CVX has a lower payout ratio of 43% versus XOM's 54%, indicating that CVX may have more room to increase its dividend payments in the future.
 
 In addition to comparing individual stocks, it's also important to consider the broader industry trends and how they impact dividend policies. For instance, the energy sector has seen significant volatility in recent years, which has led to changes in dividend policies among energy companies. On the other hand, the technology sector has seen a significant increase in dividend payments, with companies like Microsoft (MSFT) and Intel (INTC) offering yields of 1.1% and 2.1%, respectively.
 

@@ -149,11 +149,11 @@ QYLD takes the covered call approach to an extreme. By selling calls on NASDAQ-1
 The difference between 0.06% and 0.60% may seem trivial, but over decades it compounds significantly:
 
 For a $100,000 initial investment with 6% annual returns over 20 years:
-- **0.06% SCHD/VYM**: $320,000 ending value ($60,000 in total costs)
-- **0.35% JEPI**: $310,000 ending value ($200,000 in total costs)
-- **0.60% QYLD**: $305,000 ending value ($310,000 in total costs)
+- **0.06% SCHD/VYM**: about $317,000 ending value
+- **0.35% JEPI**: about $300,000 ending value
+- **0.60% QYLD**: about $286,000 ending value
 
-The $15,000 difference between lowest and highest cost options represents 5% of ending wealth—significant over long periods.
+The roughly $31,000 difference between the lowest and highest cost options is about 10% of the ending wealth, which is significant over long periods. (Computed as $100,000 x (1.06 - fee)^20; this is an illustration of fee drag, not a forecast, and the funds' actual returns and fees differ.)
 
 ### Yield Sustainability Analysis
 

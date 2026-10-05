@@ -45,7 +45,6 @@ Sustainable monthly dividends require company-specific analysis. The best monthl
 | Stock | Ticker | Dividend Yield | Monthly Payment | 5-Year Growth | Broker Link |
 |-------|--------|----------------|-----------------|---------------|-------------|
 | Gladstone Investment Corp | GAIN | 8.2% | $0.084/month | +12% | [Open Account](https://www.investopedia.com/terms/b/brokerage.asp) |
-| mplx LP | MPLX | 7.9% | $0.615/month | +18% | [Open Account](https://www.investopedia.com/terms/b/brokerage.asp) |
 | Realty Income | O | 3.6% | $0.280/month | +22% | [Open Account](https://www.investopedia.com/terms/b/brokerage.asp) |
 | Ellington Financial | EFC | 8.5% | $0.127/month | +8% | [Open Account](https://www.investopedia.com/terms/b/brokerage.asp) |
 | Invesco Mortgage Capital | IVR | 7.8% | $0.079/month | -5% | [Open Account](https://www.investopedia.com/terms/b/brokerage.asp) |
@@ -55,7 +54,7 @@ Sustainable monthly dividends require company-specific analysis. The best monthl
 
 ### Business Development Companies (BDCs)
 
-BDCs like Gladstone Investment Corporation (GAIN) and Ellington Financial (EFC) are required by regulation to distribute 90% of taxable income to shareholders. This structure ensures high current yields (7-8%) with substantial monthly distributions.
+BDCs such as Gladstone Investment Corporation (GAIN) typically elect regulated-investment-company status, which requires them to distribute at least 90% of taxable income to shareholders. This structure tends to produce high current yields with substantial distributions.
 
 **Pros:** Highest current yields, predictable distributions, monthly payment frequency
 

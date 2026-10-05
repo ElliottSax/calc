@@ -308,7 +308,7 @@ One concern with dividend-only retirement: What if dividends are cut or yields c
 
 **Strategy 1: Diversification**
 - Own 40-50 different dividend stocks/funds
-- If one cuts (happens 1-2% of portfolio), impact is minimal
+- If one company cuts its dividend, the impact on a diversified portfolio is limited
 - Our 5-pillar approach naturally diversifies
 
 **Strategy 2: Quality Selection**
@@ -487,10 +487,10 @@ Solution: Dividend growth (6%+) beats inflation. Even better with capital apprec
 **Right:** Hold, dividends continue, wait for recovery (3-5 years)
 
 In 2008-2009 financial crisis:
-- Portfolios down 30-40%
-- Dividends fell 5-10% temporarily
-- Recovery happened by 2011-2012
-- Dividend-only retirees were fine (lived on dividends)
+- Stock prices fell sharply
+- Many companies cut or suspended their dividends, especially banks and other financials
+- Prices and dividends took years to recover
+- Retirees who relied on dividend income still had to manage the cuts, which is why diversification matters
 
 ### Mistake 5: Not Rebalancing
 
@@ -508,7 +508,7 @@ A: Yes, if you have sufficient capital and discipline. $1.5-2M generates $52,500
 A: Depends on needs. $50k/year needs = $1.25-1.67M. Start building now, compound 25-30 years.
 
 **Q: What if dividends are cut during recession?**
-A: Temporary (1-2 years typically). Hold through it. Capital appreciation usually offsets. Quality companies rarely cut (Aristocrats had 0 cuts in 2008).
+A: Cuts can last for years and are not always reversed. Diversify across many payers and sectors, keep a cash reserve, and review each holding's payout ratio and balance sheet. Quality companies cut less often than average, but dividend cuts still happened in 2008-2009 even among established payers.
 
 **Q: Should I retire when I hit my number?**
 A: Not necessarily. Retiring at 55 vs. 60 = $2M vs. $4M principal. Extra 5 years of work = lifetime of additional security.

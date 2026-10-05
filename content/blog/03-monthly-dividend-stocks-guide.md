@@ -71,12 +71,6 @@ Why it dominates:
 - Monthly dividend: ~$0.17/share
 - Focus: Single-tenant retail
 
-**STORE Capital (STOR)**
-- Yield: 3.8%
-- Specialty: Net-lease commercial properties
-- Monthly dividend: ~$0.36/share (quarterly actually, but investor-friendly)
-- Benefit: Survival of retail transformation
-
 **Digital Realty (DLR)**
 - Yield: 3.0%
 - Specialty: Data centers (highest-growth real estate)
@@ -165,7 +159,7 @@ Target: Mix of income and growth
 **Allocation:**
 - 40% Realty Income (O)
 - 25% Digital Realty (DLR)
-- 15% STORE Capital (STOR)
+- 15% Net-lease REIT such as National Retail Properties (NNN)
 - 10% Closed-End Fund (ETV)
 - 10% Preferred Stock ETF (PFF)
 
@@ -222,7 +216,7 @@ The amount needed depends on dividend yield:
 - Final portfolio (with growth): ~$110,000
 - Annual income: ~$4,400 (4% yield)
 
-## Top 10 Monthly Dividend Stocks Ranked
+## Top 9 Monthly Dividend Stocks Ranked
 
 ### 1. Realty Income (O)
 
@@ -284,25 +278,7 @@ Why it's best growth play:
 
 ---
 
-### 4. STORE Capital (STOR)
-
-**Rank:** Best balanced REIT monthly payer
-
-Metrics:
-- Current yield: 3.8%
-- Dividend: ~$0.36/share (quarterly)
-- Properties: 3,200+ net-lease properties
-- Focus: Service/retail transformation
-
-Why it works:
-- Survived retail apocalypse
-- Tenant credit improvement post-pandemic
-- Recession-resistant businesses (urgent care, dental, etc.)
-- Monthly distribution reinvestment option
-
----
-
-### 5. Ares Pactival (ARCC)
+### 4. Ares Capital (ARCC)
 
 **Rank:** Best high-yield BDC for income
 
@@ -322,7 +298,7 @@ Why it's valuable for income:
 
 ---
 
-### 6. Gladstone Capital (GLAD)
+### 5. Gladstone Capital (GLAD)
 
 **Rank:** Best aggressive BDC for maximum income
 
@@ -342,7 +318,7 @@ Why income investors like it:
 
 ---
 
-### 7. Preferred Stock ETF (PFF)
+### 6. Preferred Stock ETF (PFF)
 
 **Rank:** Best diversified preferred stock monthly income
 
@@ -362,7 +338,7 @@ Why it's compelling:
 
 ---
 
-### 8. Eaton Vance Tax-Advantage (ETV)
+### 7. Eaton Vance Tax-Advantage (ETV)
 
 **Rank:** Best monthly CEF for tax efficiency
 
@@ -380,7 +356,7 @@ Why tax-smart investors use it:
 
 ---
 
-### 9. NexPoint Residential (NXRT)
+### 8. NexPoint Residential (NXRT)
 
 **Rank:** Best apartment REIT monthly payer
 
@@ -398,7 +374,7 @@ Why it's interesting:
 
 ---
 
-### 10. LTC Properties (LTC)
+### 9. LTC Properties (LTC)
 
 **Rank:** Best healthcare REIT monthly payer
 
@@ -444,7 +420,7 @@ Most monthly dividend stocks pay non-qualified or ordinary income dividends (tax
 **Positioning example:**
 - Taxable account: Dividend Aristocrats (JNJ, KO, PG)
 - 401k: Realty Income, ARCC, ETV
-- IRA: STOR, DLR, GTY
+- IRA: DLR, GTY
 
 This positioning saves thousands in taxes over 20 years.
 

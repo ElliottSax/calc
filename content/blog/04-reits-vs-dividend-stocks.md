@@ -86,8 +86,8 @@ Companies paying dividends tend to be:
 - Dividends reinvested: +$8,000
 - Capital appreciation: +$14,000
 - Final value: $32,000
-- Without dividends: $18,000
-- Dividend advantage: $14,000
+- Without dividends: $24,000 ($10,000 + $14,000 appreciation)
+- Dividend advantage: $8,000
 
 ### Best Dividend Stocks
 
@@ -186,7 +186,6 @@ REITs provide real estate exposure to small investors:
 
 **Income-Focused REIT Portfolio:**
 - Realty Income (O) - 4% yield
-- STORE Capital (STOR) - 3.8% yield
 - Getty Realty (GTY) - 4.2% yield
 
 **Growth REIT Portfolio:**
@@ -417,7 +416,7 @@ REITs and dividend stocks are both valuable for building wealth through dividend
 
 The secret: **Use the right tool in the right account.** Dividend stocks in taxable accounts, REITs in 401k/IRA accounts, and both in Roth IRAs for maximum long-term tax-free wealth.
 
-This strategy can turn $250,000 into $2 million+ over 20 years while providing growing income.
+Holding each asset in the account type that suits its tax treatment can help more of the income compound over the long run.
 
 ---
 

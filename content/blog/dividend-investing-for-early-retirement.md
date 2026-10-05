@@ -17,12 +17,12 @@ As the concept of early retirement gains popularity, many investors are turning 
 ## Analysis
 When it comes to dividend investing, it's essential to focus on stocks with a strong track record of paying consistent dividends. One key metric to consider is the current yield, which represents the annual dividend payment per share divided by the stock's current price. As of 2026, some top dividend-paying stocks include:
 
-These stocks have demonstrated a commitment to paying dividends, with some, like Johnson & Johnson, boasting over 50 years of consecutive dividend payments. It's also crucial to consider the growth rate of dividends, as this can significantly impact the overall return on investment. For instance, **Realty Income** has a 5-year dividend growth rate of 4.2%, while **3M** has a 5-year dividend growth rate of 8.5%.
+These stocks have demonstrated a commitment to paying dividends, with some, like Johnson & Johnson, boasting over 50 years of consecutive dividend payments. It's also crucial to consider the growth rate of dividends, as this can significantly impact the overall return on investment.
 
 ## Comparison
 When comparing dividend stocks, it's essential to evaluate their performance over time. One key metric to consider is the dividend payout ratio, which represents the percentage of earnings paid out as dividends. A payout ratio below 50% is generally considered sustainable, as it indicates that the company has sufficient earnings to cover its dividend payments. **Johnson & Johnson** and **3M** have payout ratios below 55%, indicating a relatively low risk of dividend cuts. On the other hand, **Coca-Cola** and **Realty Income** have higher payout ratios, which may increase the risk of dividend cuts if earnings decline.
 
-Another critical factor to consider is the dividend growth rate. **ExxonMobil** has a 5-year dividend growth rate of 2.5%, which is relatively low compared to other stocks on this list. In contrast, **3M** has a 5-year dividend growth rate of 8.5%, indicating a strong commitment to increasing dividend payments over time.
+Another critical factor to consider is the dividend growth rate: a dividend that grows faster than inflation protects the buying power of your income, while a dividend that stagnates or is cut does not.
 
 ## Strategy
 To create a successful dividend investing strategy for early retirement, it's essential to diversify your portfolio across various sectors and industries. This can help mitigate risk and ensure a relatively stable income stream. Consider allocating your portfolio into different categories, such as:

@@ -39,7 +39,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
   },
   {
     "slug": "02-top-10-dividend-aristocrats-analysis",
-    "title": "Top 10 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks",
+    "title": "Top 9 Dividend Aristocrats Analysis 2026: The Elite Dividend Stocks",
     "category": "",
     "tags": []
   },

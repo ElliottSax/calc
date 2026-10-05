@@ -17,9 +17,9 @@ Industrial dividend stocks offer a compelling investment opportunity for income-
 ## Analysis
 The industrial sector is characterized by a diverse range of companies, each with its own unique strengths and weaknesses. When evaluating industrial dividend stocks, it's essential to consider factors such as dividend yield, payout ratio, and growth rate. The dividend yield represents the annual dividend payment as a percentage of the stock's current price, while the payout ratio indicates the percentage of earnings paid out as dividends. The growth rate, on the other hand, reflects the company's ability to increase its dividend payments over time.
 
-The company has a long history of dividend payments, with a 5-year growth rate of 7.3%. Another example is Caterpillar Inc. (CAT), which offers a yield of 2.2% and a payout ratio of 33.5%. Caterpillar has a 5-year growth rate of 10.1%, driven by its dominant position in the construction and mining equipment markets.
+Another example is Caterpillar Inc. (CAT), which offers a yield of 2.2% and a payout ratio of 33.5%.
 
-Other industrial dividend stocks worth considering are Union Pacific Corporation (UNP), with a yield of 2.1% and a payout ratio of 43.8%, and Deere & Company (DE), which offers a yield of 1.8% and a payout ratio of 34.5%. Both companies have demonstrated a commitment to dividend payments, with 5-year growth rates of 8.5% and 7.5%, respectively. Additionally, investors may want to consider Honeywell International Inc. (HON), which has a yield of 2.5% and a payout ratio of 44.1%, with a 5-year growth rate of 9.1%.
+Other industrial dividend stocks worth considering are Union Pacific Corporation (UNP), with a yield of 2.1% and a payout ratio of 43.8%, and Deere & Company (DE), which offers a yield of 1.8% and a payout ratio of 34.5%. Additionally, investors may want to consider Honeywell International Inc.
 
 ## Comparison
 When comparing industrial dividend stocks, it's essential to consider the trade-offs between yield, payout ratio, and growth rate. For example, a stock with a high yield may have a lower growth rate, while a stock with a high growth rate may have a lower yield. Investors must balance these competing factors to create a diversified portfolio that meets their individual needs and goals.

@@ -475,4 +475,4 @@ Use our [Yield on Cost Calculator](/calculators/yield-on-cost) to model income s
 
 **[Sign Up for High-Yield Investment Alerts](#signup-form)**
 
-Receive weekly alerts on high-yield opportunities, dividend sustainability analysis, and risk management strategies. Join income-focused investors earning 7-10% safely.
+Receive weekly alerts on high-yield opportunities, dividend sustainability analysis, and risk management strategies. Learn how income-focused investors weigh high yields against the risk of a dividend cut.

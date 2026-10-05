@@ -27,18 +27,11 @@ The aging population creates predictable, unstoppable healthcare demand:
 - Healthcare spending increases exponentially with age
 - Healthcare is non-discretionary (can't defer when sick)
 
-This demographic wave ensures healthcare company earnings grow 5-8% annually regardless of economic conditions.
+This demographic wave supports long-term demand for healthcare, though it does not guarantee earnings growth for any one company.
 
 ### Healthcare Spending Trends
 
-Per capita healthcare spending increases dramatically with age:
-
-**Age-based healthcare spending (2026):**
-- Ages 18-45: $3,000-5,000 annually
-- Ages 45-65: $5,000-12,000 annually
-- Ages 65+: $15,000-25,000 annually
-
-The transition from $5,000 to $15,000+ spending per year creates explosive demand for healthcare stocks.
+Per capita healthcare spending rises substantially with age, which supports long-term demand for healthcare services and products. Spending levels vary widely by country and insurance arrangement, so check current figures from an official source (for example, the Centers for Medicare & Medicaid Services) before relying on any number.
 
 ### Recession-Resistant Business Models
 
@@ -145,7 +138,6 @@ Investors understanding that dividend growth + stock appreciation > current yiel
 AbbVie balances yield (3.8%) with growth (10% dividend increases). Over 10 years, this combination creates:
 - Current income: $3,800 annually from $100,000
 - Growth: Dividend reaching $9,200 annually by year 10
-- Stock appreciation: Potential 5-8% annually
 
 **Suitable for:** Balanced investors seeking current income plus strong dividend growth.
 
@@ -405,7 +397,7 @@ A: Stock typically declines 20-30%. If dividend is well-covered by other drugs, 
 
 **Q: Can healthcare stocks be held indefinitely, or should I sell when they appreciate?**
 
-A: Healthcare's 5-8% annual growth from aging population suggests indefinite holding periods. Pharmaceutical companies like JNJ have paid dividends 61 consecutive years across wildly different eras. Healthcare stocks improve with age (compounding dividends).
+A: The long-term demand tailwind from an aging population supports long holding periods for quality healthcare companies, though no stock is guaranteed to keep growing. Pharmaceutical companies like JNJ have paid dividends 61 consecutive years across wildly different eras. Healthcare stocks improve with age (compounding dividends).
 
 **Q: How does healthcare dividend growth compare to non-healthcare sectors?**
 

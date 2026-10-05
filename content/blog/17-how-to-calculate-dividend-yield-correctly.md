@@ -148,7 +148,7 @@ Divide the annual dividend by stock price and multiply by 100:
 
 ### Example 4: Dividend Growth Stock (Lower Yield, High Growth)
 
-**Broadmark Realty Capital (BRMK)**
+**Example mortgage REIT (hypothetical company)**
 - Stock Price: $10.20
 - Annual dividends: $0.88
 - Calculation: ($0.88 ÷ $10.20) × 100 = **8.63%**

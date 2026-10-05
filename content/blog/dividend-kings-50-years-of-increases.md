@@ -20,7 +20,7 @@ The Dividend Kings have a long history of rewarding shareholders with increasing
 The Dividend Kings also boast impressive dividend growth rates, with some stocks increasing their payouts by over 10% annually. These stocks have demonstrated their ability to adapt to changing market conditions while maintaining their dividend growth streaks.
 
 ## Comparison
-When comparing the Dividend Kings, it's essential to consider their industry, size, and growth prospects. While its dividend growth rate has been slower in recent years, its size and scale provide a level of stability that is hard to find in smaller stocks. Its dividend growth rate has been more consistent, with a 5-year growth rate of 12.1%, making it an attractive option for investors seeking a combination of income and growth.
+When comparing the Dividend Kings, it's essential to consider their industry, size, and growth prospects. While its dividend growth rate has been slower in recent years, its size and scale provide a level of stability that is hard to find in smaller stocks.
 
 ## Strategy
 Investing in the Dividend Kings requires a long-term perspective and a well-thought-out strategy. One approach is to focus on stocks with a strong track record of dividend growth and a sustainable payout ratio. Investors can also consider the overall valuation of the stock, as undervalued stocks with a high dividend yield can provide a higher total return over the long term. By diversifying across different industries and sectors, investors can create a portfolio that is resilient to market fluctuations and provides a consistent stream of dividend income.

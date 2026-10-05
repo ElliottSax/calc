@@ -17,14 +17,14 @@ As a retail investor, you're likely familiar with the age-old debate between gro
 ## Analysis
 Growth stocks that pay dividends are typically characterized by their ability to generate strong revenue growth, while also maintaining a commitment to returning capital to shareholders through dividend payments. These companies often operate in industries with high growth potential, such as technology, healthcare, and finance. To identify growth stocks that pay dividends, investors should look for companies with a history of consistent dividend payments, a reasonable payout ratio, and a strong track record of revenue and earnings growth. Some key metrics to consider when evaluating growth stocks that pay dividends include current yield, payout ratio, and growth rate.
 
-Microsoft has consistently grown its dividend payments over the past decade, with a 5-year dividend growth rate of 10.3%. The company's strong position in the technology industry, combined with its diversified revenue streams, make it an attractive option for investors seeking a growth stock that pays dividends.
+The company's strong position in the technology industry, combined with its diversified revenue streams, make it an attractive option for investors seeking a growth stock that pays dividends.
 
-Johnson & Johnson has increased its dividend payments for 59 consecutive years, with a 5-year dividend growth rate of 6.3%. The company's diversified portfolio of pharmaceutical, medical device, and consumer products makes it a stalwart in the healthcare industry, with a strong track record of generating consistent cash flows.
+The company's diversified portfolio of pharmaceutical, medical device, and consumer products makes it a stalwart in the healthcare industry, with a strong track record of generating consistent cash flows.
 
 ## Comparison
 When comparing growth stocks that pay dividends, it's essential to consider the trade-offs between current yield, growth rate, and payout ratio. Investors must weigh the importance of current income versus long-term growth potential when selecting growth stocks that pay dividends.
 
-Additionally, investors should consider the industry and competitive landscape when evaluating growth stocks that pay dividends. Mastercard has a 5-year dividend growth rate of 21.1%, making it an attractive option for investors seeking a growth stock with a strong track record of dividend growth.
+Additionally, investors should consider the industry and competitive landscape when evaluating growth stocks that pay dividends.
 
 ## Strategy
 To incorporate growth stocks that pay dividends into your portfolio, consider the following strategies:

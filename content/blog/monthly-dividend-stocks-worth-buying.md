@@ -17,7 +17,7 @@ Monthly dividend stocks have gained significant attention in recent years, parti
 ## Analysis
 When evaluating monthly dividend stocks, it's essential to consider several key metrics, including current yield, payout ratio, and growth rate. The current yield represents the annual dividend payment per share, divided by the stock's current price. A payout ratio, on the other hand, indicates the percentage of earnings allocated to dividend payments. A growth rate reflects the historical increase in dividend payments over time. By examining these metrics, investors can assess the sustainability and potential of a monthly dividend stock.
 
-For instance, let's consider the example of Realty Income (O), a well-established real estate investment trust (REIT) with a history of paying monthly dividends. As of 2026, Realty Income offers a current yield of 4.2%, with a payout ratio of 83% and a 5-year dividend growth rate of 4.5%.
+For instance, let's consider the example of Realty Income (O), a well-established real estate investment trust (REIT) with a history of paying monthly dividends.
 
 Other notable monthly dividend stocks include:
 

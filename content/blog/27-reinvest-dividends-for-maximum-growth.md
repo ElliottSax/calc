@@ -339,7 +339,7 @@ Disable DRIP 30 days before tax-loss harvesting. Re-enable after 30-day period.
 Young investors taking dividends as cash instead of reinvesting.
 
 **Impact:**
-Missing decades of compounding. A 30-year-old taking cash loses 40-60% of potential retirement wealth.
+Missing decades of compounding. A 30-year-old taking cash gives up a large share of the growth that reinvested dividends would have produced.
 
 **Solution:**
 If you're more than 10 years from retirement, reinvest 100% of dividends unless you need the income.
@@ -543,7 +543,7 @@ A: Ideal: reinvest in Roth IRA (tax-free forever). Next best: Traditional IRA (t
 
 ## Conclusion
 
-Dividend reinvestment is the most powerful wealth-building strategy for long-term investors. By automatically buying additional shares with dividend payments, you can increase portfolio value by 40-70% over 20-30 years compared to taking cash.
+Dividend reinvestment is the most powerful wealth-building strategy for long-term investors. By automatically buying additional shares with dividend payments, you let each payout buy shares that go on to pay further dividends, which compounds over 20-30 years compared to taking cash.
 
 Enable automatic DRIP today through your brokerage account. Set aside 15-20% of annual dividends for taxes, reinvest the rest, and let compounding do the heavy lifting. Within decades, your reinvested dividends will grow larger than your original principal.
 

@@ -195,8 +195,8 @@ Choose 2-3 quality dividend stocks:
 | JNJ | $50,000 | Large-cap, lowest yield, highest quality |
 | CVX | $50,000 | Energy, higher yield, dividend growth |
 
-Expected quarterly income: ~$1,460
-Expected monthly average: ~$487
+Expected quarterly income: ~$840 ($50,000 x 2.92% + $50,000 x 3.8% = $3,360 a year, divided by four)
+Expected monthly average: ~$280
 
 **Rung 2 (February/May/August/November Payers)**
 
@@ -207,8 +207,8 @@ Choose 2-3 stocks with higher yields:
 | VZ | $50,000 | Telecom, 6.44% yield, monthly-like dividends |
 | T | $50,000 | Telecom, 5.26% yield, reliable dividend |
 
-Expected quarterly income: ~$2,873
-Expected monthly average: ~$958
+Expected quarterly income: ~$1,460 ($50,000 x 6.44% + $50,000 x 5.26% = $5,850 a year, divided by four)
+Expected monthly average: ~$487
 
 **Rung 3 (March/June/September/December Payers)**
 
@@ -219,14 +219,16 @@ Choose 2-3 stocks for balance:
 | KO | $60,000 | Consumer staples, stable dividend |
 | PG | $40,000 | Consumer staples, lowest yield but highest quality |
 
-Expected quarterly income: ~$1,508
-Expected monthly average: ~$503
+Expected quarterly income: ~$690 ($60,000 x 3.17% + $40,000 x 2.11% = $2,746 a year, divided by four)
+Expected monthly average: ~$229
 
 **Portfolio total quarterly income:**
-- January/April/July/October: ~$1,460
-- February/May/August/November: ~$2,873
-- March/June/September/December: ~$1,508
-- **Average monthly: ~$1,280**
+- January/April/July/October: ~$840
+- February/May/August/November: ~$1,460
+- March/June/September/December: ~$690
+- **Average monthly: ~$1,000**
+
+These figures are worked from the example yields in the tracking table above. Real yields change, so re-run the arithmetic with current figures before relying on it.
 
 This creates monthly income while maintaining portfolio quality and diversification.
 

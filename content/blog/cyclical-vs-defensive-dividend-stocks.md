@@ -17,12 +17,12 @@ As a dividend investor, it's essential to understand the different types of divi
 ## Analysis of Cyclical Dividend Stocks
 Cyclical dividend stocks are companies that operate in industries that are heavily influenced by economic cycles. These companies tend to perform well during periods of economic growth and poorly during recessions. Examples of cyclical industries include automotive, aerospace, and construction. Cyclical dividend stocks often offer higher yields to compensate investors for the increased risk associated with these companies. However, their dividend payouts may be less stable and more prone to cuts during economic downturns.
 
-Let's take a look at a few examples of cyclical dividend stocks. The company has a 5-year dividend growth rate of 10.3%. Boeing's 5-year dividend growth rate is 14.1%. Caterpillar Inc. The company's 5-year dividend growth rate is 10.9%.
+Caterpillar (CAT), a maker of construction and mining equipment, is a typical cyclical dividend payer; check its current dividend and payout ratio on its investor-relations page.
 
 ## Analysis of Defensive Dividend Stocks
 Defensive dividend stocks, on the other hand, are companies that operate in industries that are less affected by economic cycles. These companies tend to perform relatively well during recessions and provide a more stable source of dividend income. Examples of defensive industries include consumer staples, healthcare, and utilities. Defensive dividend stocks often offer lower yields compared to cyclical stocks, but their dividend payouts are generally more stable and less prone to cuts.
 
-Let's examine a few examples of defensive dividend stocks. The company has a 5-year dividend growth rate of 4.5%. Johnson & Johnson's 5-year dividend growth rate is 6.3%. The company's 5-year dividend growth rate is 3.8%.
+Johnson & Johnson (JNJ) and Procter & Gamble (PG) are typical defensive dividend payers; check each company's current dividend and payout ratio on its investor-relations page.
 
 ## Comparison of Cyclical and Defensive Dividend Stocks
 When comparing cyclical and defensive dividend stocks, it's essential to consider the trade-offs between yield, stability, and growth. Cyclical stocks offer higher yields and growth potential, but their dividend payouts are less stable and more prone to cuts. Defensive stocks, on the other hand, provide a more stable source of dividend income, but their yields and growth rates may be lower. Ultimately, the choice between cyclical and defensive dividend stocks depends on an investor's individual goals, risk tolerance, and investment horizon.

@@ -14,7 +14,7 @@ publishDate: '''''''2026-03-19'''''''
 
 Dividend Reinvestment Plans (DRIPs) represent one of the most powerful yet underutilized wealth-building strategies available to individual investors. By automatically reinvesting dividends to purchase additional shares—often with zero commissions and sometimes at discounted prices—DRIPs harness the mathematical power of compound growth to accelerate portfolio appreciation dramatically.
 
-Warren Buffett famously called compound interest the "eighth wonder of the world," and DRIPs deliver this compounding on autopilot. A $10,000 investment in a 3% yielding stock growing dividends 8% annually becomes $74,000 in 25 years with DRIP enabled—versus $43,000 without reinvestment.
+Compound interest is often called the "eighth wonder of the world" (a line usually, though not reliably, attributed to Albert Einstein), and DRIPs deliver this compounding on autopilot. A $10,000 investment in a 3% yielding stock growing dividends 8% annually becomes $74,000 in 25 years with DRIP enabled—versus $43,000 without reinvestment.
 
 This comprehensive guide reveals everything you need to master DRIP investing: how DRIPs work, the types available, implementation strategies, tax optimization, and advanced techniques to maximize compound growth. Whether you're building wealth for retirement or creating generational assets, DRIPs deserve a central role in your investment strategy.
 
@@ -98,7 +98,7 @@ A DRIP automatically uses dividend payments to purchase additional shares of the
 | **Cash Dividends** | $18,940 | $43,230 | +332% |
 | **Difference** | +$5,710 | +$30,890 | **+309%** |
 
-**Key Insight:** DRIP strategy delivers 94% more wealth after 25 years ($74K vs. $38K).
+**Key Insight:** In this scenario the DRIP strategy delivers about 71% more wealth after 25 years ($74K vs. $43K).
 
 ### The Accelerator Effect
 

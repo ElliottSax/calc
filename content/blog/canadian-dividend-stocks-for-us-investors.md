@@ -17,11 +17,7 @@ As a US investor, diversifying your portfolio with international stocks can be a
 ## Analysis
 Canadian dividend stocks offer a unique combination of stability, growth, and income. Many of these companies have a long history of paying consistent dividends, making them attractive to investors seeking regular income. Additionally, the Canadian economy is closely tied to the US economy, making it easier for US investors to understand and navigate. Some of the top Canadian dividend stocks include:
 
-* Enbridge Inc. Enbridge has a strong track record of dividend growth, with a 5-year compound annual growth rate (CAGR) of 10.3%.
-* Royal Bank has a long history of dividend payments, with a 5-year CAGR of 7.1%.
-* Telus has a strong track record of dividend growth, with a 5-year CAGR of 8.5%.
-* Canadian National has a long history of dividend payments, with a 5-year CAGR of 10.1%.
-* Toronto-Dominion has a strong track record of dividend growth, with a 5-year CAGR of 8.1%.
+Large Canadian dividend payers that US investors often study include Enbridge (ENB), Royal Bank of Canada (RY), Telus (TU) and Toronto-Dominion Bank (TD); check each company's current dividend and how Canadian withholding tax applies to US holders.
 
 These stocks offer a great combination of income, growth, and stability, making them attractive to US investors.
 

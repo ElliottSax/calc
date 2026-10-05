@@ -20,7 +20,7 @@ The healthcare sector is diverse, encompassing pharmaceuticals, biotechnology, m
 Some of the top healthcare dividend stocks include Johnson & Johnson (JNJ), Pfizer (PFE), UnitedHealth Group (UNH), CVS Health (CVS), and AbbVie (ABBV). As of 2026, these stocks offer the following dividend yields and payout ratios:
 
 ## Comparison
-When comparing these healthcare dividend stocks, it's essential to consider their growth prospects and dividend growth rates. Johnson & Johnson, for example, has a long history of dividend payments and a consistent dividend growth rate of 6.3% over the past five years. Pfizer, on the other hand, has a higher dividend yield, but its dividend growth rate has been more modest, at 4.2% over the past five years. UnitedHealth Group has a lower dividend yield, but its high growth rate, driven by its diversified healthcare services business, makes it an attractive option for long-term investors.
+When comparing these healthcare dividend stocks, it's essential to consider their growth prospects and dividend growth rates. UnitedHealth Group has a lower dividend yield, but its high growth rate, driven by its diversified healthcare services business, makes it an attractive option for long-term investors.
 
 CVS Health, with its recent acquisition of Aetna, has expanded its healthcare services offerings and increased its dividend payout. However, its payout ratio is relatively low, indicating potential for future dividend growth. AbbVie, with its high dividend yield, is an attractive option for income-seeking investors, but its high payout ratio raises concerns about the sustainability of its dividend payments.
 

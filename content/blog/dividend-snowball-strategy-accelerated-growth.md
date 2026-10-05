@@ -12,7 +12,7 @@ publishDate: '''''''2026-03-19'''''''
 
 In 2026, investors are increasingly seeking strategies to accelerate income growth and sustainably increase dividend yields. One powerful approach is the Dividend Snowball Strategy, which leverages the power of compounding to drive long-term dividend income growth. By reinvesting dividends and adding new capital monthly, you can create a snowball effect that gathers momentum over time, generating a substantial increase in dividend income.
 
-Consider this: if you invest $10,000 in a high-quality dividend stock with a 4% yield and reinvest the dividends, you can potentially generate over $40,000 in dividend income within 10 years, assuming a 7% annual return and dividend growth rate. This represents a 300% increase in dividend income, all while growing your portfolio by over 500%.
+Consider this: if you invest $10,000 in a high-quality dividend stock with a 4% yield and reinvest the dividends, each payout buys more shares, which go on to pay more dividends, and the effect compounds year after year. How large it becomes depends on the yield, the dividend growth rate and the share price over time, none of which can be known in advance.
 
 In this article, we'll delve into the strategic framework, implementation steps, and advanced techniques for implementing the Dividend Snowball Strategy. We'll also examine case studies, pros and cons, and provide a comprehensive guide to get you started.
 
@@ -92,7 +92,7 @@ To further enhance the Dividend Snowball Strategy, consider the following advanc
 
 1. **Dollar-cost averaging**: Invest a fixed amount of money at regular intervals, regardless of market conditions, to reduce timing risk.
 2. **Tax-loss harvesting**: Offset capital gains by selling losing positions, reducing tax liabilities and maintaining a higher after-tax return.
-3. **Dividend capture**: Invest in dividend stocks with high yields and low volatility, and sell before the ex-dividend date to capture the dividend payment.
+3. **Dividend capture**: Buy a dividend stock before its ex-dividend date and sell on or after that date to collect the payment. Selling before the ex-dividend date forfeits the dividend, and the share price typically falls by about the dividend amount on the ex-date, so after trading costs and taxes this approach rarely adds value.
 
 ## CALCULATOR INTEGRATION
 

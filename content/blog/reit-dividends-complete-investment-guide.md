@@ -20,7 +20,7 @@ REITs are required to distribute at least 90% of their taxable income to shareho
 In addition to their dividend growth potential, REITs also offer a relatively low correlation with other asset classes, making them an effective tool for diversifying a portfolio. This is particularly important in today's market, where investors are seeking ways to reduce their exposure to volatility.
 
 ## Comparison
-When evaluating REIT dividends, it's essential to consider the underlying fundamentals of each company. This includes factors such as the quality of the portfolio, the strength of the balance sheet, and the management team's track record. While this may seem attractive, investors should also consider the company's debt-to-equity ratio, which stands at 1.23, and its dividend growth rate, which has averaged 4.5% over the past five years.
+When evaluating REIT dividends, it's essential to consider the underlying fundamentals of each company. This includes factors such as the quality of the portfolio, the strength of the balance sheet, and the management team's track record.
 
 ## Strategy
 So, how can investors incorporate REIT dividends into their portfolios? One approach is to focus on established REITs with a history of consistent dividend growth, such as those mentioned earlier. This industrial REIT has a diverse portfolio of logistics and distribution facilities, with a strong presence in the e-commerce sector. Investors may also want to consider a dividend reinvestment plan, which allows them to automatically reinvest their dividend payments into additional shares of the REIT, potentially leading to significant long-term growth.
